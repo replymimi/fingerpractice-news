@@ -1,4 +1,30 @@
 {
-  "stocks": [],
-  "crypto": []
+  "stocks": [
+    {
+      "source": "CNBC Television",
+      "title": "David Solomon on how Goldman Sachs is commemorating the 25th anniversary of 9/11",
+      "video_url": "https://www.youtube.com/watch?v=58zZapxuaGw",
+      "published_iso": "2026-09-12T01:18:14Z",
+      "duration": "1:08",
+      "transcript_raw": ""
+    },
+    {
+      "source": "Real Vision Finance",
+      "title": "This Chip Stock Could Be Setting Up Another BIG Move!",
+      "video_url": "https://www.youtube.com/watch?v=zSCWFhBgarA",
+      "published_iso": "2026-09-12T13:15:01Z",
+      "duration": "0:21",
+      "transcript_raw": ""
+    }
+  ],
+  "crypto": [
+    {
+      "source": "Coin Bureau",
+      "title": "Will Trump's $1B crypto stake destroy the CLARITY Act?",
+      "video_url": "https://www.youtube.com/watch?v=4pbCucoVh6Q",
+      "published_iso": "2026-09-12T21:00:12Z",
+      "duration": "0:48",
+      "transcript_raw": ""
+    }
+  ]
 }

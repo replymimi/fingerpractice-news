@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-13T19:40:44.973885+08:00",
+  "fetched_at": "2026-09-13T20:03:17.470810+08:00",
   "data": [
+    {
+      "source": "CoinDesk",
+      "title": "Crypto's Clarity Act is a Schrödinger's cat in life-death limbo as U.S. Senate returns",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/11/crypto-s-clarity-act-is-a-schroedinger-s-cat-in-life-death-limbo-as-u-s-senate-returns",
+      "published_iso": "2026-09-13T12:00:00+00:00",
+      "summary_raw": ""
+    },
     {
       "source": "CoinDesk",
       "title": "OpenAI IPO won't happen this year, says Sam Altman",
@@ -20,13 +27,6 @@
       "title": "Nigel Farage’s Reform UK lands $97 million donations from two crypto billionaires in 24 hours",
       "link": "https://www.coindesk.com/business/2026/09/12/nigel-farage-s-reform-uk-lands-usd97-million-donations-from-two-crypto-billionaires-in-24-hours",
       "published_iso": "2026-09-12T18:51:04+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "Anthropic CEO calls for AI race to slow down citing safety. Musk and OpenAI's Altman agrees",
-      "link": "https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees",
-      "published_iso": "2026-09-12T18:43:33+00:00",
       "summary_raw": ""
     }
   ]
