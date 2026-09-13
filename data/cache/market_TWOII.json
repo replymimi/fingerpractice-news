@@ -1,0 +1,11 @@
+{
+  "fetched_at": "2026-09-13T19:48:40.257335+08:00",
+  "data": {
+    "name": "櫃買指數 TPEx",
+    "symbol": "^TWOII",
+    "price": 269.45,
+    "prev_close": 267.72,
+    "chg": 1.73,
+    "chg_pct": 0.65
+  }
+}

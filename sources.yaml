@@ -1,0 +1,87 @@
+# 財經晨讀 - 內容來源設定
+# 修改這個檔案就能增減來源，不用碰程式碼。
+
+news:
+  stocks:
+    - id: reuters
+      name: Reuters
+      # Reuters 自己已無公開 RSS，改用 Google News 彙整其 reuters.com/business 文章
+      feed_url: https://news.google.com/rss/search?q=site:reuters.com+business&hl=en-US&gl=US&ceid=US:en
+    - id: cnbc
+      name: CNBC
+      feed_url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+    - id: marketwatch
+      name: MarketWatch
+      feed_url: https://feeds.marketwatch.com/marketwatch/topstories/
+    - id: zerohedge
+      name: Zero Hedge
+      feed_url: https://cms.zerohedge.com/fullrss2.xml
+    - id: calculatedrisk
+      name: Calculated Risk
+      feed_url: https://www.calculatedriskblog.com/feeds/posts/default
+  crypto:
+    - id: coindesk
+      name: CoinDesk
+      feed_url: https://www.coindesk.com/arc/outboundfeeds/rss/
+    - id: cointelegraph
+      name: Cointelegraph
+      feed_url: https://cointelegraph.com/rss
+    - id: theblock
+      name: The Block Research
+      feed_url: https://www.theblock.co/rss.xml
+    - id: bankless
+      name: Bankless
+      feed_url: https://www.bankless.com/feed
+
+youtube:
+  stocks:
+    - id: bloomberg_tv
+      name: Bloomberg Television
+      handle: "@markets"
+    - id: cnbc_tv
+      name: CNBC Television
+      handle: "@CNBCtelevision"
+    - id: realvision
+      name: Real Vision Finance
+      handle: "@RealVisionFinance"
+    - id: youtinghao
+      name: 游庭皓的財經號角
+      handle: "@YuTingHao"
+      note: "直播 08:30-09:30，需在 10:00 補抓場次"
+      supplemental_run: true
+  crypto:
+    - id: coinbureau
+      name: Coin Bureau
+      handle: "@CoinBureau"
+    - id: bencowen
+      name: Benjamin Cowen
+      handle: "@intothecryptoverse"
+    - id: pompliano
+      name: Anthony Pompliano
+      handle: "@APompliano"
+
+tide:
+  base_url: https://tide-tw.app/data
+  files:
+    - latest.json
+    - daily_brief.json
+    - daily_digest.json
+
+market_indices:
+  us:
+    - symbol: "^DJI"
+      name: "道瓊工業指數 DJIA"
+    - symbol: "^GSPC"
+      name: "標普 500 S&P 500"
+    - symbol: "^IXIC"
+      name: "那斯達克 NASDAQ"
+    - symbol: "^SOX"
+      name: "費城半導體 SOX"
+  tw:
+    - symbol: "^TWII"
+      name: "台股加權指數 TAIEX"
+    - symbol: "^TWOII"
+      name: "櫃買指數 TPEx"
+    - symbol: "TWD=X"
+      name: "台幣兌美元"
+      is_currency: true

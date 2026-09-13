@@ -1,0 +1,74 @@
+name: 財經晨讀自動更新
+
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 07:00 台北時間 — 主更新
+    - cron: '0 2 * * *'    # 10:00 台北時間 — 補充游庭皓摘要
+  workflow_dispatch:
+    inputs:
+      run_type:
+        description: '手動測試時要跑哪一種？'
+        type: choice
+        options: [main, supplemental]
+        default: main
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢查倉庫代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 判斷這次是主更新還是補充更新
+        run: |
+          if [ -n "${{ inputs.run_type }}" ]; then
+            echo "run_type=${{ inputs.run_type }}" >> "$GITHUB_ENV"
+          elif [ "${{ github.event.schedule }}" = "0 2 * * *" ]; then
+            echo "run_type=supplemental" >> "$GITHUB_ENV"
+          else
+            echo "run_type=main" >> "$GITHUB_ENV"
+          fi
+
+      - name: 抓新聞 RSS
+        if: env.run_type == 'main'
+        run: python scripts/fetch_news.py
+
+      - name: 抓大盤指數
+        if: env.run_type == 'main'
+        run: python scripts/fetch_market.py
+
+      - name: 抓潮汐板塊資料
+        if: env.run_type == 'main'
+        run: python scripts/fetch_tide.py
+
+      - name: 抓 YouTube 影片（主更新：除游庭皓外全部；補充更新：只抓游庭皓）
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scripts/fetch_youtube.py --run-type ${{ env.run_type }}
+
+      - name: AI 翻譯與摘要
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/summarize.py
+
+      - name: 產生網頁
+        run: python scripts/build_page.py
+
+      - name: 提交更新
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/raw data/cache data/state docs/index.html
+          git diff --cached --quiet || git commit -m "🤖 自動更新財經晨讀（${{ env.run_type }}）"
+          git push origin main

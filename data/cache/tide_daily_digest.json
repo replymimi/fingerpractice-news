@@ -1,0 +1,157 @@
+{
+  "fetched_at": "2026-09-13T19:41:09.964719+08:00",
+  "data": {
+    "date": "2026-09-11",
+    "generated_at": "2026-09-12T02:42:10+08:00",
+    "market_chg_1d": -1.61,
+    "is_market_down": true,
+    "panic_index": {
+      "score": 75,
+      "label": "恐慌",
+      "advancers": 434,
+      "decliners": 1399,
+      "down_ratio": 0.763
+    },
+    "safe_harbor": {
+      "mode": "bottom_fishing",
+      "sectors": []
+    },
+    "big_money": {
+      "abnormal_buy": [
+        {
+          "code": "2412",
+          "name": "中華電",
+          "net_1d_yi": 14.0,
+          "chg_1d": 0.72,
+          "inflow_streak": 9
+        },
+        {
+          "code": "1560",
+          "name": "中砂",
+          "net_1d_yi": 11.6,
+          "chg_1d": 7.78,
+          "inflow_streak": 5
+        },
+        {
+          "code": "6510",
+          "name": "精測",
+          "net_1d_yi": 11.5,
+          "chg_1d": -5.18,
+          "inflow_streak": 4
+        },
+        {
+          "code": "3491",
+          "name": "昇達科",
+          "net_1d_yi": 5.4,
+          "chg_1d": 4.43,
+          "inflow_streak": 1
+        },
+        {
+          "code": "2801",
+          "name": "彰銀",
+          "net_1d_yi": 5.2,
+          "chg_1d": 3.91,
+          "inflow_streak": 1
+        }
+      ],
+      "abnormal_sell": [
+        {
+          "code": "3661",
+          "name": "世芯-KY",
+          "net_1d_yi": -79.6,
+          "chg_1d": -9.99,
+          "inflow_streak": -1
+        },
+        {
+          "code": "2409",
+          "name": "友達",
+          "net_1d_yi": -32.9,
+          "chg_1d": -3.21,
+          "inflow_streak": -1
+        },
+        {
+          "code": "8150",
+          "name": "南茂",
+          "net_1d_yi": -9.7,
+          "chg_1d": -4.62,
+          "inflow_streak": -2
+        },
+        {
+          "code": "3264",
+          "name": "欣銓",
+          "net_1d_yi": -6.5,
+          "chg_1d": -3.96,
+          "inflow_streak": -1
+        },
+        {
+          "code": "3035",
+          "name": "智原",
+          "net_1d_yi": -3.2,
+          "chg_1d": -5.31,
+          "inflow_streak": -1
+        }
+      ],
+      "streak_leaders": [
+        {
+          "code": "5403",
+          "name": "中菲",
+          "net_1d_yi": 0,
+          "chg_1d": 0.11,
+          "inflow_streak": 20
+        },
+        {
+          "code": "2892",
+          "name": "第一金",
+          "net_1d_yi": 7.3,
+          "chg_1d": 2.37,
+          "inflow_streak": 20
+        },
+        {
+          "code": "9919",
+          "name": "康那香",
+          "net_1d_yi": 0,
+          "chg_1d": -1.41,
+          "inflow_streak": 20
+        },
+        {
+          "code": "3045",
+          "name": "台灣大",
+          "net_1d_yi": 3.3,
+          "chg_1d": 0.83,
+          "inflow_streak": 20
+        },
+        {
+          "code": "3374",
+          "name": "精材",
+          "net_1d_yi": 4.8,
+          "chg_1d": -5.02,
+          "inflow_streak": 15
+        }
+      ]
+    },
+    "review": {
+      "prev_date": "2026-09-10",
+      "label": "法人買最多",
+      "n": 3,
+      "avg_chg": -2.98,
+      "best": {
+        "name": "HPC 與網通 IC",
+        "chg_1d": -1.95
+      },
+      "sectors": [
+        {
+          "name": "客製 ASIC 矽智財",
+          "chg_1d": -4.78
+        },
+        {
+          "name": "Edge AI AIoT",
+          "chg_1d": -2.21
+        },
+        {
+          "name": "HPC 與網通 IC",
+          "chg_1d": -1.95
+        }
+      ]
+    }
+  }
+}

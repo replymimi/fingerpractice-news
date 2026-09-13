@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>財經晨讀</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+  :root {
+    --bg: #EFF2F7;
+    --surface: #FDFEFF;
+    --surface-raised: #FFFFFF;
+    --ink: #12151C;
+    --ink-soft: #565F72;
+    --ink-faint: #8891A3;
+    --hairline: #D6DBE4;
+    --accent-stocks: #A9701A;
+    --accent-stocks-soft: #F3E4CB;
+    --accent-crypto: #146F68;
+    --accent-crypto-soft: #D8ECE9;
+    --accent-recap: #4A55A8;
+    --accent-recap-soft: #E2E3F3;
+    --pos: #1B7A3D;
+    --neg: #B8342F;
+    --banner-bg: #E4E9F1;
+    --shadow-player: 0 -6px 24px rgba(18, 21, 28, 0.14);
+    --focus-ring: #2C64C9;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A0D13; --surface: #12161F; --surface-raised: #171C27;
+      --ink: #E9ECF3; --ink-soft: #9AA3B7; --ink-faint: #6B7488; --hairline: #232A38;
+      --accent-stocks: #E8A33D; --accent-stocks-soft: #2C2415;
+      --accent-crypto: #4FC2B8; --accent-crypto-soft: #142826;
+      --accent-recap: #8B95E8; --accent-recap-soft: #1D2036;
+      --pos: #4CBE72; --neg: #E2635C; --banner-bg: #171C27;
+      --shadow-player: 0 -6px 28px rgba(0, 0, 0, 0.5); --focus-ring: #6FA0F5;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0A0D13; --surface: #12161F; --surface-raised: #171C27;
+    --ink: #E9ECF3; --ink-soft: #9AA3B7; --ink-faint: #6B7488; --hairline: #232A38;
+    --accent-stocks: #E8A33D; --accent-stocks-soft: #2C2415;
+    --accent-crypto: #4FC2B8; --accent-crypto-soft: #142826;
+    --accent-recap: #8B95E8; --accent-recap-soft: #1D2036;
+    --pos: #4CBE72; --neg: #E2635C; --banner-bg: #171C27;
+    --shadow-player: 0 -6px 28px rgba(0, 0, 0, 0.5); --focus-ring: #6FA0F5;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Noto Sans TC', 'PingFang TC', sans-serif; padding-bottom: 88px; }
+  a { color: inherit; }
+  .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+  .topbar { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--hairline); padding: 18px 20px 16px; }
+  .topbar-inner { max-width: 1440px; margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
+  .brand-title { font-family: 'Noto Serif TC', serif; font-size: 1.9rem; font-weight: 700; margin: 0; text-wrap: balance; }
+  .update-stamp { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--ink-soft); margin-top: 6px; }
+  .update-stamp b { color: var(--ink); font-weight: 600; }
+  .play-all-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: var(--bg); border: none; border-radius: 999px; padding: 11px 20px 11px 16px; font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.02em; cursor: pointer; transition: opacity 0.15s ease; }
+  .play-all-btn:hover { opacity: 0.82; }
+  .play-all-btn svg { width: 15px; height: 15px; }
+
+  .board { max-width: 1440px; margin: 28px auto 0; padding: 0 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  @media (max-width: 1180px) { .board { grid-template-columns: 1fr 1fr; gap: 28px; } }
+  @media (max-width: 640px) { .board { grid-template-columns: 1fr; gap: 36px; } .brand-title { font-size: 1.6rem; } }
+
+  .column-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; margin-bottom: 4px; border-bottom: 2px solid var(--col-accent); }
+  .column-head-label { display: flex; align-items: baseline; gap: 8px; }
+  .column-head-label .tick { width: 9px; height: 9px; border-radius: 2px; background: var(--col-accent); display: inline-block; }
+  .column-head h2 { font-family: 'Noto Serif TC', serif; font-size: 1.12rem; font-weight: 700; margin: 0; }
+  .column-head-sub { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--ink-faint); }
+  .col-play-btn { background: none; border: 1px solid var(--hairline); color: var(--ink-soft); border-radius: 999px; padding: 5px 12px; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; cursor: pointer; white-space: nowrap; }
+  .col-play-btn:hover { border-color: var(--col-accent); color: var(--col-accent); }
+
+  .column--stocks { --col-accent: var(--accent-stocks); }
+  .column--crypto { --col-accent: var(--accent-crypto); }
+  .column--recap { --col-accent: var(--accent-recap); }
+
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0 20px; }
+  .stat-tile { border: 1px solid var(--hairline); border-radius: 6px; padding: 10px 12px; background: var(--surface); }
+  .stat-tile .stat-name { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.03em; color: var(--ink-faint); margin-bottom: 4px; }
+  .stat-tile .stat-value { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 1.02rem; font-weight: 600; color: var(--ink); }
+  .stat-tile .stat-change { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.72rem; margin-top: 2px; }
+  .stat-tile .stat-change.up { color: var(--pos); }
+  .stat-tile .stat-change.down { color: var(--neg); }
+
+  .flow-group { margin-bottom: 14px; }
+  .flow-group-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
+  .flow-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 5px 0; border-bottom: 1px dashed var(--hairline); font-size: 0.82rem; }
+  .flow-row:last-child { border-bottom: none; }
+  .flow-row .flow-name { color: var(--ink); }
+  .flow-row .flow-amt { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+  .flow-row .flow-amt.up { color: var(--pos); }
+  .flow-row .flow-amt.down { color: var(--neg); }
+
+  .sentiment-gauge { margin: 12px 0 18px; padding: 12px 14px; border: 1px solid var(--hairline); border-radius: 8px; background: var(--surface); }
+  .sentiment-gauge-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+  .sentiment-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.06em; color: var(--ink-faint); text-transform: uppercase; }
+  .sentiment-score { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+  .sentiment-bar { position: relative; height: 6px; border-radius: 999px; background: linear-gradient(90deg, var(--pos), var(--hairline) 50%, var(--neg)); margin-bottom: 6px; }
+  .sentiment-marker { position: absolute; top: 50%; width: 12px; height: 12px; border-radius: 50%; background: var(--surface-raised); border: 2px solid var(--ink); transform: translate(-50%, -50%); }
+  .sentiment-scale { display: flex; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; color: var(--ink-faint); margin-bottom: 4px; }
+  .sentiment-sub { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--ink-soft); margin: 0; }
+
+  .section-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin: 22px 0 8px; }
+
+  .item { display: flex; gap: 12px; padding: 14px 4px; border-bottom: 1px solid var(--hairline); }
+  .item:last-child { border-bottom: none; }
+  .item-play { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--hairline); background: var(--surface); color: var(--col-accent); display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 2px; transition: background 0.15s ease, border-color 0.15s ease; }
+  .item-play:hover { border-color: var(--col-accent); }
+  .item-play svg { width: 12px; height: 12px; }
+  .item[data-playing="true"] .item-play { background: var(--col-accent); color: var(--surface); border-color: var(--col-accent); }
+  .item-body { min-width: 0; flex: 1; }
+  .item-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+  .source-tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.02em; color: var(--col-accent); }
+  .item-meta .dot { color: var(--ink-faint); font-size: 0.6rem; }
+  .item-meta .time, .item-meta .dur { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--ink-faint); }
+  .item-title { font-family: 'Noto Serif TC', serif; font-size: 0.98rem; font-weight: 700; line-height: 1.45; margin: 0 0 4px; text-wrap: balance; }
+  .item-points { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-direction: column; gap: 5px; max-width: 62ch; }
+  .item-points li { position: relative; padding-left: 15px; font-size: 0.85rem; line-height: 1.6; color: var(--ink-soft); }
+  .item-points li::before { content: ''; position: absolute; left: 0; top: 0.58em; width: 5px; height: 5px; border-radius: 50%; background: var(--col-accent); }
+  .item-link { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; text-decoration: none; color: var(--ink-faint); border-bottom: 1px solid var(--hairline); }
+  .item-link:hover { color: var(--col-accent); border-color: var(--col-accent); }
+  .note-pill { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; color: var(--col-accent); background: var(--accent-stocks-soft); padding: 2px 7px; border-radius: 999px; margin-left: 4px; }
+
+  .player { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--surface-raised); border-top: 1px solid var(--hairline); box-shadow: var(--shadow-player); transform: translateY(120%); transition: transform 0.28s ease; }
+  .player[data-open="true"] { transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { .player { transition: none; } }
+  .player-inner { max-width: 1440px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 14px; }
+  .player-now { min-width: 0; flex: 1; }
+  .player-now .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase; margin-bottom: 2px; }
+  .player-now .title { font-size: 0.86rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .player-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--hairline); background: var(--surface); color: var(--ink); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+  .player-btn svg { width: 15px; height: 15px; }
+  .player-btn.main { width: 42px; height: 42px; background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .player-btn.main svg { width: 17px; height: 17px; }
+  .speed-btn { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 600; border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-soft); border-radius: 999px; padding: 6px 10px; cursor: pointer; flex: none; }
+  .player-close { flex: none; background: none; border: none; color: var(--ink-faint); font-size: 1.1rem; line-height: 1; cursor: pointer; padding: 6px; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .no-speech-note { display: none; max-width: 1440px; margin: 14px auto 0; padding: 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--ink-faint); }
+  body[data-speech="unsupported"] .no-speech-note { display: block; }
+  body[data-speech="unsupported"] .item-play, body[data-speech="unsupported"] .col-play-btn, body[data-speech="unsupported"] .play-all-btn { opacity: 0.4; cursor: not-allowed; }
+
+  footer.meta-footer { max-width: 1440px; margin: 40px auto 0; padding: 16px 20px 24px; border-top: 1px solid var(--hairline); font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--ink-faint); }
+  footer.meta-footer a { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <p class="brand-eyebrow">Daily Briefing</p>
+      <h1 class="brand-title">財經晨讀</h1>
+      <p class="update-stamp"><b>{{ date_label }}</b>　·　<b>07:00</b> 主更新　·　<b>10:00</b> 補充游庭皓摘要　·　台北時間</p>
+    </div>
+    <button class="play-all-btn" id="playAllBtn" type="button">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      全部播放
+    </button>
+  </div>
+</header>
+
+<p class="no-speech-note">這個瀏覽器不支援語音朗讀功能，播放鈕暫時無法使用，仍可正常閱讀文字內容。</p>
+
+<main class="board">
+
+  {# ---------- 美股表現 ---------- #}
+  <section class="column column--recap" data-col="us">
+    <div class="column-head">
+      <div class="column-head-label">
+        <span class="tick"></span>
+        <div><h2>美股表現</h2><div class="column-head-sub">道瓊 · 標普 500 · 那斯達克 · SOX</div></div>
+      </div>
+      <button class="col-play-btn" data-play-col="us" type="button">播放本欄</button>
+    </div>
+
+    <div class="stat-grid">
+      {% for t in market.us_tiles %}
+      <div class="stat-tile">
+        <div class="stat-name">{{ t.name }}</div>
+        <div class="stat-value">{{ t.value }}</div>
+        <div class="stat-change {{ t.direction }}">{{ '▲' if t.direction == 'up' else '▼' }} {{ t.change_label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="section-label">收盤分析</p>
+    <article class="item" data-item-id="us-recap">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">MARKET RECAP</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
+        <h3 class="item-title">{{ market.us_recap.title }}</h3>
+        <ul class="item-points">{% for p in market.us_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
+      </div>
+    </article>
+  </section>
+
+  {# ---------- 台股表現 ---------- #}
+  <section class="column column--recap" data-col="tw">
+    <div class="column-head">
+      <div class="column-head-label">
+        <span class="tick"></span>
+        <div><h2>台股表現</h2><div class="column-head-sub">加權指數 · 櫃買 · 三大法人</div></div>
+      </div>
+      <button class="col-play-btn" data-play-col="tw" type="button">播放本欄</button>
+    </div>
+
+    {% if tide.sentiment %}
+    <div class="sentiment-gauge">
+      <div class="sentiment-gauge-head">
+        <span class="sentiment-label">今日情緒</span>
+        <span class="sentiment-score">{{ tide.sentiment.score }}　{{ tide.sentiment.label }}</span>
+      </div>
+      <div class="sentiment-bar"><span class="sentiment-marker" style="left: {{ tide.sentiment.marker_pct }}%"></span></div>
+      <div class="sentiment-scale"><span>樂觀</span><span>恐慌</span></div>
+      <p class="sentiment-sub">上漲 {{ tide.sentiment.advancers }} 檔・下跌 {{ tide.sentiment.decliners }} 檔</p>
+    </div>
+    {% endif %}
+
+    <div class="stat-grid">
+      {% for t in market.tw_tiles %}
+      <div class="stat-tile">
+        <div class="stat-name">{{ t.name }}</div>
+        <div class="stat-value">{{ t.value }}</div>
+        <div class="stat-change {{ t.direction }}">{{ '▲' if t.direction == 'up' else '▼' }} {{ t.change_label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="section-label">收盤分析</p>
+    <article class="item" data-item-id="tw-recap">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">MARKET RECAP</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
+        <h3 class="item-title">{{ market.tw_recap.title }}</h3>
+        <ul class="item-points">{% for p in market.tw_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
+      </div>
+    </article>
+
+    {% if tide.flow.inflow or tide.flow.outflow %}
+    <p class="section-label">五日法人資金流向排行</p>
+    {% if tide.flow.inflow %}
+    <div class="flow-group">
+      <p class="flow-group-label">流入 TOP {{ tide.flow.inflow|length }}</p>
+      {% for s in tide.flow.inflow %}<div class="flow-row"><span class="flow-name">{{ s.name }}</span><span class="flow-amt up">+{{ '%.1f'|format(s.amount) }} 億</span></div>{% endfor %}
+    </div>
+    {% endif %}
+    {% if tide.flow.outflow %}
+    <div class="flow-group">
+      <p class="flow-group-label">流出 TOP {{ tide.flow.outflow|length }}</p>
+      {% for s in tide.flow.outflow %}<div class="flow-row"><span class="flow-name">{{ s.name }}</span><span class="flow-amt down">{{ '%.1f'|format(s.amount) }} 億</span></div>{% endfor %}
+    </div>
+    {% endif %}
+    <article class="item" data-item-id="tw-flow">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">TIDE 潮汐</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
+        <h3 class="item-title">五日法人資金流向排行</h3>
+        <ul class="item-points">
+          {% if tide.flow.inflow %}<li>流入最多：{{ tide.flow.inflow[0].name }} +{{ '%.1f'|format(tide.flow.inflow[0].amount) }} 億</li>{% endif %}
+          {% if tide.flow.outflow %}<li>流出最多：{{ tide.flow.outflow[0].name }} {{ '%.1f'|format(tide.flow.outflow[0].amount) }} 億</li>{% endif %}
+        </ul>
+        <a class="item-link" href="https://tide-tw.app/" target="_blank" rel="noopener">前往 Tide 潮汐 ↗</a>
+      </div>
+    </article>
+    {% endif %}
+
+    {% if tide.whale.buy or tide.whale.sell %}
+    <p class="section-label">大戶異常</p>
+    {% if tide.whale.buy %}
+    <div class="flow-group">
+      <p class="flow-group-label">大戶買超 TOP {{ tide.whale.buy|length }}</p>
+      {% for s in tide.whale.buy %}<div class="flow-row"><span class="flow-name">{{ s.name }}</span><span class="flow-amt up">+{{ '%.1f'|format(s.amount) }} 億</span></div>{% endfor %}
+    </div>
+    {% endif %}
+    {% if tide.whale.sell %}
+    <div class="flow-group">
+      <p class="flow-group-label">大戶賣超 TOP {{ tide.whale.sell|length }}</p>
+      {% for s in tide.whale.sell %}<div class="flow-row"><span class="flow-name">{{ s.name }}</span><span class="flow-amt down">{{ '%.1f'|format(s.amount) }} 億</span></div>{% endfor %}
+    </div>
+    {% endif %}
+    {% endif %}
+  </section>
+
+  {# ---------- 股市／總經 ---------- #}
+  <section class="column column--stocks" data-col="stocks">
+    <div class="column-head">
+      <div class="column-head-label">
+        <span class="tick"></span>
+        <div><h2>股市／總經</h2><div class="column-head-sub">Reuters · CNBC · Zero Hedge · Calculated Risk</div></div>
+      </div>
+      <button class="col-play-btn" data-play-col="stocks" type="button">播放本欄</button>
+    </div>
+
+    {% if news.stocks %}
+    <p class="section-label">今日新聞</p>
+    {% for it in news.stocks %}
+    <article class="item" data-item-id="s-n{{ loop.index }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
+        <h3 class="item-title">{{ it.title_zh }}</h3>
+        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.link %}<a class="item-link" href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% endif %}
+
+    {% if youtube.stocks %}
+    <p class="section-label">今日影片摘要</p>
+    {% for it in youtube.stocks %}
+    <article class="item" data-item-id="s-v{{ loop.index }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta">
+          <span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span>
+          {% if it.duration %}<span class="dur">{{ it.duration }}</span>{% endif %}
+          {% if it.supplemental_note %}<span class="note-pill">{{ it.supplemental_note }}</span>{% endif %}
+        </div>
+        <h3 class="item-title">{{ it.title_zh }}</h3>
+        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.video_url %}<a class="item-link" href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% endif %}
+  </section>
+
+  {# ---------- 加密貨幣 ---------- #}
+  <section class="column column--crypto" data-col="crypto">
+    <div class="column-head">
+      <div class="column-head-label">
+        <span class="tick"></span>
+        <div><h2>加密貨幣</h2><div class="column-head-sub">CoinDesk · Cointelegraph · The Block · Bankless</div></div>
+      </div>
+      <button class="col-play-btn" data-play-col="crypto" type="button">播放本欄</button>
+    </div>
+
+    {% if news.crypto %}
+    <p class="section-label">今日新聞</p>
+    {% for it in news.crypto %}
+    <article class="item" data-item-id="c-n{{ loop.index }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
+        <h3 class="item-title">{{ it.title_zh }}</h3>
+        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.link %}<a class="item-link" href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% endif %}
+
+    {% if youtube.crypto %}
+    <p class="section-label">今日影片摘要</p>
+    {% for it in youtube.crypto %}
+    <article class="item" data-item-id="c-v{{ loop.index }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta">
+          <span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span>
+          {% if it.duration %}<span class="dur">{{ it.duration }}</span>{% endif %}
+        </div>
+        <h3 class="item-title">{{ it.title_zh }}</h3>
+        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.video_url %}<a class="item-link" href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% endif %}
+  </section>
+
+</main>
+
+<footer class="meta-footer">
+  由 <a href="https://github.com/replymimi/fingerpractice-news" target="_blank" rel="noopener">fingerpractice-news</a> 自動彙整・板塊資金流向與大戶異常資料引用自 <a href="https://tide-tw.app/" target="_blank" rel="noopener">Tide 潮汐</a>
+</footer>
+
+<div class="player" id="player" data-open="false">
+  <div class="player-inner">
+    <button class="player-btn" id="prevBtn" aria-label="上一則" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg></button>
+    <button class="player-btn main" id="toggleBtn" aria-label="播放／暫停" type="button"><svg id="toggleIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+    <button class="player-btn" id="nextBtn" aria-label="下一則" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg></button>
+    <div class="player-now">
+      <div class="eyebrow" id="nowSource">尚未播放</div>
+      <div class="title" id="nowTitle">按「全部播放」開始收聽今日摘要</div>
+    </div>
+    <button class="speed-btn" id="speedBtn" type="button">1.0x</button>
+    <button class="player-close" id="closeBtn" aria-label="關閉播放器" type="button">✕</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var items = Array.prototype.map.call(document.querySelectorAll('.item'), function (el) {
+    return {
+      el: el, id: el.getAttribute('data-item-id'), column: el.closest('.column').getAttribute('data-col'),
+      source: el.querySelector('.source-tag').textContent.trim(),
+      text: el.querySelector('.item-title').textContent.trim() + '。' +
+        Array.prototype.map.call(el.querySelectorAll('.item-points li'), function (li) { return li.textContent.trim(); }).join('。') + '。'
+    };
+  });
+
+  var supported = 'speechSynthesis' in window;
+  if (!supported) { document.body.setAttribute('data-speech', 'unsupported'); }
+
+  var queue = [], queuePos = -1, rates = [1, 1.25, 1.5, 0.85], rateIdx = 0, voice = null, isPaused = false;
+
+  function loadVoice() {
+    var voices = window.speechSynthesis.getVoices();
+    voice = voices.find(function (v) { return v.lang.toLowerCase().indexOf('zh') === 0; }) || voices[0] || null;
+  }
+  if (supported) { loadVoice(); window.speechSynthesis.onvoiceschanged = loadVoice; }
+
+  var playerEl = document.getElementById('player');
+  var nowSource = document.getElementById('nowSource');
+  var nowTitle = document.getElementById('nowTitle');
+  var toggleIcon = document.getElementById('toggleIcon');
+  var speedBtn = document.getElementById('speedBtn');
+  var ICON_PLAY = '<path d="M8 5v14l11-7z"/>';
+  var ICON_PAUSE = '<path d="M6 5h4v14H6zM14 5h4v14h-4z"/>';
+
+  function clearPlayingMarks() { items.forEach(function (it) { it.el.setAttribute('data-playing', 'false'); }); }
+  function openPlayer() { playerEl.setAttribute('data-open', 'true'); }
+  function closePlayer() {
+    playerEl.setAttribute('data-open', 'false');
+    if (supported) window.speechSynthesis.cancel();
+    clearPlayingMarks(); queue = []; queuePos = -1;
+  }
+
+  function speakCurrent() {
+    if (!supported) return;
+    window.speechSynthesis.cancel(); clearPlayingMarks();
+    var idx = queue[queuePos]; var it = items[idx];
+    if (!it) return;
+    it.el.setAttribute('data-playing', 'true');
+    nowSource.textContent = it.source;
+    nowTitle.textContent = it.el.querySelector('.item-title').textContent.trim();
+    toggleIcon.innerHTML = ICON_PAUSE; isPaused = false;
+    var utter = new SpeechSynthesisUtterance(it.text);
+    utter.lang = 'zh-TW'; if (voice) utter.voice = voice; utter.rate = rates[rateIdx];
+    utter.onend = function () {
+      if (queuePos < queue.length - 1) { queuePos += 1; speakCurrent(); }
+      else { toggleIcon.innerHTML = ICON_PLAY; clearPlayingMarks(); nowSource.textContent = '播放完畢'; }
+    };
+    window.speechSynthesis.speak(utter);
+  }
+
+  function startQueue(list, startAt) {
+    if (!supported || !list.length) return;
+    queue = list; queuePos = startAt || 0; openPlayer(); speakCurrent();
+  }
+
+  document.getElementById('playAllBtn').addEventListener('click', function () {
+    startQueue(items.map(function (_, i) { return i; }), 0);
+  });
+  document.querySelectorAll('[data-play-col]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var col = btn.getAttribute('data-play-col');
+      var idxs = items.map(function (_, i) { return i; }).filter(function (i) { return items[i].column === col; });
+      startQueue(idxs, 0);
+    });
+  });
+  items.forEach(function (it, i) {
+    it.el.querySelector('.item-play').addEventListener('click', function () { startQueue([i], 0); });
+  });
+  document.getElementById('toggleBtn').addEventListener('click', function () {
+    if (!supported || queuePos < 0) return;
+    if (isPaused) { window.speechSynthesis.resume(); toggleIcon.innerHTML = ICON_PAUSE; isPaused = false; }
+    else { window.speechSynthesis.pause(); toggleIcon.innerHTML = ICON_PLAY; isPaused = true; }
+  });
+  document.getElementById('nextBtn').addEventListener('click', function () { if (queuePos < queue.length - 1) { queuePos += 1; speakCurrent(); } });
+  document.getElementById('prevBtn').addEventListener('click', function () { if (queuePos > 0) { queuePos -= 1; speakCurrent(); } });
+  document.getElementById('speedBtn').addEventListener('click', function () {
+    rateIdx = (rateIdx + 1) % rates.length;
+    speedBtn.textContent = rates[rateIdx].toFixed(2).replace(/0$/, '') + 'x';
+    if (queuePos >= 0 && !isPaused) speakCurrent();
+  });
+  document.getElementById('closeBtn').addEventListener('click', closePlayer);
+})();
+</script>
+</body>
+</html>

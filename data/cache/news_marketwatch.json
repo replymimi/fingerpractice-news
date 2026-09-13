@@ -1,0 +1,33 @@
+{
+  "fetched_at": "2026-09-13T19:40:42.638389+08:00",
+  "data": [
+    {
+      "source": "MarketWatch",
+      "title": "Why OpenAI’s Sam Altman says an IPO isn’t in the cards this year",
+      "link": "https://www.marketwatch.com/story/why-openais-sam-altman-says-an-ipo-isnt-in-the-cards-this-year-229de89c?mod=mw_rss_topstories",
+      "published_iso": "2026-09-12T21:50:00+00:00",
+      "summary_raw": "Concerns about AI safety have ramped up, and OpenAI’s CEO says now would be an ‘ill-advised’ time for the ChatGPT creator to go public"
+    },
+    {
+      "source": "MarketWatch",
+      "title": "Elon Musk backs Anthropic’s call to slow down AI progress before rogue bots take over the entire internet",
+      "link": "https://www.marketwatch.com/story/elon-musk-backs-anthropics-call-to-slow-down-ai-progress-before-rogue-bots-take-over-the-entire-internet-46f12d98?mod=mw_rss_topstories",
+      "published_iso": "2026-09-12T17:20:00+00:00",
+      "summary_raw": "Leaders of major AI companies say they agree with Anthropic CEO Dario Amodei, who just called for the tech industry to move more slowly with model development."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "‘I still don’t have my MRI’: My health insurer canceled my plan without warning. Is that legal?",
+      "link": "https://www.marketwatch.com/story/i-still-dont-have-my-mri-my-health-insurer-canceled-my-plan-without-warning-is-that-legal-02143710?mod=mw_rss_topstories",
+      "published_iso": "2026-09-12T16:01:00+00:00",
+      "summary_raw": "“It wasn’t an ACA plan, but it was meaningfully cheaper than anything I could find on the ACA exchange.”"
+    },
+    {
+      "source": "MarketWatch",
+      "title": "‘I’m the executor’: My two siblings and I inherited an IRA. Can we just cash it out?",
+      "link": "https://www.marketwatch.com/story/im-the-executor-my-two-siblings-and-i-inherited-an-ira-can-we-just-cash-it-out-dafc5b8d?mod=mw_rss_topstories",
+      "published_iso": "2026-09-12T15:00:00+00:00",
+      "summary_raw": "“Am I required to create three new inherited IRAs so that the firm can divide it equally?”"
+    }
+  ]
+}
