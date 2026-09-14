@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-13T20:06:23.513180+08:00",
+  "fetched_at": "2026-09-14T08:54:19.337870+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "Symbiosis says it recovered 15 BTC after Bitcoin bridge exploit, offers attacker 20% bounty",
+      "link": "https://www.theblock.co/news/defi/2026-09-13-symbiosis-says-it-recovered-15-btc-after-bitcoin-bridge-exploit-offers-attacker-20-bounty-414568",
+      "published_iso": "2026-09-13T21:51:11+00:00",
+      "summary_raw": "Blockchain security firm Blockaid said roughly 46.1 billion syBTC were minted but the attacker realized only about $336,000 in proceeds."
+    },
+    {
+      "source": "The Block Research",
+      "title": "Mexican authorities raid hidden crypto mine, suspecting power theft and money laundering",
+      "link": "https://www.theblock.co/news/ecosystems/2026-09-13-mexican-authorities-raid-hidden-crypto-mine-suspecting-power-theft-and-money-laundering-414564",
+      "published_iso": "2026-09-13T18:29:23+00:00",
+      "summary_raw": "Reuters reported that the site was the fourth crypto farm discovered in the area since early 2025, near a local hydroelectric dam."
+    },
     {
       "source": "The Block Research",
       "title": "CryptoQuant says bitcoin must clear resistance at $81,700 to confirm new bull market",
@@ -14,20 +28,6 @@
       "link": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516",
       "published_iso": "2026-09-12T18:57:08+00:00",
       "summary_raw": "Onchain investigator ZachXBT speculated that the incident may have been targeting high-net-worth users."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Crypto billionaires Ben Delo and Christopher Harborne each donate £36 million to Farage’s Reform UK",
-      "link": "https://www.theblock.co/news/regulation/2026-09-12-crypto-billionaires-ben-delo-and-christopher-harborne-each-donate-36-million-to-farages-reform-uk-414509",
-      "published_iso": "2026-09-12T16:18:05+00:00",
-      "summary_raw": "Meanwhile, the House of Lords is considering a bill which would halt crypto donations and cap overseas giving at £100,000 a year."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Former Alameda CEO Caroline Ellison joins nonprofit charity Manifund",
-      "link": "https://www.theblock.co/news/business/2026-09-11-former-alameda-ceo-caroline-ellison-joins-nonprofit-charity-manifund-414310",
-      "published_iso": "2026-09-11T21:37:02+00:00",
-      "summary_raw": "Former Alameda Research CEO Caroline Ellison has a new gig at the charity Manifund, its cofounder Austin Chen said Friday."
     }
   ]
 }

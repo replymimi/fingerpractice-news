@@ -1,6 +1,14 @@
 {
   "stocks": [
     {
+      "source": "Bloomberg Television",
+      "title": "Bloomberg This Weekend | Pacing The AI Frontier, Oil & Gas Prices Rising",
+      "video_url": "https://www.youtube.com/watch?v=JMaosDwXBlc",
+      "published_iso": "2026-09-13T17:09:18Z",
+      "duration": "2:28:51",
+      "transcript_raw": ""
+    },
+    {
       "source": "CNBC Television",
       "title": "David Solomon on how Goldman Sachs is commemorating the 25th anniversary of 9/11",
       "video_url": "https://www.youtube.com/watch?v=58zZapxuaGw",
@@ -10,20 +18,20 @@
     },
     {
       "source": "Real Vision Finance",
-      "title": "This Chip Stock Could Be Setting Up Another BIG Move!",
-      "video_url": "https://www.youtube.com/watch?v=zSCWFhBgarA",
-      "published_iso": "2026-09-12T13:15:01Z",
-      "duration": "0:21",
+      "title": "Stan Druckenmiller: This Irrational Habit Destroys Traders",
+      "video_url": "https://www.youtube.com/watch?v=45sMKnYjMFk",
+      "published_iso": "2026-09-13T19:30:10Z",
+      "duration": "0:28",
       "transcript_raw": ""
     }
   ],
   "crypto": [
     {
       "source": "Coin Bureau",
-      "title": "Will Trump's $1B crypto stake destroy the CLARITY Act?",
-      "video_url": "https://www.youtube.com/watch?v=4pbCucoVh6Q",
-      "published_iso": "2026-09-12T21:00:12Z",
-      "duration": "0:48",
+      "title": "Google Just Won The AI Race",
+      "video_url": "https://www.youtube.com/watch?v=s4a2M-w7_B4",
+      "published_iso": "2026-09-13T21:00:22Z",
+      "duration": "0:43",
       "transcript_raw": ""
     }
   ]
