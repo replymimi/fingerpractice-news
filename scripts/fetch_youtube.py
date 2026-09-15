@@ -83,11 +83,11 @@ def get_duration_seconds(video_id):
 def get_transcript_text(video_id):
     from youtube_transcript_api import YouTubeTranscriptApi
     try:
-        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=["en", "en-US", "en-GB"])
-        text = " ".join(seg["text"] for seg in transcript)
+        transcript = YouTubeTranscriptApi().fetch(video_id, languages=["en", "en-US", "en-GB"])
+        text = " ".join(seg.text for seg in transcript)
         return text[:TRANSCRIPT_CHAR_LIMIT]
     except Exception as e:
-        log(f"    no transcript for {video_id}: {e}")
+        log(f"    no transcript for {video_id}: {type(e).__name__}: {e}")
         return ""
 
 
