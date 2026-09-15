@@ -2,8 +2,9 @@ name: 財經晨讀自動更新
 
 on:
   schedule:
-    - cron: '0 23 * * *'   # 07:00 台北時間 — 主更新
-    - cron: '0 2 * * *'    # 10:00 台北時間 — 補充游庭皓摘要
+    # 刻意避開整點（GitHub 官方說整點排程最容易被延後執行），並提早一點觸發當緩衝
+    - cron: '15 22 * * *'  # 06:15 台北時間觸發，目標 07:00 前上線 — 主更新
+    - cron: '45 1 * * *'   # 09:45 台北時間觸發，目標 10:00 前上線 — 補充游庭皓摘要
   workflow_dispatch:
     inputs:
       run_type:
@@ -34,7 +35,7 @@ jobs:
         run: |
           if [ -n "${{ inputs.run_type }}" ]; then
             echo "run_type=${{ inputs.run_type }}" >> "$GITHUB_ENV"
-          elif [ "${{ github.event.schedule }}" = "0 2 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "45 1 * * *" ]; then
             echo "run_type=supplemental" >> "$GITHUB_ENV"
           else
             echo "run_type=main" >> "$GITHUB_ENV"
