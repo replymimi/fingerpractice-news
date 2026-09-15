@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-15T20:32:08.694079+08:00",
+  "fetched_at": "2026-09-15T20:41:13.642728+08:00",
   "data": [
+    {
+      "source": "MarketWatch",
+      "title": "The ‘Magnificent Seven’ has its mojo back and is poised to reach fresh highs",
+      "link": "https://www.marketwatch.com/story/the-magnificent-seven-has-its-mojo-back-and-is-poised-to-reach-fresh-highs-ac2c5cdb?mod=mw_rss_topstories",
+      "published_iso": "2026-09-15T12:36:00+00:00",
+      "summary_raw": "Much of the megacap tech group is enjoying a rally, says one analyst."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "My son has a potentially fatal genetic disease. What should I do with my $1.3 million estate?",
+      "link": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories",
+      "published_iso": "2026-09-15T12:31:00+00:00",
+      "summary_raw": "“He is also the sole beneficiary of my 403(b) accounts.”"
+    },
     {
       "source": "MarketWatch",
       "title": "Wells Fargo just cuts its S&P 500 price target. Will others follow?",
@@ -14,20 +28,6 @@
       "link": "https://www.marketwatch.com/story/my-total-balance-should-be-worth-20-million-i-invested-1-1-million-in-a-crypto-platform-have-i-lost-it-all-d22da562?mod=mw_rss_topstories",
       "published_iso": "2026-09-15T12:00:00+00:00",
       "summary_raw": "“I invested on the recommendation of an executive vice president of a major New York investment bank.”"
-    },
-    {
-      "source": "MarketWatch",
-      "title": "Traditional bond investors have lost money for years. These five-star portfolio managers show a better way.",
-      "link": "https://www.marketwatch.com/story/heres-the-best-way-to-invest-in-bonds-for-the-long-term-according-to-these-five-star-portfolio-managers-bbf0d5e3?mod=mw_rss_topstories",
-      "published_iso": "2026-09-15T11:46:00+00:00",
-      "summary_raw": "A fixed-income team at Morgan Stanley say investing in distressed debt and frontier local-market investing have helped drive solid returns for their fund."
-    },
-    {
-      "source": "MarketWatch",
-      "title": "It might be time to consider the ‘most hated, under-owned asset class,’ says this strategist",
-      "link": "https://www.marketwatch.com/story/it-might-be-time-to-consider-the-most-hated-under-owned-asset-class-says-this-strategist-1b86c059?mod=mw_rss_topstories",
-      "published_iso": "2026-09-15T11:24:00+00:00",
-      "summary_raw": "Vincent Deluard, market strategist at StoneX, recommends pairing British equities with a trade that shorts the euro against the Japanese yen."
     }
   ]
 }
