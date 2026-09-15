@@ -72,4 +72,10 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/raw data/cache data/state docs/index.html
           git diff --cached --quiet || git commit -m "🤖 自動更新財經晨讀（${{ env.run_type }}）"
+          for i in 1 2 3 4 5; do
+            git push origin main && exit 0
+            echo "push rejected, pulling and retrying ($i/5)"
+            git pull --rebase origin main
+            sleep $((RANDOM % 10 + 1))
+          done
           git push origin main

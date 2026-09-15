@@ -58,9 +58,10 @@ youtube:
       handle: "@CoinBureau"
     - id: bencowen
       name: Benjamin Cowen
-      handle: "@intothecryptoverse"
+      handle: "@benjaminjcowen"
     - id: pompliano
-      name: Anthony Pompliano
+      name: From The Desk Of Anthony Pompliano
+      handle: "@FromTheDeskOfAnthonyPompliano"
       handle: "@APompliano"
 
 tide:

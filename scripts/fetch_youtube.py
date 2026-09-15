@@ -25,7 +25,8 @@ from common import ROOT, RAW_DIR, log, load_json, save_json, fetch_with_cache_fa
 
 API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
 API_BASE = "https://www.googleapis.com/youtube/v3"
-MAX_RECENT = 3            # how many latest uploads to check per channel
+MAX_RECENT = 6             # how many latest uploads to scan per channel, looking for a non-Short
+MIN_DURATION_SECONDS = 150 # skip Shorts / teaser clips shorter than this
 TRANSCRIPT_CHAR_LIMIT = 6000
 
 
@@ -61,7 +62,8 @@ def recent_uploads(playlist_id):
     return videos
 
 
-def get_duration(video_id):
+def get_duration_seconds(video_id):
+    """Returns (seconds, formatted_label), or (0, '') if lookup fails."""
     import re as _re
     r = requests.get(f"{API_BASE}/videos", params={
         "part": "contentDetails", "id": video_id, "key": API_KEY,
@@ -69,13 +71,13 @@ def get_duration(video_id):
     r.raise_for_status()
     items = r.json().get("items", [])
     if not items:
-        return ""
+        return 0, ""
     iso = items[0]["contentDetails"]["duration"]  # e.g. "PT14M20S"
     m = _re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", iso)
     h, mi, s = (int(x) if x else 0 for x in m.groups())
-    h += 0
-    total_min = h * 60 + mi
-    return f"{total_min}:{s:02d}" if not h else f"{h}:{mi:02d}:{s:02d}"
+    total_seconds = h * 3600 + mi * 60 + s
+    label = f"{h}:{mi:02d}:{s:02d}" if h else f"{mi}:{s:02d}"
+    return total_seconds, label
 
 
 def get_transcript_text(video_id):
@@ -93,19 +95,43 @@ def fetch_channel(src):
     def _fetch():
         playlist_id = resolve_uploads_playlist(src["handle"])
         videos = recent_uploads(playlist_id)
-        # only keep the single most recent upload — the page shows "today's video", not a backlog
         if not videos:
             raise ValueError("no uploads returned")
-        latest = videos[0]
-        transcript = get_transcript_text(latest["video_id"])
-        duration = get_duration(latest["video_id"])
+
+        # Scan newest-first for the first real (non-Short) video that actually has
+        # captions — a 30-second Short, or a long video with subtitles disabled,
+        # both produce a near-empty summary otherwise. Remember the best
+        # duration-qualifying candidate as a fallback if none has captions.
+        chosen = None
+        fallback = None
+        for v in videos:
+            seconds, label = get_duration_seconds(v["video_id"])
+            if seconds < MIN_DURATION_SECONDS:
+                continue
+            transcript = get_transcript_text(v["video_id"])
+            candidate = {**v, "duration_seconds": seconds, "duration": label, "transcript_raw": transcript}
+            if fallback is None:
+                fallback = candidate
+            if transcript:
+                chosen = candidate
+                break
+        if chosen is None:
+            if fallback is None:
+                log(f"    no video >= {MIN_DURATION_SECONDS}s in latest {len(videos)} uploads, using newest anyway")
+                seconds, label = get_duration_seconds(videos[0]["video_id"])
+                fallback = {**videos[0], "duration_seconds": seconds, "duration": label,
+                            "transcript_raw": get_transcript_text(videos[0]["video_id"])}
+            else:
+                log(f"    no captioned video found among {len(videos)} uploads, using longest candidate title-only")
+            chosen = fallback
+
         return [{
             "source": src["name"],
-            "title": latest["title"],
-            "video_url": f"https://www.youtube.com/watch?v={latest['video_id']}",
-            "published_iso": latest["published_iso"],
-            "duration": duration,
-            "transcript_raw": transcript,
+            "title": chosen["title"],
+            "video_url": f"https://www.youtube.com/watch?v={chosen['video_id']}",
+            "published_iso": chosen["published_iso"],
+            "duration": chosen["duration"],
+            "transcript_raw": chosen["transcript_raw"],
         }]
 
     items, used_cache = fetch_with_cache_fallback(_fetch, f"youtube_{src['id']}.json", label=src["name"])
