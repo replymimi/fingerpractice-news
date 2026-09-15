@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-13T20:06:21.696573+08:00",
+  "fetched_at": "2026-09-15T09:21:07.431754+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "OpenAI rules out IPO this year as Altman, Musk & Amodei warn AI is moving too fast",
-      "link": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
-      "published_iso": "2026-09-12T23:20:43+00:00",
-      "summary_raw": "Altman's IPO comments and Amodei's public call for more careful pacing of AI development cap a week of loud AI warnings."
+      "title": "Trump goes scorched earth on AI warnings, raging about data center opposition and regulation",
+      "link": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
+      "published_iso": "2026-09-14T21:15:56+00:00",
+      "summary_raw": "The Trump administration has encouraged AI's rapid growth and the development of data centers as it seeks an insurmountable tech edge over China."
     },
     {
       "source": "CNBC",
-      "title": "Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock",
-      "link": "https://www.cnbc.com/2026/09/12/larry-ellison-nixes-plan-to-offload-up-to-7point5-billion-worth-of-oracle-stock-.html",
-      "published_iso": "2026-09-12T17:14:56+00:00",
-      "summary_raw": "Oracle founder Larry Ellison has canceled his plan to sell up to $7.5 billion worth of stock in the software company."
+      "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
+      "link": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
+      "published_iso": "2026-09-14T19:47:42+00:00",
+      "summary_raw": "Traders were pricing in a better than 92% probability of a rate increase, as well as a more than 75% chance for another one in December."
     },
     {
       "source": "CNBC",
-      "title": "NFL and midterm elections set up prediction markets for a critical fall season",
-      "link": "https://www.cnbc.com/2026/09/13/nfl-and-midterms-mark-key-fall-season-for-prediction-markets.html",
-      "published_iso": "2026-09-13T11:52:33+00:00",
-      "summary_raw": "The 2025 football season and 2024 presidential election pushed prediction markets into the prominence they enjoy today."
+      "title": "Supreme Court rejects Trump bid to lift block on U.S. Postal Service mail-in ballots rule",
+      "link": "https://www.cnbc.com/2026/09/14/supreme-court-trump-mail-ballots-midterms.html",
+      "published_iso": "2026-09-15T00:48:36+00:00",
+      "summary_raw": "Justice Brett Kavanaugh said that applying the U.S. Postal Service rule in the 2026 midterm elections \"would be arbitrary and capricious.\""
     },
     {
       "source": "CNBC",
-      "title": "China's Xi urges BRICS nations to work towards peace in the Middle East",
-      "link": "https://www.cnbc.com/2026/09/13/chinas-xi-urges-brics-peace-middle-east.html",
-      "published_iso": "2026-09-13T09:41:53+00:00",
-      "summary_raw": "China, Iran's biggest trading partner and a key customer of Tehran's energy exports, is willing to work with BRICS towards peace in the region, Xi said."
+      "title": "Trump administration repeals Biden era greenhouse gas requirements for power plants",
+      "link": "https://www.cnbc.com/2026/09/14/trump-epa-carbon-dioxide-power-plant-climate-change.html",
+      "published_iso": "2026-09-14T20:45:52+00:00",
+      "summary_raw": "President Donald Trump has systemically dismantled regulations implemented by the Obama and Biden administrations that sought to fight climate change."
     }
   ]
 }

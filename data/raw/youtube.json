@@ -1,18 +1,26 @@
 {
   "stocks": [
     {
+      "source": "Bloomberg Television",
+      "title": "Trump: AI ‘Taking Over the World...is a Hoax'",
+      "video_url": "https://www.youtube.com/watch?v=NuvaglYGWj4",
+      "published_iso": "2026-09-14T23:21:29Z",
+      "duration": "51:28",
+      "transcript_raw": ""
+    },
+    {
       "source": "CNBC Television",
-      "title": "David Solomon on how Goldman Sachs is commemorating the 25th anniversary of 9/11",
-      "video_url": "https://www.youtube.com/watch?v=58zZapxuaGw",
-      "published_iso": "2026-09-12T01:18:14Z",
-      "duration": "1:08",
+      "title": "Broadcom CEO Hock Tan goes one-on-one with Jim Cramer",
+      "video_url": "https://www.youtube.com/watch?v=7r1mfWVFfqk",
+      "published_iso": "2026-09-14T23:50:50Z",
+      "duration": "10:34",
       "transcript_raw": ""
     },
     {
       "source": "Real Vision Finance",
-      "title": "This Chip Stock Could Be Setting Up Another BIG Move!",
-      "video_url": "https://www.youtube.com/watch?v=zSCWFhBgarA",
-      "published_iso": "2026-09-12T13:15:01Z",
+      "title": "The Market Could Be Underestimating the Fed Again!",
+      "video_url": "https://www.youtube.com/watch?v=uXZMr1AZ3pE",
+      "published_iso": "2026-09-14T20:00:13Z",
       "duration": "0:21",
       "transcript_raw": ""
     }
@@ -20,10 +28,10 @@
   "crypto": [
     {
       "source": "Coin Bureau",
-      "title": "Will Trump's $1B crypto stake destroy the CLARITY Act?",
-      "video_url": "https://www.youtube.com/watch?v=4pbCucoVh6Q",
-      "published_iso": "2026-09-12T21:00:12Z",
-      "duration": "0:48",
+      "title": "Google Just Won The AI Race",
+      "video_url": "https://www.youtube.com/watch?v=s4a2M-w7_B4",
+      "published_iso": "2026-09-13T21:00:22Z",
+      "duration": "0:43",
       "transcript_raw": ""
     }
   ]
