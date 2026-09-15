@@ -120,10 +120,21 @@
   .source-tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.02em; color: var(--col-accent); }
   .item-meta .dot { color: var(--ink-faint); font-size: 0.6rem; }
   .item-meta .time, .item-meta .dur { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--ink-faint); }
-  .item-title { font-family: 'Noto Serif TC', serif; font-size: 0.98rem; font-weight: 700; line-height: 1.45; margin: 0 0 4px; text-wrap: balance; }
+  .item-title {
+    font-family: 'Noto Serif TC', serif; font-size: 0.98rem; font-weight: 700; line-height: 1.45;
+    margin: 0 0 4px; text-wrap: balance; cursor: pointer; display: flex; align-items: baseline; gap: 6px;
+  }
+  .item-title:hover { color: var(--col-accent); }
+  .item-title::after {
+    content: '展開'; flex: none; font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 0.62rem;
+    letter-spacing: 0.04em; color: var(--ink-faint); border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 1px 7px; align-self: center; transition: transform 0.15s ease;
+  }
+  .item[data-expanded="true"] .item-title::after { content: '收合'; }
   .item-points { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-direction: column; gap: 5px; max-width: 62ch; }
   .item-points li { position: relative; padding-left: 15px; font-size: 0.85rem; line-height: 1.6; color: var(--ink-soft); }
   .item-points li::before { content: ''; position: absolute; left: 0; top: 0.58em; width: 5px; height: 5px; border-radius: 50%; background: var(--col-accent); }
+  .item-points[hidden], .item-link[hidden] { display: none; }
   .item-link { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; text-decoration: none; color: var(--ink-faint); border-bottom: 1px solid var(--hairline); }
   .item-link:hover { color: var(--col-accent); border-color: var(--col-accent); }
   .note-pill { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; color: var(--col-accent); background: var(--accent-stocks-soft); padding: 2px 7px; border-radius: 999px; margin-left: 4px; }
@@ -197,7 +208,7 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">MARKET RECAP</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
         <h3 class="item-title">{{ market.us_recap.title }}</h3>
-        <ul class="item-points">{% for p in market.us_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        <ul class="item-points" hidden>{% for p in market.us_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
       </div>
     </article>
   </section>
@@ -240,7 +251,7 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">MARKET RECAP</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
         <h3 class="item-title">{{ market.tw_recap.title }}</h3>
-        <ul class="item-points">{% for p in market.tw_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        <ul class="item-points" hidden>{% for p in market.tw_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
       </div>
     </article>
 
@@ -263,11 +274,11 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">TIDE 潮汐</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
         <h3 class="item-title">五日法人資金流向排行</h3>
-        <ul class="item-points">
+        <ul class="item-points" hidden>
           {% if tide.flow.inflow %}<li>流入最多：{{ tide.flow.inflow[0].name }} +{{ '%.1f'|format(tide.flow.inflow[0].amount) }} 億</li>{% endif %}
           {% if tide.flow.outflow %}<li>流出最多：{{ tide.flow.outflow[0].name }} {{ '%.1f'|format(tide.flow.outflow[0].amount) }} 億</li>{% endif %}
         </ul>
-        <a class="item-link" href="https://tide-tw.app/" target="_blank" rel="noopener">前往 Tide 潮汐 ↗</a>
+        <a class="item-link" hidden href="https://tide-tw.app/" target="_blank" rel="noopener">前往 Tide 潮汐 ↗</a>
       </div>
     </article>
     {% endif %}
@@ -307,8 +318,8 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
         <h3 class="item-title">{{ it.title_zh }}</h3>
-        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% if it.link %}<a class="item-link" href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
+        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.link %}<a class="item-link" hidden href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
       </div>
     </article>
     {% endfor %}
@@ -326,8 +337,8 @@
           {% if it.supplemental_note %}<span class="note-pill">{{ it.supplemental_note }}</span>{% endif %}
         </div>
         <h3 class="item-title">{{ it.title_zh }}</h3>
-        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% if it.video_url %}<a class="item-link" href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
+        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.video_url %}<a class="item-link" hidden href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
       </div>
     </article>
     {% endfor %}
@@ -352,8 +363,8 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
         <h3 class="item-title">{{ it.title_zh }}</h3>
-        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% if it.link %}<a class="item-link" href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
+        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.link %}<a class="item-link" hidden href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
       </div>
     </article>
     {% endfor %}
@@ -370,8 +381,8 @@
           {% if it.duration %}<span class="dur">{{ it.duration }}</span>{% endif %}
         </div>
         <h3 class="item-title">{{ it.title_zh }}</h3>
-        <ul class="item-points">{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% if it.video_url %}<a class="item-link" href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
+        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.video_url %}<a class="item-link" hidden href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
       </div>
     </article>
     {% endfor %}
@@ -471,6 +482,15 @@
   });
   items.forEach(function (it, i) {
     it.el.querySelector('.item-play').addEventListener('click', function () { startQueue([i], 0); });
+    var titleEl = it.el.querySelector('.item-title');
+    titleEl.addEventListener('click', function () {
+      var expanded = it.el.getAttribute('data-expanded') === 'true';
+      it.el.setAttribute('data-expanded', expanded ? 'false' : 'true');
+      var points = it.el.querySelector('.item-points');
+      var link = it.el.querySelector('.item-link');
+      if (points) points.hidden = expanded;
+      if (link) link.hidden = expanded;
+    });
   });
   document.getElementById('toggleBtn').addEventListener('click', function () {
     if (!supported || queuePos < 0) return;
