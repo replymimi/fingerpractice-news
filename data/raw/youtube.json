@@ -2,10 +2,10 @@
   "stocks": [
     {
       "source": "Bloomberg Television",
-      "title": "Singapore’s Air Quality Reaches Worst Since 2019",
-      "video_url": "https://www.youtube.com/watch?v=6HTtvduWecU",
-      "published_iso": "2026-09-15T12:18:35Z",
-      "duration": "0:47",
+      "title": "Carlyle CEO on US Economy, Fed, MIT AI Partnership",
+      "video_url": "https://www.youtube.com/watch?v=aU_eIEp5qJg",
+      "published_iso": "2026-09-15T12:08:04Z",
+      "duration": "10:38",
       "transcript_raw": ""
     },
     {
@@ -18,15 +18,15 @@
     },
     {
       "source": "Real Vision Finance",
-      "title": "The US Dollar Is Breaking EVERY Macro Rule!?",
-      "video_url": "https://www.youtube.com/watch?v=rKld0Wmoj90",
-      "published_iso": "2026-09-15T11:45:22Z",
-      "duration": "0:25",
+      "title": "Is the Risk-On Trade Breaking Down? w/ Andreas Steno & Mikkel Rosenvold | Macro Mondays",
+      "video_url": "https://www.youtube.com/watch?v=gf_Yt46JN7U",
+      "published_iso": "2026-09-14T15:47:04Z",
+      "duration": "30:30",
       "transcript_raw": ""
     },
     {
       "source": "尼可拉斯楊Live精",
-      "title": "打敗Ai，我們就會成為巨富！2027大預測！這些股票一定要守住！",
+      "title": "Ai末日騙人的！2027年10月要小心！這些股票要守住！",
       "video_url": "https://www.youtube.com/watch?v=UYFuhw9wc1g",
       "published_iso": "2026-09-15T11:06:08Z",
       "duration": "16:09",
@@ -36,10 +36,18 @@
   "crypto": [
     {
       "source": "Coin Bureau",
-      "title": "Google Just Won The AI Race",
-      "video_url": "https://www.youtube.com/watch?v=s4a2M-w7_B4",
-      "published_iso": "2026-09-13T21:00:22Z",
-      "duration": "0:43",
+      "title": "Wall Street Is BUILDING the Dollar on CRYPTO Infrastructure",
+      "video_url": "https://www.youtube.com/watch?v=3-dbnsXZnic",
+      "published_iso": "2026-09-13T12:45:16Z",
+      "duration": "9:35",
+      "transcript_raw": ""
+    },
+    {
+      "source": "Benjamin Cowen",
+      "title": "Gold: Seeking a Low",
+      "video_url": "https://www.youtube.com/watch?v=33Q5XZuyKUU",
+      "published_iso": "2026-09-15T07:47:38Z",
+      "duration": "13:07",
       "transcript_raw": ""
     }
   ]

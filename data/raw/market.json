@@ -53,10 +53,10 @@
     {
       "name": "台幣兌美元",
       "symbol": "TWD=X",
-      "price": 31.823,
+      "price": 31.816,
       "prev_close": 31.685,
-      "chg": 0.14,
-      "chg_pct": 0.44
+      "chg": 0.13,
+      "chg_pct": 0.41
     }
   ]
 }
