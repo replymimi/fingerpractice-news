@@ -43,6 +43,7 @@ data/
 
 - `OPENAI_API_KEY` — 翻譯與摘要用
 - `YOUTUBE_API_KEY` — 檢查頻道新影片、抓影片時長用（YouTube Data API v3，免費額度足夠）
+- `SUPADATA_API_KEY` — 抓影片字幕用。GitHub Actions 的雲端 IP 會被 YouTube 直接擋掉字幕請求（`RequestBlocked`），所以改用 [Supadata](https://supadata.ai) 這個第三方服務代抓，免費額度每月 100 次，只用「原生字幕」模式（不會誤觸每分鐘 2 credits 的 AI 轉錄模式），額度用完會自動退回只用標題摘要，不會整個壞掉
 
 ## 本機測試
 

@@ -80,15 +80,43 @@ def get_duration_seconds(video_id):
     return total_seconds, label
 
 
+def get_transcript_via_supadata(video_id):
+    """GitHub Actions runs from a cloud IP that YouTube blocks for direct
+    caption fetches, so this is the primary path in practice, not a rare
+    fallback. Uses only the free-tier-friendly native-transcript path (never
+    the AI-generation path, which bills 2 credits/minute of video and would
+    burn the 100/month free quota in a handful of calls) — any non-200
+    response (including the 202 "needs AI generation" case) is treated as
+    "no transcript available" rather than polled."""
+    api_key = os.environ.get("SUPADATA_API_KEY", "")
+    if not api_key:
+        return ""
+    try:
+        r = requests.get(
+            "https://api.supadata.ai/v1/youtube/transcript",
+            params={"videoId": video_id, "text": "true"},
+            headers={"x-api-key": api_key},
+            timeout=20,
+        )
+        if r.status_code != 200:
+            log(f"    supadata: no transcript for {video_id} (status {r.status_code})")
+            return ""
+        return (r.json().get("content") or "")[:TRANSCRIPT_CHAR_LIMIT]
+    except Exception as e:
+        log(f"    supadata failed for {video_id}: {type(e).__name__}: {e}")
+        return ""
+
+
 def get_transcript_text(video_id):
     from youtube_transcript_api import YouTubeTranscriptApi
     try:
         transcript = YouTubeTranscriptApi().fetch(video_id, languages=["en", "en-US", "en-GB"])
         text = " ".join(seg.text for seg in transcript)
-        return text[:TRANSCRIPT_CHAR_LIMIT]
+        if text:
+            return text[:TRANSCRIPT_CHAR_LIMIT]
     except Exception as e:
-        log(f"    no transcript for {video_id}: {type(e).__name__}: {e}")
-        return ""
+        log(f"    no transcript for {video_id} via youtube_transcript_api: {type(e).__name__}")
+    return get_transcript_via_supadata(video_id)
 
 
 def fetch_channel(src):

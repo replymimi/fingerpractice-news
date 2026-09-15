@@ -56,6 +56,7 @@ jobs:
       - name: 抓 YouTube 影片（主更新：除游庭皓外全部；補充更新：只抓游庭皓）
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          SUPADATA_API_KEY: ${{ secrets.SUPADATA_API_KEY }}
         run: python scripts/fetch_youtube.py --run-type ${{ env.run_type }}
 
       - name: AI 翻譯與摘要
