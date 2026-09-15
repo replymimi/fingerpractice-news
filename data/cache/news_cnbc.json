@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-14T08:54:17.777590+08:00",
+  "fetched_at": "2026-09-15T09:21:07.431754+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Washington scrambles to meet calls for AI guardrails while the window to act closes",
-      "link": "https://www.cnbc.com/2026/09/13/ai-congress-anthropic-openai-crisis.html",
-      "published_iso": "2026-09-13T17:48:53+00:00",
-      "summary_raw": "The House is scheduled to be sent home in the coming days until after November's midterm elections, leaving a narrow window to pass any form of AI regulation."
+      "title": "Trump goes scorched earth on AI warnings, raging about data center opposition and regulation",
+      "link": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
+      "published_iso": "2026-09-14T21:15:56+00:00",
+      "summary_raw": "The Trump administration has encouraged AI's rapid growth and the development of data centers as it seeks an insurmountable tech edge over China."
     },
     {
       "source": "CNBC",
-      "title": "Anthropic's Amodei says China presents 'toughest dilemma' for his proposed AI slowdown",
-      "link": "https://www.cnbc.com/2026/09/13/china-dilemma-ai-slowdown-anthropic.html",
-      "published_iso": "2026-09-13T16:39:24+00:00",
-      "summary_raw": "OpenAI CEO Sam Altman, Demis Hassabis, the chair of Google DeepMind, and Elon Musk have all welcomed Amodei's proposal."
+      "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
+      "link": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
+      "published_iso": "2026-09-14T19:47:42+00:00",
+      "summary_raw": "Traders were pricing in a better than 92% probability of a rate increase, as well as a more than 75% chance for another one in December."
     },
     {
       "source": "CNBC",
-      "title": "Vessel struck in Strait of Hormuz, UKMTO says, as prospects for U.S.-Iran diplomacy appear elusive",
-      "link": "https://www.cnbc.com/2026/09/13/vessel-struck-strait-of-hormuz-ukmto.html",
-      "published_iso": "2026-09-13T13:38:23+00:00",
-      "summary_raw": "The latest strike happened ahead of an expected meeting between Iranian and Gulf officials in Oman to sign an agreement for shipping through the strait."
+      "title": "Supreme Court rejects Trump bid to lift block on U.S. Postal Service mail-in ballots rule",
+      "link": "https://www.cnbc.com/2026/09/14/supreme-court-trump-mail-ballots-midterms.html",
+      "published_iso": "2026-09-15T00:48:36+00:00",
+      "summary_raw": "Justice Brett Kavanaugh said that applying the U.S. Postal Service rule in the 2026 midterm elections \"would be arbitrary and capricious.\""
     },
     {
       "source": "CNBC",
-      "title": "NFL and midterm elections set up prediction markets for a critical fall season",
-      "link": "https://www.cnbc.com/2026/09/13/nfl-and-midterms-mark-key-fall-season-for-prediction-markets.html",
-      "published_iso": "2026-09-13T11:52:33+00:00",
-      "summary_raw": "The 2025 football season and 2024 presidential election pushed prediction markets into the prominence they enjoy today."
+      "title": "Trump administration repeals Biden era greenhouse gas requirements for power plants",
+      "link": "https://www.cnbc.com/2026/09/14/trump-epa-carbon-dioxide-power-plant-climate-change.html",
+      "published_iso": "2026-09-14T20:45:52+00:00",
+      "summary_raw": "President Donald Trump has systemically dismantled regulations implemented by the Obama and Biden administrations that sought to fight climate change."
     }
   ]
 }
