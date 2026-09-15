@@ -2,26 +2,34 @@
   "stocks": [
     {
       "source": "Bloomberg Television",
-      "title": "Trump: AI ‘Taking Over the World...is a Hoax'",
-      "video_url": "https://www.youtube.com/watch?v=NuvaglYGWj4",
-      "published_iso": "2026-09-14T23:21:29Z",
-      "duration": "51:28",
+      "title": "Singapore’s Air Quality Reaches Worst Since 2019",
+      "video_url": "https://www.youtube.com/watch?v=6HTtvduWecU",
+      "published_iso": "2026-09-15T12:18:35Z",
+      "duration": "0:47",
       "transcript_raw": ""
     },
     {
       "source": "CNBC Television",
-      "title": "Broadcom CEO Hock Tan goes one-on-one with Jim Cramer",
-      "video_url": "https://www.youtube.com/watch?v=7r1mfWVFfqk",
-      "published_iso": "2026-09-14T23:50:50Z",
-      "duration": "10:34",
+      "title": "Former Cleveland Fed Pres. Mester: No convincing evidence inflation is on downward path back to 2%",
+      "video_url": "https://www.youtube.com/watch?v=uYnsIKYWQck",
+      "published_iso": "2026-09-15T12:19:33Z",
+      "duration": "5:36",
       "transcript_raw": ""
     },
     {
       "source": "Real Vision Finance",
-      "title": "The Market Could Be Underestimating the Fed Again!",
-      "video_url": "https://www.youtube.com/watch?v=uXZMr1AZ3pE",
-      "published_iso": "2026-09-14T20:00:13Z",
-      "duration": "0:21",
+      "title": "The US Dollar Is Breaking EVERY Macro Rule!?",
+      "video_url": "https://www.youtube.com/watch?v=rKld0Wmoj90",
+      "published_iso": "2026-09-15T11:45:22Z",
+      "duration": "0:25",
+      "transcript_raw": ""
+    },
+    {
+      "source": "尼可拉斯楊Live精",
+      "title": "打敗Ai，我們就會成為巨富！2027大預測！這些股票一定要守住！",
+      "video_url": "https://www.youtube.com/watch?v=UYFuhw9wc1g",
+      "published_iso": "2026-09-15T11:06:08Z",
+      "duration": "16:09",
       "transcript_raw": ""
     }
   ],

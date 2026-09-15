@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-14T08:54:19.963213+08:00",
+  "fetched_at": "2026-09-15T20:32:10.988540+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "The Standard Reserve Is Building a New Kind of Bank Onchain",
+      "link": "https://www.bankless.com/read/the-standard-reserve-is-building-a-new-kind-of-bank-onchain",
+      "published_iso": "2026-09-14T18:57:00+00:00",
+      "summary_raw": "The Standard Reserve turns bank charters into soulbound NFTs and monetary policy into code."
+    },
     {
       "source": "Bankless",
       "title": "🏴 Robinhood Chain's Hidden Gems?",
@@ -21,13 +28,6 @@
       "link": "https://www.bankless.com/read/news/last-minute-clarity-act-revisions-eye-defi-clarifications",
       "published_iso": "2026-09-11T19:32:08+00:00",
       "summary_raw": "The Clarity Act just got a fresh draft ahead of its September 15th cloture vote."
-    },
-    {
-      "source": "Bankless",
-      "title": "ETH Wins Today's Risk-On Bounce Among Crypto Majors",
-      "link": "https://www.bankless.com/read/news/eth-wins-todays-risk-on-bounce-among-crypto-majors",
-      "published_iso": "2026-09-11T18:34:27+00:00",
-      "summary_raw": "ETH jumped as high as 7% today, outpacing other crypto majors amid Friday's mixed inflation data."
     }
   ]
 }

@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-15T09:21:07.431754+08:00",
+  "fetched_at": "2026-09-15T20:32:08.563422+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump goes scorched earth on AI warnings, raging about data center opposition and regulation",
-      "link": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
-      "published_iso": "2026-09-14T21:15:56+00:00",
-      "summary_raw": "The Trump administration has encouraged AI's rapid growth and the development of data centers as it seeks an insurmountable tech edge over China."
+      "title": "10-year Treasury yield rises to highest since 2007 as Fed rate-hike expectations rise",
+      "link": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
+      "published_iso": "2026-09-15T12:31:43+00:00",
+      "summary_raw": "The sell-off in U.S. government debt is deepening as investors increasingly price in an interest rate hike this week."
     },
     {
       "source": "CNBC",
-      "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
-      "link": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
-      "published_iso": "2026-09-14T19:47:42+00:00",
-      "summary_raw": "Traders were pricing in a better than 92% probability of a rate increase, as well as a more than 75% chance for another one in December."
+      "title": "No one and done: The Fed will hike at least two times over the next year, according to CNBC survey",
+      "link": "https://www.cnbc.com/2026/09/15/cnbc-fed-survey-two-rate-hikes-seen-ahead.html",
+      "published_iso": "2026-09-15T11:52:33+00:00",
+      "summary_raw": "While higher oil is cited as a main reason for the change in view, roughly three quarters of respondents see the inflation problem as broader than just energy prices."
     },
     {
       "source": "CNBC",
-      "title": "Supreme Court rejects Trump bid to lift block on U.S. Postal Service mail-in ballots rule",
-      "link": "https://www.cnbc.com/2026/09/14/supreme-court-trump-mail-ballots-midterms.html",
-      "published_iso": "2026-09-15T00:48:36+00:00",
-      "summary_raw": "Justice Brett Kavanaugh said that applying the U.S. Postal Service rule in the 2026 midterm elections \"would be arbitrary and capricious.\""
+      "title": "Iranian foreign minister will head to China for talks, as Pentagon reveals financial cost of war",
+      "link": "https://www.cnbc.com/2026/09/15/us-iran-war-trump-hormuz-munitions-dod-costs-aircraft.html",
+      "published_iso": "2026-09-15T11:53:36+00:00",
+      "summary_raw": "Iranian Foreign Minister Abbas Araghchi will visit China on Wednesday for talks, Beijing's foreign ministry announced on Tuesday."
     },
     {
       "source": "CNBC",
-      "title": "Trump administration repeals Biden era greenhouse gas requirements for power plants",
-      "link": "https://www.cnbc.com/2026/09/14/trump-epa-carbon-dioxide-power-plant-climate-change.html",
-      "published_iso": "2026-09-14T20:45:52+00:00",
-      "summary_raw": "President Donald Trump has systemically dismantled regulations implemented by the Obama and Biden administrations that sought to fight climate change."
+      "title": "Santoli: The youthful phase of AI is over. What it means for investors",
+      "link": "https://www.cnbc.com/2026/09/15/santoli-the-youthful-phase-of-ai-is-over-what-it-means-for-investors.html",
+      "published_iso": "2026-09-15T12:28:50+00:00",
+      "summary_raw": "The AI narrative has flipped to a focus on the risk with the tech unpopular with the public and projections of order backlogs beyond a few quarters now suspect."
     }
   ]
 }
