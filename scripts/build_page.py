@@ -38,7 +38,7 @@ def main():
         annotate_time_labels(summary["news"].get(col, []))
         annotate_time_labels(summary["youtube"].get(col, []))
         for it in summary["youtube"].get(col, []):
-            if it["source"] == "游庭皓的財經號角":
+            if it["source"] == "游庭皓的財經皓角":
                 it["supplemental_note"] = "10:00 補充"
 
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=True)

@@ -45,10 +45,13 @@ youtube:
       name: Real Vision Finance
       handle: "@RealVisionFinance"
     - id: youtinghao
-      name: 游庭皓的財經號角
-      handle: "@YuTingHao"
+      name: 游庭皓的財經皓角
+      handle: "@yutinghaofinance"
       note: "直播 08:30-09:30，需在 10:00 補抓場次"
       supplemental_run: true
+    - id: nicolasyoung
+      name: 尼可拉斯楊Live精
+      handle: "@nicolasyounglive"
   crypto:
     - id: coinbureau
       name: Coin Bureau
