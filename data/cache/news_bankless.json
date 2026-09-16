@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-15T21:13:30.007690+08:00",
+  "fetched_at": "2026-09-16T08:21:34.973869+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "Clarity's Vote Failed. Now What?",
+      "link": "https://www.bankless.com/read/clarity-s-vote-failed-now-what",
+      "published_iso": "2026-09-15T21:34:22+00:00",
+      "summary_raw": "CLARITY's latest Senate push failed after an ethics deal revived hopes, leaving crypto's path to lasting U.S. rules unclear."
+    },
     {
       "source": "Bankless",
       "title": "The Standard Reserve Is Building a New Kind of Bank Onchain",
@@ -21,13 +28,6 @@
       "link": "https://www.bankless.com/read/robinhood-chain-hidden-gems-5-tokens-were-watching",
       "published_iso": "2026-09-11T20:53:13+00:00",
       "summary_raw": "Highlighting a handful of Robinhood Chain tokens on our radar right now."
-    },
-    {
-      "source": "Bankless",
-      "title": "Last Minute Clarity Act Revisions Eye DeFi Clarifications",
-      "link": "https://www.bankless.com/read/news/last-minute-clarity-act-revisions-eye-defi-clarifications",
-      "published_iso": "2026-09-11T19:32:08+00:00",
-      "summary_raw": "The Clarity Act just got a fresh draft ahead of its September 15th cloture vote."
     }
   ]
 }

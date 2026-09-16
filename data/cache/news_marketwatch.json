@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-15T21:13:27.350170+08:00",
+  "fetched_at": "2026-09-16T08:21:32.695838+08:00",
   "data": [
     {
       "source": "MarketWatch",
-      "title": "Saudi Arabia may be just days away from not being able to export much oil",
-      "link": "https://www.marketwatch.com/story/saudi-arabia-may-be-just-days-away-from-not-being-able-to-export-much-oil-acfefd0c?mod=mw_rss_topstories",
-      "published_iso": "2026-09-15T13:03:00+00:00",
-      "summary_raw": "The oil exporting kingdom is now dealing with the shutdown of its East-West pipeline. Energy prices ‘are only going to rise on the back of this.’"
+      "title": "Medicare is using AI to approve claims. The result has been ‘alarmingly high denial rates.’",
+      "link": "https://www.marketwatch.com/story/medicare-is-using-ai-to-approve-claims-the-result-has-been-alarmingly-high-denial-rates-db87d902?mod=mw_rss_topstories",
+      "published_iso": "2026-09-15T23:09:00+00:00",
+      "summary_raw": "A pilot program using artificial intelligence to approve care for Medicare beneficiaries has resulted in high levels of denials and delayed decisions and prompted warnings from a vendor about a lack of readiness, according to a lawsuit seeking information about the program."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "‘My total balance should be $20 million’: I invested $1.1 million in a crypto platform. Have I lost it all?",
+      "link": "https://www.marketwatch.com/story/my-total-balance-should-be-worth-20-million-i-invested-1-1-million-in-a-crypto-platform-have-i-lost-it-all-d22da562?mod=mw_rss_topstories",
+      "published_iso": "2026-09-15T22:15:00+00:00",
+      "summary_raw": "“I invested on the recommendation of an executive vice president of a major New York investment bank.”"
     },
     {
       "source": "MarketWatch",
       "title": "‘There might be a silver lining’: My friend’s wife died at 60 after a high-earning career. Can he claim her Social Security?",
       "link": "https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories",
-      "published_iso": "2026-09-15T13:00:00+00:00",
+      "published_iso": "2026-09-15T22:00:00+00:00",
       "summary_raw": "“They had been married for over 30 years when she passed.”"
     },
     {
       "source": "MarketWatch",
-      "title": "90% of retirees are making this miscalculation with their savings",
-      "link": "https://www.marketwatch.com/story/90-of-retirees-are-making-this-miscalculation-with-their-savings-feb9db79?mod=mw_rss_topstories",
-      "published_iso": "2026-09-15T13:00:00+00:00",
-      "summary_raw": "The order in which you spend your money makes a difference for your taxes — and your enjoyment of life."
-    },
-    {
-      "source": "MarketWatch",
-      "title": "Wells Fargo just lowered its S&P 500 year-end price target. Will others follow?",
-      "link": "https://www.marketwatch.com/story/wells-fargo-just-cuts-its-s-p-500-price-target-will-others-follow-e32f968a?mod=mw_rss_topstories",
-      "published_iso": "2026-09-15T12:56:00+00:00",
-      "summary_raw": "In what may be a first since the early days of the war between the U.S. and Iran, a Wall Street firm is lowering rather than raising its S&amp;P 500 year-end target."
+      "title": "These 4 stocks could benefit most from a $3.2 trillion semiconductor opportunity",
+      "link": "https://www.marketwatch.com/story/these-four-stocks-could-benefit-most-from-a-3-2-trillion-semiconductor-opportunity-e6bf58b4?mod=mw_rss_topstories",
+      "published_iso": "2026-09-15T21:40:00+00:00",
+      "summary_raw": "A BofA analyst expects the semiconductor market to reach $3.2 trillion by the end of the decade, shrugging off fears of an AI slowdown."
     }
   ]
 }
