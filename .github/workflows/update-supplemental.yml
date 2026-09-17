@@ -1,0 +1,59 @@
+name: 財經晨讀補充更新（游庭皓）
+
+# 獨立成自己的 workflow，不跟主更新共用同一個檔案——懷疑 GitHub 對「同一個
+# workflow 裡的第二個排程」延遲特別嚴重（09-15、09-16 都晚了將近 5 小時），
+# 拆開來看看是不是能改善觸發的準時度。
+
+on:
+  schedule:
+    - cron: '45 1 * * *'   # 09:45 台北時間觸發，目標 10:00 前上線
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  run_type: supplemental
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢查倉庫代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 抓 YouTube 影片（只抓游庭皓）
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          SUPADATA_API_KEY: ${{ secrets.SUPADATA_API_KEY }}
+        run: python scripts/fetch_youtube.py --run-type supplemental
+
+      - name: AI 翻譯與摘要
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/summarize.py
+
+      - name: 產生網頁
+        run: python scripts/build_page.py
+
+      - name: 提交更新
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/raw data/cache data/state docs/index.html
+          git diff --cached --quiet || git commit -m "🤖 自動更新財經晨讀（supplemental）"
+          for i in 1 2 3 4 5; do
+            git push origin main && exit 0
+            echo "push rejected, pulling and retrying ($i/5)"
+            git pull --rebase origin main
+            sleep $((RANDOM % 10 + 1))
+          done
+          git push origin main

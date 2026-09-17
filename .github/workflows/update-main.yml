@@ -1,20 +1,15 @@
-name: 財經晨讀自動更新
+name: 財經晨讀主更新
 
 on:
   schedule:
-    # 刻意避開整點（GitHub 官方說整點排程最容易被延後執行），並提早一點觸發當緩衝
-    - cron: '15 22 * * *'  # 06:15 台北時間觸發，目標 07:00 前上線 — 主更新
-    - cron: '45 1 * * *'   # 09:45 台北時間觸發，目標 10:00 前上線 — 補充游庭皓摘要
+    - cron: '15 22 * * *'  # 06:15 台北時間觸發，目標 07:00 前上線
   workflow_dispatch:
-    inputs:
-      run_type:
-        description: '手動測試時要跑哪一種？'
-        type: choice
-        options: [main, supplemental]
-        default: main
 
 permissions:
   contents: write
+
+env:
+  run_type: main
 
 jobs:
   update:
@@ -31,33 +26,20 @@ jobs:
       - name: 安裝套件
         run: pip install -r requirements.txt
 
-      - name: 判斷這次是主更新還是補充更新
-        run: |
-          if [ -n "${{ inputs.run_type }}" ]; then
-            echo "run_type=${{ inputs.run_type }}" >> "$GITHUB_ENV"
-          elif [ "${{ github.event.schedule }}" = "45 1 * * *" ]; then
-            echo "run_type=supplemental" >> "$GITHUB_ENV"
-          else
-            echo "run_type=main" >> "$GITHUB_ENV"
-          fi
-
       - name: 抓新聞 RSS
-        if: env.run_type == 'main'
         run: python scripts/fetch_news.py
 
       - name: 抓大盤指數
-        if: env.run_type == 'main'
         run: python scripts/fetch_market.py
 
       - name: 抓潮汐板塊資料
-        if: env.run_type == 'main'
         run: python scripts/fetch_tide.py
 
-      - name: 抓 YouTube 影片（主更新：除游庭皓外全部；補充更新：只抓游庭皓）
+      - name: 抓 YouTube 影片（除游庭皓外全部）
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           SUPADATA_API_KEY: ${{ secrets.SUPADATA_API_KEY }}
-        run: python scripts/fetch_youtube.py --run-type ${{ env.run_type }}
+        run: python scripts/fetch_youtube.py --run-type main
 
       - name: AI 翻譯與摘要
         env:
@@ -72,7 +54,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/raw data/cache data/state docs/index.html
-          git diff --cached --quiet || git commit -m "🤖 自動更新財經晨讀（${{ env.run_type }}）"
+          git diff --cached --quiet || git commit -m "🤖 自動更新財經晨讀（main）"
           for i in 1 2 3 4 5; do
             git push origin main && exit 0
             echo "push rejected, pulling and retrying ($i/5)"

@@ -27,7 +27,9 @@ API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
 API_BASE = "https://www.googleapis.com/youtube/v3"
 MAX_RECENT = 6             # how many latest uploads to scan per channel, looking for a non-Short
 MIN_DURATION_SECONDS = 150 # skip Shorts / teaser clips shorter than this
-TRANSCRIPT_CHAR_LIMIT = 6000
+TRANSCRIPT_CHAR_LIMIT = 24000  # was 6000 — that cut long videos off mid-analysis,
+                                # before the actual stock picks/conclusion, which
+                                # tend to land in the back half of a 15-30 min video
 
 
 def resolve_uploads_playlist(handle):
@@ -182,7 +184,7 @@ def main():
         cfg = yaml.safe_load(f)
 
     existing = load_json(os.path.join(RAW_DIR, "youtube.json"), {"stocks": [], "crypto": []})
-    output = {"stocks": [], "crypto": []} if args.run_type == "main" else existing
+    output = {"stocks": list(existing.get("stocks", [])), "crypto": list(existing.get("crypto", []))}
 
     for column in ("stocks", "crypto"):
         log(f"Fetching YouTube column: {column} ({args.run_type} run)")
@@ -196,13 +198,14 @@ def main():
             log(f"  {src['name']}: {len(items)} item(s)")
             fresh_items.extend(items)
 
-        if args.run_type == "supplemental":
-            # replace any earlier entry from the same source, keep everything else
-            names = {it["source"] for it in fresh_items}
-            kept = [it for it in output.get(column, []) if it["source"] not in names]
-            output[column] = kept + fresh_items
-        else:
-            output[column] = fresh_items
+        # This run only owns its own set of channels (main run owns non-supplemental
+        # channels, supplemental run owns supplemental ones). Replace those channels'
+        # entries with the fresh fetch, but leave every other channel's entry from the
+        # last successful run untouched — e.g. a main run must not wipe out 游庭皓's
+        # entry from the last supplemental run just because it isn't fetching him today.
+        names = {it["source"] for it in fresh_items}
+        kept = [it for it in output.get(column, []) if it["source"] not in names]
+        output[column] = kept + fresh_items
 
     save_json(os.path.join(RAW_DIR, "youtube.json"), output)
     log("youtube.json written")
