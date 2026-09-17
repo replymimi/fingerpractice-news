@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-17T08:33:16.182376+08:00",
+  "fetched_at": "2026-09-17T09:16:33.831903+08:00",
   "data": [
+    {
+      "source": "CNBC",
+      "title": "'Hostile act': Trump threatens EU with tariffs over Canada associate-membership proposal",
+      "link": "https://www.cnbc.com/2026/09/17/trump-canada-european-union-tariffs-associate-member-ukraine-.html",
+      "published_iso": "2026-09-17T00:55:35+00:00",
+      "summary_raw": "European Commission President Ursula von der Leyen said EU is opening the door for Canada to become the first associate member of the 27-member bloc."
+    },
     {
       "source": "CNBC",
       "title": "Trump says he still has confidence in Fed Chair Warsh, demands 1% or lower interest rates",
@@ -21,13 +28,6 @@
       "link": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
       "published_iso": "2026-09-16T20:54:15+00:00",
       "summary_raw": "Billionaire Leon Black is suing the House Committee on Oversight and Government Reform seeking to block subpoenas it issued him in its probe of Jeffrey Epstein."
-    },
-    {
-      "source": "CNBC",
-      "title": "OpenAI reports 6 new instances of 'concerning model behavior' since March",
-      "link": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
-      "published_iso": "2026-09-16T23:05:48+00:00",
-      "summary_raw": "OpenAI has disclosed six new cases of model misbehavior and offered a framework for disclosing future instances, as the debate over AI model safety intensifies."
     }
   ]
 }

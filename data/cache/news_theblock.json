@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-17T08:33:18.001835+08:00",
+  "fetched_at": "2026-09-17T09:16:35.675309+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "House committee moves to codify Trump’s Strategic Bitcoin Reserve",
+      "link": "https://www.theblock.co/news/regulation/2026-09-16-house-committee-moves-bitcoin-reserve-bill-415317",
+      "published_iso": "2026-09-17T00:56:10+00:00",
+      "summary_raw": "A House committee advanced a bill to create a strategic bitcoin reserve, which would codify Trump's plan for permanent bitcoin holdings."
+    },
     {
       "source": "The Block Research",
       "title": "Bitcoin, ether swing after unanimous quarter-point Fed rate hike as Warsh takes aim at inflation",
@@ -21,13 +28,6 @@
       "link": "https://www.theblock.co/news/regulation/2026-09-16-house-panel-approves-first-federal-crypto-tax-framework-one-day-after-senates-clarity-act-stumbles-415293",
       "published_iso": "2026-09-16T17:29:50+00:00",
       "summary_raw": "The House Ways and Means Committee voted to advance crypto tax legislation, sending it to the House to consider."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Aave founder pitches ‘Uber path’ for DeFi after Clarity Act fails Senate vote",
-      "link": "https://www.theblock.co/news/defi/2026-09-16-aave-founder-pitches-uber-path-defi-clarity-act-fails-senate-vote-415278",
-      "published_iso": "2026-09-16T17:08:29+00:00",
-      "summary_raw": "Aave founder Stani Kulechov sees an 'Uber path' for DeFi if U.S. crypto legislation stalls, he told The Starting Block."
     }
   ]
 }
