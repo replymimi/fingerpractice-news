@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-16T08:21:32.562470+08:00",
+  "fetched_at": "2026-09-17T08:33:16.182376+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Nvidia's Huang diverges with CEOs of Anthropic, OpenAI on AI safety at Dreamforce",
-      "link": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html",
-      "published_iso": "2026-09-15T22:17:47+00:00",
-      "summary_raw": "Comments from the two tech leaders landed days after Anthropic's Dario Amodei published an essay urging the AI industry to slow the pace of model development."
+      "title": "Trump says he still has confidence in Fed Chair Warsh, demands 1% or lower interest rates",
+      "link": "https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html",
+      "published_iso": "2026-09-16T23:45:02+00:00",
+      "summary_raw": "President Donald Trump previously threatened to cut off trade with countries that have trade surpluses with the U.S. if the Fed doesn't cut interest rates."
     },
     {
       "source": "CNBC",
-      "title": "Iran war has cost on average $246 million per day in its first five months, CBO finds",
-      "link": "https://www.cnbc.com/2026/09/15/cbo-iran-war-cost-pentagon-weapons.html",
-      "published_iso": "2026-09-15T22:33:45+00:00",
-      "summary_raw": "CBO estimates the Iran war cost the Pentagon $38.1 billion through Aug. 1 and could cost another $2 billion to $3 billion each additional month."
+      "title": "House advances bill to rein in AI data center utility costs",
+      "link": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html",
+      "published_iso": "2026-09-17T00:08:01+00:00",
+      "summary_raw": "The bipartisan legislation would create a regulatory framework states could adopt to prevent data center-related energy costs from being passed on to consumers."
     },
     {
       "source": "CNBC",
-      "title": "Nvidia CEO Huang attending Trump's state dinner for China's Xi: Source",
-      "link": "https://www.cnbc.com/2026/09/15/nvidia-jensen-huang-trump-xi.html",
-      "published_iso": "2026-09-15T22:06:16+00:00",
-      "summary_raw": "Jensen Huang appeared to side with Trump as the president pushed back on tech CEOs' warnings about the risks of rapid AI advancement."
+      "title": "House votes to hold Leon Black in contempt of Congress over Epstein subpoenas defiance",
+      "link": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
+      "published_iso": "2026-09-16T20:54:15+00:00",
+      "summary_raw": "Billionaire Leon Black is suing the House Committee on Oversight and Government Reform seeking to block subpoenas it issued him in its probe of Jeffrey Epstein."
     },
     {
       "source": "CNBC",
-      "title": "Trump says Kennedy Center will stay closed without renovation unless his name is added back",
-      "link": "https://www.cnbc.com/2026/09/15/trump-kennedy-center-name-ruling.html",
-      "published_iso": "2026-09-15T21:46:22+00:00",
-      "summary_raw": "The ruling comes four months after the same judge ordered that the Kennedy Center could not be renamed to include President Trump's name."
+      "title": "OpenAI reports 6 new instances of 'concerning model behavior' since March",
+      "link": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
+      "published_iso": "2026-09-16T23:05:48+00:00",
+      "summary_raw": "OpenAI has disclosed six new cases of model misbehavior and offered a framework for disclosing future instances, as the debate over AI model safety intensifies."
     }
   ]
 }
