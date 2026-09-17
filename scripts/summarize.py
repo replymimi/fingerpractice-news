@@ -63,7 +63,9 @@ def ai_json(prompt, *, max_points=5):
                     "正確示範（要這樣寫）：「作者看好網路安全需求，買進軟體 ETF IGV，而非直接買 "
                     "CrowdStrike(CRWD)或 Palo Alto Networks(PANW)」——後者才是讀者真正想看到的內容。"
                     f"輸出 JSON，格式為 {{\"title_zh\": \"...\", \"points\": [\"...\", ...]}}，"
-                    f"points 是 {max_points} 條以內、每條 15-35 字的重點摘要。"
+                    f"points 最多 {max_points} 條、每條 15-35 字。這是上限不是目標，"
+                    "原文如果只夠寫 4 條扎實的重點，就寫 4 條就好，不要為了湊到上限而把同一件事拆成兩條、"
+                    "或加入無關緊要的細節硬湊數量；每一條都要是獨立、有新資訊的重點。"
                 )},
                 {"role": "user", "content": prompt},
             ],
@@ -100,7 +102,7 @@ def summarize_video_item(item):
     else:
         prompt = (f"來源頻道：{item['source']}\n影片標題：{item['title']}\n"
                    "（沒有取得字幕，只能依標題判斷，points 請控制在 2 條以內，且語氣保守）")
-    result = ai_json(prompt, max_points=5 if transcript else 2)
+    result = ai_json(prompt, max_points=15 if transcript else 2)
     if not result:
         return {
             "source": item["source"], "title_zh": item["title"],
