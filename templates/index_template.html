@@ -55,7 +55,7 @@
   a { color: inherit; }
   .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
-  .topbar { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--hairline); padding: 18px 20px 16px; }
+  .topbar { background: var(--bg); border-bottom: 1px solid var(--hairline); padding: 18px 20px 16px; }
   .topbar-inner { max-width: 1440px; margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .brand-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
   .brand-title { font-family: 'Noto Serif TC', serif; font-size: 1.9rem; font-weight: 700; margin: 0; text-wrap: balance; }
@@ -65,9 +65,10 @@
   .play-all-btn:hover { opacity: 0.82; }
   .play-all-btn svg { width: 15px; height: 15px; }
 
-  .board { max-width: 1440px; margin: 28px auto 0; padding: 0 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  @media (max-width: 1180px) { .board { grid-template-columns: 1fr 1fr; gap: 28px; } }
-  @media (max-width: 640px) { .board { grid-template-columns: 1fr; gap: 36px; } .brand-title { font-size: 1.6rem; } }
+  .board { max-width: 1440px; margin: 28px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px; }
+  .board .column { flex: 1 1 calc(25% - 18px); min-width: 300px; }
+  @media (max-width: 1180px) { .board { gap: 28px; } .board .column { flex-basis: calc(50% - 14px); } }
+  @media (max-width: 640px) { .board { gap: 36px; } .board .column { flex-basis: 100%; } .brand-title { font-size: 1.6rem; } }
 
   .column-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; margin-bottom: 4px; border-bottom: 2px solid var(--col-accent); }
   .column-head-label { display: flex; align-items: baseline; gap: 8px; }
@@ -108,6 +109,10 @@
   .sentiment-sub { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--ink-soft); margin: 0; }
 
   .section-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin: 22px 0 8px; }
+  .section-label.toggle { cursor: pointer; display: flex; align-items: center; gap: 8px; }
+  .section-label.toggle:hover { color: var(--col-accent); }
+  .toggle-pill { font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 0.62rem; letter-spacing: 0.04em; color: var(--ink-faint); border: 1px solid var(--hairline); border-radius: 999px; padding: 1px 7px; text-transform: none; }
+  .section-body[hidden] { display: none; }
 
   .item { display: flex; gap: 12px; padding: 14px 4px; border-bottom: 1px solid var(--hairline); }
   .item:last-child { border-bottom: none; }
@@ -256,7 +261,8 @@
     </article>
 
     {% if tide.flow.inflow or tide.flow.outflow %}
-    <p class="section-label">五日法人資金流向排行</p>
+    <p class="section-label toggle">五日法人資金流向排行<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
     {% if tide.flow.inflow %}
     <div class="flow-group">
       <p class="flow-group-label">流入 TOP {{ tide.flow.inflow|length }}</p>
@@ -281,10 +287,12 @@
         <a class="item-link" hidden href="https://tide-tw.app/" target="_blank" rel="noopener">前往 Tide 潮汐 ↗</a>
       </div>
     </article>
+    </div>
     {% endif %}
 
     {% if tide.whale.buy or tide.whale.sell %}
-    <p class="section-label">大戶異常</p>
+    <p class="section-label toggle">大戶異常<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
     {% if tide.whale.buy %}
     <div class="flow-group">
       <p class="flow-group-label">大戶買超 TOP {{ tide.whale.buy|length }}</p>
@@ -297,6 +305,7 @@
       {% for s in tide.whale.sell %}<div class="flow-row"><span class="flow-name">{{ s.name }}</span><span class="flow-amt down">{{ '%.1f'|format(s.amount) }} 億</span></div>{% endfor %}
     </div>
     {% endif %}
+    </div>
     {% endif %}
   </section>
 
@@ -490,6 +499,17 @@
       var link = it.el.querySelector('.item-link');
       if (points) points.hidden = expanded;
       if (link) link.hidden = expanded;
+    });
+  });
+  document.querySelectorAll('.section-label.toggle').forEach(function (label) {
+    label.addEventListener('click', function () {
+      var body = label.nextElementSibling;
+      if (!body || !body.classList.contains('section-body')) return;
+      var expanded = label.getAttribute('data-expanded') === 'true';
+      label.setAttribute('data-expanded', expanded ? 'false' : 'true');
+      body.hidden = expanded;
+      var pill = label.querySelector('.toggle-pill');
+      if (pill) pill.textContent = expanded ? '展開' : '收合';
     });
   });
   document.getElementById('toggleBtn').addEventListener('click', function () {
