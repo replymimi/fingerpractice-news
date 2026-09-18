@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-17T20:36:41.591785+08:00",
+  "fetched_at": "2026-09-18T08:17:20.537587+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 The Arc Era Begins",
-      "link": "https://www.bankless.com/read/the-arc-era-begins",
-      "published_iso": "2026-09-16T17:59:39+00:00",
-      "summary_raw": "USDC issuer Circle just launched its own chain, arriving to an arena already fielded by Tether and Stripe."
+      "title": "Vitalik Says AI Could Strengthen Cybersecurity",
+      "link": "https://www.bankless.com/read/news/vitalik-says-ai-could-strengthen-cybersecurity",
+      "published_iso": "2026-09-17T14:55:09+00:00",
+      "summary_raw": "Vitalik says AI’s math breakthroughs could make formal verification practical, helping developers build software that is harder to hack."
     },
     {
       "source": "Bankless",
-      "title": "Circle's Arc Mainnet Goes Live",
-      "link": "https://www.bankless.com/read/circles-arc-mainnet-goes-live",
-      "published_iso": "2026-09-16T16:49:45+00:00",
-      "summary_raw": "The USDC issuer just launched its own Layer 1, arriving to an arena already fielded by Tether and Stripe."
+      "title": "Senate Democrats Seek New CLARITY Talks",
+      "link": "https://www.bankless.com/read/news/senate-democrats-seek-new-clarity-talks",
+      "published_iso": "2026-09-17T14:30:41+00:00",
+      "summary_raw": "Seven Senate Democrats say they remain committed to CLARITY as lawmakers explore restarting bipartisan talks before year-end."
     },
     {
       "source": "Bankless",
-      "title": "Fake World Assets Officially Opens Its V2",
-      "link": "https://www.bankless.com/read/news/fake-world-assets-officially-opens-its-v2",
-      "published_iso": "2026-09-16T16:41:11+00:00",
-      "summary_raw": "The Ethereum gacha platform has activated purchases on its V2 protocol, which will run alongside the V1."
+      "title": "S&P Global Agrees to Acquire OpenZeppelin",
+      "link": "https://www.bankless.com/read/s-p-global-agrees-to-acquire-openzeppelin",
+      "published_iso": "2026-09-17T14:23:01+00:00",
+      "summary_raw": "S&amp;P Global is acquiring OpenZeppelin, adding smart contract security to its growing institutional crypto infrastructure stack."
     },
     {
       "source": "Bankless",
-      "title": "Venice Hits 250B Daily Tokens Milestone",
-      "link": "https://www.bankless.com/read/news/venice-hits-250b-daily-tokens-milestone",
-      "published_iso": "2026-09-16T15:52:53+00:00",
-      "summary_raw": "Venice, the rising private AI platform, has seen its token usage more than double since June."
+      "title": "The SEC Just Opened a Legal Lane for Tokenized Stocks",
+      "link": "https://www.bankless.com/read/the-sec-just-opened-a-legal-lane-for-tokenized-stocks",
+      "published_iso": "2026-09-17T13:17:40+00:00",
+      "summary_raw": "The SEC's new Innovation Exemption lets permissioned AMMs trade tokenized, rights-bearing U.S. stocks for the first time."
     }
   ]
 }
