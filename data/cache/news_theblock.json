@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-18T08:17:20.234451+08:00",
+  "fetched_at": "2026-09-19T08:20:08.179062+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "US sanctions Iranian crypto exchange BitBank over alleged bitcoin transfers to IRGC",
-      "link": "https://www.theblock.co/news/regulation/2026-09-17-us-sanctions-iranian-crypto-exchange-bitbank-alleged-bitcoin-transfers-to-irgc-415462",
-      "published_iso": "2026-09-17T20:05:28+00:00",
-      "summary_raw": "Treasury said the previously sanctioned Hormuz Safe platform used BitBank to transfer payments collected since June."
+      "title": "Bitcoin reclaims $80,000, Solana and Hyperliquid rally as crypto markets shrug off Clarity setback",
+      "link": "https://www.theblock.co/news/markets/2026-09-18-bitcoin-reclaims-80000-solana-hyperliquid-rally-crypto-markets-shrug-off-clarity-setback-415523",
+      "published_iso": "2026-09-18T15:27:41+00:00",
+      "summary_raw": "The moves comes as the SEC and CFTC advance crypto-related rulemaking despite the Clarity Act stalling in the Senate."
     },
     {
       "source": "The Block Research",
-      "title": "JPMorgan says bitcoin could get more support than gold if ETF hedging eases",
-      "link": "https://www.theblock.co/news/markets/2026-09-17-jpmorgan-bitcoin-gold-415421",
-      "published_iso": "2026-09-17T17:48:51+00:00",
-      "summary_raw": "Bitcoin could get more support than gold if investors reduce their ETF hedges, according to JPMorgan analysts."
+      "title": "Grayscale’s Zcash ETF plans 3-for-1 split after $233 million inflow surge",
+      "link": "https://www.theblock.co/news/markets/2026-09-18-grayscales-zcash-etf-plans-3-for-1-split-233-million-inflow-surge-415520",
+      "published_iso": "2026-09-18T15:09:09+00:00",
+      "summary_raw": "The Grayscale Zcash ETF (ZCSH) nears $890 million in assets as ZEC’s rally pushes mining competition to record highs."
     },
     {
       "source": "The Block Research",
-      "title": "As RWA trading surges on Hyperliquid, Dragonfly’s Qureshi makes the case for a multichain future",
-      "link": "https://www.theblock.co/news/ecosystems/2026-09-17-as-rwa-trading-surges-hyperliquid-dragonflys-qureshi-makes-case-multichain-future-415406",
-      "published_iso": "2026-09-17T17:21:07+00:00",
-      "summary_raw": "Dragonfly's Haseeb Qureshi said the shift reflects crypto's broader maturation toward tokenized stocks, bonds, and other real-world assets."
+      "title": "Ava Labs president says NYSE spent a year testing Avalanche technology for tokenization plans",
+      "link": "https://www.theblock.co/news/ecosystems/2026-09-18-ava-labs-president-says-nyse-spent-a-year-testing-avalanche-technology-tokenization-plans-415509",
+      "published_iso": "2026-09-18T13:40:15+00:00",
+      "summary_raw": "Cooper described a close working relationship with NYSE parent ICE but did not say the exchange had selected Avalanche."
     },
     {
       "source": "The Block Research",
-      "title": "Regulators keep moving on crypto: CFTC follows SEC with developer-friendly no-action stance",
-      "link": "https://www.theblock.co/news/regulation/2026-09-17-regulators-keep-moving-crypto-cftc-follows-sec-developer-friendly-no-action-stance-415425",
-      "published_iso": "2026-09-17T16:50:22+00:00",
-      "summary_raw": "Software developers who build crypto trading tools just got some breathing room from the Commodity Futures Trading Commission."
+      "title": "CFTC files crypto asset rulemaking with White House, pressing ahead without Congress",
+      "link": "https://www.theblock.co/news/regulation/2026-09-18-cftc-files-crypto-asset-rulemaking-with-white-house-pressing-ahead-without-congress-415510",
+      "published_iso": "2026-09-18T13:33:40+00:00",
+      "summary_raw": "The Commodity Futures Trading Commission isn't sitting idle — the agency has sent its crypto rulemaking to the White House for review."
     }
   ]
 }

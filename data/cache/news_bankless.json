@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-18T08:17:20.537587+08:00",
+  "fetched_at": "2026-09-19T08:20:08.537772+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "🏴 Crypto's New Compliance Shield?",
+      "link": "https://www.bankless.com/read/crypto-s-new-compliance-shield",
+      "published_iso": "2026-09-18T19:00:00+00:00",
+      "summary_raw": "The CFTC just gave every wallet and DeFi interface the same legal shield it gave to Phantom."
+    },
+    {
+      "source": "Bankless",
+      "title": "The CFTC Extended a Crypto Compliance Win to the Whole Industry",
+      "link": "https://www.bankless.com/read/the-cftc-extended-a-crypto-compliance-win-to-the-whole-industry",
+      "published_iso": "2026-09-18T15:38:16+00:00",
+      "summary_raw": "The CFTC just gave every wallet and DeFi interface the same legal shield it gave to Phantom."
+    },
+    {
+      "source": "Bankless",
+      "title": "Zcash Sets Its Sights on Next Major Network Upgrade",
+      "link": "https://www.bankless.com/read/news/zcash-sets-its-sights-on-next-major-network-upgrade",
+      "published_iso": "2026-09-18T15:18:50+00:00",
+      "summary_raw": "The popular privacy chain is leveling up next month with faster blocks and beyond."
+    },
     {
       "source": "Bankless",
       "title": "Vitalik Says AI Could Strengthen Cybersecurity",
       "link": "https://www.bankless.com/read/news/vitalik-says-ai-could-strengthen-cybersecurity",
       "published_iso": "2026-09-17T14:55:09+00:00",
       "summary_raw": "Vitalik says AI’s math breakthroughs could make formal verification practical, helping developers build software that is harder to hack."
-    },
-    {
-      "source": "Bankless",
-      "title": "Senate Democrats Seek New CLARITY Talks",
-      "link": "https://www.bankless.com/read/news/senate-democrats-seek-new-clarity-talks",
-      "published_iso": "2026-09-17T14:30:41+00:00",
-      "summary_raw": "Seven Senate Democrats say they remain committed to CLARITY as lawmakers explore restarting bipartisan talks before year-end."
-    },
-    {
-      "source": "Bankless",
-      "title": "S&P Global Agrees to Acquire OpenZeppelin",
-      "link": "https://www.bankless.com/read/s-p-global-agrees-to-acquire-openzeppelin",
-      "published_iso": "2026-09-17T14:23:01+00:00",
-      "summary_raw": "S&amp;P Global is acquiring OpenZeppelin, adding smart contract security to its growing institutional crypto infrastructure stack."
-    },
-    {
-      "source": "Bankless",
-      "title": "The SEC Just Opened a Legal Lane for Tokenized Stocks",
-      "link": "https://www.bankless.com/read/the-sec-just-opened-a-legal-lane-for-tokenized-stocks",
-      "published_iso": "2026-09-17T13:17:40+00:00",
-      "summary_raw": "The SEC's new Innovation Exemption lets permissioned AMMs trade tokenized, rights-bearing U.S. stocks for the first time."
     }
   ]
 }

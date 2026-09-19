@@ -3,44 +3,44 @@
     {
       "name": "道瓊工業指數 DJIA",
       "symbol": "^DJI",
-      "price": 51778.04,
-      "prev_close": 51461.9,
-      "chg": 316.14,
-      "chg_pct": 0.61
+      "price": 51682.64,
+      "prev_close": 51778.04,
+      "chg": -95.4,
+      "chg_pct": -0.18
     },
     {
       "name": "標普 500 S&P 500",
       "symbol": "^GSPC",
-      "price": 7637.76,
-      "prev_close": 7551.81,
-      "chg": 85.95,
-      "chg_pct": 1.14
+      "price": 7650.5,
+      "prev_close": 7637.76,
+      "chg": 12.74,
+      "chg_pct": 0.17
     },
     {
       "name": "那斯達克 NASDAQ",
       "symbol": "^IXIC",
-      "price": 26418.299,
-      "prev_close": 25978.424,
-      "chg": 439.88,
-      "chg_pct": 1.69
+      "price": 26522.545,
+      "prev_close": 26418.3,
+      "chg": 104.24,
+      "chg_pct": 0.39
     },
     {
       "name": "費城半導體 SOX",
       "symbol": "^SOX",
-      "price": 11599.492,
-      "prev_close": 11246.107,
-      "chg": 353.39,
-      "chg_pct": 3.14
+      "price": 11921.686,
+      "prev_close": 11599.5,
+      "chg": 322.19,
+      "chg_pct": 2.78
     }
   ],
   "tw": [
     {
       "name": "台股加權指數 TAIEX",
       "symbol": "^TWII",
-      "price": 46288.0,
-      "prev_close": 45511.5,
-      "chg": 776.5,
-      "chg_pct": 1.71
+      "price": 47180.75,
+      "prev_close": 45848.9,
+      "chg": 1331.85,
+      "chg_pct": 2.9
     },
     {
       "name": "櫃買指數 TPEx",
@@ -53,10 +53,10 @@
     {
       "name": "台幣兌美元",
       "symbol": "TWD=X",
-      "price": 31.851,
+      "price": 31.763,
       "prev_close": 31.852,
-      "chg": -0.0,
-      "chg_pct": -0.0
+      "chg": -0.09,
+      "chg_pct": -0.28
     }
   ]
 }
