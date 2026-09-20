@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-19T08:20:08.179062+08:00",
+  "fetched_at": "2026-09-20T08:08:52.336821+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "Bitcoin ETFs eke out positive week with $433 million Friday inflow as ether funds snap four-week inflow streak",
+      "link": "https://www.theblock.co/news/markets/2026-09-19-bitcoin-etfs-eke-out-positive-week-with-433-million-friday-inflow-as-ether-funds-snap-four-week-inflow-streak-415871",
+      "published_iso": "2026-09-19T18:01:09+00:00",
+      "summary_raw": "Fidelity's FBTC accounted for $310.7 million of Friday’s overall $433 million net inflow, a notable sum that helped offset earlier withdrawals."
+    },
+    {
+      "source": "The Block Research",
+      "title": "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
+      "link": "https://www.theblock.co/news/regulation/2026-09-19-visa-to-close-crossmint-memecoin-rewards-loophole-following-the-block-investigation-report-415866",
+      "published_iso": "2026-09-19T15:11:22+00:00",
+      "summary_raw": "Though the Crossmint-powered memecoin sales are still live on both apps, Visa's grace period is expected to end next week, per the report."
+    },
     {
       "source": "The Block Research",
       "title": "Bitcoin reclaims $80,000, Solana and Hyperliquid rally as crypto markets shrug off Clarity setback",
@@ -14,20 +28,6 @@
       "link": "https://www.theblock.co/news/markets/2026-09-18-grayscales-zcash-etf-plans-3-for-1-split-233-million-inflow-surge-415520",
       "published_iso": "2026-09-18T15:09:09+00:00",
       "summary_raw": "The Grayscale Zcash ETF (ZCSH) nears $890 million in assets as ZEC’s rally pushes mining competition to record highs."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Ava Labs president says NYSE spent a year testing Avalanche technology for tokenization plans",
-      "link": "https://www.theblock.co/news/ecosystems/2026-09-18-ava-labs-president-says-nyse-spent-a-year-testing-avalanche-technology-tokenization-plans-415509",
-      "published_iso": "2026-09-18T13:40:15+00:00",
-      "summary_raw": "Cooper described a close working relationship with NYSE parent ICE but did not say the exchange had selected Avalanche."
-    },
-    {
-      "source": "The Block Research",
-      "title": "CFTC files crypto asset rulemaking with White House, pressing ahead without Congress",
-      "link": "https://www.theblock.co/news/regulation/2026-09-18-cftc-files-crypto-asset-rulemaking-with-white-house-pressing-ahead-without-congress-415510",
-      "published_iso": "2026-09-18T13:33:40+00:00",
-      "summary_raw": "The Commodity Futures Trading Commission isn't sitting idle — the agency has sent its crypto rulemaking to the White House for review."
     }
   ]
 }
