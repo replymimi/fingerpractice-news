@@ -1,32 +1,32 @@
 {
-  "fetched_at": "2026-09-20T08:08:52.141157+08:00",
+  "fetched_at": "2026-09-21T08:16:02.070423+08:00",
   "data": [
+    {
+      "source": "CoinDesk",
+      "title": "Crypto platform Gemini’s stock is down 80% from its IPO. That’s reviving takeover speculation",
+      "link": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
+      "published_iso": "2026-09-20T14:54:48+00:00",
+      "summary_raw": ""
+    },
+    {
+      "source": "CoinDesk",
+      "title": "Coinbase, Robinhood, Circle could be early winners of SEC's tokenized-stock push, analysts say",
+      "link": "https://www.coindesk.com/business/2026/09/20/coinbase-robinhood-circle-could-be-early-winners-of-sec-s-tokenized-stock-push-analysts-say",
+      "published_iso": "2026-09-20T12:00:00+00:00",
+      "summary_raw": ""
+    },
+    {
+      "source": "CoinDesk",
+      "title": "Crypto traders braced for a total wipeout this week but Bitcoin had other plans",
+      "link": "https://www.coindesk.com/markets/2026/09/18/crypto-traders-braced-for-a-total-wipeout-this-week-but-bitcoin-had-other-plans",
+      "published_iso": "2026-09-20T12:00:00+00:00",
+      "summary_raw": ""
+    },
     {
       "source": "CoinDesk",
       "title": "Clarity Act, we hardly knew ye: We look at what was in the bill and what's replacing it",
       "link": "https://www.coindesk.com/news-analysis/2026/09/18/clarity-act-we-hardly-knew-ye-we-look-at-what-was-in-the-bill-and-what-s-replacing-it",
       "published_iso": "2026-09-19T16:00:00+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "'We have lost control': Crypto pioneer warns AI could trigger systemic banking and infrastructure shocks",
-      "link": "https://www.coindesk.com/markets/2026/09/17/we-have-lost-control-crypto-pioneer-warns-ai-could-trigger-systemic-banking-and-infrastructure-shocks",
-      "published_iso": "2026-09-19T14:00:00+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "Ripple says asset managers are preparing for XRP Ledger’s next payments upgrade",
-      "link": "https://www.coindesk.com/tech/2026/09/19/ripple-says-asset-managers-are-preparing-for-xrp-ledger-s-next-payments-upgrade",
-      "published_iso": "2026-09-19T13:39:15+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "'The orange tie stays': Michael Saylor responds to venture capitalist's bitcoin obituary",
-      "link": "https://www.coindesk.com/markets/2026/09/19/the-orange-tie-stays-michael-saylor-responds-to-venture-capitalist-s-bitcoin-obituary",
-      "published_iso": "2026-09-19T12:13:57+00:00",
       "summary_raw": ""
     }
   ]

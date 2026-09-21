@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-20T08:08:50.188099+08:00",
+  "fetched_at": "2026-09-21T08:16:00.494125+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
-      "link": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html",
-      "published_iso": "2026-09-19T12:50:49+00:00",
-      "summary_raw": "Goldman economist Joseph Briggs said broader pessimism in society may be contributing to struggling consumer sentiment even as the economy chugs along."
+      "title": "‘It's awful’: How tariffs, soaring fuel costs and higher interest rates are squeezing American companies",
+      "link": "https://www.cnbc.com/2026/09/20/tariffs-fuel-prices-and-interest-rates-squeeze-us-companies.html",
+      "published_iso": "2026-09-20T12:47:23+00:00",
+      "summary_raw": "Tariffs, fuel prices and interest rates are squeezing American companies, particularly manufacturers, auto suppliers, retailers and transportation businesses."
     },
     {
       "source": "CNBC",
-      "title": "MS NOW, CNN and Politico journalists blocked from White House after Trump ban",
-      "link": "https://www.cnbc.com/2026/09/19/trump-media-ban-ms-now.html",
-      "published_iso": "2026-09-19T18:12:15+00:00",
-      "summary_raw": "Journalists from MS NOW, CNN and Politico were denied access to the White House, one day after Trump banned three media outlets over their coverage of him."
+      "title": "Bessent meets China Vice Premier He Lifeng ahead of Trump-Xi summit",
+      "link": "https://www.cnbc.com/2026/09/20/bessent-he-lifeng-trump-xi-summit.html",
+      "published_iso": "2026-09-20T16:56:14+00:00",
+      "summary_raw": "Scott Bessent and China’s He Lifeng are holding talks on trade, AI and critical minerals ahead of Trump and Xi’s Sept. 24 summit."
     },
     {
       "source": "CNBC",
-      "title": "The AI kill switch, explained: 'It's not too little, but it's probably too late'",
-      "link": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html",
-      "published_iso": "2026-09-19T12:00:01+00:00",
-      "summary_raw": "As runaway AI fears reach a crescendo, policymakers and tech leaders are weighing the effectiveness of a magic AI stop button known as a kill switch."
+      "title": "Trump to meet with NYC Mayor Zohran Mamdani on Monday ahead of UN General Assembly",
+      "link": "https://www.cnbc.com/2026/09/20/trump-mamdani-gracie-mansion-meeting.html",
+      "published_iso": "2026-09-20T19:06:16+00:00",
+      "summary_raw": "The mayor's press office said the meeting will take place at Gracie Mansion and \"will focus on issues affecting New York City and New Yorkers.\""
     },
     {
       "source": "CNBC",
-      "title": "Google's Gemini becomes latest AI model to break out and hack computer systems",
-      "link": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html",
-      "published_iso": "2026-09-19T01:41:49+00:00",
-      "summary_raw": "The disclosure comes as scrutiny over misbehaving artificial intelligence intensifies in Washington and Silicon Valley."
+      "title": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise",
+      "link": "https://www.cnbc.com/2026/09/20/us-middle-east-travel-warning-iran-war-hormuz.html",
+      "published_iso": "2026-09-20T14:23:53+00:00",
+      "summary_raw": "The State Department urged Americans to reconsider Middle East travel as Houthi attacks intensify and Iran keeps the Strait of Hormuz closed."
     }
   ]
 }

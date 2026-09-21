@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-20T08:08:52.336821+08:00",
+  "fetched_at": "2026-09-21T08:16:02.209060+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "ZetaChain votes to shut down Layer 1 network and move ZETA to Solana",
+      "link": "https://www.theblock.co/news/defi/2026-09-20-zetachain-votes-to-shut-down-layer-1-network-and-move-zeta-to-solana-415878",
+      "published_iso": "2026-09-20T20:11:49+00:00",
+      "summary_raw": "The team plans to focus instead on Anuma, its private AI app, though the migration will still take one more vote."
+    },
+    {
+      "source": "The Block Research",
+      "title": "Polymarket faced $10 million fraud attempt as its CEO pushed growth over compliance concerns: WSJ",
+      "link": "https://www.theblock.co/news/regulation/2026-09-20-polymarket-faced-10-million-fraud-attempt-as-its-ceo-pushed-growth-over-compliance-concerns-wsj-415875",
+      "published_iso": "2026-09-20T16:07:19+00:00",
+      "summary_raw": "In a separate attack, hackers compromised nearly 500 users' accounts using stolen personal information, according to the report."
+    },
     {
       "source": "The Block Research",
       "title": "Bitcoin ETFs eke out positive week with $433 million Friday inflow as ether funds snap four-week inflow streak",
@@ -14,20 +28,6 @@
       "link": "https://www.theblock.co/news/regulation/2026-09-19-visa-to-close-crossmint-memecoin-rewards-loophole-following-the-block-investigation-report-415866",
       "published_iso": "2026-09-19T15:11:22+00:00",
       "summary_raw": "Though the Crossmint-powered memecoin sales are still live on both apps, Visa's grace period is expected to end next week, per the report."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Bitcoin reclaims $80,000, Solana and Hyperliquid rally as crypto markets shrug off Clarity setback",
-      "link": "https://www.theblock.co/news/markets/2026-09-18-bitcoin-reclaims-80000-solana-hyperliquid-rally-crypto-markets-shrug-off-clarity-setback-415523",
-      "published_iso": "2026-09-18T15:27:41+00:00",
-      "summary_raw": "The moves comes as the SEC and CFTC advance crypto-related rulemaking despite the Clarity Act stalling in the Senate."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Grayscale’s Zcash ETF plans 3-for-1 split after $233 million inflow surge",
-      "link": "https://www.theblock.co/news/markets/2026-09-18-grayscales-zcash-etf-plans-3-for-1-split-233-million-inflow-surge-415520",
-      "published_iso": "2026-09-18T15:09:09+00:00",
-      "summary_raw": "The Grayscale Zcash ETF (ZCSH) nears $890 million in assets as ZEC’s rally pushes mining competition to record highs."
     }
   ]
 }
