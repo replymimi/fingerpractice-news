@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-17T09:16:33.831903+08:00",
+  "fetched_at": "2026-09-22T08:49:39.422434+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "'Hostile act': Trump threatens EU with tariffs over Canada associate-membership proposal",
-      "link": "https://www.cnbc.com/2026/09/17/trump-canada-european-union-tariffs-associate-member-ukraine-.html",
-      "published_iso": "2026-09-17T00:55:35+00:00",
-      "summary_raw": "European Commission President Ursula von der Leyen said EU is opening the door for Canada to become the first associate member of the 27-member bloc."
+      "title": "Much of Trump’s promised midterm election spending has yet to surface, new filing shows",
+      "link": "https://www.cnbc.com/2026/09/21/trump-maga-midterm-spending-war-chest.html",
+      "published_iso": "2026-09-21T20:34:33+00:00",
+      "summary_raw": "MAGA Inc. entered September with $415.8 million as much of Trump’s promised midterm spending had yet to surface publicly."
     },
     {
       "source": "CNBC",
-      "title": "Trump says he still has confidence in Fed Chair Warsh, demands 1% or lower interest rates",
-      "link": "https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html",
-      "published_iso": "2026-09-16T23:45:02+00:00",
-      "summary_raw": "President Donald Trump previously threatened to cut off trade with countries that have trade surpluses with the U.S. if the Fed doesn't cut interest rates."
+      "title": "Stocks had a great day on the surface. But something alarming occurred not seen since 1999",
+      "link": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
+      "published_iso": "2026-09-21T21:20:41+00:00",
+      "summary_raw": "The market just posted major gains, but the latest performance is not as strong as it may seem."
     },
     {
       "source": "CNBC",
-      "title": "House advances bill to rein in AI data center utility costs",
-      "link": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html",
-      "published_iso": "2026-09-17T00:08:01+00:00",
-      "summary_raw": "The bipartisan legislation would create a regulatory framework states could adopt to prevent data center-related energy costs from being passed on to consumers."
+      "title": "OpenAI proposes development of global AI standards to guide alignment, RSI",
+      "link": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
+      "published_iso": "2026-09-21T20:51:11+00:00",
+      "summary_raw": "Jacob Coxon's post nearly two weeks ago that Anthropic and OpenAI were \"gambling with our lives\" set off a global debate about AI safety."
     },
     {
       "source": "CNBC",
-      "title": "House votes to hold Leon Black in contempt of Congress over Epstein subpoenas defiance",
-      "link": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
-      "published_iso": "2026-09-16T20:54:15+00:00",
-      "summary_raw": "Billionaire Leon Black is suing the House Committee on Oversight and Government Reform seeking to block subpoenas it issued him in its probe of Jeffrey Epstein."
+      "title": "Meta's Muse AI agent downloads are surging. Here's how it compares to ChatGPT, Grok and Claude",
+      "link": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
+      "published_iso": "2026-09-21T23:03:57+00:00",
+      "summary_raw": "Meta's Muse AI personal agent tool had 730,000 and 2.5 million downloads over the roughly five-day and thirteen-day time frames after its launch."
     }
   ]
 }

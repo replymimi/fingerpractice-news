@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-17T09:16:36.210835+08:00",
+  "fetched_at": "2026-09-22T08:49:41.504528+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 The Arc Era Begins",
-      "link": "https://www.bankless.com/read/the-arc-era-begins",
-      "published_iso": "2026-09-16T17:59:39+00:00",
-      "summary_raw": "USDC issuer Circle just launched its own chain, arriving to an arena already fielded by Tether and Stripe."
+      "title": "🏴 Robinhood's Onchain Endgame",
+      "link": "https://www.bankless.com/read/robinhood-s-onchain-endgame",
+      "published_iso": "2026-09-21T19:13:51+00:00",
+      "summary_raw": "Robinhood sees blockchains upgrading markets, with tokenized assets, perps, and AI agents at the center of its next phase."
     },
     {
       "source": "Bankless",
-      "title": "Circle's Arc Mainnet Goes Live",
-      "link": "https://www.bankless.com/read/circles-arc-mainnet-goes-live",
-      "published_iso": "2026-09-16T16:49:45+00:00",
-      "summary_raw": "The USDC issuer just launched its own Layer 1, arriving to an arena already fielded by Tether and Stripe."
+      "title": "Lighter Set to Add Binary Options Support to Its ZK Prover",
+      "link": "https://www.bankless.com/read/news/lighter-set-to-add-binary-options-support-to-its-zk-prover",
+      "published_iso": "2026-09-21T18:28:56+00:00",
+      "summary_raw": "Lighter's prover repository just got a \"Binary options support\" commit."
     },
     {
       "source": "Bankless",
-      "title": "Fake World Assets Officially Opens Its V2",
-      "link": "https://www.bankless.com/read/news/fake-world-assets-officially-opens-its-v2",
-      "published_iso": "2026-09-16T16:41:11+00:00",
-      "summary_raw": "The Ethereum gacha platform has activated purchases on its V2 protocol, which will run alongside the V1."
+      "title": "Inside Robinhood's Onchain Endgame",
+      "link": "https://www.bankless.com/read/inside-robinhood-s-onchain-endgame",
+      "published_iso": "2026-09-21T18:10:21+00:00",
+      "summary_raw": "Robinhood sees blockchains upgrading markets, with tokenized assets, perps, and AI agents at the center of its next phase."
     },
     {
       "source": "Bankless",
-      "title": "Venice Hits 250B Daily Tokens Milestone",
-      "link": "https://www.bankless.com/read/news/venice-hits-250b-daily-tokens-milestone",
-      "published_iso": "2026-09-16T15:52:53+00:00",
-      "summary_raw": "Venice, the rising private AI platform, has seen its token usage more than double since June."
+      "title": "🏴 Crypto's New Compliance Shield?",
+      "link": "https://www.bankless.com/read/crypto-s-new-compliance-shield",
+      "published_iso": "2026-09-18T19:00:00+00:00",
+      "summary_raw": "The CFTC just gave every wallet and DeFi interface the same legal shield it gave to Phantom."
     }
   ]
 }

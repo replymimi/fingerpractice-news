@@ -1,186 +1,186 @@
 {
-  "fetched_at": "2026-09-17T09:16:38.120347+08:00",
+  "fetched_at": "2026-09-22T08:49:42.976091+08:00",
   "data": {
-    "date": "2026-09-16",
-    "generated_at": "2026-09-17T03:00:29+08:00",
-    "market_chg_1d": 0.74,
+    "date": "2026-09-21",
+    "generated_at": "2026-09-22T04:05:33+08:00",
+    "market_chg_1d": 1.14,
     "is_market_down": false,
     "panic_index": {
-      "score": 30,
-      "label": "樂觀",
-      "advancers": 1328,
-      "decliners": 429,
-      "down_ratio": 0.244
+      "score": 42,
+      "label": "中性",
+      "advancers": 934,
+      "decliners": 848,
+      "down_ratio": 0.476
     },
     "safe_harbor": {
       "mode": "top_inflow",
       "sectors": [
         {
-          "name": "CXL 技術",
-          "net_1d_yi": 114.3,
-          "chg_1d": 3.69,
-          "inflow_streak": 1
+          "name": "CPU 與 Agentic AI",
+          "net_1d_yi": 264.6,
+          "chg_1d": 1.17,
+          "inflow_streak": 3
         },
         {
-          "name": "記憶體模組",
-          "net_1d_yi": 74.0,
-          "chg_1d": 3.63,
-          "inflow_streak": 1
+          "name": "HPC 與網通 IC",
+          "net_1d_yi": 200.2,
+          "chg_1d": 1.79,
+          "inflow_streak": 4
         },
         {
-          "name": "NOR Flash 利基記憶體",
-          "net_1d_yi": 58.5,
-          "chg_1d": 3.51,
-          "inflow_streak": 1
+          "name": "客製 ASIC 矽智財",
+          "net_1d_yi": 198.3,
+          "chg_1d": 2.07,
+          "inflow_streak": 2
         },
         {
           "name": "AI PC 筆電與平板",
-          "net_1d_yi": 48.3,
-          "chg_1d": 1.74,
-          "inflow_streak": 1
+          "net_1d_yi": 182.1,
+          "chg_1d": 1.19,
+          "inflow_streak": 4
         },
         {
-          "name": "銀行金融",
-          "net_1d_yi": 47.0,
-          "chg_1d": 1.4,
-          "inflow_streak": 1
+          "name": "AI 先進封裝",
+          "net_1d_yi": 180.1,
+          "chg_1d": 1.88,
+          "inflow_streak": 3
         }
       ]
     },
     "big_money": {
       "abnormal_buy": [
         {
-          "code": "6182",
-          "name": "合晶",
-          "net_1d_yi": 11.7,
-          "chg_1d": 6.16,
-          "inflow_streak": 3
+          "code": "2454",
+          "name": "聯發科",
+          "net_1d_yi": 191.0,
+          "chg_1d": 6.37,
+          "inflow_streak": 4
         },
         {
-          "code": "3532",
-          "name": "台勝科",
-          "net_1d_yi": 8.6,
-          "chg_1d": 8.11,
-          "inflow_streak": 1
-        },
-        {
-          "code": "5269",
-          "name": "祥碩",
-          "net_1d_yi": 8.5,
-          "chg_1d": 7.66,
-          "inflow_streak": 3
-        },
-        {
-          "code": "2305",
-          "name": "全友",
-          "net_1d_yi": 2.4,
-          "chg_1d": 9.9,
-          "inflow_streak": 1
-        },
-        {
-          "code": "4977",
-          "name": "眾達-KY",
-          "net_1d_yi": 2.0,
-          "chg_1d": 9.97,
+          "code": "2308",
+          "name": "台達電",
+          "net_1d_yi": 123.1,
+          "chg_1d": 8.07,
           "inflow_streak": 2
+        },
+        {
+          "code": "2409",
+          "name": "友達",
+          "net_1d_yi": 86.1,
+          "chg_1d": 9.88,
+          "inflow_streak": 1
+        },
+        {
+          "code": "6274",
+          "name": "台燿",
+          "net_1d_yi": 24.4,
+          "chg_1d": 4.74,
+          "inflow_streak": 2
+        },
+        {
+          "code": "2379",
+          "name": "瑞昱",
+          "net_1d_yi": 12.6,
+          "chg_1d": 1.79,
+          "inflow_streak": 9
         }
       ],
       "abnormal_sell": [
         {
-          "code": "6669",
-          "name": "緯穎",
-          "net_1d_yi": -68.3,
-          "chg_1d": -6.48,
-          "inflow_streak": -13
-        },
-        {
-          "code": "3081",
-          "name": "聯亞",
-          "net_1d_yi": -36.9,
-          "chg_1d": 4.86,
+          "code": "6515",
+          "name": "穎崴",
+          "net_1d_yi": -46.7,
+          "chg_1d": -9.95,
           "inflow_streak": -1
         },
         {
-          "code": "7610",
-          "name": "聯友金屬-創",
-          "net_1d_yi": -6.7,
-          "chg_1d": 4.53,
+          "code": "7769",
+          "name": "鴻勁",
+          "net_1d_yi": -39.6,
+          "chg_1d": -8.26,
           "inflow_streak": -1
         },
         {
-          "code": "6285",
-          "name": "啟碁",
-          "net_1d_yi": -4.9,
-          "chg_1d": -1.35,
-          "inflow_streak": -8
+          "code": "3026",
+          "name": "禾伸堂",
+          "net_1d_yi": -15.5,
+          "chg_1d": -0.75,
+          "inflow_streak": -1
         },
         {
-          "code": "1590",
-          "name": "亞德客-KY",
-          "net_1d_yi": -2.5,
-          "chg_1d": -3.12,
+          "code": "6442",
+          "name": "光聖",
+          "net_1d_yi": -11.4,
+          "chg_1d": -3.17,
+          "inflow_streak": -1
+        },
+        {
+          "code": "8028",
+          "name": "昇陽半導體",
+          "net_1d_yi": -9.6,
+          "chg_1d": 0.19,
           "inflow_streak": -1
         }
       ],
       "streak_leaders": [
         {
-          "code": "3045",
-          "name": "台灣大",
-          "net_1d_yi": 2.7,
-          "chg_1d": 0.4,
-          "inflow_streak": 20
-        },
-        {
           "code": "9919",
           "name": "康那香",
-          "net_1d_yi": 0,
-          "chg_1d": 0.72,
+          "net_1d_yi": 0.0,
+          "chg_1d": -0.36,
           "inflow_streak": 20
         },
         {
-          "code": "5403",
-          "name": "中菲",
-          "net_1d_yi": 0,
-          "chg_1d": 0.32,
+          "code": "3045",
+          "name": "台灣大",
+          "net_1d_yi": 3.0,
+          "chg_1d": 0.4,
           "inflow_streak": 20
         },
         {
           "code": "2247",
           "name": "汎德永業",
-          "net_1d_yi": 0,
+          "net_1d_yi": 0.0,
           "chg_1d": 0.0,
-          "inflow_streak": 13
+          "inflow_streak": 16
+        },
+        {
+          "code": "2412",
+          "name": "中華電",
+          "net_1d_yi": 2.1,
+          "chg_1d": -0.69,
+          "inflow_streak": 15
         },
         {
           "code": "5876",
           "name": "上海商銀",
-          "net_1d_yi": 0.7,
-          "chg_1d": -0.1,
-          "inflow_streak": 12
+          "net_1d_yi": 0.4,
+          "chg_1d": -0.4,
+          "inflow_streak": 15
         }
       ]
     },
     "review": {
-      "prev_date": "2026-09-15",
+      "prev_date": "2026-09-18",
       "label": "法人買最多",
       "n": 3,
-      "avg_chg": 2.02,
+      "avg_chg": -0.53,
       "best": {
-        "name": "石英頻率控制",
-        "chg_1d": 3.36
+        "name": "AI 先進封裝",
+        "chg_1d": 1.88
       },
       "sectors": [
         {
-          "name": "石英頻率控制",
-          "chg_1d": 3.36
+          "name": "HBM 高頻寬記憶體",
+          "chg_1d": -1.89
         },
         {
-          "name": "前段製程材料",
-          "chg_1d": 1.45
+          "name": "CXL 技術",
+          "chg_1d": -1.57
         },
         {
-          "name": "精密機構件",
-          "chg_1d": 1.25
+          "name": "AI 先進封裝",
+          "chg_1d": 1.88
         }
       ]
     }

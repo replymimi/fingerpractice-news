@@ -55,7 +55,7 @@
   a { color: inherit; }
   .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
-  .topbar { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--hairline); padding: 18px 20px 16px; }
+  .topbar { background: var(--bg); border-bottom: 1px solid var(--hairline); padding: 18px 20px 16px; }
   .topbar-inner { max-width: 1440px; margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .brand-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
   .brand-title { font-family: 'Noto Serif TC', serif; font-size: 1.9rem; font-weight: 700; margin: 0; text-wrap: balance; }
@@ -65,9 +65,10 @@
   .play-all-btn:hover { opacity: 0.82; }
   .play-all-btn svg { width: 15px; height: 15px; }
 
-  .board { max-width: 1440px; margin: 28px auto 0; padding: 0 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  @media (max-width: 1180px) { .board { grid-template-columns: 1fr 1fr; gap: 28px; } }
-  @media (max-width: 640px) { .board { grid-template-columns: 1fr; gap: 36px; } .brand-title { font-size: 1.6rem; } }
+  .board { max-width: 1440px; margin: 28px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px; }
+  .board .column { flex: 1 1 calc(25% - 18px); min-width: 300px; }
+  @media (max-width: 1180px) { .board { gap: 28px; } .board .column { flex-basis: calc(50% - 14px); } }
+  @media (max-width: 640px) { .board { gap: 36px; } .board .column { flex-basis: 100%; } .brand-title { font-size: 1.6rem; } }
 
   .column-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; margin-bottom: 4px; border-bottom: 2px solid var(--col-accent); }
   .column-head-label { display: flex; align-items: baseline; gap: 8px; }
@@ -108,6 +109,10 @@
   .sentiment-sub { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--ink-soft); margin: 0; }
 
   .section-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin: 22px 0 8px; }
+  .section-label.toggle { cursor: pointer; display: flex; align-items: center; gap: 8px; }
+  .section-label.toggle:hover { color: var(--col-accent); }
+  .toggle-pill { font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 0.62rem; letter-spacing: 0.04em; color: var(--ink-faint); border: 1px solid var(--hairline); border-radius: 999px; padding: 1px 7px; text-transform: none; }
+  .section-body[hidden] { display: none; }
 
   .item { display: flex; gap: 12px; padding: 14px 4px; border-bottom: 1px solid var(--hairline); }
   .item:last-child { border-bottom: none; }
@@ -169,7 +174,7 @@
     <div>
       <p class="brand-eyebrow">Daily Briefing</p>
       <h1 class="brand-title">財經晨讀</h1>
-      <p class="update-stamp"><b>2026/09/17（週四）</b>　·　<b>07:00</b> 主更新　·　<b>10:00</b> 補充游庭皓摘要　·　台北時間</p>
+      <p class="update-stamp"><b>2026/09/22（週二）</b>　·　<b>07:00</b> 主更新　·　<b>10:00</b> 補充游庭皓摘要　·　台北時間</p>
     </div>
     <button class="play-all-btn" id="playAllBtn" type="button">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -196,26 +201,26 @@
       
       <div class="stat-tile">
         <div class="stat-name">道瓊工業指數 DJIA</div>
-        <div class="stat-value">51,461.90</div>
-        <div class="stat-change down">▼ -631.21（-1.21%）</div>
+        <div class="stat-value">52,048.83</div>
+        <div class="stat-change up">▲ +366.19（+0.71%）</div>
       </div>
       
       <div class="stat-tile">
         <div class="stat-name">標普 500 S&amp;P 500</div>
-        <div class="stat-value">7,551.81</div>
-        <div class="stat-change down">▼ -33.92（-0.45%）</div>
+        <div class="stat-value">7,764.70</div>
+        <div class="stat-change up">▲ +114.20（+1.49%）</div>
       </div>
       
       <div class="stat-tile">
         <div class="stat-name">那斯達克 NASDAQ</div>
-        <div class="stat-value">25,978.42</div>
-        <div class="stat-change down">▼ -3.15（-0.01%）</div>
+        <div class="stat-value">27,122.09</div>
+        <div class="stat-change up">▲ +599.55（+2.26%）</div>
       </div>
       
       <div class="stat-tile">
         <div class="stat-name">費城半導體 SOX</div>
-        <div class="stat-value">11,246.11</div>
-        <div class="stat-change up">▲ +70.56（+0.63%）</div>
+        <div class="stat-value">12,433.17</div>
+        <div class="stat-change up">▲ +511.49（+4.29%）</div>
       </div>
       
     </div>
@@ -226,7 +231,7 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">MARKET RECAP</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
         <h3 class="item-title">美股最新指數數據與市場狀況</h3>
-        <ul class="item-points" hidden><li>道瓊工業指數 DJIA 收報 51,461.90，跌幅 1.21%。</li><li>標普 500 指數 S&amp;P 500 收報 7,551.81，跌幅 0.45%。</li><li>那斯達克指數 NASDAQ 收報 25,978.42，跌幅 0.01%。</li><li>費城半導體指數 SOX 收報 11,246.11，上漲 0.63%。</li></ul>
+        <ul class="item-points" hidden><li>道瓊工業指數 DJIA 收於 52,048.83 點，上漲 0.71%。</li><li>標普 500 指數 S&amp;P 500 收於 7,764.70 點，上漲 1.49%。</li><li>那斯達克指數 NASDAQ 收於 27,122.09 點，上漲 2.26%。</li><li>費城半導體指數 SOX 收於 12,433.17 點，上漲 4.29%。</li><li>市場表現良好，但出現自1999年以來未見的警訊。</li></ul>
       </div>
     </article>
   </section>
@@ -245,11 +250,11 @@
     <div class="sentiment-gauge">
       <div class="sentiment-gauge-head">
         <span class="sentiment-label">今日情緒</span>
-        <span class="sentiment-score">30　樂觀</span>
+        <span class="sentiment-score">42　中性</span>
       </div>
-      <div class="sentiment-bar"><span class="sentiment-marker" style="left: 30%"></span></div>
+      <div class="sentiment-bar"><span class="sentiment-marker" style="left: 42%"></span></div>
       <div class="sentiment-scale"><span>樂觀</span><span>恐慌</span></div>
-      <p class="sentiment-sub">上漲 1328 檔・下跌 429 檔</p>
+      <p class="sentiment-sub">上漲 934 檔・下跌 848 檔</p>
     </div>
     
 
@@ -257,8 +262,8 @@
       
       <div class="stat-tile">
         <div class="stat-name">台股加權指數 TAIEX</div>
-        <div class="stat-value">45,848.90</div>
-        <div class="stat-change down">▼ -13.60（-0.03%）</div>
+        <div class="stat-value">47,718.84</div>
+        <div class="stat-change up">▲ +538.09（+1.14%）</div>
       </div>
       
       <div class="stat-tile">
@@ -269,8 +274,8 @@
       
       <div class="stat-tile">
         <div class="stat-name">台幣兌美元</div>
-        <div class="stat-value">31.87</div>
-        <div class="stat-change up">▲ +0.04（+0.13%）</div>
+        <div class="stat-value">31.73</div>
+        <div class="stat-change up">▲ +0.01（+0.03%）</div>
       </div>
       
     </div>
@@ -280,23 +285,24 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">MARKET RECAP</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
-        <h3 class="item-title">台股最新指數與市場狀況</h3>
-        <ul class="item-points" hidden><li>台股加權指數 TAIEX 收在 45,848.90 點，微幅下跌 0.03%。</li><li>櫃買指數 TPEx 上漲至 269.45 點，漲幅為 0.65%。</li><li>台幣兌美元匯率為 31.87，較前一日上升 0.13%。</li><li>近五日法人資金流入最多的板塊為銀行金融，流入金額達 152 億元。</li><li>通信網路・其他及 HPC 與網通 IC 板塊各自流入 72 億元。</li></ul>
+        <h3 class="item-title">台股最新指數數據與法人資金流入情況</h3>
+        <ul class="item-points" hidden><li>台股加權指數 TAIEX 收在 47,718.84 點，上漲 1.14%。</li><li>櫃買指數 TPEx 收在 269.45 點，上漲 0.65%。</li><li>台幣兌美元匯率為 31.73，上漲 0.03%。</li><li>近五日法人資金流入前三名板塊為 CXL 技術、AI 先進封裝及 CPU 與 Agentic AI。</li><li>CXL 技術板塊資金流入達 534 億元，為最大流入板塊。</li></ul>
       </div>
     </article>
 
     
-    <p class="section-label">五日法人資金流向排行</p>
+    <p class="section-label toggle">五日法人資金流向排行<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
     
     <div class="flow-group">
       <p class="flow-group-label">流入 TOP 5</p>
-      <div class="flow-row"><span class="flow-name">銀行金融</span><span class="flow-amt up">+151.7 億</span></div><div class="flow-row"><span class="flow-name">通信網路・其他</span><span class="flow-amt up">+72.4 億</span></div><div class="flow-row"><span class="flow-name">HPC 與網通 IC</span><span class="flow-amt up">+72.3 億</span></div><div class="flow-row"><span class="flow-name">PCB 載板</span><span class="flow-amt up">+33.6 億</span></div><div class="flow-row"><span class="flow-name">AI PC 筆電與平板</span><span class="flow-amt up">+30.7 億</span></div>
+      <div class="flow-row"><span class="flow-name">CXL 技術</span><span class="flow-amt up">+533.9 億</span></div><div class="flow-row"><span class="flow-name">AI 先進封裝</span><span class="flow-amt up">+436.5 億</span></div><div class="flow-row"><span class="flow-name">CPU 與 Agentic AI</span><span class="flow-amt up">+393.9 億</span></div><div class="flow-row"><span class="flow-name">HBM 高頻寬記憶體</span><span class="flow-amt up">+388.0 億</span></div><div class="flow-row"><span class="flow-name">封測代工</span><span class="flow-amt up">+372.6 億</span></div>
     </div>
     
     
     <div class="flow-group">
       <p class="flow-group-label">流出 TOP 5</p>
-      <div class="flow-row"><span class="flow-name">HBM 高頻寬記憶體</span><span class="flow-amt down">-1133.9 億</span></div><div class="flow-row"><span class="flow-name">AI 先進封裝</span><span class="flow-amt down">-859.2 億</span></div><div class="flow-row"><span class="flow-name">晶圓代工</span><span class="flow-amt down">-804.5 億</span></div><div class="flow-row"><span class="flow-name">CPU 與 Agentic AI</span><span class="flow-amt down">-778.2 億</span></div><div class="flow-row"><span class="flow-name">記憶體模組</span><span class="flow-amt down">-393.1 億</span></div>
+      <div class="flow-row"><span class="flow-name">軟板</span><span class="flow-amt down">-154.8 億</span></div><div class="flow-row"><span class="flow-name">高速光模組</span><span class="flow-amt down">-127.5 億</span></div><div class="flow-row"><span class="flow-name">AR VR XR 光學</span><span class="flow-amt down">-125.2 億</span></div><div class="flow-row"><span class="flow-name">企業 SaaS</span><span class="flow-amt down">-117.0 億</span></div><div class="flow-row"><span class="flow-name">AI 互連元件</span><span class="flow-amt down">-115.8 億</span></div>
     </div>
     
     <article class="item" data-item-id="tw-flow">
@@ -305,28 +311,31 @@
         <div class="item-meta"><span class="source-tag">TIDE 潮汐</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
         <h3 class="item-title">五日法人資金流向排行</h3>
         <ul class="item-points" hidden>
-          <li>流入最多：銀行金融 +151.7 億</li>
-          <li>流出最多：HBM 高頻寬記憶體 -1133.9 億</li>
+          <li>流入最多：CXL 技術 +533.9 億</li>
+          <li>流出最多：軟板 -154.8 億</li>
         </ul>
         <a class="item-link" hidden href="https://tide-tw.app/" target="_blank" rel="noopener">前往 Tide 潮汐 ↗</a>
       </div>
     </article>
+    </div>
     
 
     
-    <p class="section-label">大戶異常</p>
+    <p class="section-label toggle">大戶異常<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
     
     <div class="flow-group">
       <p class="flow-group-label">大戶買超 TOP 3</p>
-      <div class="flow-row"><span class="flow-name">合晶</span><span class="flow-amt up">+11.7 億</span></div><div class="flow-row"><span class="flow-name">台勝科</span><span class="flow-amt up">+8.6 億</span></div><div class="flow-row"><span class="flow-name">祥碩</span><span class="flow-amt up">+8.5 億</span></div>
+      <div class="flow-row"><span class="flow-name">聯發科</span><span class="flow-amt up">+191.0 億</span></div><div class="flow-row"><span class="flow-name">台達電</span><span class="flow-amt up">+123.1 億</span></div><div class="flow-row"><span class="flow-name">友達</span><span class="flow-amt up">+86.1 億</span></div>
     </div>
     
     
     <div class="flow-group">
       <p class="flow-group-label">大戶賣超 TOP 3</p>
-      <div class="flow-row"><span class="flow-name">緯穎</span><span class="flow-amt down">-68.3 億</span></div><div class="flow-row"><span class="flow-name">聯亞</span><span class="flow-amt down">-36.9 億</span></div><div class="flow-row"><span class="flow-name">聯友金屬-創</span><span class="flow-amt down">-6.7 億</span></div>
+      <div class="flow-row"><span class="flow-name">穎崴</span><span class="flow-amt down">-46.7 億</span></div><div class="flow-row"><span class="flow-name">鴻勁</span><span class="flow-amt down">-39.6 億</span></div><div class="flow-row"><span class="flow-name">禾伸堂</span><span class="flow-amt down">-15.5 億</span></div>
     </div>
     
+    </div>
     
   </section>
 
@@ -346,160 +355,160 @@
     <article class="item" data-item-id="s-n1">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">06:30</span></div>
-        <h3 class="item-title">美國Heeney Capital將運營委內瑞拉金礦，Continental尋求進入石油項目</h3>
-        <ul class="item-points" hidden><li>Heeney Capital將負責運營委內瑞拉的金礦項目。</li><li>Continental公司正在尋求進入委內瑞拉的石油開發項目。</li><li>這些動作顯示美國公司對委內瑞拉資源的興趣回升。</li><li>委內瑞拉擁有豐富的礦產資源，吸引外資進入。</li><li>Heeney Capital和Continental的計劃可能影響當地經濟發展。</li></ul>
-        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQX0Q2S2JRT3llcENjREtGM2t4eDlYa0VxdUEwT0Z0TTlSUjdadWdSZnNEUlRYWGI3M3hOZ0xXYU9xZEZqVjV1VFo1amtXVVZnejhnazk0TXpyUlY3QTlaeGFSRmd1Z0dXOVBsc2I2SV85aW9oejlMWjA1OFF5Vk1sbGRLRV92TlVLV3NuaGhWanVlbVBMQTdQUXNGd0RBWU5zRG9tV2RUMlpzb2ZZSG1idWl2ZHlCclVyVTdtYQ?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
+        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">04:26</span></div>
+        <h3 class="item-title">加拿大看好與法國的液化天然氣合作機會</h3>
+        <ul class="item-points" hidden><li>加拿大官員表示與法國的液化天然氣合作潛力巨大。</li><li>法國對加拿大的液化天然氣出口表示興趣。</li><li>加拿大希望加強與法國在能源領域的合作。</li><li>液化天然氣將成為兩國能源合作的重要組成部分。</li></ul>
+        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFIxci14cDBaVHNsWl9PMWR6WUVUakpNb084aU1EZHNkY1FiVDRIMXp2bWRsY2ExMjRUT3NTVnFfd3lWWHp3MlEwb2d4NkxmRndJSmFKYURDU05NS0hzbWl1djRXMXhpUDYydmhqSnRUY2p0NGNDM1ZTTFktVkVjejM0UjhKalJpOVZzaFhmR05DYU10YUZPZjJXWXZfeEdsVGdFXzF1aFJ5dw?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n2">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">02:40</span></div>
-        <h3 class="item-title">美國零售銷售強勁顯示經濟韌性，通脹壓力上升</h3>
-        <ul class="item-points" hidden><li>美國零售銷售數據顯示出強勁增長，反映經濟韌性。</li><li>近期數據顯示，通脹壓力正在逐漸上升。</li><li>強勁的消費支出可能影響聯準會的貨幣政策決策。</li><li>市場對未來經濟增長的預期有所改善。</li><li>分析師關注零售銷售增長對整體經濟的影響。</li></ul>
-        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQZVdndU5ZZ1lnT0pkMEZEVG4zTjdERHB1Z1Vwem1aUURBS3pxOUpDWXh3Tkd1NDFfWWp1eDJQNWdQanlhcHBJZTJJaWs3U1JXQTluNDV2dUp2QlFNZ1ZFU1Y5T295QXM1akRDdnM4UTBjR09XUjhYV0FUWUZCM3dldUJoTHloMWk1QlFzbjNxeWxRNktyOFVyb3AzYndmMGg1?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
+        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">23:33</span></div>
+        <h3 class="item-title">摩根大通預測印度企業海外併購上升以保障供應鏈</h3>
+        <ul class="item-points" hidden><li>摩根大通預測印度企業的海外併購活動將增加。</li><li>企業尋求通過併購來保障其供應鏈的穩定性。</li><li>印度企業在全球市場的併購活動日益活躍。</li><li>供應鏈安全成為企業併購的重要考量因素。</li><li>摩根大通對印度市場的未來併購趨勢持樂觀態度。</li></ul>
+        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNTURra0FPeDc1dkZfRWJEckNsckxGRHNWYllaUHpERkJkZ2xydzNGQ1B1Ny1vR2tBcGNxdC1YSWpnaXlEOU9ZQTJIUUZKN1R5dXpzU055TEhWYmhwal83eGx4cXYxcUNqS21ZdXdzbkdTQmpITmZBWWtsbnhhOWw4LVdyNTRCeUFuQ2lRcGtxM3NoY2xtckFxWEVvTWw4WXh3VmtjWFJwNkMtanlYSXBmM1lCVTJ3RFoyQjh6MWVXSTNNSTdv?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n3">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">22:20</span></div>
-        <h3 class="item-title">OpenAI測試廣告贊助代理，擴展ChatGPT廣告的AI工具</h3>
-        <ul class="item-points" hidden><li>OpenAI正在測試廣告贊助的代理功能。</li><li>新功能將擴展ChatGPT的廣告工具。</li><li>這一舉措旨在吸引更多廣告商參與。</li><li>OpenAI希望提升廣告效果與用戶互動。</li><li>測試結果將影響未來的廣告策略。</li></ul>
-        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPdzBSSTlvNXJRRXplQlhuWUlTV2NDS3pKOHdpV3Q5YnRRZ21XT3RrT0ExVkhmbFlkaWZMM3R1LUJybTVvMm1GOEluTS16ODZRVUl6VVlkbE5OaXFQY3Y5NWw1RVh3cGZ0VVdveDVIVFhNWVhsNDZ0aXVhQzEyeWlpOVVyLVpCMTNiSkhQVVp2R2ExWXlJUVhRamtEV3ZtVkJTR2lvM0R3RW0tVW5vQmhuTm9uMUtyYWlEdWdwNUNQaTIxdkxZeTZB?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
+        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">23:32</span></div>
+        <h3 class="item-title">Donatella Versace與Z世代時尚零售商REVOLVE合作</h3>
+        <ul class="item-points" hidden><li>Donatella Versace與REVOLVE達成合作，針對Z世代市場。</li><li>此次合作將推出限量版時尚系列，吸引年輕消費者。</li><li>REVOLVE專注於線上銷售，符合當前消費趨勢。</li><li>Versace品牌希望透過此合作提升在年輕族群中的影響力。</li><li>此舉可能改變奢侈品牌與年輕消費者的互動方式。</li></ul>
+        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOY0F2R2hJbFViM183dlBSN1hMNXhxb3NUYl9oRmJORXZnM2V5QVFtWW10ekpxRFFyd1RhaktsYm53SlNhc2NTRlpEQS1rMDZnenA4QXVyelFEM2lIYjAwY09QT1hIUF9WNTA1TXI2cjl4WjljdXlOWlFwSTdNOVJJRlpNbXRLTWRGWEEtRlZwcFJPSUVSYVVNOHYzUGVtRVVJUTZIT2ozSWZjWmJwRlNwZGpXSjR0ZVZKLUtCc05mc0E?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n4">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">21:18</span></div>
-        <h3 class="item-title">對消費類股的做空活動增加</h3>
-        <ul class="item-points" hidden><li>對消費類股的做空活動在8月有所增加。</li><li>對沖基金在8月加大了對消費類股的押注。</li><li>Hazeltree報告指出，這一趨勢顯示市場對消費者支出前景的擔憂。</li><li>消費類股的做空比例上升，反映出投資者的謹慎情緒。</li><li>市場分析師預測，消費類股可能面臨更大的下行壓力。</li></ul>
-        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNlNncWxsVGdiLUNLX21YV0FLdEUyVmVFTDJ6TTBmeTRuclprZEtnM3FVbnlwRTZza1U3T19tNGUtV0dsc2RjV1RzZm1oSVZoc3hLN0ltRlRnVS1idFBtZUxaTElhOFFlYlpCaUVBeG9Kdkx6MnRGa0V0SnRjeVVlSFQ1T2ZiVlBqX3dCTW5yR3BMRU5Gc0FCZ3JUVk9pUjNrLVk5aWdvY0ZQcGd6YlJKMmxpZzNRVzc5eEUxenRiTi1TNEtjcldPUXdkOXpZSFBiZHc?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
+        <div class="item-meta"><span class="source-tag">REUTERS</span><span class="dot">●</span><span class="time">18:14</span></div>
+        <h3 class="item-title">航空供應商測試稀土替代品以減少對中國的依賴</h3>
+        <ul class="item-points" hidden><li>航空供應商正在尋找稀土材料的替代品。</li><li>此舉旨在降低對中國稀土供應的依賴。</li><li>稀土材料在航空航天技術中至關重要。</li><li>供應商希望通過替代品來增強供應鏈的穩定性。</li><li>測試替代品的過程可能會影響未來的生產成本。</li></ul>
+        <a class="item-link" hidden href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQdmtCaDgySDB0TTRLU2tuRzhJT3VZZEEtZVFkU1BjQVlCTlJJV2M1QzFuc0lCa3BHRGd2bi1DWjAzSU5yc3lSOU9uMkNPbnNZMDJYTW9pZ0c5SjNhUHRHeDNZOFdGYzgxTGRrdndyUjlqUnlyOFpxdkxLeWJFbW5wQ1YtaXpqS1RpTmdLRkJja0lWLUxYNUszNkZ1dXdjWDJXck5xNjNQWVNRYkxUQWhpcG9pR2FQNzFHVVdWcE5zVWlsdkhKQzZhTWgzbw?oc=5" target="_blank" rel="noopener">前往 Reuters ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n5">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">08:55</span></div>
-        <h3 class="item-title">特朗普威脅對歐盟徵收關稅，因加拿大準會員提案</h3>
-        <ul class="item-points" hidden><li>歐洲委員會主席烏爾蘇拉·馮德萊恩表示，歐盟將允許加拿大成為準會員。</li><li>特朗普將此舉視為對美國的「敵對行為」。</li><li>加拿大若成為歐盟準會員，將是27國集團的首例。</li><li>特朗普威脅將對歐盟徵收關稅以回應此提案。</li><li>此事件可能影響美加歐之間的貿易關係。</li></ul>
-        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/17/trump-canada-european-union-tariffs-associate-member-ukraine-.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
+        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">04:34</span></div>
+        <h3 class="item-title">特朗普承諾的中期選舉支出尚未公開</h3>
+        <ul class="item-points" hidden><li>MAGA Inc. 9月初擁有4.158億美元資金。</li><li>特朗普承諾的中期選舉支出仍未公開。</li><li>大部分預期的選舉支出尚未顯現。</li></ul>
+        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/21/trump-maga-midterm-spending-war-chest.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n6">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">07:45</span></div>
-        <h3 class="item-title">特朗普對美聯儲主席Warsh仍有信心，要求利率降至1%或以下</h3>
-        <ul class="item-points" hidden><li>特朗普威脅若美聯儲不降息將切斷與貿易順差國家的貿易。</li><li>特朗普要求美聯儲將利率降至1%或更低。</li><li>特朗普對美聯儲主席Warsh表示持續信心。</li></ul>
-        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
+        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">05:20</span></div>
+        <h3 class="item-title">股市表面上表現良好，但出現自1999年以來未見的警訊</h3>
+        <ul class="item-points" hidden><li>市場近期大幅上漲，但實際表現不如預期。</li><li>投資者需警惕市場表面繁榮下的潛在風險。</li><li>最新數據顯示，市場內部結構出現異常情況。</li><li>專家指出，這種情況自1999年以來未曾出現。</li><li>需密切關注未來市場走勢及其影響。</li></ul>
+        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n7">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">08:08</span></div>
-        <h3 class="item-title">美國國會推進法案以控制AI數據中心的公用事業成本</h3>
-        <ul class="item-points" hidden><li>兩黨立法將建立監管框架，供各州採用。</li><li>法案旨在防止數據中心相關的能源成本轉嫁給消費者。</li><li>此舉可能減輕消費者在AI數據中心上的支出。</li><li>立法獲得兩黨支持，顯示對AI發展的關注。</li><li>預期法案將影響數據中心的運營成本結構。</li></ul>
-        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
+        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">04:51</span></div>
+        <h3 class="item-title">OpenAI提議制定全球AI標準以指導對齊與安全性</h3>
+        <ul class="item-points" hidden><li>Jacob Coxon的文章引發全球對AI安全的辯論。</li><li>Anthropic和OpenAI被指控在AI發展中存在風險。</li><li>OpenAI提議建立全球AI標準以促進安全性。</li><li>該提議旨在指導AI技術的對齊與發展。</li></ul>
+        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n8">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">04:54</span></div>
-        <h3 class="item-title">眾議院投票決定控告Leon Black藐視國會</h3>
-        <ul class="item-points" hidden><li>億萬富翁Leon Black正對眾議院監督與政府改革委員會提起訴訟。</li><li>訴訟目的是阻止委員會對他發出的傳票。</li><li>該傳票涉及對Jeffrey Epstein的調查。</li><li>Leon Black因拒絕遵從傳票而面臨藐視國會的指控。</li><li>這一事件引發了對Epstein案件的持續關注。</li></ul>
-        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
+        <div class="item-meta"><span class="source-tag">CNBC</span><span class="dot">●</span><span class="time">07:03</span></div>
+        <h3 class="item-title">Meta的Muse AI代理下載量激增</h3>
+        <ul class="item-points" hidden><li>Meta的Muse AI在推出後五天內下載量達73萬次。</li><li>在推出後十三天內，Muse AI的下載量達到250萬次。</li><li>Muse AI的下載量顯著增長，顯示出強勁的市場需求。</li><li>這一數字與其他AI工具如ChatGPT、Grok和Claude進行比較。</li></ul>
+        <a class="item-link" hidden href="https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html" target="_blank" rel="noopener">前往 CNBC ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n9">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">07:51</span></div>
-        <h3 class="item-title">英特爾股價上漲，投資者期待記憶體晶片成為轉型的下一步</h3>
-        <ul class="item-points" hidden><li>英特爾正在與SK Hynix進行初步談判。</li><li>SK Hynix考慮與英特爾建立合作夥伴關係。</li><li>合作將使SK Hynix能在美國生產記憶體晶片。</li><li>投資者對英特爾的轉型前景持樂觀態度。</li></ul>
-        <a class="item-link" hidden href="https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
+        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">06:01</span></div>
+        <h3 class="item-title">Meta股票因新AI助手表現最佳，創13年來最佳月份</h3>
+        <ul class="item-points" hidden><li>Meta的股票本月漲幅顯著，創下13年來最佳表現。</li><li>新推出的AI助手Muse正獲得越來越多的關注和使用。</li><li>投資者對Meta的AI投資回報感到樂觀。</li><li>Muse的受歡迎程度提升了市場對Meta未來的信心。</li><li>Meta的AI策略似乎正在吸引更多投資者的興趣。</li></ul>
+        <a class="item-link" hidden href="https://www.marketwatch.com/story/metas-stock-is-enjoying-its-best-month-in-more-than-two-years-thanks-to-the-companys-hot-new-ai-assistant-bf106291?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n10">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">06:25</span></div>
-        <h3 class="item-title">美聯儲三年來首次升息，市場預期將有更多加息</h3>
-        <ul class="item-points" hidden><li>美聯儲政策制定委員會一致決定加息。</li><li>對未來加息的指引意見分歧。</li><li>市場對於後續加息的預期持謹慎態度。</li><li>此次加息標誌著美聯儲的貨幣政策轉變。</li><li>投資者需密切關注經濟數據及美聯儲的後續行動。</li></ul>
-        <a class="item-link" hidden href="https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
+        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">05:57</span></div>
+        <h3 class="item-title">分析師看好AT&amp;T股票，認為無線市場最佳選擇</h3>
+        <ul class="item-points" hidden><li>BNP分析師對AT&amp;T股票持正面看法。</li><li>分析師指出，投資者在移動業務方面幾乎無可挑剔。</li></ul>
+        <a class="item-link" hidden href="https://www.marketwatch.com/story/at-ts-stock-looks-like-the-smartest-bet-in-the-wireless-sector-analyst-says-6e773d63?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n11">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">06:16</span></div>
-        <h3 class="item-title">我的出租房產已結清，但我需要現金。現在借取50,000美元的HELOC是個壞時機嗎？</h3>
-        <ul class="item-points" hidden><li>聯邦儲備局於週三宣布加息25個基點，利率範圍為3.75%-4.0%。</li></ul>
-        <a class="item-link" hidden href="https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
+        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">05:47</span></div>
+        <h3 class="item-title">比特幣漲至8個月高點，顯示當前風險偏好</h3>
+        <ul class="item-points" hidden><li>比特幣價格達到8個月來的最高點。</li><li>投資者對美國加密貨幣監管規範的期待仍然存在。</li><li>不明朗的監管框架未能阻止比特幣的上漲。</li><li>市場顯示出對風險資產的強烈興趣。</li><li>投資者對未來的監管政策持樂觀態度。</li></ul>
+        <a class="item-link" hidden href="https://www.marketwatch.com/story/bitcoin-hits-an-8-month-high-and-sends-a-clear-message-about-risk-appetite-right-now-edc7b9a5?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n12">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">06:15</span></div>
-        <h3 class="item-title">朋友的妻子去世後，他能否申請社會安全金？</h3>
-        <ul class="item-points" hidden><li>朋友的妻子在60歲時去世，婚姻持續超過30年。</li><li>她的高收入職業可能影響社會安全金的申請資格。</li><li>根據社會安全局規定，配偶可以申請已故配偶的社會安全金。</li><li>申請者需提供結婚證明及其他必要文件。</li><li>社會安全金的金額將根據已故配偶的工作記錄計算。</li></ul>
-        <a class="item-link" hidden href="https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
+        <div class="item-meta"><span class="source-tag">MARKETWATCH</span><span class="dot">●</span><span class="time">05:30</span></div>
+        <h3 class="item-title">我們在50多歲，沒有孩子，擁有200萬美元的退休帳戶，真的需要遺囑嗎？</h3>
+        <ul class="item-points" hidden><li>夫妻倆在50多歲，擁有200萬美元的IRA和401(k)。</li><li>他們沒有負債，擁有主要住宅和度假屋。</li><li>還擁有位於其他州的母親房產。</li></ul>
+        <a class="item-link" hidden href="https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories" target="_blank" rel="noopener">前往 MarketWatch ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n13">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">08:55</span></div>
-        <h3 class="item-title">為何CPI忽略了住房、股票及追求進步的成本</h3>
-        <ul class="item-points" hidden><li>美國中位數房價已達到歷史高點，75%的住房被認為無法負擔。</li><li>CPI指數未能反映住房和股票市場的實際成本變化。</li><li>追求經濟進步的成本未納入CPI計算，影響通脹指標的準確性。</li><li>文章探討了CPI與實際生活成本之間的差距。</li><li>作者Karl-Friedrich Israel分析了CPI的計算方法及其局限性。</li></ul>
-        <a class="item-link" hidden href="https://www.zerohedge.com/economics/why-cpi-ignores-homes-stocks-and-cost-getting-ahead" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
+        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">08:05</span></div>
+        <h3 class="item-title">DHS律師指控明尼蘇達法官協調阻止移民執法</h3>
+        <ul class="item-points" hidden><li>DHS律師表示明尼蘇達法官協調行動以阻止移民執法。</li><li>指控涉及多名法官共同制定策略以影響移民政策。</li><li>此事件引發對法官獨立性及其對移民執法影響的討論。</li><li>DHS強調需要有效的移民執法以維護國家安全。</li><li>該指控可能導致進一步的法律挑戰及政策調整。</li></ul>
+        <a class="item-link" hidden href="https://www.zerohedge.com/political/dhs-lawyer-says-minnesota-judges-coordinated-block-immigration-enforcement" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n14">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">08:30</span></div>
-        <h3 class="item-title">拉夫羅夫警告：若北約攻擊俄羅斯，戰爭將會「非常短暫」</h3>
-        <ul class="item-points" hidden><li>俄羅斯外長拉夫羅夫再次回應歐洲官員的指控。</li><li>他強調若北約攻擊俄羅斯，戰爭將會迅速結束。</li><li>拉夫羅夫重申莫斯科不尋求將戰爭擴大至烏克蘭之外。</li><li>此言論反映出俄方對北約動作的高度警覺。</li><li>拉夫羅夫的發言可能影響國際對俄烏衝突的看法。</li></ul>
-        <a class="item-link" hidden href="https://www.zerohedge.com/geopolitical/lavrov-warns-if-nato-attacked-russia-war-would-be-very-short" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
+        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">07:15</span></div>
+        <h3 class="item-title">麻薩諸塞州學區因涉嫌秘密性別轉換而被調查</h3>
+        <ul class="item-points" hidden><li>麻薩諸塞州教育部對一學區展開調查。</li><li>調查針對學校是否秘密進行性別轉換。</li><li>家長對學校未通知性別轉換感到不滿。</li><li>學校被指控未遵循法律要求的透明度。</li><li>調查結果可能影響該學區的政策與運作。</li></ul>
+        <a class="item-link" hidden href="https://www.zerohedge.com/political/massachusetts-school-district-investigated-over-alleged-secret-gender-transition" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n15">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">08:05</span></div>
-        <h3 class="item-title">比爾·蓋茲呼籲全球對AI進行打擊</h3>
-        <ul class="item-points" hidden><li>比爾·蓋茲警告人工智慧的潛在風險。</li><li>他在媒體巡迴中強調AI的影響力。</li><li>蓋茲呼籲全球合作以應對AI挑戰。</li><li>他認為AI的發展需要更嚴格的監管。</li><li>蓋茲的言論反映了對科技未來的擔憂。</li></ul>
-        <a class="item-link" hidden href="https://www.zerohedge.com/ai/bill-gates-calls-globalist-crackdown-ai" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
+        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">06:50</span></div>
+        <h3 class="item-title">沙烏地阿拉伯因胡塞攻擊重新調整石油出口</h3>
+        <ul class="item-points" hidden><li>沙烏地阿拉伯因胡塞武裝攻擊重新調整石油出口路線。</li><li>衛星影像顯示，超級油輪在新的航道上運行。</li><li>胡塞武裝的攻擊目標為雅恩布（Yanbu）地區。</li><li>此次調整可能影響沙烏地的石油供應鏈。</li><li>該事件引發市場對中東地區安全的擔憂。</li></ul>
+        <a class="item-link" hidden href="https://www.zerohedge.com/energy/saudi-arabia-reroutes-oil-exports-houthi-strikes-target-yanbu" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="s-n16">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">07:40</span></div>
-        <h3 class="item-title">Vance 確保特朗普支持者伊朗戰爭進入「截然不同的階段」</h3>
-        <ul class="item-points" hidden><li>副總統 JD Vance 表示伊朗衝突將進入新階段。</li><li>Vance 曾反對發動「史詩怒火行動」。</li><li>他最新的聲明顯示出對未來局勢的不同看法。</li><li>Vance 似乎在試圖安撫特朗普的支持者。</li><li>此番言論可能影響特朗普陣營的戰略方向。</li></ul>
-        <a class="item-link" hidden href="https://www.zerohedge.com/geopolitical/vance-seeks-assure-trump-base-iran-war-entering-much-different-phase" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
+        <div class="item-meta"><span class="source-tag">ZERO HEDGE</span><span class="dot">●</span><span class="time">06:25</span></div>
+        <h3 class="item-title">Nvidia CEO：AI使人類滅絕的機率為零</h3>
+        <ul class="item-points" hidden><li>Nvidia CEO Jensen Huang 表示，AI 使人類滅絕的機率為零。</li><li>Huang 反駁了某些人工智慧專家的悲觀預測。</li><li>他強調，AI 的發展應該以安全和負責任的方式進行。</li><li>Huang 認為，AI 將成為人類的強大助手，而非威脅。</li><li>Nvidia 將持續推動 AI 技術的創新與應用。</li></ul>
+        <a class="item-link" hidden href="https://www.zerohedge.com/ai/nvidia-ceo-says-zero-percent-chance-ai-making-humans-extinct" target="_blank" rel="noopener">前往 Zero Hedge ↗</a>
       </div>
     </article>
     
@@ -508,7 +517,7 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">CALCULATED RISK</span><span class="dot">●</span><span class="time">21:21</span></div>
         <h3 class="item-title">這是結束也是新開始</h3>
-        <ul class="item-points" hidden><li>作者決定停止每日更新部落格，已經寫作21年。</li><li>將改為每週發送經濟摘要的電子報。</li><li>電子報將包含下週經濟數據日程安排。</li><li>電子報還會回顧上週的數據及當前話題的評論。</li><li>作者將繼續撰寫房地產電子報。</li></ul>
+        <ul class="item-points" hidden><li>作者決定停止每日更新部落格，經營21年。</li><li>將改為每週發送經濟摘要電子報。</li><li>電子報將包含下週經濟數據日程、上週數據回顧及時事評論。</li><li>作者仍會撰寫房地產電子報，持續關注該領域。</li></ul>
         <a class="item-link" hidden href="http://www.calculatedriskblog.com/2026/01/this-is-end-and-new-beginning.html" target="_blank" rel="noopener">前往 Calculated Risk ↗</a>
       </div>
     </article>
@@ -518,7 +527,7 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">CALCULATED RISK</span><span class="dot">●</span><span class="time">08:50</span></div>
         <h3 class="item-title">週日夜間期貨</h3>
-        <ul class="item-points" hidden><li>2026年1月11日當週的經濟日程無重大發布。</li><li>標準普爾500指數期貨下跌16點，道瓊斯期貨下跌104點。</li><li>WTI原油期貨價格上漲，現報每桶59.37美元。</li></ul>
+        <ul class="item-points" hidden><li>2026年1月11日當週，週一無重大經濟數據發布。</li><li>S&amp;P 500期貨下跌16點，DOW期貨下跌104點（公平價值）。</li><li>WTI原油期貨價格上漲，現報每桶59.37美元。</li></ul>
         <a class="item-link" hidden href="http://www.calculatedriskblog.com/2026/01/sunday-night-futures_11.html" target="_blank" rel="noopener">前往 Calculated Risk ↗</a>
       </div>
     </article>
@@ -528,7 +537,7 @@
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">CALCULATED RISK</span><span class="dot">●</span><span class="time">21:12</span></div>
         <h3 class="item-title">酒店業：入住率年增4.4%</h3>
-        <ul class="item-points" hidden><li>2025年酒店入住率表現疲弱，特別是1月初。</li><li>根據CoStar數據，截至2026年1月3日，美國酒店業年增率正面。</li><li>數據顯示2025年12月28日至2026年1月3日的入住率變化。</li><li>入住率較2024年和2025年同週相比，顯示出增長趨勢。</li><li>整體市場在年初的旅行需求仍然較弱。</li></ul>
+        <ul class="item-points" hidden><li>2025年初酒店入住率較弱，特別是1月初旅遊需求低迷。</li><li>根據CoStar數據，截至2026年1月3日，美國酒店業報告年增率為正。</li><li>數據顯示2025年12月28日至2026年1月3日的入住率較2024年及2025年同週增加4.4%。</li></ul>
         <a class="item-link" hidden href="http://www.calculatedriskblog.com/2026/01/hotels-occupancy-rate-increased-44-year.html" target="_blank" rel="noopener">前往 Calculated Risk ↗</a>
       </div>
     </article>
@@ -537,8 +546,8 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta"><span class="source-tag">CALCULATED RISK</span><span class="dot">●</span><span class="time">03:11</span></div>
-        <h3 class="item-title">本週房地產新聞摘要：住房開工數下降至124.6萬年率</h3>
-        <ul class="item-points" hidden><li>本週住房開工數下降至124.6萬年率。</li><li>多戶住宅和單戶住宅開工數均有變化。</li><li>住房市場持續面臨挑戰，影響整體經濟。</li><li>專家分析未來幾個月的市場走向。</li><li>房地產投資者需密切關注開工數據變化。</li></ul>
+        <h3 class="item-title">本週房地產新聞摘要：住宅開工數降至124.6萬年率</h3>
+        <ul class="item-points" hidden><li>本週住宅開工數降至124.6萬年率，顯示市場放緩。</li><li>多戶住宅開工數和單戶住宅開工數均有變化。</li><li>市場對於新建住宅的需求持平，未見明顯增長。</li><li>專家預測未來幾個月住宅開工數可能持續低迷。</li><li>房地產市場面臨挑戰，需關注經濟指標變化。</li></ul>
         <a class="item-link" hidden href="http://www.calculatedriskblog.com/2026/01/real-estate-newsletter-articles-this_050832638.html" target="_blank" rel="noopener">前往 Calculated Risk ↗</a>
       </div>
     </article>
@@ -552,13 +561,13 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">BLOOMBERG TELEVISION</span><span class="dot">●</span><span class="time">08:00</span>
-          <span class="dur">4:27</span>
+          <span class="source-tag">BLOOMBERG TELEVISION</span><span class="dot">●</span><span class="time">07:33</span>
+          <span class="dur">53:22</span>
           
         </div>
-        <h3 class="item-title">全球關注日圓的原因</h3>
-        <ul class="item-points" hidden><li>日圓今年貶值至40年來最低，7月兌美元匯率達164日圓。</li><li>五年前日圓兌美元匯率為102，顯示出大幅貶值。</li><li>日本是美國國債的第二大持有國，僅次於美國本身。</li><li>美國財政部長斯科特·貝森特積極介入日圓匯率問題，試圖控制其走勢。</li><li>日圓貶值使日本企業如豐田和日產獲得強勁利潤，但也增加了日本的生活成本。</li><li>日本幾乎完全依賴進口能源，日圓貶值對民生造成壓力，影響首相高市早苗的支持率。</li><li>美國的國債服務成本達到數十年來的最高點，10年期美國國債收益率從2022年的1.7%上升至5%以上。</li><li>日本為保護日圓開始拋售美國國債，這將影響美國的借貸成本。</li><li>美國希望避免更高的國債收益率，因而施壓日本提高利率。</li><li>日圓作為資金來源貨幣，投資者借入日圓並投資於高收益資產，形成所謂的套利交易。</li><li>長期來看，資本外流對日本經濟不利，解決方案是提高利率，但需謹慎行事。</li><li>過快提高利率可能會扼殺目前脆弱的經濟增長，政策制定者面臨兩難。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=nxRuyHPTzWU" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">特朗普與馬姆達尼會面，為聯合國大會做準備</h3>
+        <ul class="item-points" hidden><li>特朗普在聯合國大會前夕抵達紐約，計劃與市長馬姆達尼會面。</li><li>特朗普呼籲成立新的AI部隊，以推進技術發展，並在股市引發反彈。</li><li>標準普爾500指數上漲超過1.5%，創下自8月以來最佳表現。</li><li>Meta平台股價上漲11%，為2025年以來最佳單日漲幅。</li><li>特朗普計劃與法國總統馬克龍進行會談，並在會後舉行接待會。</li><li>參與會議的媒體受到限制，主要電視網絡停止報導特朗普的活動。</li><li>美國國會議員達雷爾·伊薩提到，柴油價格已達每加侖6.51美元，並討論是否應暫停柴油出口。</li><li>伊薩表示，當前全球危機對美國生產者影響不大，呼籲考慮立法。</li><li>特朗普強調美國在AI技術上領先中國，並計劃任命新的白宮AI專員。</li><li>市場對於石油價格的波動表示關注，布蘭特原油價格接近100美元。</li><li>派拉蒙與華納兄弟探索達成和解，結束對收購的法律挑戰。</li><li>特朗普的會議將成為中美兩國領導人之間的重要對話。</li><li>特朗普與習近平的會議將探討貿易及AI等議題。</li><li>美國國會議員強調，需加強對沙特阿拉伯的防禦支持以應對中東威脅。</li><li>特朗普的行程緊湊，重點放在與習近平的會晤上。</li><li>市場對半導體股的熱情高漲，許多公司股價在五天內上漲超過25%。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=tcE79sZ--c8" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -566,13 +575,13 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">CNBC TELEVISION</span><span class="dot">●</span><span class="time">08:24</span>
-          <span class="dur">8:46</span>
+          <span class="source-tag">CNBC TELEVISION</span><span class="dot">●</span><span class="time">07:11</span>
+          <span class="dur">44:22</span>
           
         </div>
-        <h3 class="item-title">Okta CEO Todd McKinnon與Jim Cramer對談重點整理</h3>
-        <ul class="item-points" hidden><li>Okta在八月報告了優異的季度業績，股價在過去六個月上漲了140%。</li><li>McKinnon強調AI代理需要身份識別以便於控制和監控其行為。</li><li>他指出，AI的潛力在於提供更多數據和連接，但必須確保可見性和控制。</li><li>Okta提供的解決方案旨在幫助企業建立安全的AI代理環境。</li><li>McKinnon提到，行業需要協作以確保技術的安全發展。</li><li>他強調，企業在使用AI時必須優先考慮安全控制和身份管理。</li><li>Okta的目標是成為企業的身份管理基礎，確保AI的安全使用。</li><li>他提到，隨著技術發展，所有設備都將成為代理，需加強可見性和控制。</li><li>McKinnon認為，企業應該在連接AI時設置正確的控制藍圖。</li><li>他強調，透明度和控制是解決AI風險的關鍵。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=dXl22PWMCA4" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">Tim Cook在Mad Money的回顧與展望</h3>
+        <ul class="item-points" hidden><li>Tim Cook於2026年9月1日結束其Apple CEO任期，回顧十年領導歷程。</li><li>Cook提到Apple Pay已在70萬個地點接受，顯示其市場需求強勁。</li><li>Apple的服務業務成為第二大收入來源，去年增長20%，達60億美元。</li><li>Cook強調Apple專注於長期價值，而非短期股價波動。</li><li>Apple在美國創造了200萬個工作機會，並計劃進一步增聘。</li><li>Cook宣布將設立10億美元的先進製造基金，促進美國製造業發展。</li><li>Cook認為健康科技是未來重要領域，Apple Watch將在健康管理上發揮關鍵作用。</li><li>Cook回顧了與Kramer的首次通話，並強調創新對Apple的重要性。</li><li>Cook指出，Apple的產品已成為人們生活中不可或缺的一部分。</li><li>Cook提到Apple的創新不僅限於硬體，還包括軟體和服務的整合。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=4l1Z4dy8nRY" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -580,13 +589,13 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">REAL VISION FINANCE</span><span class="dot">●</span><span class="time">23:47</span>
-          <span class="dur">30:30</span>
+          <span class="source-tag">REAL VISION FINANCE</span><span class="dot">●</span><span class="time">00:06</span>
+          <span class="dur">25:57</span>
           
         </div>
-        <h3 class="item-title">風險偏好交易是否正在崩潰？</h3>
-        <ul class="item-points" hidden><li>油價目前在110至120美元之間波動，顯示市場不安。</li><li>Dario Murray提到網路可能在6至12個月內結束，引發市場關注。</li><li>市場對Dario的言論反應平淡，顯示投資者對AI發展的信心仍在。</li><li>Dario的言論獲得Sam Altman和Elon Musk的支持，顯示AI行業內部的共識。</li><li>過去AI領導者的預測多未實現，市場對未來的預測持謹慎態度。</li><li>即將召開的FOMC會議預計將加息，市場反應已經開始調整。</li><li>油價因沙烏地阿拉伯的管道受損而上升，預計將持續影響市場。</li><li>特朗普在社交媒體上強調油價問題，試圖轉移焦點。</li><li>市場對於未來的油價走勢持謹慎樂觀，認為不會有大幅上漲。</li><li>AI和硬體需求的未來仍然存在不確定性，可能影響Nvidia等公司的表現。</li><li>市場對於即將到來的IPO持觀望態度，企業可能會尋求建立市場壁壘。</li><li>Dario的言論可能是為了政治考量，試圖影響未來的政策走向。</li><li>市場對於通脹的反應顯示出對經濟前景的擔憂。</li><li>投資者正在調整持倉，對能源股和美元持樂觀態度。</li><li>整體市場情緒顯示出對未來的風險偏好正在減弱。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=gf_Yt46JN7U" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">市場即將再次起飛？</h3>
+        <ul class="item-points" hidden><li>Andreas Steno認為AI與加密貨幣將會同時發展，而非相互取代。</li><li>目前加密貨幣的上漲與美元短期走弱的交易有關，並受到美國債務水平的影響。</li><li>南韓半導體貿易數據顯示，出口在年初的增長率接近80%。</li><li>儘管市場對油價和地緣政治的擔憂，油價仍然在100美元附近徘徊。</li><li>市場對即將召開的美中高峰會持樂觀態度，並期待AI安全計畫的進展。</li><li>Andreas指出，市場目前的空頭情緒過於集中，可能預示著反彈的機會。</li><li>他強調，AI和加密貨幣的結合將促進微交易的可行性。</li><li>投資者對於半導體行業的看法正在改善，並預期將有更多的投資機會。</li><li>Andreas提到，市場對於即將到來的四季度持樂觀態度，並可能出現意外的漲幅。</li><li>他表示，儘管面臨多重挑戰，經濟周期仍然保持穩定，未來仍有上漲潛力。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=WLKBub4CdfI" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -594,13 +603,13 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">尼可拉斯楊LIVE精</span><span class="dot">●</span><span class="time">19:06</span>
-          <span class="dur">16:09</span>
+          <span class="source-tag">尼可拉斯楊LIVE精</span><span class="dot">●</span><span class="time">19:55</span>
+          <span class="dur">15:34</span>
           
         </div>
-        <h3 class="item-title">AI末日，賣掉股票？2027年10月要小心！這些股票要守住！</h3>
-        <ul class="item-points" hidden><li>在美國聯準會加息前，市場出現各種對AI的擔憂與預測。</li><li>OpenAI的Dario對AI未來發展表示擔憂，認為若不受控，可能導致人類滅絕。</li><li>AI的自我更新能力將取代許多純認知工作，需謹慎投資相關股票。</li><li>近期AI放緩的論點引發多位業界領袖的不同看法，包括Altman和Musk。</li><li>美國國債持續上升，科技創新是支撐股市的重要因素。</li><li>NVIDIA的Jensen Huang擔心AI放緩會影響晶片銷售，支持開源模型。</li><li>OpenAI的Max訂閱層級因計算能力不足而關閉，顯示需求仍然強勁。</li><li>金融股在新加坡、台灣及美國表現良好，值得投資者關注。</li><li>對於AI安全和控制的討論日益重要，未來可能會有更多監管措施。</li><li>Tesla的Optimus機器人因其製造能力而受到青睞，但需注意投資時機。</li><li>未來數據中心投資預計將達到31.6兆美元，AI股票的持有量將影響收益。</li><li>AI的發展可能在2030年前後引發人類與AI的資源競爭。</li><li>投資者應使用估值工具，避免購買估值過高的股票。</li><li>建議將資金分配於軟體、金融和醫療領域，以對沖AI風險。</li><li>Propicks AI提供股票選擇和投資建議，適合不熟悉交易的投資者。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=UYFuhw9wc1g" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">費半指數啟動！利空出盡！11月前看好的股票</h3>
+        <ul class="item-points" hidden><li>費城半導體指數在加息後大幅上漲，市場轉向關注降息的可能性。</li><li>美國經濟表現良好，沃什表示加息不會影響整體經濟，反而有助於降低物價。</li><li>美股大型企業持續回購股票，推高每股盈餘(EPS)，預期股價將穩步上升。</li><li>根據moomoo App，10月份加息的概率為53.1%，預期利率將在2028年降至3.0%-4.0%。</li><li>AI基建需求大增，黃仁勳提到500億美元的AI數據中心回本周期僅需12個月。</li><li>摩根大通報告指出，AI科技服務業對利率變動不敏感，持續吸引巨額投資。</li><li>AI推理需求預計將增長100倍，對記憶體需求的影響將顯著。</li><li>三星即將推出zHBM和zNAND-O技術，提升記憶體性能以滿足AI需求。</li><li>博通和Marvell在AI封裝和連接技術上具備優勢，未來需求將持續增長。</li><li>大型企業在不確定的經濟環境中更具抗壓能力，未來將更偏向於投資這類企業。</li><li>短期內，石油價格上漲和中期選舉可能引發市場波動，但長期看好AI股票。</li><li>Meta推出的新AI Muse顯示出強大的應用潛力，未來可能成為重要的個人助手。</li><li>投資者應關注AI股票的長期增長潛力，避免短期市場波動影響決策。</li><li>建議投資者利用moomoo進行定期定額投資，降低風險並把握市場機會。</li><li>短期的不確定性可能成為良好的買入時機，特別是在11月份中期選舉後。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=jWQREGDxLGo" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -608,13 +617,13 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">游庭皓的財經皓角</span><span class="dot">●</span><span class="time">09:05</span>
-          <span class="dur">30:56</span>
+          <span class="source-tag">游庭皓的財經皓角</span><span class="dot">●</span><span class="time">09:09</span>
+          <span class="dur">32:48</span>
           <span class="note-pill">10:00 補充</span>
         </div>
-        <h3 class="item-title">2026/9/17(四)三年首度升息!這只是剛開始?升息循環開啟 美股漲得動嗎?</h3>
-        <ul class="item-points" hidden><li>2026年9月17日，聯準會如預期升息一碼，將基準利率調整至4%。</li><li>聯準會暗示年底前可能再升息一碼，部分官員預測升息兩碼。</li><li>道瓊指數昨日開高後急跌630點，三大指數收黑，費半卻小漲。</li><li>聯準會主席華許表示，美國經濟未因高利率失速，通膨問題更為重要。</li><li>華許強調，升息是為了抑制通膨，並非直接解決能源價格問題。</li><li>美國消費者信心指數降至47.8，顯示消費者對未來經濟悲觀。</li><li>聯準會預測2027年核心PCE物價指數將降至2.5%，但通膨回到2%需等到2029年。</li><li>川普呼籲美國利率應降至1%以促進經濟增長，對升息表示不滿。</li><li>市場對於未來利率預期不明，缺乏前瞻指引使得投資者感到不安。</li><li>升息對中低收入家庭及中小企業影響重大，可能加劇經濟壓力。</li><li>華許表示，升息不會立即影響AI市場，長期看仍有成長潛力。</li><li>美國10年期公債殖利率突破5%，顯示資本競爭激烈及地緣政治風險。</li><li>聯準會未來決策將根據經濟數據變化，無固定升息路徑。</li><li>投資者需關注未來CPI數據及經濟走勢，決定是否進一步升息。</li><li>市場對於高利率的反應複雜，可能導致股市估值波動。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=TQ_oEc9vnB8" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">美股最危險組合:油價100美元+美債5% 川習會登場</h3>
+        <ul class="item-points" hidden><li>2026年9月21日，美國股市漲跌互見，費半指數上漲2.78%，漲322點。</li><li>美債殖利率接近5%，油價已達每桶100美元，市場壓力加大。</li><li>川習會將於9月24日舉行，市場關注關稅及AI等議題。</li><li>美國股市面臨多重壓力，包括AI資本支出上升及通膨外溢。</li><li>標普500指數自5月以來持平，技術面未見明確趨勢。</li><li>羅素2000小型股指數回到長期上升趨勢線附近，面臨較大賣壓。</li><li>油價上漲可能提升企業融資成本，影響股市表現。</li><li>美國財政赤字及AI企業債發行問題短期內無法解決。</li><li>聯準會面臨升息壓力，市場對於未來利率預期不明朗。</li><li>美中貿易關係緊張，雙方在稀土供應及關稅問題上仍需協商。</li><li>美國汽車業對中國車廠進入美國市場表示強烈反對。</li><li>韓國對美國的3,500億美元投資計畫因關稅壓力而延後。</li><li>日本央行升息，可能影響全球資金流動及美債市場。</li><li>市場波動性可能因美國期中選舉而加大，需提前做好避險。</li><li>AI產業的獲利能力仍需觀察，影響股市未來走向。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=EJdsmRgakkU" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -637,160 +646,160 @@
     <article class="item" data-item-id="c-n1">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">03:07</span></div>
-        <h3 class="item-title">Revolut駭客要求300萬美元贖金，威脅出售客戶數據</h3>
-        <ul class="item-points" hidden><li>駭客要求以Monero支付300萬美元贖金。</li><li>駭客聲稱擁有Revolut客戶的敏感數據。</li><li>若不支付贖金，駭客威脅將公開客戶數據。</li><li>Revolut尚未對駭客的要求做出回應。</li><li>此事件引發對金融科技公司安全性的關注。</li></ul>
-        <a class="item-link" hidden href="https://www.coindesk.com/markets/2026/09/16/revolut-hackers-demand-usd3-million-in-monero-threaten-to-sell-customer-data" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
+        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">04:39</span></div>
+        <h3 class="item-title">比特幣可能測試90,000美元，但交易者警告槓桿正在增加</h3>
+        <ul class="item-points" hidden><li>比特幣價格可能測試90,000美元的關鍵阻力位。</li><li>近期空頭被迫平倉，推高比特幣價格。</li><li>交易者對市場槓桿增加表示擔憂，可能影響未來走勢。</li><li>比特幣目前在70,000美元附近波動，顯示出強勁的買盤。</li><li>市場情緒轉向樂觀，但需警惕潛在的回調風險。</li></ul>
+        <a class="item-link" hidden href="https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n2">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">01:54</span></div>
-        <h3 class="item-title">美聯儲自2023年7月以來首次加息25個基點</h3>
-        <ul class="item-points" hidden><li>美聯儲將利率提高25個基點，至5.25%-5.50%。</li><li>此次加息是自2023年7月以來的首次調整。</li><li>市場普遍預期此次加息，反映出經濟增長的持續性。</li><li>美聯儲主席鮑威爾表示，將根據經濟數據進一步調整政策。</li><li>此次決策旨在應對通脹壓力，保持經濟穩定。</li></ul>
-        <a class="item-link" hidden href="https://www.coindesk.com/markets/2026/09/16/fed-raises-rates-by-25-basis-points-in-first-hike-since-july-2023" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
+        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">03:08</span></div>
+        <h3 class="item-title">投資銀行預測代幣化股票需求低迷，儘管SEC新交易規則出台</h3>
+        <ul class="item-points" hidden><li>投資銀行預測代幣化股票需求將持平或下降。</li><li>SEC的新交易規則未能激發市場對代幣化股票的興趣。</li><li>市場對代幣化股票的接受度仍然有限，影響需求。</li><li>投資銀行分析師指出，傳統股票市場仍佔主導地位。</li><li>代幣化股票的流動性和透明度問題仍待解決。</li></ul>
+        <a class="item-link" hidden href="https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n3">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">01:34</span></div>
-        <h3 class="item-title">Celsius控告BitMEX索賠4.95億美元</h3>
-        <ul class="item-points" hidden><li>Celsius因2020年崩盤清算事件，對BitMEX提起訴訟。</li><li>訴訟金額高達4.95億美元，指控BitMEX不當行為。</li><li>Celsius聲稱BitMEX的行為導致其客戶遭受重大損失。</li><li>此案可能影響加密貨幣交易所的法律責任。</li><li>Celsius在破產程序中尋求賠償以彌補損失。</li></ul>
-        <a class="item-link" hidden href="https://www.coindesk.com/business/2026/09/16/celsius-sues-bitmex-for-usd495-million-over-2020-crash-liquidations" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
+        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">00:01</span></div>
+        <h3 class="item-title">加密貨幣政治團體計劃花3000萬美元對抗Sherrod Brown的參議院競選</h3>
+        <ul class="item-points" hidden><li>加密貨幣政治團體計劃在2024年對抗Sherrod Brown的參議院競選。</li><li>該團體將花費3000萬美元以影響選舉結果。</li><li>Sherrod Brown是美國參議院金融委員會主席，對加密貨幣持批評態度。</li><li>該團體希望推動更友好的加密貨幣政策。</li><li>選舉將於2024年舉行，該團體的行動將影響競選動態。</li></ul>
+        <a class="item-link" hidden href="https://www.coindesk.com/news-analysis/2026/09/21/crypto-s-fairshake-repeats-history-with-usd30-million-to-oppose-sherrod-brown-senate-bid" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n4">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">00:21</span></div>
-        <h3 class="item-title">美國眾議院稅務委員會推進加密貨幣稅法案</h3>
-        <ul class="item-points" hidden><li>美國眾議院稅務委員會在Clarity Act失利後推進新的加密貨幣稅法案。</li><li>該法案旨在簡化加密貨幣的稅收報告要求。</li><li>法案要求加密貨幣交易所提供用戶交易的詳細報告。</li><li>推進此法案的背景是為了填補Clarity Act未能通過的空白。</li><li>法案的通過可能會影響加密貨幣市場的合規性與透明度。</li></ul>
-        <a class="item-link" hidden href="https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
+        <div class="item-meta"><span class="source-tag">COINDESK</span><span class="dot">●</span><span class="time">23:00</span></div>
+        <h3 class="item-title">歐洲央行計畫以自有資金購買代幣化債券</h3>
+        <ul class="item-points" hidden><li>歐洲央行將開始購買代幣化債券以促進市場流動性。</li><li>這項計畫旨在探索數位資產的潛力。</li><li>代幣化債券的交易將使用區塊鏈技術進行。</li><li>歐洲央行的行動可能影響未來的金融政策。</li><li>此舉顯示央行對數位金融工具的日益重視。</li></ul>
+        <a class="item-link" hidden href="https://www.coindesk.com/policy/2026/09/21/ecb-announces-it-will-invest-in-tokenized-securities-via-new-pontes-platform" target="_blank" rel="noopener">前往 CoinDesk ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n5">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">08:23</span></div>
-        <h3 class="item-title">美國立法者推進法案以法定化特朗普的比特幣儲備</h3>
-        <ul class="item-points" hidden><li>新法案將正式確立特朗普的比特幣儲備政策。</li><li>法案將鎖定通過民事和刑事沒收獲得的比特幣。</li><li>這些比特幣將被鎖定20年，無法動用。</li></ul>
-        <a class="item-link" hidden href="https://cointelegraph.com/news/us-bitcoin-reserve-bill-passes-house-committee?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
+        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">04:37</span></div>
+        <h3 class="item-title">沙烏地阿拉伯退出中國支持的mBridge CBDC項目</h3>
+        <ul class="item-points" hidden><li>沙烏地阿拉伯已退出mBridge項目，該項目為跨境CBDC平台。</li><li>mBridge項目受到美國政策制定者的關注與審查。</li><li>該消息來源於《金融時報》的報導。</li></ul>
+        <a class="item-link" hidden href="https://cointelegraph.com/news/saudi-arabia-exits-china-backed-mbridge-cbdc-project-ft?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n6">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">04:51</span></div>
-        <h3 class="item-title">CLARITY法案可能在跛腳會期獲得再次機會，政策倡導者表示</h3>
-        <ul class="item-points" hidden><li>數位主權聯盟執行董事Adrian Wall表示，兩黨參議員正在考慮推進加密市場結構法案。</li><li>該法案可能在現任國會結束前再次提出。</li><li>CLARITY法案旨在為加密貨幣市場建立明確的規範框架。</li><li>如果成功推進，將對加密市場的發展產生重大影響。</li><li>跛腳會期通常是推動未通過法案的最後機會。</li></ul>
-        <a class="item-link" hidden href="https://cointelegraph.com/news/clarity-act-could-get-another-shot-during-lame-duck-session-policy-advocate-says?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
+        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">03:53</span></div>
+        <h3 class="item-title">今日加密貨幣動態</h3>
+        <ul class="item-points" hidden><li>今日加密貨幣市場動態影響比特幣價格。</li><li>區塊鏈技術的最新趨勢持續受到關注。</li><li>去中心化金融(DeFi)的發展狀況成為焦點。</li><li>Web3的進展對加密貨幣市場影響深遠。</li><li>加密貨幣監管政策的變化引發市場反應。</li></ul>
+        <a class="item-link" hidden href="https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n7">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">03:25</span></div>
-        <h3 class="item-title">今天加密貨幣市場動態</h3>
-        <ul class="item-points" hidden><li>今日比特幣價格波動，影響市場情緒。</li><li>區塊鏈技術持續受到關注，推動創新應用。</li><li>去中心化金融(DeFi)領域出現新趨勢，吸引投資者。</li><li>Web3發展加速，促進數位資產的普及。</li><li>加密貨幣監管政策持續演變，影響市場走向。</li></ul>
-        <a class="item-link" hidden href="https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
+        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">02:35</span></div>
+        <h3 class="item-title">Ondo讓機構直接將股票轉換為代幣化股份</h3>
+        <ul class="item-points" hidden><li>Ondo推出的新系統允許機構直接轉換股票為代幣化股份。</li><li>機構可使用基礎證券進行代幣化股票和ETF的鑄造與贖回。</li><li>該系統不再需要現金進行轉換，提升了流動性。</li><li>只有經過批准的機構能夠使用此轉換系統。</li><li>Ondo的創新旨在簡化資產的數位化過程。</li></ul>
+        <a class="item-link" hidden href="https://cointelegraph.com/news/ondo-lets-institutions-convert-stocks-directly-into-tokenized-shares?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n8">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">03:19</span></div>
-        <h3 class="item-title">英國FCA發布加密貨幣授權指導</h3>
-        <ul class="item-points" hidden><li>FCA發布新指導，明確哪些加密活動需獲授權。</li><li>指導旨在幫助公司準備英國數位資產監管制度。</li><li>授權申請窗口將於九月開放。</li><li>新規定將影響加密貨幣公司的運營方式。</li><li>FCA強調合規性對於行業未來的重要性。</li></ul>
-        <a class="item-link" hidden href="https://cointelegraph.com/news/uk-fca-sets-crypto-authorization-guidance-ahead-of-september-application-window?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
+        <div class="item-meta"><span class="source-tag">COINTELEGRAPH</span><span class="dot">●</span><span class="time">02:15</span></div>
+        <h3 class="item-title">加密貨幣政治行動委員會將花費3000萬美元反對Sherrod Brown</h3>
+        <ul class="item-points" hidden><li>加密貨幣相關的政治行動委員會將投入3000萬美元反對Sherrod Brown。</li><li>該PAC與其他團體共同在2024年俄亥俄州參議院選舉中花費超過3億美元。</li><li>此次選舉導致Sherrod Brown敗給Bernie Moreno。</li><li>這是該PAC再次針對Sherrod Brown展開的行動。</li><li>俄亥俄州參議院選舉的資金競爭激烈，影響選舉結果。</li></ul>
+        <a class="item-link" hidden href="https://cointelegraph.com/news/crypto-pac-fairshake-spending-sherrod-brown-ohio-senate-race?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound" target="_blank" rel="noopener">前往 Cointelegraph ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n9">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">08:56</span></div>
-        <h3 class="item-title">眾議院委員會推進特朗普的比特幣戰略儲備法案</h3>
-        <ul class="item-points" hidden><li>眾議院委員會通過法案，建立戰略比特幣儲備。</li><li>該法案將正式確立特朗普的比特幣持有計畫。</li><li>法案旨在確保美國擁有永久性比特幣儲備。</li><li>這一舉措可能影響未來的加密貨幣政策。</li><li>比特幣的戰略儲備將提升美國在數位資產的地位。</li></ul>
-        <a class="item-link" hidden href="https://www.theblock.co/news/regulation/2026-09-16-house-committee-moves-bitcoin-reserve-bill-415317" target="_blank" rel="noopener">前往 The Block Research ↗</a>
+        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">00:35</span></div>
+        <h3 class="item-title">Clarity Act後果：加密貨幣Fairshake PAC對抗Sherrod Brown投入3000萬美元</h3>
+        <ul class="item-points" hidden><li>加密貨幣PAC Fairshake在俄亥俄州選舉中投入3000萬美元。</li><li>目標對象為前參議員Sherrod Brown，對加密貨幣持懷疑態度。</li><li>此舉顯示加密貨幣行業對政策影響的重視。</li><li>Fairshake PAC旨在促進加密貨幣的友好政策環境。</li><li>該投資可能影響未來的選舉結果及加密政策。</li></ul>
+        <a class="item-link" hidden href="https://www.theblock.co/news/regulation/2026-09-21-clarity-act-fallout-cryptos-fairshake-pac-commits-30-million-against-sherrod-brown-415962" target="_blank" rel="noopener">前往 The Block Research ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n10">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">04:02</span></div>
-        <h3 class="item-title">比特幣與以太幣因美聯儲加息劇烈波動</h3>
-        <ul class="item-points" hidden><li>美聯儲宣布自三年前以來首次加息0.25個百分點。</li><li>比特幣和以太幣在加息後出現劇烈波動。</li><li>加息決策反映出對抗通脹的堅定立場。</li><li>市場對加息的反應顯示出投資者的不安情緒。</li></ul>
-        <a class="item-link" hidden href="https://www.theblock.co/news/markets/2026-09-16-bitcoin-ether-swing-unanimous-quarter-point-fed-rate-hike-warsh-aim-inflation-415307" target="_blank" rel="noopener">前往 The Block Research ↗</a>
+        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">23:07</span></div>
+        <h3 class="item-title">Strive增加1,355個比特幣，年終第二大資產目標加速前進</h3>
+        <ul class="item-points" hidden><li>Strive (ASST) 現為第五大公共比特幣持有者。</li><li>Strive 在比特幣持有量上落後於 Strategy、Twenty One、Metaplanet 和 MARA。</li><li>Strive 近期增加了1,355個比特幣。</li><li>該公司正加速朝向年終的第二大資產目標邁進。</li></ul>
+        <a class="item-link" hidden href="https://www.theblock.co/news/markets/2026-09-21-strive-adds-1355-bitcoin-picks-up-pace-year-end-second-place-treasury-goal-415940" target="_blank" rel="noopener">前往 The Block Research ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n11">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">02:06</span></div>
-        <h3 class="item-title">美國CFTC準備推動加密貨幣規則</h3>
-        <ul class="item-points" hidden><li>CFTC主席Mike Selig表示，機構已準備好發布新金融領域的規則。</li><li>SEC與CFTC正加緊推動加密貨幣相關規範。</li><li>Clarity Act在參議院的進展停滯，影響加密規則的推動。</li></ul>
-        <a class="item-link" hidden href="https://www.theblock.co/news/regulation/2026-09-16-go-time-sec-cftc-prepare-push-crypto-rules-clarity-act-stalls-senate-415281" target="_blank" rel="noopener">前往 The Block Research ↗</a>
+        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">22:47</span></div>
+        <h3 class="item-title">Coinbase向美國客戶開放IPO配額，首個合作為Oura</h3>
+        <ul class="item-points" hidden><li>Coinbase擴大業務，進軍IPO市場。</li><li>此次開放IPO配額的首個合作夥伴為Oura。</li><li>Coinbase之前已推出IPO衍生品。</li><li>此舉標誌著Coinbase從二級市場進入初級市場。</li><li>Coinbase計畫進一步擴展其金融服務範疇。</li></ul>
+        <a class="item-link" hidden href="https://www.theblock.co/news/business/2026-09-21-coinbase-opens-ipo-allocations-us-customers-starting-oura-415942" target="_blank" rel="noopener">前往 The Block Research ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n12">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">01:29</span></div>
-        <h3 class="item-title">眾議院小組委員會批准首個聯邦加密貨幣稅收框架</h3>
-        <ul class="item-points" hidden><li>眾議院財政委員會投票推進加密貨幣稅收立法。</li><li>該法案將送交眾議院進一步考慮。</li><li>此舉發生在參議院的Clarity Act遭遇挫折後。</li></ul>
-        <a class="item-link" hidden href="https://www.theblock.co/news/regulation/2026-09-16-house-panel-approves-first-federal-crypto-tax-framework-one-day-after-senates-clarity-act-stumbles-415293" target="_blank" rel="noopener">前往 The Block Research ↗</a>
+        <div class="item-meta"><span class="source-tag">THE BLOCK RESEARCH</span><span class="dot">●</span><span class="time">21:14</span></div>
+        <h3 class="item-title">Tom Lee表示加密牛市已經開始，Bitmine接近5%以太坊供應目標</h3>
+        <ul class="item-points" hidden><li>Bitmine目前的總投資額為171億美元。</li><li>Bitmine擁有超過4.9%的以太坊流通供應量。</li><li>Bitmine最近購買了27,562 ETH。</li><li>Tom Lee預測加密市場將進入牛市。</li><li>Bitmine的以太坊持有量接近5%的目標。</li></ul>
+        <a class="item-link" hidden href="https://www.theblock.co/news/business/2026-09-21-crypto-bull-market-underway-tom-lee-says-bitmine-nears-5-ethereum-supply-target-with-27562-eth-buy-415923" target="_blank" rel="noopener">前往 The Block Research ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n13">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">01:59</span></div>
-        <h3 class="item-title">🏴 Arc時代的開始</h3>
-        <ul class="item-points" hidden><li>USDC發行商Circle剛推出自己的區塊鏈。</li><li>Circle的區塊鏈進入了Tether和Stripe已經佈局的市場。</li></ul>
-        <a class="item-link" hidden href="https://www.bankless.com/read/the-arc-era-begins" target="_blank" rel="noopener">前往 Bankless ↗</a>
+        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">03:13</span></div>
+        <h3 class="item-title">Robinhood的鏈上終局</h3>
+        <ul class="item-points" hidden><li>Robinhood認為區塊鏈將升級市場運作方式。</li><li>未來將重點發展代幣化資產及永續合約。</li><li>AI代理將成為Robinhood下一階段的核心技術。</li><li>Robinhood計劃在其平台上整合區塊鏈技術。</li><li>這些變革將改變投資者的交易體驗。</li></ul>
+        <a class="item-link" hidden href="https://www.bankless.com/read/robinhood-s-onchain-endgame" target="_blank" rel="noopener">前往 Bankless ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n14">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">00:49</span></div>
-        <h3 class="item-title">Circle的Arc主網上線</h3>
-        <ul class="item-points" hidden><li>Circle推出自己的Layer 1區塊鏈，名為Arc。</li><li>Arc主網的上線進一步擴展了USDC的生態系統。</li><li>目前市場上已有Tether和Stripe等競爭者。</li><li>Arc主網的推出可能影響穩定幣市場的競爭格局。</li><li>Circle希望通過Arc增強其在區塊鏈領域的影響力。</li></ul>
-        <a class="item-link" hidden href="https://www.bankless.com/read/circles-arc-mainnet-goes-live" target="_blank" rel="noopener">前往 Bankless ↗</a>
+        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">02:28</span></div>
+        <h3 class="item-title">Lighter將在其ZK Prover中新增二元選擇權支持</h3>
+        <ul class="item-points" hidden><li>Lighter的證明者庫新增了「二元選擇權支持」的提交。</li></ul>
+        <a class="item-link" hidden href="https://www.bankless.com/read/news/lighter-set-to-add-binary-options-support-to-its-zk-prover" target="_blank" rel="noopener">前往 Bankless ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n15">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">00:41</span></div>
-        <h3 class="item-title">假世界資產正式啟用其V2版本</h3>
-        <ul class="item-points" hidden><li>以太坊抽卡平台啟動V2協議的購買功能。</li><li>V2將與V1協議並行運行。</li></ul>
-        <a class="item-link" hidden href="https://www.bankless.com/read/news/fake-world-assets-officially-opens-its-v2" target="_blank" rel="noopener">前往 Bankless ↗</a>
+        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">02:10</span></div>
+        <h3 class="item-title">深入了解Robinhood的鏈上終局</h3>
+        <ul class="item-points" hidden><li>Robinhood預測區塊鏈將升級市場結構。</li><li>未來計畫包括代幣化資產的使用。</li><li>Robinhood將重點放在永續合約交易上。</li><li>AI代理將成為Robinhood下一階段的核心。</li><li>公司正積極探索區塊鏈技術的應用潛力。</li></ul>
+        <a class="item-link" hidden href="https://www.bankless.com/read/inside-robinhood-s-onchain-endgame" target="_blank" rel="noopener">前往 Bankless ↗</a>
       </div>
     </article>
     
     <article class="item" data-item-id="c-n16">
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
-        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">23:52</span></div>
-        <h3 class="item-title">威尼斯達成每日250億代幣里程碑</h3>
-        <ul class="item-points" hidden><li>威尼斯是一個新興的私人AI平台。</li><li>自6月以來，威尼斯的代幣使用量已超過兩倍增長。</li><li>每日代幣使用量達到250億。</li></ul>
-        <a class="item-link" hidden href="https://www.bankless.com/read/news/venice-hits-250b-daily-tokens-milestone" target="_blank" rel="noopener">前往 Bankless ↗</a>
+        <div class="item-meta"><span class="source-tag">BANKLESS</span><span class="dot">●</span><span class="time">03:00</span></div>
+        <h3 class="item-title">加密貨幣的新合規保護？</h3>
+        <ul class="item-points" hidden><li>CFTC為每個錢包和DeFi介面提供了法律保護。</li><li>這項保護與之前給予Phantom的法律保護相同。</li><li>此舉可能影響加密貨幣的合規性和市場運作。</li><li>加密市場的合規環境可能因此變得更加明朗。</li><li>投資者對於DeFi平台的信心可能會提升。</li></ul>
+        <a class="item-link" hidden href="https://www.bankless.com/read/crypto-s-new-compliance-shield" target="_blank" rel="noopener">前往 Bankless ↗</a>
       </div>
     </article>
     
@@ -803,12 +812,12 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">COIN BUREAU</span><span class="dot">●</span><span class="time">20:35</span>
-          <span class="dur">11:31</span>
+          <span class="source-tag">COIN BUREAU</span><span class="dot">●</span><span class="time">20:45</span>
+          <span class="dur">15:34</span>
         </div>
-        <h3 class="item-title">Clarity法案已死</h3>
-        <ul class="item-points" hidden><li>Clarity法案在參議院以49票對50票失敗，未能進入辯論階段。</li><li>該法案原本旨在劃分CFTC和SEC的監管權限，並提供加密貨幣的明確規範。</li><li>法案在參議院的延遲使其成為黨派問題，最終未能獲得通過。</li><li>特朗普家庭的加密貨幣投資成為民主黨反對的主要原因。</li><li>參議員Lummis等人提出的635頁替代文本未能獲得民主黨支持。</li><li>加密行業在2024年選舉中花費超過2.6億美元，但仍無法獲得足夠支持。</li><li>Clarity法案的失敗意味著國會將無法合併眾議院已通過的版本。</li><li>SEC和CFTC已表示將主要加密貨幣視為商品，而非證券。</li><li>SEC主席Atkins提出更廣泛的加密規範，兩機構將協調其方法。</li><li>穩定幣市場從2023年底的1240億美元增長至超過3000億美元。</li><li>比特幣ETF累計吸引約550億美元資金，支持1000億美元資產。</li><li>市場對Clarity法案失敗反應負面，比特幣年初至今下跌13%。</li><li>儘管法案失敗，加密行業仍在持續增長，顯示出其韌性。</li><li>未來加密市場結構法案仍有可能出現，行業將繼續發展。</li><li>Clarity法案的失敗是否是加密行業的重大政治挫敗，仍有待觀察。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=CwrG4fV4dmw" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">如何透過加密貨幣真正實現家族財富傳承</h3>
+        <ul class="item-points" hidden><li>加密貨幣被視為普通人獲得財富的最佳機會，能在單一周期內改變財務狀況。</li><li>成功的關鍵在於找到能夠持續增長的項目，並且要有可重複的方法來評估它們。</li><li>評估項目的四個核心問題包括：是否有實際用戶？消失後是否會被遺憾？需求是否持久？是否有機制使價值回流？</li><li>Hyperlquid在2026年上半年產生了4.19億美元的總費用，增長31%。</li><li>Zcash的DeFi活動總價值鎖定僅約230萬美元，主要用於隱私貨幣的用途。</li><li>Gayscale在2026年8月上市了首個追蹤隱私幣的美國現貨ETF，初始資產數以億計。</li><li>比特幣的歷史回撤幅度逐漸縮小，顯示出資產的成熟性。</li><li>持有少量有實際需求的加密貨幣是成功的關鍵，避免將投資組合變成彩票票據。</li><li>在加密貨幣市場，資產的價值往往會隨著新項目的出現而轉移，需保持靈活性。</li><li>比特幣應該隨著投資組合的增長而增加配置比例，因為它是最具長期存在潛力的資產。</li><li>成功的投資需要在上漲過程中逐步獲利，而不是等到頂峰時才賣出。</li><li>加密貨幣的財富傳承需要良好的法律結構和稅務規劃，以避免未來的問題。</li><li>70%的富裕家庭在第二代失去財富，90%在第三代失去，主要原因是家庭溝通不良。</li><li>學習和傳承市場智慧對於保持家族財富至關重要，避免因為缺乏準備而失去財富。</li><li>每個人都可以通過耐心和長期的信念來建立可持續的投資組合。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=7_lq-zQEXA8" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -816,12 +825,12 @@
       <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="item-body">
         <div class="item-meta">
-          <span class="source-tag">BENJAMIN COWEN</span><span class="dot">●</span><span class="time">17:37</span>
-          <span class="dur">9:00</span>
+          <span class="source-tag">BENJAMIN COWEN</span><span class="dot">●</span><span class="time">22:23</span>
+          <span class="dur">3:01</span>
         </div>
-        <h3 class="item-title">比特幣的可疑投機</h3>
-        <ul class="item-points" hidden><li>比特幣目前交易價格為79,000美元，未來一周的走勢不明。</li><li>歷史上，金叉出現後比特幣通常會有10%至15%的修正。</li><li>2023年比特幣在金叉後下跌約12%，而2019年下跌15%。</li><li>2014年和2015年金叉後，比特幣分別下跌50%和60%。</li><li>若比特幣下跌10%，價格將回落至73,000至74,000美元，15%則約70,000美元。</li><li>若比特幣形成低點後的反彈為低高點，則可能重蹈2014-2015年的情況。</li><li>分析指出，若比特幣在70,000至75,000美元區間反彈並創新高，則看好牛市的可能性。</li><li>若未能創新高，則可能預示低點尚未到來，需謹慎觀察。</li><li>金叉出現後，快速的反彈應在幾周內發生，否則低點可能仍在前方。</li><li>作者強調，未來走勢仍不確定，需根據市場反應進行調整。</li></ul>
-        <a class="item-link" hidden href="https://www.youtube.com/watch?v=gc93viz0-7c" target="_blank" rel="noopener">觀看原片 ↗</a>
+        <h3 class="item-title">比特幣突破五月高點（我錯了）</h3>
+        <ul class="item-points" hidden><li>比特幣突破了五月的高點，價格達到85,815美元。</li><li>作者承認自己之前錯誤預測比特幣無法突破該高點。</li><li>今年的策略是從七月開始在3美元以下進行購買，但僅持續了5天。</li><li>作者表示，市場中每個人都會有錯誤的時候，這是他的一次經歷。</li><li>他提到，對於比特幣的未來走勢將持觀望態度。</li><li>作者最近從新西蘭旅行回來，並表示這是他一生的夢想之一。</li></ul>
+        <a class="item-link" hidden href="https://www.youtube.com/watch?v=RD1IMRMH6JU" target="_blank" rel="noopener">觀看原片 ↗</a>
       </div>
     </article>
     
@@ -929,6 +938,17 @@
       var link = it.el.querySelector('.item-link');
       if (points) points.hidden = expanded;
       if (link) link.hidden = expanded;
+    });
+  });
+  document.querySelectorAll('.section-label.toggle').forEach(function (label) {
+    label.addEventListener('click', function () {
+      var body = label.nextElementSibling;
+      if (!body || !body.classList.contains('section-body')) return;
+      var expanded = label.getAttribute('data-expanded') === 'true';
+      label.setAttribute('data-expanded', expanded ? 'false' : 'true');
+      body.hidden = expanded;
+      var pill = label.querySelector('.toggle-pill');
+      if (pill) pill.textContent = expanded ? '展開' : '收合';
     });
   });
   document.getElementById('toggleBtn').addEventListener('click', function () {
