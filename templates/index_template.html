@@ -318,21 +318,6 @@
       <button class="col-play-btn" data-play-col="stocks" type="button">播放本欄</button>
     </div>
 
-    {% if news.stocks %}
-    <p class="section-label">今日新聞</p>
-    {% for it in news.stocks %}
-    <article class="item" data-item-id="s-n{{ loop.index }}">
-      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-      <div class="item-body">
-        <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
-        <h3 class="item-title">{{ it.title_zh }}</h3>
-        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% if it.link %}<a class="item-link" hidden href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
-      </div>
-    </article>
-    {% endfor %}
-    {% endif %}
-
     {% if youtube.stocks %}
     <p class="section-label">今日影片摘要</p>
     {% for it in youtube.stocks %}
@@ -351,6 +336,21 @@
     </article>
     {% endfor %}
     {% endif %}
+
+    {% if news.stocks %}
+    <p class="section-label">今日新聞</p>
+    {% for it in news.stocks %}
+    <article class="item" data-item-id="s-n{{ loop.index }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
+        <h3 class="item-title">{{ it.title_zh }}</h3>
+        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.link %}<a class="item-link" hidden href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% endif %}
   </section>
 
   {# ---------- 加密貨幣 ---------- #}
@@ -362,21 +362,6 @@
       </div>
       <button class="col-play-btn" data-play-col="crypto" type="button">播放本欄</button>
     </div>
-
-    {% if news.crypto %}
-    <p class="section-label">今日新聞</p>
-    {% for it in news.crypto %}
-    <article class="item" data-item-id="c-n{{ loop.index }}">
-      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-      <div class="item-body">
-        <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
-        <h3 class="item-title">{{ it.title_zh }}</h3>
-        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% if it.link %}<a class="item-link" hidden href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
-      </div>
-    </article>
-    {% endfor %}
-    {% endif %}
 
     {% if youtube.crypto %}
     <p class="section-label">今日影片摘要</p>
@@ -391,6 +376,21 @@
         <h3 class="item-title">{{ it.title_zh }}</h3>
         <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
         {% if it.video_url %}<a class="item-link" hidden href="{{ it.video_url }}" target="_blank" rel="noopener">觀看原片 ↗</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% endif %}
+
+    {% if news.crypto %}
+    <p class="section-label">今日新聞</p>
+    {% for it in news.crypto %}
+    <article class="item" data-item-id="c-n{{ loop.index }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">{{ it.source|upper }}</span><span class="dot">●</span><span class="time">{{ it.time_label }}</span></div>
+        <h3 class="item-title">{{ it.title_zh }}</h3>
+        <ul class="item-points" hidden>{% for p in it.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if it.link %}<a class="item-link" hidden href="{{ it.link }}" target="_blank" rel="noopener">前往 {{ it.source }} ↗</a>{% endif %}
       </div>
     </article>
     {% endfor %}
