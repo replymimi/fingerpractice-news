@@ -66,9 +66,8 @@
   .play-all-btn svg { width: 15px; height: 15px; }
 
   .board { max-width: 1440px; margin: 28px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px; }
-  .board .column { flex: 1 1 calc(25% - 18px); min-width: 300px; }
-  @media (max-width: 1180px) { .board { gap: 28px; } .board .column { flex-basis: calc(50% - 14px); } }
-  @media (max-width: 640px) { .board { gap: 36px; } .board .column { flex-basis: 100%; } .brand-title { font-size: 1.6rem; } }
+  .board .column { flex: 1 1 calc(50% - 12px); min-width: 300px; max-width: 720px; }
+  @media (max-width: 640px) { .board { gap: 36px; } .board .column { flex-basis: 100%; max-width: none; } .brand-title { font-size: 1.6rem; } }
 
   .column-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; margin-bottom: 4px; border-bottom: 2px solid var(--col-accent); }
   .column-head-label { display: flex; align-items: baseline; gap: 8px; }
