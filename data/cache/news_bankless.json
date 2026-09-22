@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-21T08:16:02.723895+08:00",
+  "fetched_at": "2026-09-22T08:49:41.504528+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "🏴 Robinhood's Onchain Endgame",
+      "link": "https://www.bankless.com/read/robinhood-s-onchain-endgame",
+      "published_iso": "2026-09-21T19:13:51+00:00",
+      "summary_raw": "Robinhood sees blockchains upgrading markets, with tokenized assets, perps, and AI agents at the center of its next phase."
+    },
+    {
+      "source": "Bankless",
+      "title": "Lighter Set to Add Binary Options Support to Its ZK Prover",
+      "link": "https://www.bankless.com/read/news/lighter-set-to-add-binary-options-support-to-its-zk-prover",
+      "published_iso": "2026-09-21T18:28:56+00:00",
+      "summary_raw": "Lighter's prover repository just got a \"Binary options support\" commit."
+    },
+    {
+      "source": "Bankless",
+      "title": "Inside Robinhood's Onchain Endgame",
+      "link": "https://www.bankless.com/read/inside-robinhood-s-onchain-endgame",
+      "published_iso": "2026-09-21T18:10:21+00:00",
+      "summary_raw": "Robinhood sees blockchains upgrading markets, with tokenized assets, perps, and AI agents at the center of its next phase."
+    },
     {
       "source": "Bankless",
       "title": "🏴 Crypto's New Compliance Shield?",
       "link": "https://www.bankless.com/read/crypto-s-new-compliance-shield",
       "published_iso": "2026-09-18T19:00:00+00:00",
       "summary_raw": "The CFTC just gave every wallet and DeFi interface the same legal shield it gave to Phantom."
-    },
-    {
-      "source": "Bankless",
-      "title": "The CFTC Extended a Crypto Compliance Win to the Whole Industry",
-      "link": "https://www.bankless.com/read/the-cftc-extended-a-crypto-compliance-win-to-the-whole-industry",
-      "published_iso": "2026-09-18T15:38:16+00:00",
-      "summary_raw": "The CFTC just gave every wallet and DeFi interface the same legal shield it gave to Phantom."
-    },
-    {
-      "source": "Bankless",
-      "title": "Zcash Sets Its Sights on Next Major Network Upgrade",
-      "link": "https://www.bankless.com/read/news/zcash-sets-its-sights-on-next-major-network-upgrade",
-      "published_iso": "2026-09-18T15:18:50+00:00",
-      "summary_raw": "The popular privacy chain is leveling up next month with faster blocks and beyond."
-    },
-    {
-      "source": "Bankless",
-      "title": "Vitalik Says AI Could Strengthen Cybersecurity",
-      "link": "https://www.bankless.com/read/news/vitalik-says-ai-could-strengthen-cybersecurity",
-      "published_iso": "2026-09-17T14:55:09+00:00",
-      "summary_raw": "Vitalik says AI’s math breakthroughs could make formal verification practical, helping developers build software that is harder to hack."
     }
   ]
 }

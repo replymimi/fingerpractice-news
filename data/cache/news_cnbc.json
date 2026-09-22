@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-21T08:16:00.494125+08:00",
+  "fetched_at": "2026-09-22T08:49:39.422434+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "‘It's awful’: How tariffs, soaring fuel costs and higher interest rates are squeezing American companies",
-      "link": "https://www.cnbc.com/2026/09/20/tariffs-fuel-prices-and-interest-rates-squeeze-us-companies.html",
-      "published_iso": "2026-09-20T12:47:23+00:00",
-      "summary_raw": "Tariffs, fuel prices and interest rates are squeezing American companies, particularly manufacturers, auto suppliers, retailers and transportation businesses."
+      "title": "Much of Trump’s promised midterm election spending has yet to surface, new filing shows",
+      "link": "https://www.cnbc.com/2026/09/21/trump-maga-midterm-spending-war-chest.html",
+      "published_iso": "2026-09-21T20:34:33+00:00",
+      "summary_raw": "MAGA Inc. entered September with $415.8 million as much of Trump’s promised midterm spending had yet to surface publicly."
     },
     {
       "source": "CNBC",
-      "title": "Bessent meets China Vice Premier He Lifeng ahead of Trump-Xi summit",
-      "link": "https://www.cnbc.com/2026/09/20/bessent-he-lifeng-trump-xi-summit.html",
-      "published_iso": "2026-09-20T16:56:14+00:00",
-      "summary_raw": "Scott Bessent and China’s He Lifeng are holding talks on trade, AI and critical minerals ahead of Trump and Xi’s Sept. 24 summit."
+      "title": "Stocks had a great day on the surface. But something alarming occurred not seen since 1999",
+      "link": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
+      "published_iso": "2026-09-21T21:20:41+00:00",
+      "summary_raw": "The market just posted major gains, but the latest performance is not as strong as it may seem."
     },
     {
       "source": "CNBC",
-      "title": "Trump to meet with NYC Mayor Zohran Mamdani on Monday ahead of UN General Assembly",
-      "link": "https://www.cnbc.com/2026/09/20/trump-mamdani-gracie-mansion-meeting.html",
-      "published_iso": "2026-09-20T19:06:16+00:00",
-      "summary_raw": "The mayor's press office said the meeting will take place at Gracie Mansion and \"will focus on issues affecting New York City and New Yorkers.\""
+      "title": "OpenAI proposes development of global AI standards to guide alignment, RSI",
+      "link": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
+      "published_iso": "2026-09-21T20:51:11+00:00",
+      "summary_raw": "Jacob Coxon's post nearly two weeks ago that Anthropic and OpenAI were \"gambling with our lives\" set off a global debate about AI safety."
     },
     {
       "source": "CNBC",
-      "title": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise",
-      "link": "https://www.cnbc.com/2026/09/20/us-middle-east-travel-warning-iran-war-hormuz.html",
-      "published_iso": "2026-09-20T14:23:53+00:00",
-      "summary_raw": "The State Department urged Americans to reconsider Middle East travel as Houthi attacks intensify and Iran keeps the Strait of Hormuz closed."
+      "title": "Meta's Muse AI agent downloads are surging. Here's how it compares to ChatGPT, Grok and Claude",
+      "link": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
+      "published_iso": "2026-09-21T23:03:57+00:00",
+      "summary_raw": "Meta's Muse AI personal agent tool had 730,000 and 2.5 million downloads over the roughly five-day and thirteen-day time frames after its launch."
     }
   ]
 }

@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-21T08:16:02.209060+08:00",
+  "fetched_at": "2026-09-22T08:49:40.972498+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "ZetaChain votes to shut down Layer 1 network and move ZETA to Solana",
-      "link": "https://www.theblock.co/news/defi/2026-09-20-zetachain-votes-to-shut-down-layer-1-network-and-move-zeta-to-solana-415878",
-      "published_iso": "2026-09-20T20:11:49+00:00",
-      "summary_raw": "The team plans to focus instead on Anuma, its private AI app, though the migration will still take one more vote."
+      "title": "Clarity Act fallout: crypto’s Fairshake PAC commits $30 million against Sherrod Brown",
+      "link": "https://www.theblock.co/news/regulation/2026-09-21-clarity-act-fallout-cryptos-fairshake-pac-commits-30-million-against-sherrod-brown-415962",
+      "published_iso": "2026-09-21T16:35:43+00:00",
+      "summary_raw": "Crypto PAC Fairshake is throwing $30 million into an Ohio race against former Sen. Sherrod Brown, who has been skeptical of crypto."
     },
     {
       "source": "The Block Research",
-      "title": "Polymarket faced $10 million fraud attempt as its CEO pushed growth over compliance concerns: WSJ",
-      "link": "https://www.theblock.co/news/regulation/2026-09-20-polymarket-faced-10-million-fraud-attempt-as-its-ceo-pushed-growth-over-compliance-concerns-wsj-415875",
-      "published_iso": "2026-09-20T16:07:19+00:00",
-      "summary_raw": "In a separate attack, hackers compromised nearly 500 users' accounts using stolen personal information, according to the report."
+      "title": "Strive adds 1,355 bitcoin, picks up pace toward year-end second-place treasury goal",
+      "link": "https://www.theblock.co/news/markets/2026-09-21-strive-adds-1355-bitcoin-picks-up-pace-year-end-second-place-treasury-goal-415940",
+      "published_iso": "2026-09-21T15:07:39+00:00",
+      "summary_raw": "Strive (ASST) remains the fifth-largest public bitcoin holder, behind Strategy, Twenty One, Metaplanet and MARA."
     },
     {
       "source": "The Block Research",
-      "title": "Bitcoin ETFs eke out positive week with $433 million Friday inflow as ether funds snap four-week inflow streak",
-      "link": "https://www.theblock.co/news/markets/2026-09-19-bitcoin-etfs-eke-out-positive-week-with-433-million-friday-inflow-as-ether-funds-snap-four-week-inflow-streak-415871",
-      "published_iso": "2026-09-19T18:01:09+00:00",
-      "summary_raw": "Fidelity's FBTC accounted for $310.7 million of Friday’s overall $433 million net inflow, a notable sum that helped offset earlier withdrawals."
+      "title": "Coinbase opens IPO allocations to US customers, starting with Oura",
+      "link": "https://www.theblock.co/news/business/2026-09-21-coinbase-opens-ipo-allocations-us-customers-starting-oura-415942",
+      "published_iso": "2026-09-21T14:47:12+00:00",
+      "summary_raw": "This expands Coinbase's push beyond secondary-market stock trading into the primary market, following its rollout of pre-IPO derivatives."
     },
     {
       "source": "The Block Research",
-      "title": "Visa to close Crossmint memecoin rewards loophole following The Block investigation: report",
-      "link": "https://www.theblock.co/news/regulation/2026-09-19-visa-to-close-crossmint-memecoin-rewards-loophole-following-the-block-investigation-report-415866",
-      "published_iso": "2026-09-19T15:11:22+00:00",
-      "summary_raw": "Though the Crossmint-powered memecoin sales are still live on both apps, Visa's grace period is expected to end next week, per the report."
+      "title": "‘Crypto bull market is underway,’ Tom Lee says as Bitmine nears 5% Ethereum supply target with 27,562 ETH buy",
+      "link": "https://www.theblock.co/news/business/2026-09-21-crypto-bull-market-underway-tom-lee-says-bitmine-nears-5-ethereum-supply-target-with-27562-eth-buy-415923",
+      "published_iso": "2026-09-21T13:14:39+00:00",
+      "summary_raw": "Bitmine's total investments currently stand at $17.1 billion, and the company owns over 4.9% of Ethereum's circulating supply."
     }
   ]
 }
