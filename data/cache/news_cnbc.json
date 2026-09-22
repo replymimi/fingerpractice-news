@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-22T08:49:39.422434+08:00",
+  "fetched_at": "2026-09-22T10:00:10.669972+08:00",
   "data": [
     {
       "source": "CNBC",
@@ -10,24 +10,24 @@
     },
     {
       "source": "CNBC",
+      "title": "All Iranian airlines to be 'shut down' from Wednesday, Bessent tells CNBC",
+      "link": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
+      "published_iso": "2026-09-22T01:51:44+00:00",
+      "summary_raw": "The Treasury Secretary said that Washington was pressuring Iran \"like never before\""
+    },
+    {
+      "source": "CNBC",
+      "title": "Jamie Dimon says hyperscaler AI spending could hit $1 trillion next year",
+      "link": "https://www.cnbc.com/2026/09/21/jamie-dimon-jpm-jpmorgan-indiaconference.html",
+      "published_iso": "2026-09-22T01:30:01+00:00",
+      "summary_raw": "JPMorgan CEO Jamie Dimon says AI spending across the hyperscaler ecosystem could reach $1 trillion next year as investment continues to surge."
+    },
+    {
+      "source": "CNBC",
       "title": "Stocks had a great day on the surface. But something alarming occurred not seen since 1999",
       "link": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
       "published_iso": "2026-09-21T21:20:41+00:00",
       "summary_raw": "The market just posted major gains, but the latest performance is not as strong as it may seem."
-    },
-    {
-      "source": "CNBC",
-      "title": "OpenAI proposes development of global AI standards to guide alignment, RSI",
-      "link": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
-      "published_iso": "2026-09-21T20:51:11+00:00",
-      "summary_raw": "Jacob Coxon's post nearly two weeks ago that Anthropic and OpenAI were \"gambling with our lives\" set off a global debate about AI safety."
-    },
-    {
-      "source": "CNBC",
-      "title": "Meta's Muse AI agent downloads are surging. Here's how it compares to ChatGPT, Grok and Claude",
-      "link": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
-      "published_iso": "2026-09-21T23:03:57+00:00",
-      "summary_raw": "Meta's Muse AI personal agent tool had 730,000 and 2.5 million downloads over the roughly five-day and thirteen-day time frames after its launch."
     }
   ]
 }

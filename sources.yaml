@@ -12,10 +12,65 @@ news:
       feed_url: https://www.cnbc.com/id/100003114/device/rss/rss.html
     - id: marketwatch
       name: MarketWatch
-      feed_url: https://feeds.marketwatch.com/marketwatch/topstories/
+      # 原本用的 topstories 是大眾新聞大雜燴（曾出現星巴克杯子、麥當勞玩具這種消費新聞）
+      # 換成即時財經頭條，內容才真的都是市場/央行/總經
+      feed_url: https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines
     - id: zerohedge
       name: Zero Hedge
+      # Zero Hedge 官方只有這一種全站 RSS，沒有財經專屬版本，內容本來就混雜政治／社會新聞
+      # 用關鍵字過濾，只留跟財經/總經相關的標題
       feed_url: https://cms.zerohedge.com/fullrss2.xml
+      topic_keywords:
+        - fed
+        - federal reserve
+        - rate
+        - inflation
+        - cpi
+        - ppi
+        - gdp
+        - market
+        - stock
+        - bond
+        - yield
+        - dollar
+        - currency
+        - oil
+        - crude
+        - treasury
+        - economy
+        - economic
+        - recession
+        - jobs
+        - payroll
+        - unemployment
+        - earnings
+        - ipo
+        - s&p
+        - nasdaq
+        - dow jones
+        - crypto
+        - bitcoin
+        - tariff
+        - trade deal
+        - trade war
+        - debt
+        - deficit
+        - housing
+        - retail sales
+        - consumer spending
+        - ecb
+        - boj
+        - pboc
+        - powell
+        - central bank
+        - wall street
+        - hedge fund
+        - stimulus
+        - bailout
+        - default
+        - credit
+        - mortgage
+        - bank
     - id: calculatedrisk
       name: Calculated Risk
       feed_url: https://www.calculatedriskblog.com/feeds/posts/default
