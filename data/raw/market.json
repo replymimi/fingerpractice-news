@@ -37,10 +37,10 @@
     {
       "name": "台股加權指數 TAIEX",
       "symbol": "^TWII",
-      "price": 47718.84,
-      "prev_close": 47180.75,
-      "chg": 538.09,
-      "chg_pct": 1.14
+      "price": 48387.23,
+      "prev_close": 47718.84,
+      "chg": 668.39,
+      "chg_pct": 1.4
     },
     {
       "name": "櫃買指數 TPEx",
@@ -53,10 +53,10 @@
     {
       "name": "台幣兌美元",
       "symbol": "TWD=X",
-      "price": 31.726,
+      "price": 31.667,
       "prev_close": 31.715,
-      "chg": 0.01,
-      "chg_pct": 0.03
+      "chg": -0.05,
+      "chg_pct": -0.15
     }
   ]
 }
