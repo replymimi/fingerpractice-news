@@ -90,15 +90,6 @@ news:
 
 youtube:
   stocks:
-    - id: bloomberg_tv
-      name: Bloomberg Television
-      handle: "@markets"
-    - id: cnbc_tv
-      name: CNBC Television
-      handle: "@CNBCtelevision"
-    - id: realvision
-      name: Real Vision Finance
-      handle: "@RealVisionFinance"
     - id: youtinghao
       name: 游庭皓的財經皓角
       handle: "@yutinghaofinance"
@@ -107,17 +98,7 @@ youtube:
     - id: nicolasyoung
       name: 尼可拉斯楊Live精
       handle: "@nicolasyounglive"
-  crypto:
-    - id: coinbureau
-      name: Coin Bureau
-      handle: "@CoinBureau"
-    - id: bencowen
-      name: Benjamin Cowen
-      handle: "@benjaminjcowen"
-    - id: pompliano
-      name: From The Desk Of Anthony Pompliano
-      handle: "@FromTheDeskOfAnthonyPompliano"
-      handle: "@APompliano"
+  crypto: []
 
 tide:
   base_url: https://tide-tw.app/data
