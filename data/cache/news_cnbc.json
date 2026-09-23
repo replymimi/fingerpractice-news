@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-22T10:00:58.307935+08:00",
+  "fetched_at": "2026-09-23T08:31:43.926100+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Much of Trump’s promised midterm election spending has yet to surface, new filing shows",
-      "link": "https://www.cnbc.com/2026/09/21/trump-maga-midterm-spending-war-chest.html",
-      "published_iso": "2026-09-21T20:34:33+00:00",
-      "summary_raw": "MAGA Inc. entered September with $415.8 million as much of Trump’s promised midterm spending had yet to surface publicly."
+      "title": "Trump administration is examining whether a diesel export ban is feasible, Treasury Secretary says",
+      "link": "https://www.cnbc.com/2026/09/22/trump-diesel-export-ban-urkaine-russia-iran.html",
+      "published_iso": "2026-09-22T23:43:48+00:00",
+      "summary_raw": "Republican lawmakers have called for an export ban as high diesel prices hit farmers and truckers ahead of the November midterm elections."
     },
     {
       "source": "CNBC",
-      "title": "All Iranian airlines to be 'shut down' from Wednesday, Bessent tells CNBC",
-      "link": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
-      "published_iso": "2026-09-22T01:51:44+00:00",
-      "summary_raw": "The Treasury Secretary said that Washington was pressuring Iran \"like never before\""
+      "title": "Trump administration removes around 760,000 Obamacare enrollments, alleging fraud",
+      "link": "https://www.cnbc.com/2026/09/22/trump-administration-removes-around-760000-obamacare-enrollments.html",
+      "published_iso": "2026-09-22T21:07:21+00:00",
+      "summary_raw": "Vice President JD Vance's White House Task Force to Eliminate Fraud estimates the action will save roughly $2.2 billion in taxpayer-funded subsidies."
     },
     {
       "source": "CNBC",
-      "title": "Jamie Dimon says hyperscaler AI spending could hit $1 trillion next year",
-      "link": "https://www.cnbc.com/2026/09/21/jamie-dimon-jpm-jpmorgan-indiaconference.html",
-      "published_iso": "2026-09-22T01:30:01+00:00",
-      "summary_raw": "JPMorgan CEO Jamie Dimon says AI spending across the hyperscaler ecosystem could reach $1 trillion next year as investment continues to surge."
+      "title": "Trump discloses more than 1,100 July trades, including up to $25 million each in sales of Microsoft, Amazon",
+      "link": "https://www.cnbc.com/2026/09/22/trump-trades-microsoft-amazon-july-financial-disclosure.html",
+      "published_iso": "2026-09-22T22:03:33+00:00",
+      "summary_raw": "Trump sold tech stocks including Amazon and Microsoft when the Mag 7 stocks popped on July 20, adding $291 billion in market value in one day."
     },
     {
       "source": "CNBC",
-      "title": "Stocks had a great day on the surface. But something alarming occurred not seen since 1999",
-      "link": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
-      "published_iso": "2026-09-21T21:20:41+00:00",
-      "summary_raw": "The market just posted major gains, but the latest performance is not as strong as it may seem."
+      "title": "U.S. regulators rush to write crypto rulebook after Clarity Act stalls in Senate",
+      "link": "https://www.cnbc.com/2026/09/22/clarity-act-crypto-rules-regulators.html",
+      "published_iso": "2026-09-22T20:46:52+00:00",
+      "summary_raw": "State and federal regulators are rushing to fill the void after comprehensive crypto rules failed to clear the Senate."
     }
   ]
 }
