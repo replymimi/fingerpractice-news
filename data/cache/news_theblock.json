@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-23T08:31:45.191277+08:00",
+  "fetched_at": "2026-09-23T19:10:18.135783+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "Canada’s big six banks explore tokenized deposit system to modernize payments",
+      "link": "https://www.theblock.co/news/business/2026-09-23-canada-banks-tokenized-deposit-system-416129",
+      "published_iso": "2026-09-23T04:57:07+00:00",
+      "summary_raw": "The banks said the first phase of the project involves moving tokenized deposits efficiently across financial institutions."
+    },
     {
       "source": "The Block Research",
       "title": "Crypto VC Hashed anchors new digital asset private credit fund targeting $300 million",
@@ -21,13 +28,6 @@
       "link": "https://www.theblock.co/news/regulation/2026-09-22-cftc-selig-mass-tokenization-24-7-trading-416111",
       "published_iso": "2026-09-22T21:08:20+00:00",
       "summary_raw": "The Trump administration is preparing for a financial market overhaul as tokenization  and 24/7 trading move into the spotlight."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Coinbase, Circle shares positioned for crypto recovery as estimates stabilize: William Blair",
-      "link": "https://www.theblock.co/news/markets/2026-09-22-coinbase-circle-shares-positioned-crypto-recovery-estimates-stabilize-william-blair-416083",
-      "published_iso": "2026-09-22T18:44:53+00:00",
-      "summary_raw": "Blair says COIN offers an attractive entry after a 31% rise, trims its EBITDA estimate and sees USDC growth driving Circle's next leg."
     }
   ]
 }
