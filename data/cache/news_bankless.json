@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-22T10:01:00.290344+08:00",
+  "fetched_at": "2026-09-23T08:31:45.403918+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 Robinhood's Onchain Endgame",
-      "link": "https://www.bankless.com/read/robinhood-s-onchain-endgame",
-      "published_iso": "2026-09-21T19:13:51+00:00",
-      "summary_raw": "Robinhood sees blockchains upgrading markets, with tokenized assets, perps, and AI agents at the center of its next phase."
+      "title": "🏴 Will BTC Underperform?",
+      "link": "https://www.bankless.com/read/will-btc-underperform",
+      "published_iso": "2026-09-22T21:59:46+00:00",
+      "summary_raw": "Last cycle mainstreamed Bitcoin. This one may belong to Zcash and alts with real revenue, buybacks, and newly opening U.S. markets."
     },
     {
       "source": "Bankless",
-      "title": "Lighter Set to Add Binary Options Support to Its ZK Prover",
-      "link": "https://www.bankless.com/read/news/lighter-set-to-add-binary-options-support-to-its-zk-prover",
-      "published_iso": "2026-09-21T18:28:56+00:00",
-      "summary_raw": "Lighter's prover repository just got a \"Binary options support\" commit."
+      "title": "This is Not Bitcoin’s Cycle",
+      "link": "https://www.bankless.com/read/this-is-not-bitcoin-s-cycle",
+      "published_iso": "2026-09-22T21:49:20+00:00",
+      "summary_raw": "Last cycle mainstreamed Bitcoin. This one may belong to Zcash and alts with real revenue, buybacks, and newly opening U.S. markets."
     },
     {
       "source": "Bankless",
-      "title": "Inside Robinhood's Onchain Endgame",
-      "link": "https://www.bankless.com/read/inside-robinhood-s-onchain-endgame",
-      "published_iso": "2026-09-21T18:10:21+00:00",
-      "summary_raw": "Robinhood sees blockchains upgrading markets, with tokenized assets, perps, and AI agents at the center of its next phase."
+      "title": "Coinbase Rolls Out Fixed-Rate Bitcoin Loans via Morpho Midnight",
+      "link": "https://www.bankless.com/read/news/coinbase-rolls-out-fixed-rate-bitcoin-loans-via-morpho-midnight",
+      "published_iso": "2026-09-22T18:36:14+00:00",
+      "summary_raw": "Coinbase launches fixed-rate, bitcoin-backed USDC loans powered by Morpho Midnight on Base."
     },
     {
       "source": "Bankless",
-      "title": "🏴 Crypto's New Compliance Shield?",
-      "link": "https://www.bankless.com/read/crypto-s-new-compliance-shield",
-      "published_iso": "2026-09-18T19:00:00+00:00",
-      "summary_raw": "The CFTC just gave every wallet and DeFi interface the same legal shield it gave to Phantom."
+      "title": "Prediction Market Trueo Is Leaping from Base to Ethereum",
+      "link": "https://www.bankless.com/read/news/prediction-market-trueo-is-leaping-from-base-to-ethereum",
+      "published_iso": "2026-09-22T18:03:29+00:00",
+      "summary_raw": "Prediction market Trueo is migrating from Base to Ethereum mainnet, earning praise from Vitalik Buterin."
     }
   ]
 }
