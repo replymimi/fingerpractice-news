@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-23T19:10:18.486258+08:00",
+  "fetched_at": "2026-09-24T08:29:38.173657+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 Will BTC Underperform?",
-      "link": "https://www.bankless.com/read/will-btc-underperform",
-      "published_iso": "2026-09-22T21:59:46+00:00",
-      "summary_raw": "Last cycle mainstreamed Bitcoin. This one may belong to Zcash and alts with real revenue, buybacks, and newly opening U.S. markets."
+      "title": "BlackRock Maps Crypto’s Role in the AI Economy",
+      "link": "https://www.bankless.com/read/blackrock-maps-crypto-s-role-in-the-ai-economy",
+      "published_iso": "2026-09-23T17:50:24+00:00",
+      "summary_raw": "BlackRock says AI agents could drive stablecoin payments and help create new markets for trading and financing compute."
     },
     {
       "source": "Bankless",
-      "title": "This is Not Bitcoin’s Cycle",
-      "link": "https://www.bankless.com/read/this-is-not-bitcoin-s-cycle",
-      "published_iso": "2026-09-22T21:49:20+00:00",
-      "summary_raw": "Last cycle mainstreamed Bitcoin. This one may belong to Zcash and alts with real revenue, buybacks, and newly opening U.S. markets."
+      "title": "NYSE, Blockchain.com Partner on Tokenized Stocks",
+      "link": "https://www.bankless.com/read/news/nyse-blockchain-com-partner-on-tokenized-stocks",
+      "published_iso": "2026-09-23T17:17:44+00:00",
+      "summary_raw": "Blockchain.com and the NYSE are teaming up to bring tokenized U.S. stocks and ETFs to Blockchain.com’s global users through the exchange’s planned 24/7 onchain trading venue. What’s the Scoop? NYSE taps Blockchain.com: T…"
     },
     {
       "source": "Bankless",
-      "title": "Coinbase Rolls Out Fixed-Rate Bitcoin Loans via Morpho Midnight",
-      "link": "https://www.bankless.com/read/news/coinbase-rolls-out-fixed-rate-bitcoin-loans-via-morpho-midnight",
-      "published_iso": "2026-09-22T18:36:14+00:00",
-      "summary_raw": "Coinbase launches fixed-rate, bitcoin-backed USDC loans powered by Morpho Midnight on Base."
+      "title": "CFTC Warns Prediction Markets Over Mention Contracts",
+      "link": "https://www.bankless.com/read/news/cftc-warns-prediction-markets-over-mention-contracts",
+      "published_iso": "2026-09-23T17:09:52+00:00",
+      "summary_raw": "CFTC staff warns mention markets carry elevated manipulation risks after cases involving George Santos, White House staff and others."
     },
     {
       "source": "Bankless",
-      "title": "Prediction Market Trueo Is Leaping from Base to Ethereum",
-      "link": "https://www.bankless.com/read/news/prediction-market-trueo-is-leaping-from-base-to-ethereum",
-      "published_iso": "2026-09-22T18:03:29+00:00",
-      "summary_raw": "Prediction market Trueo is migrating from Base to Ethereum mainnet, earning praise from Vitalik Buterin."
+      "title": "ZEC and NEAR Are Eating the Blue Chips' Bid",
+      "link": "https://www.bankless.com/read/zec-and-near-are-eating-the-blue-chips-bid",
+      "published_iso": "2026-09-23T16:57:28+00:00",
+      "summary_raw": "BTC:ETH::ZEC:NEAR! How Zcash and NEAR are drawing capital away from Bitcoin and Ethereum."
     }
   ]
 }

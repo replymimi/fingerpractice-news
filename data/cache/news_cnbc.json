@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-23T19:10:16.361607+08:00",
+  "fetched_at": "2026-09-24T08:29:36.223976+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump-Xi summit puts AI safety talks on the table but neither side wants to slow down",
-      "link": "https://www.cnbc.com/2026/09/23/trump-xi-meeting-ai-safety-chips-us-china-dialogue.html",
-      "published_iso": "2026-09-23T09:14:32+00:00",
-      "summary_raw": "Recent weeks have seen AI safety fears reach new heights. That will be a key focus for the U.S. and Chinese premiers, analysts told CNBC."
+      "title": "U.S.-China trade truce extended for two months, Bessent says, as Xi begins state visit",
+      "link": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
+      "published_iso": "2026-09-23T23:59:39+00:00",
+      "summary_raw": "The deal, which was set to expire in November, will now be extended to Jan. 10, Bessent said, noting the need for Beijing to fulfill more deliverables."
     },
     {
       "source": "CNBC",
-      "title": "Nearly 10% of borrowers opted for riskier mortgages last week, as rates soared over 7%",
-      "link": "https://www.cnbc.com/2026/09/23/nearly-10percent-of-borrowers-opted-for-riskier-mortgages-last-week.html",
-      "published_iso": "2026-09-23T11:00:01+00:00",
-      "summary_raw": "As mortgage rates rise, borrowers are seeking savings in riskier, adjustable-rate mortgages that offer lower rates."
+      "title": "10-year Treasury yield rockets to 19-year high. Here's what's driving the spike",
+      "link": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
+      "published_iso": "2026-09-23T20:07:50+00:00",
+      "summary_raw": "Treasury yields traded higher on Wednesday as new services and manufacturing sector data increased worry of further Federal Reserve rate hikes."
     },
     {
       "source": "CNBC",
-      "title": "Iran says Trump’s threats a sign of ‘strategic desperation,’ floats conditions for Hormuz reopening",
-      "link": "https://www.cnbc.com/2026/09/23/us-iran-war-trump-hormuz.html",
-      "published_iso": "2026-09-23T09:05:23+00:00",
-      "summary_raw": "Tehran's proposal could pave the way for restoring traffic through the Strait of Hormuz, reviving fragile hopes for a diplomatic off-ramp."
+      "title": "Meta's standoff with Amazon over Muse could be a sign of things to come",
+      "link": "https://www.cnbc.com/2026/09/23/metas-standoff-with-amazon-over-muse-comes-ahead-of-meta-connect.html",
+      "published_iso": "2026-09-23T23:39:10+00:00",
+      "summary_raw": "Meta's new Muse AI personal agent is garnering excitement and shows signs of becoming a hit, but Amazon has blocked the app from its site."
     },
     {
       "source": "CNBC",
-      "title": "Texas turning blue may hinge on Democrats harnessing data center opposition",
-      "link": "https://www.cnbc.com/2026/09/23/texas-data-centers-election.html",
-      "published_iso": "2026-09-23T10:00:01+00:00",
-      "summary_raw": "Data center opposition is reshaping Texas' 2026 governor and Senate races as voters raise concerns over power, water and utility costs."
+      "title": "OpenAI and Anthropic CEOs push for AI cooperation at UN after Trump rebuffs 'globalist scheme' to control it",
+      "link": "https://www.cnbc.com/2026/09/23/altman-amodei-un-ai-safety.html",
+      "published_iso": "2026-09-23T20:29:20+00:00",
+      "summary_raw": "Altman is one of several tech executives who's argued that AI companies should temper the pace of AI development in order to manage potential risks."
     }
   ]
 }
