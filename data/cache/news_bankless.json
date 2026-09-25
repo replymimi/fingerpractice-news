@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-24T08:29:38.173657+08:00",
+  "fetched_at": "2026-09-25T08:33:04.549723+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "BlackRock Maps Crypto’s Role in the AI Economy",
-      "link": "https://www.bankless.com/read/blackrock-maps-crypto-s-role-in-the-ai-economy",
-      "published_iso": "2026-09-23T17:50:24+00:00",
-      "summary_raw": "BlackRock says AI agents could drive stablecoin payments and help create new markets for trading and financing compute."
+      "title": "New NFT Cathedrals Are Going Up Everywhere",
+      "link": "https://www.bankless.com/read/new-nft-cathedrals-are-going-up-everywhere",
+      "published_iso": "2026-09-24T19:08:17+00:00",
+      "summary_raw": "If you've tuned out NFTs during the memecoin era, you may be missing today's non-fungible resurgence."
     },
     {
       "source": "Bankless",
-      "title": "NYSE, Blockchain.com Partner on Tokenized Stocks",
-      "link": "https://www.bankless.com/read/news/nyse-blockchain-com-partner-on-tokenized-stocks",
-      "published_iso": "2026-09-23T17:17:44+00:00",
-      "summary_raw": "Blockchain.com and the NYSE are teaming up to bring tokenized U.S. stocks and ETFs to Blockchain.com’s global users through the exchange’s planned 24/7 onchain trading venue. What’s the Scoop? NYSE taps Blockchain.com: T…"
+      "title": "New York Sues Polymarket Over Alleged Illegal Gambling",
+      "link": "https://www.bankless.com/read/news/new-york-sues-polymarket-over-alleged-illegal-gambling",
+      "published_iso": "2026-09-24T18:58:19+00:00",
+      "summary_raw": "New York alleged Polymarket operates as gambling and is seeking to block the platform in the state."
     },
     {
       "source": "Bankless",
-      "title": "CFTC Warns Prediction Markets Over Mention Contracts",
-      "link": "https://www.bankless.com/read/news/cftc-warns-prediction-markets-over-mention-contracts",
-      "published_iso": "2026-09-23T17:09:52+00:00",
-      "summary_raw": "CFTC staff warns mention markets carry elevated manipulation risks after cases involving George Santos, White House staff and others."
+      "title": "Alloc Init Proposes Zcash-Style Privacy for Bitcoin",
+      "link": "https://www.bankless.com/read/news/alloc-init-proposes-zcash-style-privacy-for-bitcoin",
+      "published_iso": "2026-09-24T18:46:27+00:00",
+      "summary_raw": "The proposed Shielded Bitcoin metaprotocol would use Zcash-style private notes to hide BTC transfers without changing Bitcoin consensus."
     },
     {
       "source": "Bankless",
-      "title": "ZEC and NEAR Are Eating the Blue Chips' Bid",
-      "link": "https://www.bankless.com/read/zec-and-near-are-eating-the-blue-chips-bid",
-      "published_iso": "2026-09-23T16:57:28+00:00",
-      "summary_raw": "BTC:ETH::ZEC:NEAR! How Zcash and NEAR are drawing capital away from Bitcoin and Ethereum."
+      "title": "Tempo Launches Mercator Tool Router for AI Agents",
+      "link": "https://www.bankless.com/read/news/tempo-launches-mercator-tool-router-for-ai-agents",
+      "published_iso": "2026-09-24T18:07:19+00:00",
+      "summary_raw": "Mercator lets agents discover, pay for, and combine use outside tools, improving their performance on domain specific tasks along the way."
     }
   ]
 }

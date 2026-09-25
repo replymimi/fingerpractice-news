@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-24T08:29:37.595825+08:00",
+  "fetched_at": "2026-09-25T08:33:04.083829+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Hut 8 wins bidding for Poolin’s Texas data centers with $140 million offer",
-      "link": "https://www.theblock.co/news/business/2026-09-23-hut-8-wins-bidding-poolin-texas-data-centers-140-million-offer-416190",
-      "published_iso": "2026-09-23T18:01:58+00:00",
-      "summary_raw": "The proposed acquisition would add two Texas sites to Hut 8’s expanding AI infrastructure portfolio."
+      "title": "More than $170 million in crypto moves from Bitget wallets to unidentified address",
+      "link": "https://www.theblock.co/news/markets/2026-09-24-more-than-170-million-in-crypto-moves-from-bitget-wallets-unidentified-address-416345",
+      "published_iso": "2026-09-24T21:20:47+00:00",
+      "summary_raw": "The receiving address has made several swaps, but the reason for the Bitget wallet transfers remains unclear."
     },
     {
       "source": "The Block Research",
-      "title": "‘Not behind closed doors’: Senate Banking Democrats call for prediction markets hearing as GOP meets privately with Kalshi",
-      "link": "https://www.theblock.co/news/regulation/2026-09-23-senate-banking-democrats-prediction-markets-hearing-kalshi-416193",
-      "published_iso": "2026-09-23T17:36:11+00:00",
-      "summary_raw": "Every Democrat on the Senate Banking Committee is urging its chair, Sen. Tim Scott, to hold a congressional hearing on prediction markets."
+      "title": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
+      "link": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336",
+      "published_iso": "2026-09-24T20:19:46+00:00",
+      "summary_raw": "The Federal Reserve proposed new measures for stablecoin issuers, including reserve-asset limits and standardized capital requirements."
     },
     {
       "source": "The Block Research",
-      "title": "‘BTC still has room to catch up’: Bitcoin’s $80,000 breakout draws institutional demand as analysts weigh durability",
-      "link": "https://www.theblock.co/news/markets/2026-09-23-bitcoin-breakout-etf-inflows-analysts-k33-nexo-resistance-416182",
-      "published_iso": "2026-09-23T16:52:09+00:00",
-      "summary_raw": "K33, Nexo and 21shares weigh in on bitcoin's breakout as ETF inflows hit their highest since Nov. 2024. Key levels: $87K–88K resistance."
+      "title": "Solana treasury firm SkyAI keeps board after shareholder protest, loses equity plan vote",
+      "link": "https://www.theblock.co/news/business/2026-09-24-solana-treasury-skyai-keeps-board-shareholder-protest-loses-equity-plan-vote-416298",
+      "published_iso": "2026-09-24T19:17:47+00:00",
+      "summary_raw": "SkyAI’s board survived a shareholder protest, but its proposed equity pay plan fell by a wide margin."
     },
     {
       "source": "The Block Research",
-      "title": "Blockchain.com, NYSE plan access to tokenized US stocks and ETFs",
-      "link": "https://www.theblock.co/news/web3/2026-09-23-blockchain-com-nyse-tokenized-us-stocks-etfs-416176",
-      "published_iso": "2026-09-23T15:36:10+00:00",
-      "summary_raw": "Blockchain.com and NYSE have signed an agreement to explore tokenized stocks and ETFs, subject to regulatory approvals."
+      "title": "ARK Invest brings $1.3 billion venture fund onchain through Securitize",
+      "link": "https://www.theblock.co/news/markets/2026-09-24-ark-invest-tokenizes-arkvx-venture-fund-securitize-416294",
+      "published_iso": "2026-09-24T18:37:22+00:00",
+      "summary_raw": "ARK Invest is bringing its $1.3B ARK Venture Fund (ARKVX), which holds OpenAI, Anthropic and Stripe, onchain via Securitize on Ethereum."
     }
   ]
 }

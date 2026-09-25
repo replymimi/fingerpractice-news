@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-24T08:29:36.223976+08:00",
+  "fetched_at": "2026-09-25T08:33:02.235657+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "U.S.-China trade truce extended for two months, Bessent says, as Xi begins state visit",
-      "link": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
-      "published_iso": "2026-09-23T23:59:39+00:00",
-      "summary_raw": "The deal, which was set to expire in November, will now be extended to Jan. 10, Bessent said, noting the need for Beijing to fulfill more deliverables."
+      "title": "Senate narrowly votes down resolution calling for end to Iran war",
+      "link": "https://www.cnbc.com/2026/09/24/iran-war-powers-senate-vote-fuel.html",
+      "published_iso": "2026-09-24T20:36:15+00:00",
+      "summary_raw": "The vote came weeks before the midterm election, where President Donald Trump's fellow Republicans are trying to retain their majorities in Congress."
     },
     {
       "source": "CNBC",
-      "title": "10-year Treasury yield rockets to 19-year high. Here's what's driving the spike",
-      "link": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
-      "published_iso": "2026-09-23T20:07:50+00:00",
-      "summary_raw": "Treasury yields traded higher on Wednesday as new services and manufacturing sector data increased worry of further Federal Reserve rate hikes."
+      "title": "Trump, Xi to attend state dinner after White House meeting",
+      "link": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
+      "published_iso": "2026-09-24T22:09:33+00:00",
+      "summary_raw": "Trump greeted China's Xi at Joint Base Andrews, marking the U.S. president's first time traveling to the facility to welcome a foreign leader."
     },
     {
       "source": "CNBC",
-      "title": "Meta's standoff with Amazon over Muse could be a sign of things to come",
-      "link": "https://www.cnbc.com/2026/09/23/metas-standoff-with-amazon-over-muse-comes-ahead-of-meta-connect.html",
-      "published_iso": "2026-09-23T23:39:10+00:00",
-      "summary_raw": "Meta's new Muse AI personal agent is garnering excitement and shows signs of becoming a hit, but Amazon has blocked the app from its site."
+      "title": "30-year fixed mortgage rate jumps sharply Thursday to 7.45%",
+      "link": "https://www.cnbc.com/2026/09/24/30-year-fixed-mortgage-rate-spikes-thursday-to-7point45percent.html",
+      "published_iso": "2026-09-24T23:08:16+00:00",
+      "summary_raw": "The 30-year fixed rate surged to 7.45%, the highest level since April 2024 as bonds sold off and yields rose."
     },
     {
       "source": "CNBC",
-      "title": "OpenAI and Anthropic CEOs push for AI cooperation at UN after Trump rebuffs 'globalist scheme' to control it",
-      "link": "https://www.cnbc.com/2026/09/23/altman-amodei-un-ai-safety.html",
-      "published_iso": "2026-09-23T20:29:20+00:00",
-      "summary_raw": "Altman is one of several tech executives who's argued that AI companies should temper the pace of AI development in order to manage potential risks."
+      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+      "link": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
+      "published_iso": "2026-09-24T21:40:19+00:00",
+      "summary_raw": "Markets expect the central bank will take a firmer hand on inflation. It's not that easy."
     }
   ]
 }

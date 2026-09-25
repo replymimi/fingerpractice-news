@@ -1,48 +1,48 @@
 {
-  "fetched_at": "2026-09-24T08:29:39.246924+08:00",
+  "fetched_at": "2026-09-25T08:33:05.553221+08:00",
   "data": {
-    "date": "2026-09-23",
-    "generated_at": "2026-09-24T03:09:58+08:00",
-    "market_chg_1d": 0.75,
+    "date": "2026-09-24",
+    "generated_at": "2026-09-25T03:24:42+08:00",
+    "market_chg_1d": -0.28,
     "is_market_down": false,
     "panic_index": {
-      "score": 50,
+      "score": 54,
       "label": "中性",
-      "advancers": 742,
-      "decliners": 991,
-      "down_ratio": 0.572
+      "advancers": 795,
+      "decliners": 936,
+      "down_ratio": 0.541
     },
     "safe_harbor": {
       "mode": "top_inflow",
       "sectors": [
         {
-          "name": "HBM 高頻寬記憶體",
-          "net_1d_yi": 335.0,
-          "chg_1d": 1.74,
-          "inflow_streak": 1
-        },
-        {
-          "name": "CPU 與 Agentic AI",
-          "net_1d_yi": 233.9,
-          "chg_1d": 1.04,
+          "name": "PCB 載板",
+          "net_1d_yi": 122.5,
+          "chg_1d": 2.88,
           "inflow_streak": 5
         },
         {
-          "name": "AI 先進封裝",
-          "net_1d_yi": 230.8,
-          "chg_1d": 0.77,
+          "name": "PCB 硬板製造",
+          "net_1d_yi": 96.5,
+          "chg_1d": 0.78,
           "inflow_streak": 5
         },
         {
-          "name": "CXL 技術",
-          "net_1d_yi": 187.0,
-          "chg_1d": 1.57,
+          "name": "矽光子與 CPO",
+          "net_1d_yi": 65.2,
+          "chg_1d": 0.73,
+          "inflow_streak": 5
+        },
+        {
+          "name": "電容器",
+          "net_1d_yi": 49.4,
+          "chg_1d": 1.62,
           "inflow_streak": 1
         },
         {
-          "name": "記憶體模組",
-          "net_1d_yi": 159.7,
-          "chg_1d": 0.71,
+          "name": "被動元件 MLCC",
+          "net_1d_yi": 48.5,
+          "chg_1d": 0.64,
           "inflow_streak": 1
         }
       ]
@@ -50,137 +50,137 @@
     "big_money": {
       "abnormal_buy": [
         {
-          "code": "3037",
-          "name": "欣興",
-          "net_1d_yi": 65.3,
-          "chg_1d": 3.57,
-          "inflow_streak": 4
-        },
-        {
-          "code": "3443",
-          "name": "創意",
-          "net_1d_yi": 35.3,
-          "chg_1d": 0.12,
+          "code": "3026",
+          "name": "禾伸堂",
+          "net_1d_yi": 25.1,
+          "chg_1d": 5.47,
           "inflow_streak": 1
         },
         {
-          "code": "2404",
-          "name": "漢唐",
-          "net_1d_yi": 22.6,
-          "chg_1d": 9.65,
-          "inflow_streak": 2
-        },
-        {
-          "code": "6526",
-          "name": "達發",
-          "net_1d_yi": 9.6,
-          "chg_1d": 9.95,
-          "inflow_streak": 5
-        },
-        {
-          "code": "3016",
-          "name": "嘉晶",
-          "net_1d_yi": 9.1,
-          "chg_1d": 9.81,
+          "code": "3293",
+          "name": "鈊象",
+          "net_1d_yi": 24.8,
+          "chg_1d": 4.39,
           "inflow_streak": 3
-        }
-      ],
-      "abnormal_sell": [
-        {
-          "code": "4958",
-          "name": "臻鼎-KY",
-          "net_1d_yi": -77.4,
-          "chg_1d": -3.27,
-          "inflow_streak": -1
-        },
-        {
-          "code": "2409",
-          "name": "友達",
-          "net_1d_yi": -56.3,
-          "chg_1d": -5.32,
-          "inflow_streak": -1
-        },
-        {
-          "code": "6488",
-          "name": "環球晶",
-          "net_1d_yi": -53.8,
-          "chg_1d": -2.16,
-          "inflow_streak": -1
-        },
-        {
-          "code": "5483",
-          "name": "中美晶",
-          "net_1d_yi": -39.8,
-          "chg_1d": -5.38,
-          "inflow_streak": -1
         },
         {
           "code": "6182",
           "name": "合晶",
-          "net_1d_yi": -31.2,
-          "chg_1d": -2.94,
+          "net_1d_yi": 24.8,
+          "chg_1d": 4.33,
+          "inflow_streak": 1
+        },
+        {
+          "code": "3016",
+          "name": "嘉晶",
+          "net_1d_yi": 13.7,
+          "chg_1d": 9.97,
+          "inflow_streak": 4
+        },
+        {
+          "code": "2059",
+          "name": "川湖",
+          "net_1d_yi": 11.3,
+          "chg_1d": -0.32,
+          "inflow_streak": 2
+        }
+      ],
+      "abnormal_sell": [
+        {
+          "code": "2317",
+          "name": "鴻海",
+          "net_1d_yi": -60.7,
+          "chg_1d": -2.15,
+          "inflow_streak": -1
+        },
+        {
+          "code": "8299",
+          "name": "群聯",
+          "net_1d_yi": -33.7,
+          "chg_1d": -4.06,
+          "inflow_streak": -2
+        },
+        {
+          "code": "3653",
+          "name": "健策",
+          "net_1d_yi": -21.5,
+          "chg_1d": 7.96,
+          "inflow_streak": -1
+        },
+        {
+          "code": "1709",
+          "name": "和益",
+          "net_1d_yi": -8.4,
+          "chg_1d": -9.94,
+          "inflow_streak": -3
+        },
+        {
+          "code": "6693",
+          "name": "廣閎科",
+          "net_1d_yi": -3.2,
+          "chg_1d": 6.35,
           "inflow_streak": -1
         }
       ],
       "streak_leaders": [
         {
-          "code": "9919",
-          "name": "康那香",
-          "net_1d_yi": 0,
-          "chg_1d": 0.0,
-          "inflow_streak": 20
-        },
-        {
           "code": "3045",
           "name": "台灣大",
-          "net_1d_yi": 1.8,
-          "chg_1d": 0.0,
+          "net_1d_yi": 1.2,
+          "chg_1d": -0.41,
           "inflow_streak": 20
         },
         {
-          "code": "2247",
-          "name": "汎德永業",
-          "net_1d_yi": 0,
-          "chg_1d": -0.86,
+          "code": "2412",
+          "name": "中華電",
+          "net_1d_yi": 4.0,
+          "chg_1d": -0.34,
           "inflow_streak": 18
         },
         {
           "code": "5876",
           "name": "上海商銀",
           "net_1d_yi": 0.1,
-          "chg_1d": -0.91,
-          "inflow_streak": 17
+          "chg_1d": -0.61,
+          "inflow_streak": 18
         },
         {
-          "code": "2412",
-          "name": "中華電",
-          "net_1d_yi": 6.7,
-          "chg_1d": 0.34,
-          "inflow_streak": 17
+          "code": "8227",
+          "name": "巨有科技",
+          "net_1d_yi": 0.2,
+          "chg_1d": -1.13,
+          "inflow_streak": 14
+        },
+        {
+          "code": "2380",
+          "name": "虹光",
+          "net_1d_yi": 0,
+          "chg_1d": 0.6,
+          "inflow_streak": 13
         }
       ]
     },
     "review": {
-      "prev_date": "2026-09-22",
+      "prev_date": "2026-09-23",
       "label": "法人買最多",
       "n": 3,
-      "avg_chg": 0.48,
+      "avg_chg": -0.19,
       "best": {
-        "name": "PCB 載板",
-        "chg_1d": 1.08
+        "name": "AI 先進封裝",
+        "chg_1d": 0.5
       },
       "sectors": [
         {
-          "name": "PCB 載板",
-          "chg_1d": 1.08
+          "name": "HBM 高頻寬記憶體",
+          "chg_1d": -0.91
         },
         {
-          "name": "PCB 硬板製造",
-          "chg_1d": 0.58
+          "name": "CPU 與 Agentic AI",
+          "chg_1d": -0.17
         },
         {
-          "name": "封測代工",
-          "chg_1d": -0.22
+          "name": "AI 先進封裝",
+          "chg_1d": 0.5
         }
       ]
     }
