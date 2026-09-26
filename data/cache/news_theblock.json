@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-25T08:33:04.083829+08:00",
+  "fetched_at": "2026-09-26T08:37:21.223223+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "More than $170 million in crypto moves from Bitget wallets to unidentified address",
-      "link": "https://www.theblock.co/news/markets/2026-09-24-more-than-170-million-in-crypto-moves-from-bitget-wallets-unidentified-address-416345",
-      "published_iso": "2026-09-24T21:20:47+00:00",
-      "summary_raw": "The receiving address has made several swaps, but the reason for the Bitget wallet transfers remains unclear."
+      "title": "SEC crypto FAQ addresses token buybacks, network upgrades and promises of profit",
+      "link": "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
+      "published_iso": "2026-09-25T20:32:40+00:00",
+      "summary_raw": "Promoting a network’s current uses generally would not create an expectation of profit, SEC staff said."
     },
     {
       "source": "The Block Research",
-      "title": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
-      "link": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336",
-      "published_iso": "2026-09-24T20:19:46+00:00",
-      "summary_raw": "The Federal Reserve proposed new measures for stablecoin issuers, including reserve-asset limits and standardized capital requirements."
+      "title": "Blockchain Association CEO Summer Mersinger to step down, Kristin Smith to return as interim CEO",
+      "link": "https://www.theblock.co/news/regulation/2026-09-25-blockchain-association-ceo-summer-mersinger-tstep-down-kristin-smith-interim-ceo-416913",
+      "published_iso": "2026-09-25T19:48:07+00:00",
+      "summary_raw": "The Blockchain Association is switching up its leadership with CEO Summer Mersinger set to step down next month."
     },
     {
       "source": "The Block Research",
-      "title": "Solana treasury firm SkyAI keeps board after shareholder protest, loses equity plan vote",
-      "link": "https://www.theblock.co/news/business/2026-09-24-solana-treasury-skyai-keeps-board-shareholder-protest-loses-equity-plan-vote-416298",
-      "published_iso": "2026-09-24T19:17:47+00:00",
-      "summary_raw": "SkyAI’s board survived a shareholder protest, but its proposed equity pay plan fell by a wide margin."
+      "title": "Man charged in $16 million crypto ‘massive pig butchering’ scam",
+      "link": "https://www.theblock.co/news/regulation/2026-09-25-man-charged-in-16-million-crypto-massive-pig-butchering-scam-416895",
+      "published_iso": "2026-09-25T17:48:16+00:00",
+      "summary_raw": "A man was charged for his role in defrauding someone of millions of dollars' worth of crypto in a \"massive pig butchering\" scam."
     },
     {
       "source": "The Block Research",
-      "title": "ARK Invest brings $1.3 billion venture fund onchain through Securitize",
-      "link": "https://www.theblock.co/news/markets/2026-09-24-ark-invest-tokenizes-arkvx-venture-fund-securitize-416294",
-      "published_iso": "2026-09-24T18:37:22+00:00",
-      "summary_raw": "ARK Invest is bringing its $1.3B ARK Venture Fund (ARKVX), which holds OpenAI, Anthropic and Stripe, onchain via Securitize on Ethereum."
+      "title": "Magic Eden legacy approvals leave $5.7 million in NFTs exposed to exploit before rescue",
+      "link": "https://www.theblock.co/news/web3/2026-09-25-magic-eden-legacy-approvals-leave-5-7-million-in-nfts-exposed-to-exploit-before-rescue-416874",
+      "published_iso": "2026-09-25T14:09:15+00:00",
+      "summary_raw": "Magic Eden legacy approvals exposed $5.7 million in NFTs to an exploit before whitehats rescued 23,155 tokens."
     }
   ]
 }

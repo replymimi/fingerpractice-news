@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-25T08:33:04.549723+08:00",
+  "fetched_at": "2026-09-26T08:37:21.738889+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "New NFT Cathedrals Are Going Up Everywhere",
-      "link": "https://www.bankless.com/read/new-nft-cathedrals-are-going-up-everywhere",
-      "published_iso": "2026-09-24T19:08:17+00:00",
-      "summary_raw": "If you've tuned out NFTs during the memecoin era, you may be missing today's non-fungible resurgence."
+      "title": "🏴 Ethereum's New AI Swarm",
+      "link": "https://www.bankless.com/read/ethereum-s-new-ai-swarm",
+      "published_iso": "2026-09-25T21:46:36+00:00",
+      "summary_raw": "Digging into IMD, the rising AI experiment that has the potential to become a new kind of prolific workforce."
     },
     {
       "source": "Bankless",
-      "title": "New York Sues Polymarket Over Alleged Illegal Gambling",
-      "link": "https://www.bankless.com/read/news/new-york-sues-polymarket-over-alleged-illegal-gambling",
-      "published_iso": "2026-09-24T18:58:19+00:00",
-      "summary_raw": "New York alleged Polymarket operates as gambling and is seeking to block the platform in the state."
+      "title": "Inside IMD, Ethereum's New AI Swarm Experiment",
+      "link": "https://www.bankless.com/read/inside-imd-ethereum-s-new-ai-swarm-experiment",
+      "published_iso": "2026-09-25T20:24:29+00:00",
+      "summary_raw": "A new kind of AI workforce is ascending in the Ethereum ecosystem, replete with experimental tokenomics. Here's why it matters, and how you might consider the trade."
     },
     {
       "source": "Bankless",
-      "title": "Alloc Init Proposes Zcash-Style Privacy for Bitcoin",
-      "link": "https://www.bankless.com/read/news/alloc-init-proposes-zcash-style-privacy-for-bitcoin",
-      "published_iso": "2026-09-24T18:46:27+00:00",
-      "summary_raw": "The proposed Shielded Bitcoin metaprotocol would use Zcash-style private notes to hide BTC transfers without changing Bitcoin consensus."
+      "title": "Ethena Expands USDe Backing Into Equity Perpetuals",
+      "link": "https://www.bankless.com/read/news/ethena-expands-usde-backing-into-equity-perpetuals",
+      "published_iso": "2026-09-25T13:51:23+00:00",
+      "summary_raw": "Expanding its USDe basis trade to Binance equity perps means Ethena, in theory, opens itself up to a $150T+ market of real-world assets."
     },
     {
       "source": "Bankless",
-      "title": "Tempo Launches Mercator Tool Router for AI Agents",
-      "link": "https://www.bankless.com/read/news/tempo-launches-mercator-tool-router-for-ai-agents",
-      "published_iso": "2026-09-24T18:07:19+00:00",
-      "summary_raw": "Mercator lets agents discover, pay for, and combine use outside tools, improving their performance on domain specific tasks along the way."
+      "title": "Bitget Hacked for $351.6M",
+      "link": "https://www.bankless.com/read/news/bitget-hacked-for-351-6m",
+      "published_iso": "2026-09-25T12:58:35+00:00",
+      "summary_raw": "A backend wallet breach drained $351.6M as hackers consolidate funds into ETH and investigators probe a DPRK link."
     }
   ]
 }
