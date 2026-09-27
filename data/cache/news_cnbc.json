@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-26T08:37:19.587281+08:00",
+  "fetched_at": "2026-09-27T08:35:06.883527+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump, Xi wrap state visit centered on spectacle over substance. Here are the top takeaways",
-      "link": "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html",
-      "published_iso": "2026-09-25T21:38:38+00:00",
-      "summary_raw": "President Trump and Chinese leader Xi went heavy on the ceremony and light on deliverables as they danced around Taiwan and Iran during two days in Washington."
+      "title": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
+      "link": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
+      "published_iso": "2026-09-26T17:10:32+00:00",
+      "summary_raw": "OpenAI is conducting an extensive review of misaligned model activity after disclosures involving an Australian government portal and other websites."
     },
     {
       "source": "CNBC",
-      "title": "Airlines waive change fees ahead of nor'easter as flight delays trickle in",
-      "link": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
-      "published_iso": "2026-09-25T19:59:45+00:00",
-      "summary_raw": "Flight disruptions were minimal for Saturday as of Friday morning."
+      "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
+      "link": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
+      "published_iso": "2026-09-26T16:57:57+00:00",
+      "summary_raw": "A federal jury awarded Taction Technology more than $5.7 billion after finding Apple infringed claims from two haptics patents. Apple plans to appeal."
     },
     {
       "source": "CNBC",
-      "title": "CEO who posted 'Lake America' sweatshirt photos is no longer with the company",
-      "link": "https://www.cnbc.com/2026/09/25/ceo-who-posted-lake-america-sweatshirt-photos-has-left-the-company.html",
-      "published_iso": "2026-09-25T13:32:57+00:00",
-      "summary_raw": "Smith on Sept. 11 had posted an allegedly AI-edited photo on Facebook of her family dressed in \"Lake America\" sweatshirts."
+      "title": "Boeing flags 737 Max software glitch affecting some automated approach functions",
+      "link": "https://www.cnbc.com/2026/09/26/boeing-737-max-navigation-software-glitch.html",
+      "published_iso": "2026-09-26T21:55:01+00:00",
+      "summary_raw": "Boeing identified a software issue on some 737 Max aircraft that can affect automated vertical navigation functions after a missed approach."
     },
     {
       "source": "CNBC",
-      "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
-      "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-      "published_iso": "2026-09-25T17:19:19+00:00",
-      "summary_raw": "In a 2-1 decision, a federal appeals court upheld the Department of Defense's blacklisting of Anthropic."
+      "title": "Trump rejects Iran's conditional ceasefire proposal, WSJ reports, as Saudi coalition intercepts projectiles",
+      "link": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
+      "published_iso": "2026-09-26T15:05:38+00:00",
+      "summary_raw": "Trump expects renewed U.S. bombing of Iran after the midterm elections, The Wall Street Journal reports, as Saudi-backed forces intercept projectiles."
     }
   ]
 }

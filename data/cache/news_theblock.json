@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-26T08:37:21.223223+08:00",
+  "fetched_at": "2026-09-27T08:35:08.921682+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
+      "link": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+      "published_iso": "2026-09-26T17:24:12+00:00",
+      "summary_raw": "The inflows pushed bitcoin ETFs' year-to-date net flows back above zero, after the funds sat roughly $5.8 billion in the red just two months ago."
+    },
+    {
+      "source": "The Block Research",
+      "title": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
+      "link": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
+      "published_iso": "2026-09-26T15:17:34+00:00",
+      "summary_raw": "A federal appeals court ruled on Friday that Kalshi has not adequately shown its sports event contracts are swaps under the Commodity Exchange Act."
+    },
     {
       "source": "The Block Research",
       "title": "SEC crypto FAQ addresses token buybacks, network upgrades and promises of profit",
@@ -14,20 +28,6 @@
       "link": "https://www.theblock.co/news/regulation/2026-09-25-blockchain-association-ceo-summer-mersinger-tstep-down-kristin-smith-interim-ceo-416913",
       "published_iso": "2026-09-25T19:48:07+00:00",
       "summary_raw": "The Blockchain Association is switching up its leadership with CEO Summer Mersinger set to step down next month."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Man charged in $16 million crypto ‘massive pig butchering’ scam",
-      "link": "https://www.theblock.co/news/regulation/2026-09-25-man-charged-in-16-million-crypto-massive-pig-butchering-scam-416895",
-      "published_iso": "2026-09-25T17:48:16+00:00",
-      "summary_raw": "A man was charged for his role in defrauding someone of millions of dollars' worth of crypto in a \"massive pig butchering\" scam."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Magic Eden legacy approvals leave $5.7 million in NFTs exposed to exploit before rescue",
-      "link": "https://www.theblock.co/news/web3/2026-09-25-magic-eden-legacy-approvals-leave-5-7-million-in-nfts-exposed-to-exploit-before-rescue-416874",
-      "published_iso": "2026-09-25T14:09:15+00:00",
-      "summary_raw": "Magic Eden legacy approvals exposed $5.7 million in NFTs to an exploit before whitehats rescued 23,155 tokens."
     }
   ]
 }
