@@ -1,19 +1,19 @@
 {
   "stocks": [
     {
-      "source": "游庭皓的財經皓角",
-      "title": "2026/9/28(一) 導讀 國家為什麼會失敗/自由的窄廊台灣",
-      "video_url": "https://www.youtube.com/watch?v=dknQKeMAkvU",
-      "published_iso": "2026-09-28T00:30:11Z",
-      "duration": "18:20",
-      "transcript_raw": ""
-    },
-    {
       "source": "尼可拉斯楊Live精",
       "title": "扎克伯格暴漲！Muse AI真能幫你賺錢！半導體跌了不要怕，拿穩了！",
       "video_url": "https://www.youtube.com/watch?v=IShsondOirc",
       "published_iso": "2026-09-24T11:00:20Z",
       "duration": "13:43",
+      "transcript_raw": ""
+    },
+    {
+      "source": "游庭皓的財經皓角",
+      "title": "2026/9/28(一) 導讀 國家為什麼會失敗/自由的窄廊台灣",
+      "video_url": "https://www.youtube.com/watch?v=dknQKeMAkvU",
+      "published_iso": "2026-09-28T00:30:11Z",
+      "duration": "18:20",
       "transcript_raw": ""
     }
   ],
