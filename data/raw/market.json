@@ -20,16 +20,16 @@
       "name": "那斯達克 NASDAQ",
       "symbol": "^IXIC",
       "price": 27068.717,
-      "prev_close": 26939.373,
-      "chg": 129.34,
+      "prev_close": 26939.4,
+      "chg": 129.32,
       "chg_pct": 0.48
     },
     {
       "name": "費城半導體 SOX",
       "symbol": "^SOX",
       "price": 12668.929,
-      "prev_close": 12492.536,
-      "chg": 176.39,
+      "prev_close": 12492.5,
+      "chg": 176.43,
       "chg_pct": 1.41
     }
   ],
@@ -38,8 +38,8 @@
       "name": "台股加權指數 TAIEX",
       "symbol": "^TWII",
       "price": 48024.6,
-      "prev_close": 48157.29,
-      "chg": -132.69,
+      "prev_close": 48157.3,
+      "chg": -132.7,
       "chg_pct": -0.28
     },
     {
@@ -53,10 +53,10 @@
     {
       "name": "台幣兌美元",
       "symbol": "TWD=X",
-      "price": 31.695,
-      "prev_close": 31.804,
-      "chg": -0.11,
-      "chg_pct": -0.34
+      "price": 31.77,
+      "prev_close": 31.695,
+      "chg": 0.07,
+      "chg_pct": 0.24
     }
   ]
 }

@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-27T08:35:08.921682+08:00",
+  "fetched_at": "2026-09-28T08:44:36.881049+08:00",
   "data": [
+    {
+      "source": "The Block Research",
+      "title": "Onchain analyst links $18.4 million in Robinhood Chain memecoin extractions to single rug-pull operation",
+      "link": "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960",
+      "published_iso": "2026-09-27T22:02:57+00:00",
+      "summary_raw": "The creators of 10 Pons V2 launches exempted a set of wallets from Pons' anti-sniping tax; those wallets went on to buy most of each token's supply, per onchain data."
+    },
+    {
+      "source": "The Block Research",
+      "title": "‘It’s really not just a blockchain anymore’: Vitalik Buterin maps Ethereum’s path to 2030",
+      "link": "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
+      "published_iso": "2026-09-27T14:35:53+00:00",
+      "summary_raw": "Ethereum co-founder Vitalik Buterin said Ethereum is \"really not just a blockchain anymore\" and laid out how its design will change by 2030 in a post."
+    },
     {
       "source": "The Block Research",
       "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
@@ -14,20 +28,6 @@
       "link": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
       "published_iso": "2026-09-26T15:17:34+00:00",
       "summary_raw": "A federal appeals court ruled on Friday that Kalshi has not adequately shown its sports event contracts are swaps under the Commodity Exchange Act."
-    },
-    {
-      "source": "The Block Research",
-      "title": "SEC crypto FAQ addresses token buybacks, network upgrades and promises of profit",
-      "link": "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
-      "published_iso": "2026-09-25T20:32:40+00:00",
-      "summary_raw": "Promoting a network’s current uses generally would not create an expectation of profit, SEC staff said."
-    },
-    {
-      "source": "The Block Research",
-      "title": "Blockchain Association CEO Summer Mersinger to step down, Kristin Smith to return as interim CEO",
-      "link": "https://www.theblock.co/news/regulation/2026-09-25-blockchain-association-ceo-summer-mersinger-tstep-down-kristin-smith-interim-ceo-416913",
-      "published_iso": "2026-09-25T19:48:07+00:00",
-      "summary_raw": "The Blockchain Association is switching up its leadership with CEO Summer Mersinger set to step down next month."
     }
   ]
 }

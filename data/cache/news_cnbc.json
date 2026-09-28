@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-27T08:35:06.883527+08:00",
+  "fetched_at": "2026-09-28T08:44:35.153627+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "OpenAI expands review of model behavior after more rogue agent incidents emerge",
-      "link": "https://www.cnbc.com/2026/09/26/openai-agent-model-behavior-review.html",
-      "published_iso": "2026-09-26T17:10:32+00:00",
-      "summary_raw": "OpenAI is conducting an extensive review of misaligned model activity after disclosures involving an Australian government portal and other websites."
+      "title": "Taxpayer-funded Trump ads draw bipartisan scrutiny ahead of midterms",
+      "link": "https://www.cnbc.com/2026/09/27/trump-government-funded-ads-midterms.html",
+      "published_iso": "2026-09-27T21:38:59+00:00",
+      "summary_raw": "TV ads featuring Trump are expanding nationally, prompting bipartisan questions over whether they comply with restrictions on taxpayer-funded publicity."
     },
     {
       "source": "CNBC",
-      "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
-      "link": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
-      "published_iso": "2026-09-26T16:57:57+00:00",
-      "summary_raw": "A federal jury awarded Taction Technology more than $5.7 billion after finding Apple infringed claims from two haptics patents. Apple plans to appeal."
+      "title": "Oil gains over 1% as Trump rejects Iranian proposal to reopen Hormuz Strait",
+      "link": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
+      "published_iso": "2026-09-28T00:32:09+00:00",
+      "summary_raw": "Oil prices jumped on Monday after U.S. President Donald Trump rejected an Iranian peace proposal aimed at ending the conflict."
     },
     {
       "source": "CNBC",
-      "title": "Boeing flags 737 Max software glitch affecting some automated approach functions",
-      "link": "https://www.cnbc.com/2026/09/26/boeing-737-max-navigation-software-glitch.html",
-      "published_iso": "2026-09-26T21:55:01+00:00",
-      "summary_raw": "Boeing identified a software issue on some 737 Max aircraft that can affect automated vertical navigation functions after a missed approach."
+      "title": "At NFL games this season, drone defense tech aims to bring down disruptions",
+      "link": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
+      "published_iso": "2026-09-27T15:22:03+00:00",
+      "summary_raw": "The NFL told CNBC it recorded 10,852 drone violations over stadiums between 2021 and 2025. The Jaguars became the first team to sign a drone defense firm."
     },
     {
       "source": "CNBC",
-      "title": "Trump rejects Iran's conditional ceasefire proposal, WSJ reports, as Saudi coalition intercepts projectiles",
-      "link": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
-      "published_iso": "2026-09-26T15:05:38+00:00",
-      "summary_raw": "Trump expects renewed U.S. bombing of Iran after the midterm elections, The Wall Street Journal reports, as Saudi-backed forces intercept projectiles."
+      "title": "Anthropic CEO Amodei set to meet with Trump after missing state dinner",
+      "link": "https://www.cnbc.com/2026/09/27/dario-amodei-set-to-have-dinner-with-trump-after-missing-state-dinner.html",
+      "published_iso": "2026-09-27T19:13:27+00:00",
+      "summary_raw": "As top tech CEOs rubbed elbows at President Trump's glitzy dinner for Chinese President Xi on Thursday, Anthropic's CEO was noticeably absent."
     }
   ]
 }

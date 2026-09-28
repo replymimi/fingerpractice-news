@@ -1,19 +1,19 @@
 {
   "stocks": [
     {
-      "source": "尼可拉斯楊Live精",
-      "title": "扎克伯格暴漲！Muse AI真能幫你賺錢！半導體跌了不要怕，拿穩了！",
-      "video_url": "https://www.youtube.com/watch?v=IShsondOirc",
-      "published_iso": "2026-09-24T11:00:20Z",
-      "duration": "13:43",
-      "transcript_raw": ""
-    },
-    {
       "source": "游庭皓的財經皓角",
       "title": "2026/9/24(四) 台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?【早晨財經速解讀】",
       "video_url": "https://www.youtube.com/watch?v=TVKacGhmAm4",
       "published_iso": "2026-09-24T00:25:10Z",
       "duration": "33:49",
+      "transcript_raw": ""
+    },
+    {
+      "source": "尼可拉斯楊Live精",
+      "title": "扎克伯格暴漲！Muse AI真能幫你賺錢！半導體跌了不要怕，拿穩了！",
+      "video_url": "https://www.youtube.com/watch?v=IShsondOirc",
+      "published_iso": "2026-09-24T11:00:20Z",
+      "duration": "13:43",
       "transcript_raw": ""
     }
   ],
