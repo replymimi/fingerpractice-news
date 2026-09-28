@@ -35,6 +35,11 @@ jobs:
       - name: 抓潮汐板塊資料
         run: python scripts/fetch_tide.py
 
+      - name: 抓台股籌碼（三大法人、融資融券、自選股）
+        env:
+          FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
+        run: python scripts/fetch_chips.py
+
       - name: 抓 YouTube 影片（除游庭皓外全部）
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}

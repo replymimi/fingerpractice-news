@@ -7,7 +7,7 @@
 
 一個 GitHub Actions 排程，一天跑兩次（台北時間）：
 
-- **07:00 主更新**：抓新聞 RSS、大盤指數、潮汐板塊資料、除游庭皓以外的 YouTube 頻道 → AI 翻譯摘要 → 產生網頁
+- **07:00 主更新**：抓新聞 RSS、大盤指數、潮汐板塊資料、台股法人籌碼與自選股、除游庭皓以外的 YouTube 頻道 → AI 翻譯摘要 → 產生網頁
 - **10:00 補充更新**：只補抓游庭皓的財經皓角（他 08:30-09:30 直播，07:00 時影片還沒上架）→ 合併進當天的頁面
 
 ## 目錄結構
@@ -19,6 +19,7 @@ scripts/
   fetch_news.py             抓 RSS 新聞
   fetch_market.py           抓大盤指數（道瓊/標普/那斯達克/SOX/TAIEX/TPEx/台幣匯率）
   fetch_tide.py              抓潮汐的板塊資金流向、大戶異常、情緒指數
+  fetch_chips.py             抓三大法人買賣超排行、融資融券、自選股（證交所 + FinMind）
   fetch_youtube.py           檢查頻道新影片、抓英文字幕
   summarize.py               AI 翻譯 + 抓重點，組成 summary.json
   build_page.py               把 summary.json 套進網頁樣板，輸出 docs/index.html
@@ -57,3 +58,9 @@ export OPENAI_API_KEY=...
 python scripts/summarize.py
 python scripts/build_page.py      # 輸出 docs/index.html
 ```
+
+三大法人動向與自選股追蹤：全市場的外資／投信買賣超排行用[臺灣證券交易所](https://www.twse.com.tw/)的
+公開資料（目前只含上市股票、排除 ETF，金額是「買賣超股數 × 收盤價」的估算）；大盤法人總額、融資融券、
+自選股的股價、法人進出、月營收用 [FinMind](https://finmindtrade.com/)。FinMind 不註冊也能用（每小時 300 次），
+想提高到 600 次，就到 FinMind 官網註冊拿 token，存成 GitHub Secrets 的 `FINMIND_TOKEN`。
+自選股清單在 `sources.yaml` 的 `tw_chips.watchlist`。

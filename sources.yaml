@@ -125,3 +125,15 @@ market_indices:
     - symbol: "TWD=X"
       name: "台幣兌美元"
       is_currency: true
+
+# 台股籌碼面：三大法人、融資融券、自選股
+# 全市場排行用證交所公開資料；大盤總額與自選股用 FinMind（免費，不用註冊也能跑）
+tw_chips:
+  top_n: 5            # 外資／投信買賣超各列前幾名
+  watchlist:          # 自選股：要加減股票改這裡，id 是股票代號、name 是顯示名稱
+    - id: "2330"
+      name: 台積電
+    - id: "2317"
+      name: 鴻海
+    - id: "2454"
+      name: 聯發科

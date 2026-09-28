@@ -98,6 +98,13 @@
   .flow-row .flow-amt.up { color: var(--pos); }
   .flow-row .flow-amt.down { color: var(--neg); }
 
+  .flow-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  @media (max-width: 420px) { .flow-pair { grid-template-columns: 1fr; } }
+  .flow-row .flow-code { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; color: var(--ink-faint); margin-left: 4px; }
+  .item-meta .chg { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.7rem; font-weight: 600; }
+  .item-meta .chg.up { color: var(--pos); }
+  .item-meta .chg.down { color: var(--neg); }
+
   .sentiment-gauge { margin: 12px 0 18px; padding: 12px 14px; border: 1px solid var(--hairline); border-radius: 8px; background: var(--surface); }
   .sentiment-gauge-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
   .sentiment-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.06em; color: var(--ink-faint); text-transform: uppercase; }
@@ -184,6 +191,7 @@
 
 <p class="no-speech-note">這個瀏覽器不支援語音朗讀功能，播放鈕暫時無法使用，仍可正常閱讀文字內容。</p>
 
+{% macro amt_rows(list) %}{% for s in list %}<div class="flow-row"><span class="flow-name">{{ s.name }}<span class="flow-code">{{ s.id }}</span></span><span class="flow-amt {{ 'up' if s.amount >= 0 else 'down' }}">{{ '%+.1f'|format(s.amount) }} 億</span></div>{% endfor %}{% endmacro %}
 <main class="board">
 
   {# ---------- 美股表現 ---------- #}
@@ -258,6 +266,63 @@
         <ul class="item-points" hidden>{% for p in market.tw_recap.points %}<li>{{ p }}</li>{% endfor %}</ul>
       </div>
     </article>
+
+    {% if chips.totals or chips.ranking %}
+    <p class="section-label toggle">三大法人動向{% if chips.ranking %}　{{ chips.ranking.date[5:]|replace('-', '/') }}{% endif %}<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
+    {% if chips.totals %}
+    <div class="flow-group">
+      <p class="flow-group-label">全市場買賣超</p>
+      {% for label, v in [('外資', chips.totals.foreign), ('投信', chips.totals.trust), ('自營商', chips.totals.dealer), ('三大法人合計', chips.totals.total)] %}
+      <div class="flow-row"><span class="flow-name">{{ label }}</span><span class="flow-amt {{ 'up' if v >= 0 else 'down' }}">{{ '%+.1f'|format(v) }} 億</span></div>
+      {% endfor %}
+      {% if chips.totals.margin_money_chg is not none %}
+      <div class="flow-row"><span class="flow-name">融資餘額增減</span><span class="flow-amt {{ 'up' if chips.totals.margin_money_chg >= 0 else 'down' }}">{{ '%+.1f'|format(chips.totals.margin_money_chg) }} 億</span></div>
+      <div class="flow-row"><span class="flow-name">融券餘額增減</span><span class="flow-amt {{ 'up' if chips.totals.short_chg >= 0 else 'down' }}">{{ '{:+,}'.format(chips.totals.short_chg) }} 張</span></div>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if chips.ranking %}
+    {% for key, label in [('foreign', '外資'), ('trust', '投信')] %}
+    <div class="flow-pair">
+      <div class="flow-group"><p class="flow-group-label">{{ label }}買超 TOP {{ chips.ranking[key].buy|length }}</p>{{ amt_rows(chips.ranking[key].buy) }}</div>
+      <div class="flow-group"><p class="flow-group-label">{{ label }}賣超 TOP {{ chips.ranking[key].sell|length }}</p>{{ amt_rows(chips.ranking[key].sell) }}</div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if chips.market_points %}
+    <article class="item" data-item-id="tw-chips">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta"><span class="source-tag">證交所 · FINMIND</span><span class="dot">●</span><span class="time">07:00 彙整</span></div>
+        <h3 class="item-title">三大法人籌碼摘要</h3>
+        <ul class="item-points" hidden>{% for p in chips.market_points %}<li>{{ p }}</li>{% endfor %}</ul>
+      </div>
+    </article>
+    {% endif %}
+    </div>
+    {% endif %}
+
+    {% if chips.watchlist %}
+    <p class="section-label toggle">自選股追蹤<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
+    {% for s in chips.watchlist %}
+    <article class="item" data-item-id="tw-watch-{{ s.id }}">
+      <button class="item-play" aria-label="播放本則"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="item-body">
+        <div class="item-meta">
+          <span class="source-tag">{{ s.id }}</span><span class="dot">●</span>
+          <span class="chg {{ 'up' if s.chg >= 0 else 'down' }}">{{ '{:,.2f}'.format(s.close) }}　{{ '▲' if s.chg >= 0 else '▼' }} {{ '%+.2f'|format(s.chg_pct) }}%</span>
+          <span class="time">{{ s.date[5:]|replace('-', '/') }}</span>
+        </div>
+        <h3 class="item-title">{{ s.name }}</h3>
+        <ul class="item-points" hidden>{% for p in s.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        <a class="item-link" hidden href="https://tw.stock.yahoo.com/quote/{{ s.id }}" target="_blank" rel="noopener">看完整走勢 ↗</a>
+      </div>
+    </article>
+    {% endfor %}
+    </div>
+    {% endif %}
 
     {% if tide.flow.inflow or tide.flow.outflow %}
     <p class="section-label toggle">五日法人資金流向排行<span class="toggle-pill">展開</span></p>
@@ -400,7 +465,7 @@
 </main>
 
 <footer class="meta-footer">
-  由 <a href="https://github.com/replymimi/fingerpractice-news" target="_blank" rel="noopener">fingerpractice-news</a> 自動彙整・板塊資金流向與大戶異常資料引用自 <a href="https://tide-tw.app/" target="_blank" rel="noopener">Tide 潮汐</a>
+  由 <a href="https://github.com/replymimi/fingerpractice-news" target="_blank" rel="noopener">fingerpractice-news</a> 自動彙整・板塊資金流向與大戶異常資料引用自 <a href="https://tide-tw.app/" target="_blank" rel="noopener">Tide 潮汐</a>・法人籌碼與自選股資料來自<a href="https://www.twse.com.tw/" target="_blank" rel="noopener">臺灣證券交易所</a>與 <a href="https://finmindtrade.com/" target="_blank" rel="noopener">FinMind</a>
 </footer>
 
 <div class="player" id="player" data-open="false">

@@ -167,6 +167,56 @@ def sentiment_gauge(tide_digest):
     }
 
 
+def net_words(v, unit, fmt="{:,.1f}"):
+    """-329.6 -> '賣超 329.6 億' — reads naturally in the text-to-speech player."""
+    return f"{'買超' if v >= 0 else '賣超'} {fmt.format(abs(v))} {unit}"
+
+
+def chg_words(v, unit, fmt="{:,.1f}"):
+    return f"{'增加' if v >= 0 else '減少'} {fmt.format(abs(v))} {unit}"
+
+
+def chips_section(chips):
+    """Pass chips.json through for the page, plus plain-sentence points the
+    read-aloud player can speak (it reads each item's title + <li> text)."""
+    market = chips.get("market") or {}
+    totals, ranking = market.get("totals"), market.get("ranking")
+
+    market_points = []
+    if totals:
+        market_points.append(f"三大法人合計{net_words(totals['total'], '億')}：外資{net_words(totals['foreign'], '億')}、"
+                             f"投信{net_words(totals['trust'], '億')}、自營商{net_words(totals['dealer'], '億')}")
+        if totals.get("margin_money_chg") is not None:
+            market_points.append(f"融資餘額{chg_words(totals['margin_money_chg'], '億')}，融券{chg_words(totals['short_chg'], '張', '{:,.0f}')}")
+    if ranking:
+        for key, label in (("foreign", "外資"), ("trust", "投信")):
+            for side, verb in (("buy", "買超"), ("sell", "賣超")):
+                top = ranking[key][side][:3]
+                if top:
+                    names = "、".join(f"{s['name']}({abs(s['amount']):.1f}億)" for s in top)
+                    market_points.append(f"{label}{verb}前三：{names}")
+
+    watchlist = []
+    for s in chips.get("watchlist", []):
+        pts = [f"收盤 {s['close']:,.2f}，{'漲' if s['chg'] >= 0 else '跌'} {abs(s['chg']):,.2f}（{s['chg_pct']:+.2f}%）"]
+        if s.get("inst"):
+            i = s["inst"]
+            pts.append(f"外資{net_words(i['foreign'], '張', '{:,.0f}')}、投信{net_words(i['trust'], '張', '{:,.0f}')}、"
+                       f"自營商{net_words(i['dealer'], '張', '{:,.0f}')}；外資近五日累計{net_words(s['foreign_5d'], '張', '{:,.0f}')}")
+        if s.get("margin_chg") is not None:
+            pts.append(f"融資{chg_words(s['margin_chg'], '張', '{:,.0f}')}，餘額 {s['margin_balance']:,} 張；"
+                       f"融券{chg_words(s['short_chg'], '張', '{:,.0f}')}")
+        rev = s.get("revenue")
+        if rev:
+            extra = "、".join(x for x in (
+                f"年增 {rev['yoy']:+.1f}%" if rev.get("yoy") is not None else "",
+                f"月增 {rev['mom']:+.1f}%" if rev.get("mom") is not None else "") if x)
+            pts.append(f"{rev['label']}營收 {rev['amount_yi']:,.1f} 億" + (f"，{extra}" if extra else ""))
+        watchlist.append({**s, "points": pts})
+
+    return {"totals": totals, "ranking": ranking, "market_points": market_points, "watchlist": watchlist}
+
+
 def recap_bullets(region_label, market_rows, tide_sentence, headlines):
     lines = [f"{r['name']}: {r['price']:,.2f} ({r['chg_pct']:+.2f}%)" for r in market_rows]
     headline_block = "\n".join(f"- {h}" for h in headlines[:6]) or "（無）"
@@ -188,6 +238,7 @@ def main():
     youtube = load_json(os.path.join(RAW_DIR, "youtube.json"), {"stocks": [], "crypto": []})
     market = load_json(os.path.join(RAW_DIR, "market.json"), {"us": [], "tw": []})
     tide = load_json(os.path.join(RAW_DIR, "tide.json"), {})
+    chips = chips_section(load_json(os.path.join(RAW_DIR, "chips.json"), {}))
 
     log("Summarizing news items...")
     news_out = {col: [summarize_news_item(it) for it in news.get(col, [])] for col in ("stocks", "crypto")}
@@ -207,6 +258,8 @@ def main():
     if flow["inflow"]:
         top_in = "、".join(f"{s['name']}(+{s['amount']:.0f}億)" for s in flow["inflow"][:3])
         tw_context = f"近五日法人資金流入前三名板塊：{top_in}。"
+    if chips["market_points"]:
+        tw_context += "最近一個交易日的法人籌碼：" + "；".join(chips["market_points"]) + "。"
 
     us_title, us_points = recap_bullets("美股", market.get("us", []), "", us_headlines)
     tw_title, tw_points = recap_bullets("台股", market.get("tw", []), tw_context, us_headlines)
@@ -222,6 +275,7 @@ def main():
             "tw_recap": {"title": tw_title, "points": tw_points},
         },
         "tide": {"flow": flow, "whale": whale, "sentiment": sentiment},
+        "chips": chips,
         "news": news_out,
         "youtube": youtube_out,
     }
