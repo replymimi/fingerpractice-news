@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-09-28T08:44:36.608457+08:00",
+  "fetched_at": "2026-09-28T12:13:35.306240+08:00",
   "data": [
+    {
+      "source": "CoinDesk",
+      "title": "Bitcoin, Nasdaq futures decline as Trump won’t rule out more Iran strikes",
+      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+      "published_iso": "2026-09-28T03:58:52+00:00",
+      "summary_raw": ""
+    },
     {
       "source": "CoinDesk",
       "title": "Vitalik Buterin maps Ethereum’s shift beyond a blockchain in sweeping 2030 vision",
@@ -20,13 +27,6 @@
       "title": "Kraken’s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
       "link": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
       "published_iso": "2026-09-26T14:00:00+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
-      "link": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
-      "published_iso": "2026-09-26T13:00:00+00:00",
       "summary_raw": ""
     }
   ]
