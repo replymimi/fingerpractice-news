@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-28T12:13:35.560861+08:00",
+  "fetched_at": "2026-09-29T09:56:19.871860+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Onchain analyst links $18.4 million in Robinhood Chain memecoin extractions to single rug-pull operation",
-      "link": "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960",
-      "published_iso": "2026-09-27T22:02:57+00:00",
-      "summary_raw": "The creators of 10 Pons V2 launches exempted a set of wallets from Pons' anti-sniping tax; those wallets went on to buy most of each token's supply, per onchain data."
+      "title": "Tether’s USDT at center of Iran’s shadow banking network, new Senate Report says",
+      "link": "https://www.theblock.co/news/regulation/2026-09-28-tethers-usdt-center-iran-shadow-banking-network-new-senate-report-says-417094",
+      "published_iso": "2026-09-28T19:10:42+00:00",
+      "summary_raw": "Tether and its stablecoin have become central in \"Iran's shadow banking system,\" according to a new Senate investigation."
     },
     {
       "source": "The Block Research",
-      "title": "‘It’s really not just a blockchain anymore’: Vitalik Buterin maps Ethereum’s path to 2030",
-      "link": "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
-      "published_iso": "2026-09-27T14:35:53+00:00",
-      "summary_raw": "Ethereum co-founder Vitalik Buterin said Ethereum is \"really not just a blockchain anymore\" and laid out how its design will change by 2030 in a post."
+      "title": "Citi expands Coinbase partnership to power stablecoin payments for businesses",
+      "link": "https://www.theblock.co/news/business/2026-09-28-citi-coinbase-stablecoin-payments-corporate-clients-417082",
+      "published_iso": "2026-09-28T17:22:06+00:00",
+      "summary_raw": "Coinbase is expanding partnership with Citi to provide businesses with infrastructure connecting traditional fiat payments and stablecoins."
     },
     {
       "source": "The Block Research",
-      "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
-      "link": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
-      "published_iso": "2026-09-26T17:24:12+00:00",
-      "summary_raw": "The inflows pushed bitcoin ETFs' year-to-date net flows back above zero, after the funds sat roughly $5.8 billion in the red just two months ago."
+      "title": "SEC Commissioner Hester Peirce reflects on her time at the agency, what she still wanted to get done: ‘There’s no good time to leave’",
+      "link": "https://www.theblock.co/news/regulation/2026-09-28-sec-commissioner-hester-peirce-reflects-what-she-wanted-get-done-no-good-time-to-leave-417075",
+      "published_iso": "2026-09-28T16:35:29+00:00",
+      "summary_raw": "After nearly a decade at the Securities and Exchange Commission, Hester Peirce is wrapping up her last week at the agency."
     },
     {
       "source": "The Block Research",
-      "title": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
-      "link": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
-      "published_iso": "2026-09-26T15:17:34+00:00",
-      "summary_raw": "A federal appeals court ruled on Friday that Kalshi has not adequately shown its sports event contracts are swaps under the Commodity Exchange Act."
+      "title": "Strive pushes bitcoin holdings above 27,400 BTC with latest $94.5 million purchase",
+      "link": "https://www.theblock.co/news/business/2026-09-28-strive-pushes-bitcoin-holdings-above-27400-btc-latest-94-5-million-purchase-417035",
+      "published_iso": "2026-09-28T16:00:33+00:00",
+      "summary_raw": "SATA supplied 85% of Strive’s latest capital as its bitcoin holdings climbed to 27,462 BTC."
     }
   ]
 }

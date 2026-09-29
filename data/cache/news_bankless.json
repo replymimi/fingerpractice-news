@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-09-28T12:13:35.905185+08:00",
+  "fetched_at": "2026-09-29T09:56:20.081284+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "🏴 Shifting Sands for Kalshi",
+      "link": "https://www.bankless.com/read/shifting-sands-for-kalshi",
+      "published_iso": "2026-09-28T19:14:59+00:00",
+      "summary_raw": "Federal courts are increasingly backing state gaming laws over prediction markets as the fight heads toward the Supreme Court."
+    },
+    {
+      "source": "Bankless",
+      "title": "States Pull Ahead in Prediction Market Fight",
+      "link": "https://www.bankless.com/read/states-pull-ahead-in-prediction-market-fight",
+      "published_iso": "2026-09-28T18:06:32+00:00",
+      "summary_raw": "Federal courts are increasingly backing state gaming laws over prediction markets as the fight heads toward the Supreme Court."
+    },
     {
       "source": "Bankless",
       "title": "🏴 Ethereum's New AI Swarm",
@@ -14,20 +28,6 @@
       "link": "https://www.bankless.com/read/inside-imd-ethereum-s-new-ai-swarm-experiment",
       "published_iso": "2026-09-25T20:24:29+00:00",
       "summary_raw": "A new kind of AI workforce is ascending in the Ethereum ecosystem, replete with experimental tokenomics. Here's why it matters, and how you might consider the trade."
-    },
-    {
-      "source": "Bankless",
-      "title": "Ethena Expands USDe Backing Into Equity Perpetuals",
-      "link": "https://www.bankless.com/read/news/ethena-expands-usde-backing-into-equity-perpetuals",
-      "published_iso": "2026-09-25T13:51:23+00:00",
-      "summary_raw": "Expanding its USDe basis trade to Binance equity perps means Ethena, in theory, opens itself up to a $150T+ market of real-world assets."
-    },
-    {
-      "source": "Bankless",
-      "title": "Bitget Hacked for $351.6M",
-      "link": "https://www.bankless.com/read/news/bitget-hacked-for-351-6m",
-      "published_iso": "2026-09-25T12:58:35+00:00",
-      "summary_raw": "A backend wallet breach drained $351.6M as hackers consolidate funds into ETH and investigators probe a DPRK link."
     }
   ]
 }
