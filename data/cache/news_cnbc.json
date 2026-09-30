@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-29T09:56:18.829619+08:00",
+  "fetched_at": "2026-09-30T09:17:31.414009+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "OpenAI abandons plan to release upcoming model as safety concerns escalate",
-      "link": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html",
-      "published_iso": "2026-09-28T23:19:46+00:00",
-      "summary_raw": "The heads of OpenAI and rival Anthropic have both indicated recently that top AI labs should slow the pace of model development."
+      "title": "Trump tries to rename AI 'super intelligence' as polls show him sinking on key issue",
+      "link": "https://www.cnbc.com/2026/09/29/trump-ai-super-intelligence.html",
+      "published_iso": "2026-09-29T22:42:35+00:00",
+      "summary_raw": "Trump shrugged when asked if he is concerned that his support for AI and data centers could hurt Republicans in the upcoming midterm election."
     },
     {
       "source": "CNBC",
-      "title": "Trump announces plan for $15 billion steel plant, would be largest in U.S. history",
-      "link": "https://www.cnbc.com/2026/09/28/trump-steel-plant-iowa.html",
-      "published_iso": "2026-09-28T21:20:00+00:00",
-      "summary_raw": "Trump's announcement with Mesabi Metallics comes as Americans' souring views of the economy are poised to shape the upcoming midterm election."
+      "title": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
+      "link": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
+      "published_iso": "2026-09-29T20:51:43+00:00",
+      "summary_raw": "Data is expected to show ongoing price pressures and consumers who nevertheless continue to spend."
     },
     {
       "source": "CNBC",
-      "title": "Oil extends gains as Middle East supply concerns persist",
-      "link": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html",
-      "published_iso": "2026-09-29T01:53:31+00:00",
-      "summary_raw": "Oil rose after Iranian officials were reportedly pessimistic over a deal before U.S. midterm elections."
+      "title": "30-year Treasury bond yield scales to highest level since 2002",
+      "link": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html",
+      "published_iso": "2026-09-29T20:03:39+00:00",
+      "summary_raw": "U.S. Treasury yields largely rose Tuesday, adding to the gains that catapulted them to multi-year highs amid central bank monetary policy concerns."
     },
     {
       "source": "CNBC",
-      "title": "Samsung to inject $1 billion into Nvidia- and KKR-backed AI infrastructure firm",
-      "link": "https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html",
-      "published_iso": "2026-09-29T01:48:52+00:00",
-      "summary_raw": "Samsung Electronics and its five affiliates are investing $1 billion in KKR-launched Helix as the group expands its push into global AI infrastructure."
+      "title": "Hedge funds hold a record share of the $30 trillion Treasury market. What could go wrong?",
+      "link": "https://www.cnbc.com/2026/09/30/us-treasury-market-is-relying-more-on-hedge-funds.html",
+      "published_iso": "2026-09-30T00:19:09+00:00",
+      "summary_raw": "Hedge funds can boost Treasury market liquidity, but their growing role also risks creating financial instability."
     }
   ]
 }

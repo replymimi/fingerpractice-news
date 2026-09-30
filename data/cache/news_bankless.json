@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-29T09:56:20.081284+08:00",
+  "fetched_at": "2026-09-30T09:17:33.119296+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 Shifting Sands for Kalshi",
-      "link": "https://www.bankless.com/read/shifting-sands-for-kalshi",
-      "published_iso": "2026-09-28T19:14:59+00:00",
-      "summary_raw": "Federal courts are increasingly backing state gaming laws over prediction markets as the fight heads toward the Supreme Court."
+      "title": "NEAR Stopped Bitget's Hackers Without Breaking Privacy",
+      "link": "https://www.bankless.com/read/near-stopped-bitget-s-hackers-without-breaking-privacy",
+      "published_iso": "2026-09-29T19:12:50+00:00",
+      "summary_raw": "Bitget's hackers tried to push $50M+ through NEAR Intents and got turned away."
     },
     {
       "source": "Bankless",
-      "title": "States Pull Ahead in Prediction Market Fight",
-      "link": "https://www.bankless.com/read/states-pull-ahead-in-prediction-market-fight",
-      "published_iso": "2026-09-28T18:06:32+00:00",
-      "summary_raw": "Federal courts are increasingly backing state gaming laws over prediction markets as the fight heads toward the Supreme Court."
+      "title": "House Expands Probe Into Prediction-Market Insider Trading",
+      "link": "https://www.bankless.com/read/news/house-opens-probe-into-prediction-market-insider-trading",
+      "published_iso": "2026-09-29T14:37:32+00:00",
+      "summary_raw": "House Oversight expanded its prediction-market insider trading probe to Hyperliquid, Crypto.com, and PredictIt."
     },
     {
       "source": "Bankless",
-      "title": "🏴 Ethereum's New AI Swarm",
-      "link": "https://www.bankless.com/read/ethereum-s-new-ai-swarm",
-      "published_iso": "2026-09-25T21:46:36+00:00",
-      "summary_raw": "Digging into IMD, the rising AI experiment that has the potential to become a new kind of prolific workforce."
+      "title": "Bitwise Teases NEAR ETF Launch for Today",
+      "link": "https://www.bankless.com/read/news/bitwise-teases-near-etf-launch-for-today",
+      "published_iso": "2026-09-29T14:08:11+00:00",
+      "summary_raw": "Bitwise looks set to launch its NEAR ETF, offering direct NEAR exposure alongside staking rewards through NYSE Arca."
     },
     {
       "source": "Bankless",
-      "title": "Inside IMD, Ethereum's New AI Swarm Experiment",
-      "link": "https://www.bankless.com/read/inside-imd-ethereum-s-new-ai-swarm-experiment",
-      "published_iso": "2026-09-25T20:24:29+00:00",
-      "summary_raw": "A new kind of AI workforce is ascending in the Ethereum ecosystem, replete with experimental tokenomics. Here's why it matters, and how you might consider the trade."
+      "title": "Coinbase Completes U.S. Derivatives Stack With CFTC Approval",
+      "link": "https://www.bankless.com/read/news/coinbase-completes-u-s-derivatives-stack-with-cftc-approval",
+      "published_iso": "2026-09-29T13:59:17+00:00",
+      "summary_raw": "CFTC approval gives Coinbase its own clearinghouse, bringing more of its regulated U.S. derivatives business in-house."
     }
   ]
 }

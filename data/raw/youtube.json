@@ -1,19 +1,19 @@
 {
   "stocks": [
     {
-      "source": "尼可拉斯楊Live精",
-      "title": "做空記憶體！勝率81%的男人，看漲美光50%！怎麼辦？",
-      "video_url": "https://www.youtube.com/watch?v=MYCuKwTXmrw",
-      "published_iso": "2026-09-28T11:30:23Z",
-      "duration": "19:07",
-      "transcript_raw": ""
-    },
-    {
       "source": "游庭皓的財經皓角",
       "title": "2026/9/29(二)10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?【早晨財經速解讀】",
       "video_url": "https://www.youtube.com/watch?v=wBb7G4Ifd34",
       "published_iso": "2026-09-29T01:11:52Z",
       "duration": "35:33",
+      "transcript_raw": ""
+    },
+    {
+      "source": "尼可拉斯楊Live精",
+      "title": "做空記憶體！勝率81%的男人，看漲美光50%！怎麼辦？",
+      "video_url": "https://www.youtube.com/watch?v=MYCuKwTXmrw",
+      "published_iso": "2026-09-28T11:30:23Z",
+      "duration": "19:07",
       "transcript_raw": ""
     }
   ],
