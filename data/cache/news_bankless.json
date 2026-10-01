@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-30T09:17:33.119296+08:00",
+  "fetched_at": "2026-10-01T09:17:33.985023+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "🏴 Robinhood Wants Everything",
+      "link": "https://www.bankless.com/read/robinhood-wants-everything",
+      "published_iso": "2026-09-30T19:16:18+00:00",
+      "summary_raw": "Here's everything the HOOD Summit revealed, from 10x perps to Robinhood's answer to Fomo."
+    },
+    {
+      "source": "Bankless",
+      "title": "Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors",
+      "link": "https://www.bankless.com/read/news/stripe-s-bridge-launches-ousd-the-stablecoin-that-pays-its-distributors",
+      "published_iso": "2026-09-30T17:45:57+00:00",
+      "summary_raw": "OUSD, a new Stripe-issued stablecoin, is live across four chains."
+    },
+    {
+      "source": "Bankless",
+      "title": "What Was Revealed at Robinhood's HOOD Summit",
+      "link": "https://www.bankless.com/read/what-was-revealed-at-robinhood-s-hood-summit",
+      "published_iso": "2026-09-30T17:18:32+00:00",
+      "summary_raw": "Robinhood launched greater abilities for agents, the rollout of perpetuals in the U.S., and the debut of their social feed, all while dealing a blow to Lighter in the short term."
+    },
     {
       "source": "Bankless",
       "title": "NEAR Stopped Bitget's Hackers Without Breaking Privacy",
       "link": "https://www.bankless.com/read/near-stopped-bitget-s-hackers-without-breaking-privacy",
       "published_iso": "2026-09-29T19:12:50+00:00",
       "summary_raw": "Bitget's hackers tried to push $50M+ through NEAR Intents and got turned away."
-    },
-    {
-      "source": "Bankless",
-      "title": "House Expands Probe Into Prediction-Market Insider Trading",
-      "link": "https://www.bankless.com/read/news/house-opens-probe-into-prediction-market-insider-trading",
-      "published_iso": "2026-09-29T14:37:32+00:00",
-      "summary_raw": "House Oversight expanded its prediction-market insider trading probe to Hyperliquid, Crypto.com, and PredictIt."
-    },
-    {
-      "source": "Bankless",
-      "title": "Bitwise Teases NEAR ETF Launch for Today",
-      "link": "https://www.bankless.com/read/news/bitwise-teases-near-etf-launch-for-today",
-      "published_iso": "2026-09-29T14:08:11+00:00",
-      "summary_raw": "Bitwise looks set to launch its NEAR ETF, offering direct NEAR exposure alongside staking rewards through NYSE Arca."
-    },
-    {
-      "source": "Bankless",
-      "title": "Coinbase Completes U.S. Derivatives Stack With CFTC Approval",
-      "link": "https://www.bankless.com/read/news/coinbase-completes-u-s-derivatives-stack-with-cftc-approval",
-      "published_iso": "2026-09-29T13:59:17+00:00",
-      "summary_raw": "CFTC approval gives Coinbase its own clearinghouse, bringing more of its regulated U.S. derivatives business in-house."
     }
   ]
 }

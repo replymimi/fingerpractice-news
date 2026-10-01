@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-30T09:17:31.414009+08:00",
+  "fetched_at": "2026-10-01T09:17:31.582827+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump tries to rename AI 'super intelligence' as polls show him sinking on key issue",
-      "link": "https://www.cnbc.com/2026/09/29/trump-ai-super-intelligence.html",
-      "published_iso": "2026-09-29T22:42:35+00:00",
-      "summary_raw": "Trump shrugged when asked if he is concerned that his support for AI and data centers could hurt Republicans in the upcoming midterm election."
+      "title": "Trump 'thinking about' diesel export ban, but says it could have 'negative impact' on gasoline",
+      "link": "https://www.cnbc.com/2026/09/30/trump-diesel-export-ban-gas.html",
+      "published_iso": "2026-09-30T22:43:53+00:00",
+      "summary_raw": "Trump recently said he was \"very seriously\" considering a diesel export ban, despite warnings from the U.S. oil industry that doing so would raise prices."
     },
     {
       "source": "CNBC",
-      "title": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
-      "link": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
-      "published_iso": "2026-09-29T20:51:43+00:00",
-      "summary_raw": "Data is expected to show ongoing price pressures and consumers who nevertheless continue to spend."
+      "title": "Passengers and crew foil co-pilot's apparent attempt to crash FlyDubai flight to Israel",
+      "link": "https://www.cnbc.com/2026/10/01/dubai-israel-flight-pilot-crash-indian.html",
+      "published_iso": "2026-10-01T01:09:18+00:00",
+      "summary_raw": "One of the pilots on a FlyDubai flight headed for Israel stabbed the second pilot, according to Israeli Prime Minister Benjamin Netanyahu."
     },
     {
       "source": "CNBC",
-      "title": "30-year Treasury bond yield scales to highest level since 2002",
-      "link": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html",
-      "published_iso": "2026-09-29T20:03:39+00:00",
-      "summary_raw": "U.S. Treasury yields largely rose Tuesday, adding to the gains that catapulted them to multi-year highs amid central bank monetary policy concerns."
+      "title": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
+      "link": "https://www.cnbc.com/2026/09/30/micron-mu-q4-earnings-report-2026.html",
+      "published_iso": "2026-09-30T20:59:05+00:00",
+      "summary_raw": "Micron is up over 500% in the past year as the company benefits from soaring AI demand."
     },
     {
       "source": "CNBC",
-      "title": "Hedge funds hold a record share of the $30 trillion Treasury market. What could go wrong?",
-      "link": "https://www.cnbc.com/2026/09/30/us-treasury-market-is-relying-more-on-hedge-funds.html",
-      "published_iso": "2026-09-30T00:19:09+00:00",
-      "summary_raw": "Hedge funds can boost Treasury market liquidity, but their growing role also risks creating financial instability."
+      "title": "Sen. Hawley: OpenAI CEO Sam Altman declined to testify at rogue AI hearing",
+      "link": "https://www.cnbc.com/2026/09/30/hawley-openai-sam-altman-rogue-ai.html",
+      "published_iso": "2026-09-30T20:51:44+00:00",
+      "summary_raw": "A Senate subcommittee on Wednesday is examining rogue AI, after a series of AI cyberattacks and increasing warnings about the risks of the technology."
     }
   ]
 }

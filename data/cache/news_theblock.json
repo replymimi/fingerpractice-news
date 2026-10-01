@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-09-30T09:17:32.855686+08:00",
+  "fetched_at": "2026-10-01T09:17:33.465973+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "CryptoQuant says bitcoin correction could be near as traders’ unrealized profit hits 21-month high",
-      "link": "https://www.theblock.co/news/markets/2026-09-29-cryptoquant-says-bitcoin-correction-could-near-traders-unrealized-profit-21-month-high-417206",
-      "published_iso": "2026-09-29T19:14:47+00:00",
-      "summary_raw": "Bitcoin could face a near-term correction as short-term traders' onchain unrealized profit margin has reached its highest level in 21 months, according to CryptoQuant."
+      "title": "Clarity Act’s failure gave crypto ‘faster’ regulatory wins, Bitwise CIO says",
+      "link": "https://www.theblock.co/news/markets/2026-09-30-clarity-acts-failure-gave-crypto-faster-regulatory-wins-bitwise-says-417362",
+      "published_iso": "2026-09-30T21:53:05+00:00",
+      "summary_raw": "Bitwise’s Matt Hougan says Clarity’s defeat left crypto with fewer restrictions and faster SEC action."
     },
     {
       "source": "The Block Research",
-      "title": "Comer presses Crypto.com, Hyperliquid and PredictIt on identity checks and suspicious trades",
-      "link": "https://www.theblock.co/news/regulation/2026-09-29-comer-presses-crypto-com-hyperliquid-predictit-identity-checks-suspicious-trades-417192",
-      "published_iso": "2026-09-29T17:40:37+00:00",
-      "summary_raw": "Comer’s expanded probe seeks records on government insiders, employee trades and suspicious activity referrals."
+      "title": "CFTC secures over $30 million judgment against defendants in Fundsz fraud case",
+      "link": "https://www.theblock.co/news/regulation/2026-09-30-cftc-secures-over-30-million-judgment-against-defendants-in-fundsz-fraud-case-417365",
+      "published_iso": "2026-09-30T20:37:08+00:00",
+      "summary_raw": "The CFTC secured a win in court after the agency said two defendants participated in a crypto scheme that they then tried to walk back."
     },
     {
       "source": "The Block Research",
-      "title": "Aztec relaunches zk.money privacy wallet on its Ethereum Layer 2",
-      "link": "https://www.theblock.co/news/defi/2026-09-29-aztec-zk-money-privacy-wallet-ethereum-layer-2-417174",
-      "published_iso": "2026-09-29T16:00:00+00:00",
-      "summary_raw": "Aztec Labs has relaunched zk.money, a self-custodial privacy wallet, on Aztec Network after discontinuing the original product in 2023."
+      "title": "Base launches Cobalt upgrade with conditional transactions and new B20 asset functions",
+      "link": "https://www.theblock.co/news/ecosystems/2026-09-30-base-launches-cobalt-upgrade-with-conditional-transactions-and-new-b20-asset-functions-417308",
+      "published_iso": "2026-09-30T19:00:00+00:00",
+      "summary_raw": "Base has launched Cobalt, adding conditional transactions and new functions for assets issued under its B20 standard."
     },
     {
       "source": "The Block Research",
-      "title": "Bitcoin tests long-term holder supply cluster as leverage clears, analysts say",
-      "link": "https://www.theblock.co/news/markets/2026-09-29-bitcoin-tests-long-term-holder-supply-cluster-leverage-clears-analysts-say-417162",
-      "published_iso": "2026-09-29T15:09:46+00:00",
-      "summary_raw": "Bitcoin traded near $84,000 on Tuesday, near Glassnode's largest long-term holder cost-basis cluster price range."
+      "title": "DogeOS launches testnet to bring EVM smart contracts to Dogecoin",
+      "link": "https://www.theblock.co/news/ecosystems/2026-09-30-dogeos-launches-public-testnet-dogecoin-zk-rollup-evm-417307",
+      "published_iso": "2026-09-30T18:23:57+00:00",
+      "summary_raw": "DogeOS launched a public testnet for its zero-knowledge rollup bringing EVM smart contracts to Dogecoin, with DOGE used for gas fees."
     }
   ]
 }
