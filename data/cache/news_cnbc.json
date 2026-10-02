@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-01T09:17:31.582827+08:00",
+  "fetched_at": "2026-10-02T09:41:19.986595+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump 'thinking about' diesel export ban, but says it could have 'negative impact' on gasoline",
-      "link": "https://www.cnbc.com/2026/09/30/trump-diesel-export-ban-gas.html",
-      "published_iso": "2026-09-30T22:43:53+00:00",
-      "summary_raw": "Trump recently said he was \"very seriously\" considering a diesel export ban, despite warnings from the U.S. oil industry that doing so would raise prices."
+      "title": "Nike shares drop as retailer posts disappointing sales, announces layoffs as part of restructuring",
+      "link": "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html",
+      "published_iso": "2026-10-01T21:34:44+00:00",
+      "summary_raw": "Nike is expected to post another quarter of declining sales as the company tries to turn around its business and regain growth in China."
     },
     {
       "source": "CNBC",
-      "title": "Passengers and crew foil co-pilot's apparent attempt to crash FlyDubai flight to Israel",
-      "link": "https://www.cnbc.com/2026/10/01/dubai-israel-flight-pilot-crash-indian.html",
-      "published_iso": "2026-10-01T01:09:18+00:00",
-      "summary_raw": "One of the pilots on a FlyDubai flight headed for Israel stabbed the second pilot, according to Israeli Prime Minister Benjamin Netanyahu."
+      "title": "Trump could target three Fed governors. Removing them may be harder than it looks",
+      "link": "https://www.cnbc.com/2026/10/01/trump-fed-powell-lisa-cook-michael-barr-removal.html",
+      "published_iso": "2026-10-01T21:14:49+00:00",
+      "summary_raw": "Trump could seek to remove Jerome Powell, Lisa Cook and Michael Barr from the Federal Reserve, but court rulings and lengthy litigation could limit him."
     },
     {
       "source": "CNBC",
-      "title": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
-      "link": "https://www.cnbc.com/2026/09/30/micron-mu-q4-earnings-report-2026.html",
-      "published_iso": "2026-09-30T20:59:05+00:00",
-      "summary_raw": "Micron is up over 500% in the past year as the company benefits from soaring AI demand."
+      "title": "Brent oil jumps more than 4% as U.S. reportedly sends third aircraft carrier to Middle East",
+      "link": "https://www.cnbc.com/2026/10/01/oil-prices-today-wti-brent.html",
+      "published_iso": "2026-10-01T19:29:26+00:00",
+      "summary_raw": "Oil prices rose sharply Thursday following a report the U.S. is sending a third aircraft carrier strike group to the Middle East."
     },
     {
       "source": "CNBC",
-      "title": "Sen. Hawley: OpenAI CEO Sam Altman declined to testify at rogue AI hearing",
-      "link": "https://www.cnbc.com/2026/09/30/hawley-openai-sam-altman-rogue-ai.html",
-      "published_iso": "2026-09-30T20:51:44+00:00",
-      "summary_raw": "A Senate subcommittee on Wednesday is examining rogue AI, after a series of AI cyberattacks and increasing warnings about the risks of the technology."
+      "title": "Interpol says AI is increasing the speed and scale of cyber threats. Here’s what companies should watch",
+      "link": "https://www.cnbc.com/2026/10/02/interpol-cyberattack-cyberthreat-agentic-ai.html",
+      "published_iso": "2026-10-02T01:38:13+00:00",
+      "summary_raw": "An Interpol executive warns AI is making existing cyber threats faster and harder to detect, while companies face new risks from the rise of agentic AI."
     }
   ]
 }

@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-01T09:17:33.985023+08:00",
+  "fetched_at": "2026-10-02T09:41:21.648154+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "Derive V3 Wants to Be the Engine of Onchain Options",
+      "link": "https://www.bankless.com/read/derive-v3-wants-to-be-the-engine-of-onchain-options",
+      "published_iso": "2026-10-01T19:23:23+00:00",
+      "summary_raw": "Can Derive V3, an Ethereum-native rebuild, help the protocol take on Deribit?"
+    },
     {
       "source": "Bankless",
       "title": "🏴 Robinhood Wants Everything",
@@ -21,13 +28,6 @@
       "link": "https://www.bankless.com/read/what-was-revealed-at-robinhood-s-hood-summit",
       "published_iso": "2026-09-30T17:18:32+00:00",
       "summary_raw": "Robinhood launched greater abilities for agents, the rollout of perpetuals in the U.S., and the debut of their social feed, all while dealing a blow to Lighter in the short term."
-    },
-    {
-      "source": "Bankless",
-      "title": "NEAR Stopped Bitget's Hackers Without Breaking Privacy",
-      "link": "https://www.bankless.com/read/near-stopped-bitget-s-hackers-without-breaking-privacy",
-      "published_iso": "2026-09-29T19:12:50+00:00",
-      "summary_raw": "Bitget's hackers tried to push $50M+ through NEAR Intents and got turned away."
     }
   ]
 }

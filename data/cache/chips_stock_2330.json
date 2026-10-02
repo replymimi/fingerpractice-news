@@ -1,22 +1,22 @@
 {
-  "fetched_at": "2026-10-01T09:17:47.161289+08:00",
+  "fetched_at": "2026-10-02T09:41:39.108110+08:00",
   "data": {
     "id": "2330",
     "name": "台積電",
-    "date": "2026-09-30",
-    "close": 2480.0,
-    "chg": 5.0,
-    "chg_pct": 0.20202020202020202,
+    "date": "2026-10-01",
+    "close": 2510.0,
+    "chg": 30.0,
+    "chg_pct": 1.2096774193548387,
     "inst": {
-      "foreign": 702.594,
-      "trust": 761.722,
-      "dealer": 399.899,
-      "date": "2026-09-30"
+      "foreign": 3090.73,
+      "trust": 596.45,
+      "dealer": 602.528,
+      "date": "2026-10-01"
     },
-    "foreign_5d": -4907.7609999999995,
-    "margin_chg": 562,
-    "margin_balance": 30696,
-    "short_chg": 3,
+    "foreign_5d": 2512.473,
+    "margin_chg": -38,
+    "margin_balance": 30658,
+    "short_chg": 2,
     "revenue": {
       "label": "2026 年 8 月",
       "amount_yi": 5148.05337,
