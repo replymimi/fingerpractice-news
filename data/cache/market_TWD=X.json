@@ -1,11 +1,13 @@
 {
-  "fetched_at": "2026-10-03T10:19:58.180001+08:00",
+  "fetched_at": "2026-10-03T10:28:34.829106+08:00",
   "data": {
-    "name": "台幣兌美元",
+    "name": "美元兌台幣 USD/TWD",
     "symbol": "TWD=X",
+    "is_currency": true,
     "price": 31.796,
     "prev_close": 31.888,
     "chg": -0.09,
-    "chg_pct": -0.29
+    "chg_pct": -0.29,
+    "as_of": "2026-10-03T05:18:11+08:00"
   }
 }

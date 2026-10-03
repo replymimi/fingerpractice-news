@@ -3,60 +3,74 @@
     {
       "name": "道瓊工業指數 DJIA",
       "symbol": "^DJI",
+      "is_currency": false,
       "price": 51176.96,
       "prev_close": 50926.56,
       "chg": 250.4,
-      "chg_pct": 0.49
+      "chg_pct": 0.49,
+      "as_of": "2026-10-03T05:00:17+08:00"
     },
     {
       "name": "標普 500 S&P 500",
       "symbol": "^GSPC",
+      "is_currency": false,
       "price": 7722.72,
       "prev_close": 7666.45,
       "chg": 56.27,
-      "chg_pct": 0.73
+      "chg_pct": 0.73,
+      "as_of": "2026-10-03T04:59:13+08:00"
     },
     {
       "name": "那斯達克 NASDAQ",
       "symbol": "^IXIC",
+      "is_currency": false,
       "price": 27190.863,
       "prev_close": 26871.596,
       "chg": 319.27,
-      "chg_pct": 1.19
+      "chg_pct": 1.19,
+      "as_of": "2026-10-03T05:15:59+08:00"
     },
     {
       "name": "費城半導體 SOX",
       "symbol": "^SOX",
+      "is_currency": false,
       "price": 13136.675,
       "prev_close": 12829.0,
       "chg": 307.67,
-      "chg_pct": 2.4
+      "chg_pct": 2.4,
+      "as_of": "2026-10-03T05:15:59+08:00"
     }
   ],
   "tw": [
     {
       "name": "台股加權指數 TAIEX",
       "symbol": "^TWII",
+      "is_currency": false,
       "price": 48475.74,
       "prev_close": 48353.49,
       "chg": 122.25,
-      "chg_pct": 0.25
+      "chg_pct": 0.25,
+      "as_of": "2026-10-02T13:33:15+08:00"
     },
     {
       "name": "櫃買指數 TPEx",
-      "symbol": "^TWOII",
-      "price": 269.45,
-      "prev_close": 267.72,
-      "chg": 1.73,
-      "chg_pct": 0.65
+      "symbol": "TPEX",
+      "is_currency": false,
+      "price": 426.93,
+      "prev_close": 418.82,
+      "chg": 8.11,
+      "chg_pct": 1.94,
+      "as_of": "2026-10-02T13:30:00+08:00"
     },
     {
-      "name": "台幣兌美元",
+      "name": "美元兌台幣 USD/TWD",
       "symbol": "TWD=X",
+      "is_currency": true,
       "price": 31.796,
       "prev_close": 31.888,
       "chg": -0.09,
-      "chg_pct": -0.29
+      "chg_pct": -0.29,
+      "as_of": "2026-10-03T05:18:11+08:00"
     }
   ]
 }

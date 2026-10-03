@@ -134,10 +134,13 @@ market_indices:
   tw:
     - symbol: "^TWII"
       name: "台股加權指數 TAIEX"
-    - symbol: "^TWOII"
+    # 櫃買指數：Yahoo 已查無 ^TWOII（404，舊快取曾凍結在 269.45 三週，實際約 427），改用櫃買中心官方 OpenAPI
+    - id: TPEX
+      provider: tpex
       name: "櫃買指數 TPEx"
+    # TWD=X 的數字是「1 美元 = 幾元台幣」：數字變大 = 台幣貶值，所以用中性顏色、明講升貶，不用漲跌紅綠
     - symbol: "TWD=X"
-      name: "台幣兌美元"
+      name: "美元兌台幣 USD/TWD"
       is_currency: true
 
 # 台股籌碼面：三大法人、融資融券、自選股

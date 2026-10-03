@@ -88,6 +88,8 @@
   .stat-tile .stat-change { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.72rem; margin-top: 2px; }
   .stat-tile .stat-change.up { color: var(--pos); }
   .stat-tile .stat-change.down { color: var(--neg); }
+  .stat-tile .stat-change.flat { color: var(--ink-soft); }
+  .stat-tile .stat-asof { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: var(--ink-faint); margin-top: 3px; }
 
   .flow-group { margin-bottom: 14px; }
   .flow-group-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
@@ -209,7 +211,8 @@
       <div class="stat-tile">
         <div class="stat-name">{{ t.name }}</div>
         <div class="stat-value">{{ t.value }}</div>
-        <div class="stat-change {{ t.direction }}">{{ '▲' if t.direction == 'up' else '▼' }} {{ t.change_label }}</div>
+        <div class="stat-change {{ t.direction }}">{{ t.arrow }} {{ t.change_label }}</div>
+        <div class="stat-asof">{{ t.as_of_label }}</div>
       </div>
       {% endfor %}
     </div>
@@ -252,7 +255,8 @@
       <div class="stat-tile">
         <div class="stat-name">{{ t.name }}</div>
         <div class="stat-value">{{ t.value }}</div>
-        <div class="stat-change {{ t.direction }}">{{ '▲' if t.direction == 'up' else '▼' }} {{ t.change_label }}</div>
+        <div class="stat-change {{ t.direction }}">{{ t.arrow }} {{ t.change_label }}</div>
+        <div class="stat-asof">{{ t.as_of_label }}</div>
       </div>
       {% endfor %}
     </div>

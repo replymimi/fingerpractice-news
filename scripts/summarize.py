@@ -117,22 +117,45 @@ def summarize_video_item(item):
     }
 
 
+_WEEKDAYS = ["一", "二", "三", "四", "五", "六", "日"]
+
+
+def _as_of_label(iso):
+    """'10/02（五）13:30' — every tile states when its quote is from."""
+    if not iso:
+        return "時間不明"
+    dt = datetime.fromisoformat(iso).astimezone(TAIPEI)
+    return f"{dt.month:02d}/{dt.day:02d}（{_WEEKDAYS[dt.weekday()]}）{dt:%H:%M}"
+
+
 def build_market_tiles(rows):
     tiles = []
     for row in rows:
-        is_currency = row.get("is_currency")
-        if is_currency:
+        as_of = _as_of_label(row.get("as_of"))
+        if row.get("is_currency"):
+            # price = TWD per 1 USD, so a bigger number means the TWD got weaker.
+            # Neutral colour: red/green would read as "good/bad" and mean different things to different people.
+            chg = row["chg"]
+            if abs(chg) < 0.0005:
+                direction, arrow, word = "flat", "■", "持平"
+            elif chg > 0:
+                direction, arrow, word = "flat", "▲", "台幣貶值"
+            else:
+                direction, arrow, word = "flat", "▼", "台幣升值"
             tiles.append({
                 "name": row["name"], "value": f"{row['price']:.3f}",
-                "direction": "up" if row["chg"] >= 0 else "down",
-                "change_label": f"{'升值' if row['chg'] >= 0 else '貶值'} {abs(row['chg']):.3f}",
+                "direction": direction, "arrow": arrow,
+                "change_label": f"{chg:+.3f}（{word}）",
+                "as_of_label": as_of,
             })
         else:
             sign = "+" if row["chg"] >= 0 else ""
+            up = row["chg"] >= 0
             tiles.append({
                 "name": row["name"], "value": f"{row['price']:,.2f}",
-                "direction": "up" if row["chg"] >= 0 else "down",
+                "direction": "up" if up else "down", "arrow": "▲" if up else "▼",
                 "change_label": f"{sign}{row['chg']:,.2f}（{sign}{row['chg_pct']:.2f}%）",
+                "as_of_label": as_of,
             })
     return tiles
 

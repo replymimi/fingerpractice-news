@@ -1,11 +1,13 @@
 {
-  "fetched_at": "2026-10-03T10:19:58.007378+08:00",
+  "fetched_at": "2026-10-03T10:28:34.503585+08:00",
   "data": {
     "name": "費城半導體 SOX",
     "symbol": "^SOX",
+    "is_currency": false,
     "price": 13136.675,
     "prev_close": 12829.0,
     "chg": 307.67,
-    "chg_pct": 2.4
+    "chg_pct": 2.4,
+    "as_of": "2026-10-03T05:15:59+08:00"
   }
 }
