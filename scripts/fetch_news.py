@@ -22,6 +22,7 @@ from common import ROOT, RAW_DIR, log, save_json, fetch_with_cache_fallback
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
 ITEMS_PER_SOURCE = 4
 CANDIDATES_TO_SCAN = 60  # how many raw entries to look through when a source needs keyword filtering
+MAX_AGE_DAYS = 4         # drop anything older: a feed that quietly stops updating must not keep showing old news as current
 
 
 def parse_entry_time(entry):
@@ -30,6 +31,13 @@ def parse_entry_time(entry):
         if t:
             return datetime(*t[:6], tzinfo=timezone.utc).isoformat()
     return None
+
+
+def is_fresh(published_iso):
+    if not published_iso:
+        return True  # can't judge, keep
+    age = datetime.now(timezone.utc) - datetime.fromisoformat(published_iso)
+    return age.days <= MAX_AGE_DAYS
 
 
 def matches_topic(entry, keywords):
@@ -54,16 +62,19 @@ def fetch_one_source(src):
         d = feedparser.parse(r.content)
         if not d.entries:
             raise ValueError("0 entries parsed")
-        scan_limit = CANDIDATES_TO_SCAN if keywords else ITEMS_PER_SOURCE
+        scan_limit = CANDIDATES_TO_SCAN
         items = []
         for entry in d.entries[:scan_limit]:
             if not matches_topic(entry, keywords):
+                continue
+            published_iso = parse_entry_time(entry)
+            if not is_fresh(published_iso):
                 continue
             items.append({
                 "source": src["name"],
                 "title": entry.get("title", "").strip(),
                 "link": entry.get("link", ""),
-                "published_iso": parse_entry_time(entry),
+                "published_iso": published_iso,
                 "summary_raw": (entry.get("summary", "") or "")[:600],
             })
             if len(items) >= ITEMS_PER_SOURCE:
@@ -75,7 +86,8 @@ def fetch_one_source(src):
     items, used_cache = fetch_with_cache_fallback(_fetch, f"news_{src['id']}.json", label=src["name"])
     if used_cache:
         log(f"  -> {src['name']}: using cached copy")
-    return items or []
+    # also applies to the cache-fallback path, whose items may be old
+    return [it for it in (items or []) if is_fresh(it.get("published_iso"))]
 
 
 def main():
@@ -89,6 +101,8 @@ def main():
         for src in cfg["news"][column]:
             items = fetch_one_source(src)
             log(f"  {src['name']}: {len(items)} items")
+            if not items:
+                log(f"  WARN {src['name']}: 0 items newer than {MAX_AGE_DAYS} days — feed may have stopped updating")
             column_items.extend(items)
         output[column] = column_items
 

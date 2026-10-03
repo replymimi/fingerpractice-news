@@ -1,6 +1,68 @@
 # 財經晨讀 - 內容來源設定
 # 修改這個檔案就能增減來源，不用碰程式碼。
 
+# 標題關鍵字（整詞比對，只比標題）：沒有財經專屬 feed 的來源用它擋掉非財經新聞
+finance_keywords: &finance_keywords
+  - fed
+  - federal reserve
+  - rate
+  - inflation
+  - cpi
+  - ppi
+  - gdp
+  - market
+  - stock
+  - bond
+  - yield
+  - dollar
+  - currency
+  - oil
+  - crude
+  - treasury
+  - economy
+  - economic
+  - recession
+  - jobs
+  - payroll
+  - unemployment
+  - earnings
+  - ipo
+  - s&p
+  - nasdaq
+  - dow jones
+  - crypto
+  - bitcoin
+  - tariff
+  - trade deal
+  - trade war
+  - debt
+  - deficit
+  - housing
+  - retail sales
+  - consumer spending
+  - ecb
+  - boj
+  - pboc
+  - powell
+  - central bank
+  - wall street
+  - hedge fund
+  - stimulus
+  - bailout
+  - default
+  - credit
+  - mortgage
+  - bank
+  - stocks
+  - shares
+  - rates
+  - yields
+  - bonds
+  - markets
+  - banks
+  - tariffs
+  - layoffs
+
 news:
   stocks:
     - id: reuters
@@ -12,68 +74,20 @@ news:
       feed_url: https://www.cnbc.com/id/100003114/device/rss/rss.html
     - id: marketwatch
       name: MarketWatch
-      # 原本用的 topstories 是大眾新聞大雜燴（曾出現星巴克杯子、麥當勞玩具這種消費新聞）
-      # 換成即時財經頭條，內容才真的都是市場/央行/總經
-      feed_url: https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines
+      # 注意：mw_realtimeheadlines / marketpulse 這兩個「財經專屬」feed 都已經停更（最新只到 2025 年），
+      # 不能用。目前還在更新的只有 topstories（混有民生消費新聞），所以用標題關鍵字過濾。
+      feed_url: https://feeds.marketwatch.com/marketwatch/topstories/
+      topic_keywords: *finance_keywords
     - id: zerohedge
       name: Zero Hedge
       # Zero Hedge 官方只有這一種全站 RSS，沒有財經專屬版本，內容本來就混雜政治／社會新聞
       # 用關鍵字過濾，只留跟財經/總經相關的標題
       feed_url: https://cms.zerohedge.com/fullrss2.xml
-      topic_keywords:
-        - fed
-        - federal reserve
-        - rate
-        - inflation
-        - cpi
-        - ppi
-        - gdp
-        - market
-        - stock
-        - bond
-        - yield
-        - dollar
-        - currency
-        - oil
-        - crude
-        - treasury
-        - economy
-        - economic
-        - recession
-        - jobs
-        - payroll
-        - unemployment
-        - earnings
-        - ipo
-        - s&p
-        - nasdaq
-        - dow jones
-        - crypto
-        - bitcoin
-        - tariff
-        - trade deal
-        - trade war
-        - debt
-        - deficit
-        - housing
-        - retail sales
-        - consumer spending
-        - ecb
-        - boj
-        - pboc
-        - powell
-        - central bank
-        - wall street
-        - hedge fund
-        - stimulus
-        - bailout
-        - default
-        - credit
-        - mortgage
-        - bank
+      topic_keywords: *finance_keywords
     - id: calculatedrisk
       name: Calculated Risk
-      feed_url: https://www.calculatedriskblog.com/feeds/posts/default
+      # 作者 2026-01 結束每日部落格，改發電子報（房地產為主）；舊的 Blogger/FeedBurner feed 停在 2026-01-12
+      feed_url: https://calculatedrisk.substack.com/feed
   crypto:
     - id: coindesk
       name: CoinDesk
