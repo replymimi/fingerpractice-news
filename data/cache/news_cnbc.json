@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-02T09:41:19.986595+08:00",
+  "fetched_at": "2026-10-03T09:11:34.279831+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Nike shares drop as retailer posts disappointing sales, announces layoffs as part of restructuring",
-      "link": "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html",
-      "published_iso": "2026-10-01T21:34:44+00:00",
-      "summary_raw": "Nike is expected to post another quarter of declining sales as the company tries to turn around its business and regain growth in China."
+      "title": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
+      "link": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
+      "published_iso": "2026-10-02T17:20:33+00:00",
+      "summary_raw": "Ford on Friday reported a year-over-year sales decline of 6.6% during the third quarter to 507,395 light-duty vehicles."
     },
     {
       "source": "CNBC",
-      "title": "Trump could target three Fed governors. Removing them may be harder than it looks",
-      "link": "https://www.cnbc.com/2026/10/01/trump-fed-powell-lisa-cook-michael-barr-removal.html",
-      "published_iso": "2026-10-01T21:14:49+00:00",
-      "summary_raw": "Trump could seek to remove Jerome Powell, Lisa Cook and Michael Barr from the Federal Reserve, but court rulings and lengthy litigation could limit him."
+      "title": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
+      "link": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
+      "published_iso": "2026-10-02T19:19:15+00:00",
+      "summary_raw": "The FAA on Monday said it was reviewing the software glitch, which could affect procedures during certain landings."
     },
     {
       "source": "CNBC",
-      "title": "Brent oil jumps more than 4% as U.S. reportedly sends third aircraft carrier to Middle East",
-      "link": "https://www.cnbc.com/2026/10/01/oil-prices-today-wti-brent.html",
-      "published_iso": "2026-10-01T19:29:26+00:00",
-      "summary_raw": "Oil prices rose sharply Thursday following a report the U.S. is sending a third aircraft carrier strike group to the Middle East."
+      "title": "Cerebras stock hits post-IPO low, tumbling 20% for the week on Nvidia pressure and lockup expiration",
+      "link": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html",
+      "published_iso": "2026-10-02T22:38:49+00:00",
+      "summary_raw": "Cerebras shares hit an all-time low due to pressure from chip giant Nvidia, plus a post-lockup selloff."
     },
     {
       "source": "CNBC",
-      "title": "Interpol says AI is increasing the speed and scale of cyber threats. Here’s what companies should watch",
-      "link": "https://www.cnbc.com/2026/10/02/interpol-cyberattack-cyberthreat-agentic-ai.html",
-      "published_iso": "2026-10-02T01:38:13+00:00",
-      "summary_raw": "An Interpol executive warns AI is making existing cyber threats faster and harder to detect, while companies face new risks from the rise of agentic AI."
+      "title": "Men are losing ground in the labor market. Here's why",
+      "link": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
+      "published_iso": "2026-10-02T17:38:59+00:00",
+      "summary_raw": "Women outnumbered men in the workforce for eight straight months as of September, according to one analysis."
     }
   ]
 }

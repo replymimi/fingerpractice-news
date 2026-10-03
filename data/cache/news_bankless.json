@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-02T09:41:21.648154+08:00",
+  "fetched_at": "2026-10-03T09:11:36.107047+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "Derive V3 Wants to Be the Engine of Onchain Options",
-      "link": "https://www.bankless.com/read/derive-v3-wants-to-be-the-engine-of-onchain-options",
-      "published_iso": "2026-10-01T19:23:23+00:00",
-      "summary_raw": "Can Derive V3, an Ethereum-native rebuild, help the protocol take on Deribit?"
+      "title": "🏴 CryptoPunks Rally Again",
+      "link": "https://www.bankless.com/read/cryptopunks-rally-again",
+      "published_iso": "2026-10-02T21:37:29+00:00",
+      "summary_raw": "CryptoPunks sales are surging while the collection's grails are moving for millions again."
     },
     {
       "source": "Bankless",
-      "title": "🏴 Robinhood Wants Everything",
-      "link": "https://www.bankless.com/read/robinhood-wants-everything",
-      "published_iso": "2026-09-30T19:16:18+00:00",
-      "summary_raw": "Here's everything the HOOD Summit revealed, from 10x perps to Robinhood's answer to Fomo."
+      "title": "CryptoPunks Are Heating Back Up",
+      "link": "https://www.bankless.com/read/cryptopunks-are-heating-back-up",
+      "published_iso": "2026-10-02T20:55:10+00:00",
+      "summary_raw": "CryptoPunks sales are surging, and the collection's grails are selling for millions again. Here's everything you need to know."
     },
     {
       "source": "Bankless",
-      "title": "Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors",
-      "link": "https://www.bankless.com/read/news/stripe-s-bridge-launches-ousd-the-stablecoin-that-pays-its-distributors",
-      "published_iso": "2026-09-30T17:45:57+00:00",
-      "summary_raw": "OUSD, a new Stripe-issued stablecoin, is live across four chains."
+      "title": "SEC Proposes New Crypto Custody Framework for Advisers and Funds",
+      "link": "https://www.bankless.com/read/news/sec-proposes-new-crypto-custody-framework-for-advisers-and-funds",
+      "published_iso": "2026-10-02T17:56:02+00:00",
+      "summary_raw": "The SEC's new proposal would let advisers and funds use state trust companies, and in limited cases self-custody, to hold crypto."
     },
     {
       "source": "Bankless",
-      "title": "What Was Revealed at Robinhood's HOOD Summit",
-      "link": "https://www.bankless.com/read/what-was-revealed-at-robinhood-s-hood-summit",
-      "published_iso": "2026-09-30T17:18:32+00:00",
-      "summary_raw": "Robinhood launched greater abilities for agents, the rollout of perpetuals in the U.S., and the debut of their social feed, all while dealing a blow to Lighter in the short term."
+      "title": "Blast L2 Winds Down, Sets Oct. 26th Withdrawal Deadline",
+      "link": "https://www.bankless.com/read/news/blast-l2-winds-down-sets-oct-26th-withdrawal-deadline",
+      "published_iso": "2026-10-02T17:41:50+00:00",
+      "summary_raw": "Blast is sunsetting its Ethereum L2 after costs outran revenue."
     }
   ]
 }

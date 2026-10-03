@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-02T09:41:21.230213+08:00",
+  "fetched_at": "2026-10-03T09:11:35.502284+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Ethereum Foundation launches zkAPI to let users pay for AI models without revealing identity",
-      "link": "https://www.theblock.co/news/defi/2026-10-01-ethereum-foundation-launches-zkapi-417504",
-      "published_iso": "2026-10-02T00:22:58+00:00",
-      "summary_raw": "Users deposit funds into an Ethereum vault and authorize spending with zero-knowledge proofs, so the API provider can't link requests to a payer."
+      "title": "Drift opens exploit recovery claims with initial payouts of just over 1% of user losses",
+      "link": "https://www.theblock.co/news/ecosystems/2026-10-02-drift-opens-exploit-recovery-claims-initial-payouts-just-over-1-user-losses-417581",
+      "published_iso": "2026-10-02T17:10:40+00:00",
+      "summary_raw": "DFX holders can cash out now or wait for more funding, with no firm timeline for full repayment."
     },
     {
       "source": "The Block Research",
-      "title": "SEC proposes framework allowing investment advisers, funds to self-custody crypto",
-      "link": "https://www.theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
-      "published_iso": "2026-10-01T21:00:53+00:00",
-      "summary_raw": "SEC proposed a crypto framework for investment advisers &amp; funds, allowing self-custody in some cases &amp; state trust companies as custodians."
+      "title": "Paradigm-backed Layer 2 Blast to wind down network as costs exceed revenue",
+      "link": "https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583",
+      "published_iso": "2026-10-02T16:54:29+00:00",
+      "summary_raw": "Ethereum L2 Blast is winding down after costs outpaced revenue. Users have until Oct. 26 to withdraw via the app."
     },
     {
       "source": "The Block Research",
-      "title": "Hyperliquid Policy Center, Circle press EU on perps and stablecoin reserves in MiCA review",
-      "link": "https://www.theblock.co/news/regulation/2026-10-01-hyperliquid-circle-mica-review-417452",
-      "published_iso": "2026-10-01T19:10:36+00:00",
-      "summary_raw": "Hyperliquid's policy group wants perps under MiFID II, while Circle targets MiCA's bank deposit floor in filings to the European Commission's MiCA review."
+      "title": "Bitcoin nears highest level since January as $85,000 sell wall clears, US jobs data disappoints",
+      "link": "https://www.theblock.co/news/markets/2026-10-02-bitcoin-nears-highest-level-january-85000-sell-wall-clears-us-jobs-data-disappoints-417570",
+      "published_iso": "2026-10-02T13:34:40+00:00",
+      "summary_raw": "Bitcoin climbed back toward $87,000 on Friday as sellers cleared out around $85,000, according to Glassnode."
     },
     {
       "source": "The Block Research",
-      "title": "Ethereum staking reward burn proposal EIP-8363 pulled from Hegota upgrade",
-      "link": "https://www.theblock.co/news/ecosystems/2026-10-01-ethereum-staking-reward-burn-proposal-eip-8363-pulled-hegota-upgrade-417419",
-      "published_iso": "2026-10-01T16:17:23+00:00",
-      "summary_raw": "Co-author Jérôme de Tychey said industry participants and core contributors convinced him a scoping process was the wrong venue for an issuance change."
+      "title": "BitGo CEO says Clarity’s failure left capital markets exposed to risk potentially worse than Lehman",
+      "link": "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
+      "published_iso": "2026-10-02T12:28:54+00:00",
+      "summary_raw": "BitGo CEO Mike Belshe warned that Clarity's failure left systemic risks arising from one firm holding exchange, brokerage, and custody functions."
     }
   ]
 }
