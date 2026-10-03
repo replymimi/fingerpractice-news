@@ -13,12 +13,17 @@ DOCS_DIR = os.path.join(ROOT, "docs")
 TEMPLATE_DIR = os.path.join(ROOT, "templates")
 
 
+WEEKDAYS = ["一", "二", "三", "四", "五", "六", "日"]
+
+
 def time_label(iso):
+    """Date + weekday + time, e.g. '10/02（五）09:06'. Time alone made a
+    previous day's video (e.g. Friday's on a Saturday) look like today's."""
     if not iso:
         return "—"
     try:
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(TAIPEI)
-        return dt.strftime("%H:%M")
+        return f"{dt.month:02d}/{dt.day:02d}（{WEEKDAYS[dt.weekday()]}）{dt:%H:%M}"
     except Exception:
         return "—"
 
