@@ -38,9 +38,9 @@
       "name": "台股加權指數 TAIEX",
       "symbol": "^TWII",
       "price": 48475.74,
-      "prev_close": 47940.1,
-      "chg": 535.64,
-      "chg_pct": 1.12
+      "prev_close": 48353.49,
+      "chg": 122.25,
+      "chg_pct": 0.25
     },
     {
       "name": "櫃買指數 TPEx",
