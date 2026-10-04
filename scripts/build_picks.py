@@ -340,7 +340,8 @@ def build():
                         "pct": round(chg / prev * 100, 2) if prev else None,
                         "days": len(s["c"]), "a": check_stock(s)}
         vi = volume_surge.vol_info(s["v"], shares.get(code))
-        stocks[code]["vol"] = {**vi, "tags": volume_surge.tags(vi), "hit": volume_surge.is_ordinary(code) and volume_surge.qualifies(vi)}
+        stocks[code]["vol"] = {**vi, "tags": volume_surge.tags(vi), "hit": volume_surge.is_ordinary(code) and volume_surge.qualifies(vi),
+                               "thin": vi["v"] < volume_surge.MIN_LOTS and volume_surge.meets_standard(vi)}
     meta = [{**a, "checks": [{"t": c[0], "l": c[1], **({"g": c[2]} if len(c) > 2 else {})} for c in a["checks"]]}
             for a in ANALYSTS]
     surge = volume_surge.analyze(series, latest, names)

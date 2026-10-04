@@ -169,7 +169,7 @@
       <div class="surge-head"><h2>爆大量清單</h2>
         <span class="sort-btns">排序<button type="button" data-sort="mult" aria-pressed="true">倍數</button><button type="button" data-sort="turnover" aria-pressed="false">週轉率</button></span></div>
       <ul class="surge-list" id="surge-list"></ul>
-      <p class="surge-note">你的自訂標準：成交量 ≥ 過去 5 日或 20 日均量的 2 倍（不含當天），或創 3 個月新高量，或週轉率 &gt; 10%，任一成立就列入。倍數取兩者較高的。上櫃股票的量不含盤後定價。點一檔就看它的六家檢查。</p>
+      <p class="surge-note">你的自訂標準：成交量 ≥ 過去 5 日或 20 日均量的 2 倍（不含當天），或創 3 個月新高量，或週轉率 &gt; 10%，任一成立、而且當天成交 ≥ 1,000 張就列入。倍數取兩者較高的。上櫃股票的量不含盤後定價。點一檔就看它的六家檢查。</p>
     </section>
     <div id="result"></div>
   </section>
@@ -344,6 +344,7 @@
   function volBox(v) {
     if (!v) return "";
     const head = v.hit ? `<span class="vol-hit">🔥 爆大量</span>${v.tags.length ? "：" + esc(v.tags.join("・")) : ""}`
+                       : v.thin ? "量能：倍數或週轉率有達標，但當天成交未滿 1,000 張，不列入爆大量"
                        : "量能：沒有達到爆大量標準";
     return `<div class="vol-box"><b>${head}</b>${!v.hit && v.high ? `（${HIGH[v.high]}）` : ""}<div class="det">${esc(volLine(v))}</div></div>`;
   }

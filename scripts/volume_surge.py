@@ -5,7 +5,9 @@ The owner's own standard (自訂, not any analyst's or the exchange's):
     (today excluded, so the comparison is against the past)
   - 新高量: volume above every day of the previous 60 trading days (~3 months)
   - 週轉率: volume / issued common shares > 10%
-Any one of the three puts a stock on the list. Stronger levels become tags:
+Any one of the three puts a stock on the list, as long as the day's volume
+is at least 1,000 張 (owner's choice, to drop thinly traded stocks where 120
+張 can already be "18x"). Stronger levels become tags:
 >= 3x, a 120-day (~half-year) high, turnover > 20%, and > 30% (chips unstable).
 
 Only ordinary stocks (4-digit codes not starting with 0); ETFs are left out.
@@ -22,6 +24,7 @@ from common import DATA_DIR, RAW_DIR, log, load_json, save_json
 SHARES_PATH = os.path.join(DATA_DIR, "stocks", "shares.json")
 MULT_MIN, MULT_STRONG = 2, 3
 TURNOVER_MIN, TURNOVER_HIGH, TURNOVER_UNSTABLE = 10, 20, 30
+MIN_LOTS = 1000  # day's volume floor, 張
 
 
 def is_ordinary(code):
@@ -50,9 +53,13 @@ def vol_info(v, shares):
     return info
 
 
-def qualifies(info):
+def meets_standard(info):
     return ((info["mult"] or 0) >= MULT_MIN or info["high"] >= 60
             or (info["turnover"] or 0) > TURNOVER_MIN)
+
+
+def qualifies(info):
+    return info["v"] >= MIN_LOTS and meets_standard(info)
 
 
 def tags(info):
