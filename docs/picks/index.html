@@ -58,6 +58,12 @@
   .search { display: flex; gap: 8px; margin: 22px 0 6px; }
   .search input { flex: 1; min-width: 0; font-size: 1.05rem; padding: 11px 14px; border: 1px solid var(--hairline); border-radius: 8px; background: var(--surface); color: var(--ink); }
   .hint { font-size: 0.78rem; color: var(--ink-faint); margin: 0 0 18px; }
+  .recent { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -8px 0 20px; }
+  .recent-label { font-size: 0.74rem; color: var(--ink-faint); margin-right: 2px; }
+  #recent-list { display: contents; }
+  .recent-chip { font-size: 0.78rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--hairline); background: var(--surface); color: var(--ink); cursor: pointer; font-family: inherit; }
+  .recent-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .recent-chip .rc-code { font-family: 'IBM Plex Mono', monospace; color: var(--ink-soft); margin-right: 4px; }
   .lock-again { background: none; border: none; color: var(--ink-faint); font-size: 0.78rem; text-decoration: underline; cursor: pointer; padding: 0; font-family: inherit; }
 
   /* stock header */
@@ -131,6 +137,11 @@
       <button class="btn" type="submit">檢查</button>
     </form>
     <p class="hint">每天早上 07:00 更新到前一個交易日收盤。<button class="lock-again" id="forget" type="button">登出並忘記這台裝置</button></p>
+    <div class="recent" id="recent" hidden>
+      <span class="recent-label">最近查過</span>
+      <span id="recent-list"></span>
+      <button class="lock-again" id="recent-clear" type="button">清除</button>
+    </div>
     <div id="result"></div>
   </section>
 
@@ -152,6 +163,20 @@
     set: (v) => { try { localStorage.setItem(KEY, v); } catch {} },
     clear: () => { try { localStorage.removeItem(KEY); } catch {} },
   };
+  // last 10 checked stocks, newest first (this device only)
+  const RECENT_KEY = "picks-recent";
+  const recent = {
+    get: () => { try { return JSON.parse(localStorage.getItem(RECENT_KEY)) || []; } catch { return []; } },
+    save: (list) => { try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch {} },
+    add(code) { this.save([code, ...this.get().filter((c) => c !== code)].slice(0, 10)); },
+    clear: () => { try { localStorage.removeItem(RECENT_KEY); } catch {} },
+  };
+  function renderRecent() {
+    const list = recent.get().filter((c) => DATA.stocks[c]);
+    $("recent").hidden = !list.length;
+    $("recent-list").innerHTML = list.map((c) =>
+      `<button class="recent-chip" type="button" data-code="${esc(c)}"><span class="rc-code">${esc(c)}</span>${esc(DATA.stocks[c].n)}</button>`).join("");
+  }
   const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
@@ -194,12 +219,18 @@
     $("stamp").textContent = `資料日期：${DATA.date} 收盤｜共 ${Object.keys(DATA.stocks).length.toLocaleString()} 檔`;
     $("stock-list").innerHTML = Object.entries(DATA.stocks)
       .map(([c, s]) => `<option value="${esc(c)}">${esc(s.n)}</option>`).join("");
+    renderRecent();
     const fromHash = decodeURIComponent(location.hash.slice(1));
     if (fromHash) { $("q").value = fromHash; show(fromHash); } else { $("q").focus(); }
   }
 
   $("lock").addEventListener("submit", (ev) => { ev.preventDefault(); unlock($("pw").value, $("remember").checked); });
-  $("forget").addEventListener("click", () => { store.clear(); location.hash = ""; location.reload(); });
+  $("forget").addEventListener("click", () => { store.clear(); recent.clear(); location.hash = ""; location.reload(); });
+  $("recent-clear").addEventListener("click", () => { recent.clear(); renderRecent(); });
+  $("recent-list").addEventListener("click", (ev) => {
+    const b = ev.target.closest(".recent-chip");
+    if (b) { $("q").value = b.dataset.code; show(b.dataset.code); }
+  });
   $("search-form").addEventListener("submit", (ev) => { ev.preventDefault(); show($("q").value); });
   window.addEventListener("hashchange", () => { if (DATA) { const q = decodeURIComponent(location.hash.slice(1)); $("q").value = q; show(q); } });
 
@@ -265,6 +296,8 @@
       return;
     }
     if (location.hash.slice(1) !== hit) history.replaceState(null, "", "#" + hit);
+    recent.add(hit);
+    renderRecent();
     const s = DATA.stocks[hit];
     const verdicts = DATA.analysts.map((m) => ({ m, v: verdict(m, s.a[m.key]) }));
     const okCount = verdicts.filter(({ v }) => v.k === "pass" || v.k === "warn").length;
