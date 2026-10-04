@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>波段條件檢查</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+  :root {
+    --bg: #EFF2F7; --surface: #FDFEFF; --ink: #12151C; --ink-soft: #565F72; --ink-faint: #8891A3;
+    --hairline: #D6DBE4; --accent: #A9701A; --accent-soft: #F3E4CB;
+    --pass: #1B7A3D; --pass-soft: #DDEFE3; --fail: #B8342F; --fail-soft: #F6DEDC;
+    --warn: #8A6A12; --warn-soft: #F3EACB; --na: #8891A3;
+    --candle-up: #C9352F; --candle-down: #1F8A4C; --ma-line: #4A55A8; --focus-ring: #2C64C9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A0D13; --surface: #12161F; --ink: #E9ECF3; --ink-soft: #9AA3B7; --ink-faint: #6B7488;
+      --hairline: #232A38; --accent: #E8A33D; --accent-soft: #2C2415;
+      --pass: #4CBE72; --pass-soft: #15281C; --fail: #E2635C; --fail-soft: #2E1716;
+      --warn: #E0BC4E; --warn-soft: #2A2410; --na: #6B7488;
+      --candle-up: #E8615A; --candle-down: #45B872; --ma-line: #8B95E8; --focus-ring: #6FA0F5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0A0D13; --surface: #12161F; --ink: #E9ECF3; --ink-soft: #9AA3B7; --ink-faint: #6B7488;
+    --hairline: #232A38; --accent: #E8A33D; --accent-soft: #2C2415;
+    --pass: #4CBE72; --pass-soft: #15281C; --fail: #E2635C; --fail-soft: #2E1716;
+    --warn: #E0BC4E; --warn-soft: #2A2410; --na: #6B7488;
+    --candle-up: #E8615A; --candle-down: #45B872; --ma-line: #8B95E8; --focus-ring: #6FA0F5;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Noto Sans TC', 'PingFang TC', sans-serif; line-height: 1.55; }
+  a { color: inherit; }
+  .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  .topbar { border-bottom: 1px solid var(--hairline); padding: 18px 0 14px; }
+  .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
+  h1 { font-family: 'Noto Serif TC', serif; font-size: 1.7rem; font-weight: 700; margin: 0; }
+  .stamp { font-family: 'IBM Plex Mono', monospace; font-size: 0.76rem; color: var(--ink-soft); margin-top: 6px; }
+
+  /* lock screen */
+  .lock { max-width: 360px; margin: 64px auto; padding: 24px; background: var(--surface); border: 1px solid var(--hairline); border-radius: 10px; }
+  .lock h2 { font-family: 'Noto Serif TC', serif; font-size: 1.15rem; margin: 0 0 14px; }
+  .lock input[type=password] { width: 100%; font-size: 1rem; padding: 10px 12px; border: 1px solid var(--hairline); border-radius: 6px; background: var(--bg); color: var(--ink); }
+  .lock label { display: flex; gap: 6px; align-items: center; font-size: 0.82rem; color: var(--ink-soft); margin: 10px 0 14px; }
+  .btn { background: var(--ink); color: var(--bg); border: none; border-radius: 999px; padding: 10px 20px; font-size: 0.9rem; font-family: inherit; cursor: pointer; }
+  .btn:disabled { opacity: 0.5; cursor: wait; }
+  .err { color: var(--fail); font-size: 0.85rem; margin: 10px 0 0; }
+
+  /* search */
+  .search { display: flex; gap: 8px; margin: 22px 0 6px; }
+  .search input { flex: 1; min-width: 0; font-size: 1.05rem; padding: 11px 14px; border: 1px solid var(--hairline); border-radius: 8px; background: var(--surface); color: var(--ink); }
+  .hint { font-size: 0.78rem; color: var(--ink-faint); margin: 0 0 18px; }
+  .lock-again { background: none; border: none; color: var(--ink-faint); font-size: 0.78rem; text-decoration: underline; cursor: pointer; padding: 0; font-family: inherit; }
+
+  /* stock header */
+  .stock-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; padding: 6px 0 10px; border-bottom: 2px solid var(--accent); }
+  .stock-head .code { font-family: 'IBM Plex Mono', monospace; font-size: 1rem; color: var(--ink-soft); }
+  .stock-head .name { font-family: 'Noto Serif TC', serif; font-size: 1.5rem; font-weight: 700; }
+  .stock-head .mkt { font-size: 0.75rem; color: var(--ink-faint); border: 1px solid var(--hairline); border-radius: 999px; padding: 0 8px; }
+  .stock-head .px { font-family: 'IBM Plex Mono', monospace; font-size: 1.05rem; font-weight: 600; }
+  .stock-head .asof { font-family: 'IBM Plex Mono', monospace; font-size: 0.74rem; color: var(--ink-faint); }
+  .summary { margin: 14px 0 6px; font-size: 1.02rem; }
+  .summary b { font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; }
+  .summary-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px; padding: 0; list-style: none; }
+  .chip { font-size: 0.78rem; padding: 2px 10px; border-radius: 999px; border: 1px solid transparent; }
+  .v-pass { background: var(--pass-soft); color: var(--pass); }
+  .v-warn { background: var(--warn-soft); color: var(--warn); }
+  .v-fail { background: var(--fail-soft); color: var(--fail); }
+  .v-na { background: transparent; border-color: var(--hairline); color: var(--na); }
+
+  /* analyst card */
+  .card { background: var(--surface); border: 1px solid var(--hairline); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
+  .card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .card-head h3 { font-family: 'Noto Serif TC', serif; font-size: 1.08rem; margin: 0; }
+  .card-head .style { font-size: 0.76rem; color: var(--ink-faint); margin-left: 6px; font-weight: 400; font-family: 'Noto Sans TC', sans-serif; }
+  .verdict { font-size: 0.82rem; font-weight: 500; padding: 3px 10px; border-radius: 999px; }
+  .checks { list-style: none; padding: 0; margin: 12px 0 0; }
+  .checks li { display: grid; grid-template-columns: 22px 1fr; gap: 2px 8px; padding: 7px 0; border-top: 1px dashed var(--hairline); }
+  .checks .ic { font-size: 0.92rem; line-height: 1.5; text-align: center; }
+  .checks .lab { font-size: 0.9rem; }
+  .checks .tag { font-size: 0.68rem; color: var(--ink-faint); border: 1px solid var(--hairline); border-radius: 4px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
+  .checks .det { grid-column: 2; font-family: 'IBM Plex Mono', 'Noto Sans TC', monospace; font-size: 0.78rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .checks li.fail .lab { color: var(--fail); font-weight: 500; }
+  .checks li.group-head { font-size: 0.8rem; font-weight: 500; color: var(--ink); padding-top: 10px; }
+  .checks li.group-head span span { font-weight: 400; margin-left: 8px; font-size: 0.76rem; }
+  .g-pass { color: var(--pass); } .g-fail { color: var(--fail); } .g-na { color: var(--na); }
+  .note, .exit, .src { font-size: 0.78rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .exit b, .note b, .src b { color: var(--ink); font-weight: 500; }
+  .src a { color: var(--ink-soft); }
+  .chart { margin-top: 10px; }
+  .chart svg { width: 100%; height: auto; display: block; }
+  .chart-legend { font-size: 0.72rem; color: var(--ink-faint); display: flex; gap: 14px; flex-wrap: wrap; margin-top: 2px; }
+  .chart-legend i { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 4px; }
+
+  .empty { color: var(--ink-faint); padding: 30px 0; text-align: center; }
+  footer { font-size: 0.74rem; color: var(--ink-faint); border-top: 1px solid var(--hairline); margin-top: 28px; padding: 14px 0 40px; }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <p class="eyebrow">Fingerpractice · 私人工具</p>
+    <h1>波段條件檢查</h1>
+    <div class="stamp" id="stamp">資料載入中…</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <form class="lock" id="lock" autocomplete="on">
+    <h2>請輸入密碼</h2>
+    <input type="text" name="username" value="picks" autocomplete="username" hidden>
+    <input type="password" id="pw" autocomplete="current-password" required aria-label="密碼">
+    <label><input type="checkbox" id="remember" checked> 記住這台裝置</label>
+    <button class="btn" id="unlock" type="submit">解鎖</button>
+    <p class="err" id="lock-err" hidden></p>
+  </form>
+
+  <section id="app" hidden>
+    <form class="search" id="search-form">
+      <input id="q" list="stock-list" inputmode="search" placeholder="輸入股票代號或名稱，例如 2368 或 金像電" aria-label="股票代號或名稱" autocomplete="off">
+      <datalist id="stock-list"></datalist>
+      <button class="btn" type="submit">檢查</button>
+    </form>
+    <p class="hint">每天早上 07:00 更新到前一個交易日收盤。<button class="lock-again" id="forget" type="button">登出並忘記這台裝置</button></p>
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <p>這是公開資訊的條件整理，不是投資建議。進場前請自己設好停損。</p>
+    <p>只有原文有數字、或本來就是是非題的條件才自動打勾；原文沒給數字的條件只列數據，由你判斷。</p>
+    <p>股價為未還原價（多數看盤軟體預設）。資料來源：臺灣證券交易所、證券櫃檯買賣中心。</p>
+  </footer>
+</main>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const KEY = "picks-pw";
+  let DATA = null;
+
+  const store = {
+    get: () => { try { return localStorage.getItem(KEY); } catch { return null; } },
+    set: (v) => { try { localStorage.setItem(KEY, v); } catch {} },
+    clear: () => { try { localStorage.removeItem(KEY); } catch {} },
+  };
+  const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  let enc = null;
+  async function loadEnc() {
+    if (enc) return enc;
+    const r = await fetch("data.json", { cache: "no-store" });
+    if (!r.ok) throw new Error("data");
+    enc = await r.json();
+    $("stamp").textContent = `資料日期：${enc.date} 收盤`;
+    return enc;
+  }
+
+  async function decrypt(pw) {
+    const e = await loadEnc();
+    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+    const key = await crypto.subtle.deriveKey(
+      { name: "PBKDF2", salt: b64(e.salt), iterations: e.iter, hash: "SHA-256" },
+      base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+    const plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(e.iv) }, key, b64(e.ct));
+    const stream = new Blob([plain]).stream().pipeThrough(new DecompressionStream("deflate"));
+    return JSON.parse(await new Response(stream).text());
+  }
+
+  async function unlock(pw, remember) {
+    $("unlock").disabled = true;
+    $("lock-err").hidden = true;
+    try {
+      DATA = await decrypt(pw);
+    } catch (err) {
+      $("unlock").disabled = false;
+      $("lock-err").textContent = err.message === "data" ? "資料檔讀不到，請稍後再試。" : "密碼不對。";
+      $("lock-err").hidden = false;
+      store.clear();
+      return;
+    }
+    if (remember) store.set(pw);
+    $("lock").hidden = true;
+    $("app").hidden = false;
+    $("stamp").textContent = `資料日期：${DATA.date} 收盤｜共 ${Object.keys(DATA.stocks).length.toLocaleString()} 檔`;
+    $("stock-list").innerHTML = Object.entries(DATA.stocks)
+      .map(([c, s]) => `<option value="${esc(c)}">${esc(s.n)}</option>`).join("");
+    const fromHash = decodeURIComponent(location.hash.slice(1));
+    if (fromHash) { $("q").value = fromHash; show(fromHash); } else { $("q").focus(); }
+  }
+
+  $("lock").addEventListener("submit", (ev) => { ev.preventDefault(); unlock($("pw").value, $("remember").checked); });
+  $("forget").addEventListener("click", () => { store.clear(); location.hash = ""; location.reload(); });
+  $("search-form").addEventListener("submit", (ev) => { ev.preventDefault(); show($("q").value); });
+  window.addEventListener("hashchange", () => { if (DATA) { const q = decodeURIComponent(location.hash.slice(1)); $("q").value = q; show(q); } });
+
+  function find(q) {
+    q = q.trim();
+    if (!q) return null;
+    const code = q.split(/\s/)[0].toUpperCase();
+    if (DATA.stocks[code]) return code;
+    const hits = Object.entries(DATA.stocks).filter(([, s]) => s.n === q);
+    if (hits.length) return hits[0][0];
+    const part = Object.entries(DATA.stocks).filter(([, s]) => s.n.includes(q));
+    return part.length === 1 ? part[0][0] : (part.length ? part.map(([c]) => c) : null);
+  }
+
+  // verdict for one analyst: pass / warn (auto all pass, has judge/manual items) / fail / na
+  // status of a set of auto checks: pass / fail (with count) / na
+  function autoStatus(pairs) {
+    const failed = pairs.filter(([, r]) => r[0] === false).length;
+    const missing = pairs.filter(([, r]) => r[0] === null).length;
+    return failed ? { k: "fail", failed } : missing ? { k: "na" } : { k: "pass" };
+  }
+
+  // analysts with groups (權證小哥): any group fully passing counts
+  function groupStatus(meta, res) {
+    const out = {};
+    for (const g of Object.keys(meta.groups || {}))
+      out[g] = autoStatus(meta.checks.map((m, i) => [m, res.c[i]]).filter(([m]) => m.t === "auto" && m.g === g));
+    return out;
+  }
+
+  function verdict(meta, res) {
+    const open = meta.checks.filter((m) => m.t !== "auto").length;
+    let st;
+    if (meta.groups) {
+      const gs = Object.entries(groupStatus(meta, res));
+      const passed = gs.filter(([, s]) => s.k === "pass").map(([g]) => g);
+      if (passed.length) {
+        const who = passed.length === gs.length ? "兩組都全過" : `${passed.join("、")} 組全過`;
+        return open ? { k: "warn", text: `${who}，另有 ${open} 項請你判斷` } : { k: "pass", text: `符合（${who}）` };
+      }
+      else if (gs.every(([, s]) => s.k === "fail"))
+        return { k: "fail", text: "兩組都不符合（" + gs.map(([g, s]) => `${g} 組卡 ${s.failed} 條`).join("、") + "）" };
+      else st = { k: "na" };
+    } else {
+      st = autoStatus(meta.checks.map((m, i) => [m, res.c[i]]).filter(([m]) => m.t === "auto"));
+    }
+    if (st.k === "fail") return { k: "fail", text: `不符合，卡 ${st.failed} 條` };
+    if (st.k === "na") return { k: "na", text: "資料不足，無法判斷" };
+    if (open) return { k: "warn", text: `自動條件都過，另有 ${open} 項請你判斷` };
+    return { k: "pass", text: "符合" };
+  }
+
+  const ICON = { true: "✅", false: "❌", null: "⚪" };
+  const TAG = { judge: "請你判斷", manual: "需看盤軟體" };
+
+  function show(q) {
+    const hit = find(q);
+    const out = $("result");
+    if (!hit) { out.innerHTML = `<p class="empty">找不到「${esc(q)}」。上市、上櫃股票和 ETF 都可以查，請確認代號。</p>`; return; }
+    if (Array.isArray(hit)) {
+      out.innerHTML = `<p class="empty">有 ${hit.length} 檔名稱包含「${esc(q)}」：` +
+        hit.slice(0, 20).map((c) => `<a href="#${c}">${c} ${esc(DATA.stocks[c].n)}</a>`).join("、") + "</p>";
+      return;
+    }
+    if (location.hash.slice(1) !== hit) history.replaceState(null, "", "#" + hit);
+    const s = DATA.stocks[hit];
+    const verdicts = DATA.analysts.map((m) => ({ m, v: verdict(m, s.a[m.key]) }));
+    const okCount = verdicts.filter(({ v }) => v.k === "pass" || v.k === "warn").length;
+    const chg = s.chg == null ? "" : `${s.chg >= 0 ? "+" : ""}${s.chg}${s.pct == null ? "" : `（${s.pct >= 0 ? "+" : ""}${s.pct}%）`}`;
+
+    let html = `<div class="stock-head">
+      <span class="code">${esc(hit)}</span><span class="name">${esc(s.n)}</span><span class="mkt">${esc(s.m)}</span>
+      <span class="px">${s.c} <span style="font-weight:400;color:var(--ink-soft)">${esc(chg)}</span></span>
+      <span class="asof">${esc(DATA.date)} 收盤</span></div>
+      <p class="summary">6 家中，自動條件全部通過：<b>${okCount}</b> 家</p>
+      <ul class="summary-list">${verdicts.map(({ m, v }) =>
+        `<li class="chip v-${v.k}">${v.k === "pass" ? "✅" : v.k === "warn" ? "⚠️" : v.k === "fail" ? "❌" : "⚪"} ${esc(m.name)}</li>`).join("")}</ul>`;
+    if (s.days < 100) html += `<p class="note">這檔目前只有 ${s.days} 個交易日的資料，部分條件會顯示「資料不足」。</p>`;
+    if (s.m === "上櫃") html += `<p class="note">上櫃股票的成交量不含盤後定價交易（櫃買中心沒有提供這部分的歷史資料），可能比看盤軟體少 2～4%。</p>`;
+
+    for (const { m, v } of verdicts) {
+      const res = s.a[m.key];
+      const gs = groupStatus(m, res);
+      const GTEXT = { pass: "✅ 全過", na: "⚪ 資料不足" };
+      const rows = m.checks.map((c, i) => {
+        const [ok, det] = res.c[i];
+        const icon = c.t === "auto" ? ICON[ok] : c.t === "judge" ? "👀" : "📱";
+        const cls = c.t === "auto" && ok === false ? "fail" : "";
+        const head = c.g && (i === 0 || m.checks[i - 1].g !== c.g)
+          ? `<li class="group-head"><span></span><span>${esc(c.g)} 組：${esc(m.groups[c.g])}<span class="g-${gs[c.g].k}">${gs[c.g].k === "fail" ? `❌ 卡 ${gs[c.g].failed} 條` : GTEXT[gs[c.g].k]}</span></span></li>`
+          : (!c.g && i > 0 && m.checks[i - 1].g ? `<li class="group-head"><span></span><span>其他條件</span></li>` : "");
+        return head + `<li class="${cls}"><span class="ic">${icon}</span><span class="lab">${esc(c.l)}${TAG[c.t] ? `<span class="tag">${TAG[c.t]}</span>` : ""}</span><span class="det">${esc(det)}</span></li>`;
+      });
+      html += `<article class="card">
+        <div class="card-head"><h3>${esc(m.name)}<span class="style">${esc(m.style)}</span></h3>
+        <span class="verdict v-${v.k}">${esc(v.text)}</span></div>
+        <ul class="checks">${rows.join("")}</ul>
+        ${res.wk ? chart(res.wk) : ""}
+        ${m.note ? `<p class="note"><b>注意：</b>${esc(m.note)}</p>` : ""}
+        ${res.exit ? `<p class="exit"><b>出場參考：</b>${esc(res.exit)}</p>` : ""}
+        <p class="src"><b>出處：</b>${m.sources.map((x) => x.u ? `<a href="${esc(x.u)}" target="_blank" rel="noopener noreferrer">${esc(x.t)}</a>` : esc(x.t)).join("；")}</p>
+      </article>`;
+    }
+    out.innerHTML = html;
+  }
+
+  // weekly candles + 20-week MA, for judging the W bottom by eye
+  function chart(wk) {
+    const W = 640, H = 200, padL = 46, padR = 8, padT = 10, padB = 22;
+    const vals = wk.flatMap((w) => [w[2], w[3], w[5]]).filter((x) => x != null);
+    const max = Math.max(...vals), min = Math.min(...vals);
+    const y = (v) => padT + (max - v) / (max - min || 1) * (H - padT - padB);
+    const step = (W - padL - padR) / wk.length;
+    const x = (i) => padL + step * (i + 0.5);
+    const bw = Math.max(2, step * 0.6);
+    let svg = "";
+    for (let g = 0; g <= 3; g++) {
+      const v = min + (max - min) * g / 3, yy = y(v);
+      svg += `<line x1="${padL}" x2="${W - padR}" y1="${yy}" y2="${yy}" stroke="var(--hairline)" stroke-width="1"/>` +
+        `<text x="${padL - 6}" y="${yy + 4}" text-anchor="end" font-size="10" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">${Math.round(v * 100) / 100}</text>`;
+    }
+    wk.forEach((w, i) => {
+      const [label, o, h, l, c] = w;
+      const col = c >= o ? "var(--candle-up)" : "var(--candle-down)";
+      svg += `<line x1="${x(i)}" x2="${x(i)}" y1="${y(h)}" y2="${y(l)}" stroke="${col}" stroke-width="1"/>` +
+        `<rect x="${x(i) - bw / 2}" y="${Math.min(y(o), y(c))}" width="${bw}" height="${Math.max(1, Math.abs(y(o) - y(c)))}" fill="${col}"><title>${label} 開${o} 高${h} 低${l} 收${c}</title></rect>`;
+      if (i % 4 === 0 || i === wk.length - 1)
+        svg += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle" font-size="10" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">${label}</text>`;
+    });
+    const pts = wk.map((w, i) => w[5] == null ? null : `${x(i)},${y(w[5])}`).filter(Boolean);
+    if (pts.length > 1) svg += `<polyline points="${pts.join(" ")}" fill="none" stroke="var(--ma-line)" stroke-width="1.6"/>`;
+    return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="近 ${wk.length} 週週 K 線與 20 週均線">${svg}</svg>
+      <div class="chart-legend"><span><i style="background:var(--candle-up)"></i>週 K 收紅</span><span><i style="background:var(--candle-down)"></i>週 K 收黑</span><span><i style="background:var(--ma-line)"></i>20 週均線</span><span>近 ${wk.length} 週，日期是每週最後一個交易日</span></div></div>`;
+  }
+
+  const saved = store.get();
+  loadEnc().then(() => { if (saved) unlock(saved, true); }).catch(() => {
+    $("stamp").textContent = "資料檔還沒產生，或暫時讀不到。";
+  });
+})();
+</script>
+</body>
+</html>

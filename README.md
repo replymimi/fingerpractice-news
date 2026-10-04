@@ -54,6 +54,7 @@ data/
 
 - `OPENAI_API_KEY` — 翻譯與摘要用
 - `YOUTUBE_API_KEY` — 檢查頻道新影片、抓影片時長用（YouTube Data API v3，免費額度足夠）
+- `PICKS_PASSWORD` — 波段條件檢查頁的密碼（見下方）。沒設定的話，那一頁就不會更新，晨讀本身不受影響
 - `SUPADATA_API_KEY` — 抓影片字幕用。GitHub Actions 的雲端 IP 會被 YouTube 直接擋掉字幕請求（`RequestBlocked`），所以改用 [Supadata](https://supadata.ai) 這個第三方服務代抓，免費額度每月 100 次，只用「原生字幕」模式（不會誤觸每分鐘 2 credits 的 AI 轉錄模式），額度用完會自動退回只用標題摘要，不會整個壞掉
 
 ## 本機測試
@@ -74,3 +75,19 @@ python scripts/build_page.py      # 輸出 docs/index.html
 自選股的股價、法人進出、月營收用 [FinMind](https://finmindtrade.com/)。FinMind 不註冊也能用（每小時 300 次），
 想提高到 600 次，就到 FinMind 官網註冊拿 token，存成 GitHub Secrets 的 `FINMIND_TOKEN`。
 自選股清單在 `sources.yaml` 的 `tw_chips.watchlist`。
+
+## 波段條件檢查頁（私人，`/picks/`）
+
+輸入台股代號，看 6 家名師（朱家泓、林恩如、權證小哥、張志誠、陳學進、蔡正華）的波段買點條件，
+每家各自判斷「符合／不符合」，不符合會列出卡在哪一條、實際數字是多少。
+
+- **規則原則**：只有原文有數字、或本來就是是非題的條件才自動打勾；原文沒給數字的條件只列數據，
+  標「請你判斷」；要看券商分點的標「需看盤軟體」。**不自己補門檻數字。**規則和出處都寫在
+  `scripts/build_picks.py` 最上面的 `ANALYSTS`。
+- `scripts/fetch_stock_history.py`：每天抓證交所＋櫃買中心的全市場收盤行情和投信買賣超，
+  每個交易日存一個檔（`data/stocks/daily/`），保留最近 150 個交易日。不花 AI token。
+  第一次或資料缺很多天時：`python scripts/fetch_stock_history.py --backfill 150`（約 25 分鐘）。
+- `scripts/build_picks.py`：算出全部股票的結果，用 `PICKS_PASSWORD` 加密成 `docs/picks/data.json`。
+  網頁本身（`docs/picks/index.html`）是公開的空殼，沒有密碼就只看得到亂碼。
+- 不讓搜尋引擎收錄：頁面有 `noindex`，`docs/robots.txt` 也擋掉 `/picks/`，首頁不放連結。
+- 股價是未還原價。這兩步失敗不會擋住晨讀上線（workflow 設了 `continue-on-error`）。

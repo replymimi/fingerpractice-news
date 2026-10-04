@@ -40,6 +40,17 @@ jobs:
           FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
         run: python scripts/fetch_chips.py
 
+      # 波段條件檢查頁：任何一步失敗都不擋晨讀上線
+      - name: 抓全市場行情（波段條件檢查用）
+        continue-on-error: true
+        run: python scripts/fetch_stock_history.py
+
+      - name: 產生波段條件檢查頁（加密）
+        continue-on-error: true
+        env:
+          PICKS_PASSWORD: ${{ secrets.PICKS_PASSWORD }}
+        run: python scripts/build_picks.py
+
       - name: 抓 YouTube 影片（除游庭皓外全部）
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
@@ -58,7 +69,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/raw data/cache data/state docs/index.html
+          git add data/raw data/cache data/state data/stocks docs/index.html docs/picks
           git diff --cached --quiet || git commit -m "🤖 自動更新財經晨讀（main）"
           for i in 1 2 3 4 5; do
             git push origin main && exit 0
