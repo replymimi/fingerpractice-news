@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-04T21:52:56.522885+08:00",
+  "fetched_at": "2026-10-04T22:34:35.737956+08:00",
   "data": [
+    {
+      "source": "Cointelegraph",
+      "title": "Trump taps intel chief Jay Clayton to lead new Super Intelligence Force",
+      "link": "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published_iso": "2026-10-04T13:48:48+00:00",
+      "summary_raw": "<p style=\"float: right; margin: 0 0 10px 15px; width: 240px;\"><img alt=\"Trump taps intel chief Jay Clayton to lead new Super Intelligence Force\" class=\"type:primaryImage\" src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M43HDDKT65TRCAPN5G00GZPC/white-house-tron.png\" /></p><p>President Donald Trump said US intel chief Clayton will lead the SIF, reporting to the president and Chief of Staff Susie Wiles. </p>"
+    },
     {
       "source": "Cointelegraph",
       "title": "Japan adds Garantex to list of Russia sanctions over Ukraine war",
@@ -21,13 +28,6 @@
       "link": "https://cointelegraph.com/news/russias-finance-ministry-pays-wages-in-digital-rubles-for-first-time?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published_iso": "2026-10-04T07:18:00+00:00",
       "summary_raw": "<p style=\"float: right; margin: 0 0 10px 15px; width: 240px;\"><img alt=\"Russia’s Finance Ministry pays wages in digital rubles for first time\" class=\"type:primaryImage\" src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M42W4H59F8TR0F58VVB4T7YG/russia-kremlin-moscow-red-square-digital-rouble-ruble-national-cryptocurrency.png\" /></p><p>Work on the introduction of the digital ruble to the budget process is being carried out by the Bank of Russia together with the Ministry of Finance.</p>"
-    },
-    {
-      "source": "Cointelegraph",
-      "title": "Here’s what happened in crypto today",
-      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published_iso": "2026-10-03T12:20:00+00:00",
-      "summary_raw": "<p style=\"float: right; margin: 0 0 10px 15px; width: 240px;\"><img alt=\"Here’s what happened in crypto today\" class=\"type:primaryImage\" src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" /></p><p>Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.</p>"
     }
   ]
 }
