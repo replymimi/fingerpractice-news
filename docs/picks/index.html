@@ -12,7 +12,7 @@
     --bg: #EFF2F7; --surface: #FDFEFF; --ink: #12151C; --ink-soft: #565F72; --ink-faint: #8891A3;
     --hairline: #D6DBE4; --accent: #A9701A; --accent-soft: #F3E4CB;
     --pass: #1B7A3D; --pass-soft: #DDEFE3; --fail: #B8342F; --fail-soft: #F6DEDC;
-    --warn: #8A6A12; --warn-soft: #F3EACB; --na: #8891A3;
+    --na: #8891A3;
     --candle-up: #C9352F; --candle-down: #1F8A4C; --ma-line: #4A55A8; --focus-ring: #2C64C9;
   }
   @media (prefers-color-scheme: dark) {
@@ -20,7 +20,7 @@
       --bg: #0A0D13; --surface: #12161F; --ink: #E9ECF3; --ink-soft: #9AA3B7; --ink-faint: #6B7488;
       --hairline: #232A38; --accent: #E8A33D; --accent-soft: #2C2415;
       --pass: #4CBE72; --pass-soft: #15281C; --fail: #E2635C; --fail-soft: #2E1716;
-      --warn: #E0BC4E; --warn-soft: #2A2410; --na: #6B7488;
+      --na: #6B7488;
       --candle-up: #E8615A; --candle-down: #45B872; --ma-line: #8B95E8; --focus-ring: #6FA0F5;
     }
   }
@@ -28,7 +28,7 @@
     --bg: #0A0D13; --surface: #12161F; --ink: #E9ECF3; --ink-soft: #9AA3B7; --ink-faint: #6B7488;
     --hairline: #232A38; --accent: #E8A33D; --accent-soft: #2C2415;
     --pass: #4CBE72; --pass-soft: #15281C; --fail: #E2635C; --fail-soft: #2E1716;
-    --warn: #E0BC4E; --warn-soft: #2A2410; --na: #6B7488;
+    --na: #6B7488;
     --candle-up: #E8615A; --candle-down: #45B872; --ma-line: #8B95E8; --focus-ring: #6FA0F5;
   }
 
@@ -78,7 +78,8 @@
   .summary-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px; padding: 0; list-style: none; }
   .chip { font-size: 0.78rem; padding: 2px 10px; border-radius: 999px; border: 1px solid transparent; }
   .v-pass { background: var(--pass-soft); color: var(--pass); }
-  .v-warn { background: var(--warn-soft); color: var(--warn); }
+  .chip-sub { font-size: 0.72rem; opacity: 0.8; }
+  .summary-sub { font-size: 0.85rem; color: var(--ink-soft); margin-left: 4px; }
   .v-fail { background: var(--fail-soft); color: var(--fail); }
   .v-na { background: transparent; border-color: var(--hairline); color: var(--na); }
 
@@ -245,7 +246,8 @@
     return part.length === 1 ? part[0][0] : (part.length ? part.map(([c]) => c) : null);
   }
 
-  // verdict for one analyst: pass / warn (auto all pass, has judge/manual items) / fail / na
+  // verdict for one analyst: pass / fail / na. A pass can still carry `open`:
+  // conditions with no number in the source, left for the owner to judge.
   // status of a set of auto checks: pass / fail (with count) / na
   function autoStatus(pairs) {
     const failed = pairs.filter(([, r]) => r[0] === false).length;
@@ -269,7 +271,7 @@
       const passed = gs.filter(([, s]) => s.k === "pass").map(([g]) => g);
       if (passed.length) {
         const who = passed.length === gs.length ? "兩組都全過" : `${passed.join("、")} 組全過`;
-        return open ? { k: "warn", text: `${who}，另有 ${open} 項請你判斷` } : { k: "pass", text: `符合（${who}）` };
+        return { k: "pass", open, text: open ? `${who}，另有 ${open} 項待你判斷` : `符合（${who}）` };
       }
       else if (gs.every(([, s]) => s.k === "fail"))
         return { k: "fail", text: "兩組都不符合（" + gs.map(([g, s]) => `${g} 組卡 ${s.failed} 條`).join("、") + "）" };
@@ -279,8 +281,7 @@
     }
     if (st.k === "fail") return { k: "fail", text: `不符合，卡 ${st.failed} 條` };
     if (st.k === "na") return { k: "na", text: "資料不足，無法判斷" };
-    if (open) return { k: "warn", text: `自動條件都過，另有 ${open} 項請你判斷` };
-    return { k: "pass", text: "符合" };
+    return { k: "pass", open, text: open ? `自動條件都過，另有 ${open} 項待你判斷` : "符合" };
   }
 
   const ICON = { true: "✅", false: "❌", null: "⚪" };
@@ -300,16 +301,17 @@
     renderRecent();
     const s = DATA.stocks[hit];
     const verdicts = DATA.analysts.map((m) => ({ m, v: verdict(m, s.a[m.key]) }));
-    const okCount = verdicts.filter(({ v }) => v.k === "pass" || v.k === "warn").length;
+    const okCount = verdicts.filter(({ v }) => v.k === "pass").length;
+    const openCount = verdicts.filter(({ v }) => v.k === "pass" && v.open).length;
     const chg = s.chg == null ? "" : `${s.chg >= 0 ? "+" : ""}${s.chg}${s.pct == null ? "" : `（${s.pct >= 0 ? "+" : ""}${s.pct}%）`}`;
 
     let html = `<div class="stock-head">
       <span class="code">${esc(hit)}</span><span class="name">${esc(s.n)}</span><span class="mkt">${esc(s.m)}</span>
       <span class="px">${s.c} <span style="font-weight:400;color:var(--ink-soft)">${esc(chg)}</span></span>
       <span class="asof">${esc(DATA.date)} 收盤</span></div>
-      <p class="summary">6 家中，自動條件全部通過：<b>${okCount}</b> 家</p>
+      <p class="summary">6 家中，自動條件全部通過：<b>${okCount}</b> 家${openCount ? `<span class="summary-sub">（其中 ${openCount} 家還有項目要你自己看）</span>` : ""}</p>
       <ul class="summary-list">${verdicts.map(({ m, v }) =>
-        `<li class="chip v-${v.k}">${v.k === "pass" ? "✅" : v.k === "warn" ? "⚠️" : v.k === "fail" ? "❌" : "⚪"} ${esc(m.name)}</li>`).join("")}</ul>`;
+        `<li class="chip v-${v.k}">${v.k === "pass" ? "✅" : v.k === "fail" ? "❌" : "⚪"} ${esc(m.name)}${v.open ? `<span class="chip-sub">・${v.open} 項待看</span>` : ""}</li>`).join("")}</ul>`;
     if (s.days < 100) html += `<p class="note">這檔目前只有 ${s.days} 個交易日的資料，部分條件會顯示「資料不足」。</p>`;
     if (s.m === "上櫃") html += `<p class="note">上櫃股票的成交量不含盤後定價交易（櫃買中心沒有提供這部分的歷史資料），可能比看盤軟體少 2～4%。</p>`;
 
