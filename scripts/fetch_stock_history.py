@@ -202,6 +202,42 @@ def run(target_trading_days, max_calendar_days):
             break
 
 
+SHARES_PATH = os.path.join(DATA_DIR, "stocks", "shares.json")
+
+
+def fetch_shares():
+    """Issued common shares per stock, for 週轉率. Latest snapshot only (it
+    changes rarely); on failure the previous file is kept."""
+    shares = load_json(SHARES_PATH, {})
+    try:
+        rows = get_json("https://openapi.twse.com.tw/v1/opendata/t187ap03_L", {})
+        for x in rows:
+            n = num(x.get("已發行普通股數或TDR原股發行股數"))
+            if n:
+                shares[x["公司代號"].strip()] = int(n)
+    except Exception as e:
+        log(f"  WARN TWSE shares: {e}")
+    try:
+        # the OTC daily quote table carries 發行股數 (column 14); walk back to the last trading day
+        today = now_taipei().date()
+        for n_back in range(10):
+            d = today - timedelta(days=n_back)
+            if d.weekday() >= 5:
+                continue
+            data = get_json("https://www.tpex.org.tw/www/zh-tw/afterTrading/otc",
+                            {"date": tpex_date(d), "type": "EW", "response": "json"})["tables"][0]["data"]
+            if data:
+                for row in data:
+                    n = num(row[14])
+                    if n:
+                        shares[row[0].strip()] = int(n)
+                break
+    except Exception as e:
+        log(f"  WARN TPEx shares: {e}")
+    save_json(SHARES_PATH, shares)
+    return len(shares)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--backfill", type=int, default=0, help="make sure the last N trading days exist")
@@ -211,6 +247,7 @@ def main():
     else:
         run(5, 10)  # daily: covers a missed run or two, and retries days with missing 投信
     log(f"stock history: {prune()} trading days on disk")
+    log(f"issued shares: {fetch_shares()} stocks")
 
 
 if __name__ == "__main__":

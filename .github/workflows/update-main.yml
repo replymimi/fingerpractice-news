@@ -45,6 +45,10 @@ jobs:
         continue-on-error: true
         run: python scripts/fetch_stock_history.py
 
+      - name: 找出爆大量股票
+        continue-on-error: true
+        run: python scripts/volume_surge.py
+
       - name: 產生波段條件檢查頁（加密）
         continue-on-error: true
         env:

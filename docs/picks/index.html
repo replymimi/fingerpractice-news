@@ -108,6 +108,27 @@
   .chart-legend i { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 4px; }
 
   .empty { color: var(--ink-faint); padding: 30px 0; text-align: center; }
+
+  /* volume surge */
+  .surge-open { background: none; border: 1px solid var(--hairline); color: var(--ink); border-radius: 999px; padding: 5px 14px; font-size: 0.82rem; font-family: inherit; cursor: pointer; margin: 0 0 18px; }
+  .surge-open:hover { border-color: var(--accent); color: var(--accent); }
+  .surge-panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: 10px; padding: 12px 14px; margin-bottom: 20px; }
+  .surge-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  .surge-head h2 { font-family: 'Noto Serif TC', serif; font-size: 1.05rem; margin: 0; }
+  .sort-btns button { background: none; border: 1px solid var(--hairline); color: var(--ink-soft); border-radius: 999px; padding: 2px 10px; font-size: 0.76rem; font-family: inherit; cursor: pointer; margin-left: 4px; }
+  .sort-btns button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .surge-list { max-height: 60vh; overflow-y: auto; margin: 0; padding: 0; list-style: none; }
+  .surge-list li { display: grid; grid-template-columns: 1fr auto; gap: 0 10px; padding: 7px 2px; border-top: 1px dashed var(--hairline); cursor: pointer; }
+  .surge-list li:hover .s-name { color: var(--accent); }
+  .s-name { font-size: 0.88rem; }
+  .s-name .mono { color: var(--ink-faint); font-size: 0.76rem; margin-left: 4px; }
+  .s-num { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.84rem; font-weight: 600; text-align: right; }
+  .s-sub { grid-column: 1 / -1; font-size: 0.72rem; color: var(--ink-faint); font-family: 'IBM Plex Mono', 'Noto Sans TC', monospace; }
+  .surge-note { font-size: 0.72rem; color: var(--ink-faint); margin: 8px 0 0; }
+  .vol-box { background: var(--surface); border: 1px solid var(--hairline); border-radius: 10px; padding: 10px 14px; margin: 0 0 14px; font-size: 0.84rem; }
+  .vol-box b { font-weight: 500; }
+  .vol-box .det { font-family: 'IBM Plex Mono', 'Noto Sans TC', monospace; font-size: 0.78rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .vol-hit { color: var(--accent); font-weight: 500; }
   footer { font-size: 0.74rem; color: var(--ink-faint); border-top: 1px solid var(--hairline); margin-top: 28px; padding: 14px 0 40px; }
   footer p { margin: 0 0 6px; }
 </style>
@@ -143,6 +164,13 @@
       <span id="recent-list"></span>
       <button class="lock-again" id="recent-clear" type="button">清除</button>
     </div>
+    <button class="surge-open" id="surge-open" type="button" hidden></button>
+    <section class="surge-panel" id="surge-panel" hidden>
+      <div class="surge-head"><h2>爆大量清單</h2>
+        <span class="sort-btns">排序<button type="button" data-sort="mult" aria-pressed="true">倍數</button><button type="button" data-sort="turnover" aria-pressed="false">週轉率</button></span></div>
+      <ul class="surge-list" id="surge-list"></ul>
+      <p class="surge-note">你的自訂標準：成交量 ≥ 過去 5 日或 20 日均量的 2 倍（不含當天），或創 3 個月新高量，或週轉率 &gt; 10%，任一成立就列入。倍數取兩者較高的。上櫃股票的量不含盤後定價。點一檔就看它的六家檢查。</p>
+    </section>
     <div id="result"></div>
   </section>
 
@@ -221,12 +249,29 @@
     $("stock-list").innerHTML = Object.entries(DATA.stocks)
       .map(([c, s]) => `<option value="${esc(c)}">${esc(s.n)}</option>`).join("");
     renderRecent();
+    if (DATA.surge) {
+      $("surge-open").hidden = false;
+      $("surge-open").textContent = `🔥 今日爆大量清單（${DATA.surge.length} 檔）`;
+    }
     const fromHash = decodeURIComponent(location.hash.slice(1));
     if (fromHash) { $("q").value = fromHash; show(fromHash); } else { $("q").focus(); }
   }
 
   $("lock").addEventListener("submit", (ev) => { ev.preventDefault(); unlock($("pw").value, $("remember").checked); });
   $("forget").addEventListener("click", () => { store.clear(); recent.clear(); location.hash = ""; location.reload(); });
+  $("surge-open").addEventListener("click", () => {
+    const p = $("surge-panel");
+    p.hidden = !p.hidden;
+    if (!p.hidden) renderSurge();
+  });
+  document.querySelector(".sort-btns").addEventListener("click", (ev) => {
+    const b = ev.target.closest("button");
+    if (b) { surgeSort = b.dataset.sort; renderSurge(); }
+  });
+  $("surge-list").addEventListener("click", (ev) => {
+    const li = ev.target.closest("li");
+    if (li) { $("q").value = li.dataset.code; show(li.dataset.code); $("result").scrollIntoView({ behavior: "smooth" }); }
+  });
   $("recent-clear").addEventListener("click", () => { recent.clear(); renderRecent(); });
   $("recent-list").addEventListener("click", (ev) => {
     const b = ev.target.closest(".recent-chip");
@@ -284,6 +329,40 @@
     return { k: "pass", open, text: open ? `自動條件都過，另有 ${open} 項待你判斷` : "符合" };
   }
 
+
+  const fmtN = (x) => x == null ? "—" : Math.round(x).toLocaleString();
+  const HIGH = { 60: "創 3 個月新高量", 120: "創半年新高量" };
+
+  function volLine(v) {
+    const parts = [`${fmtN(v.v)} 張`];
+    if (v.m5 != null) parts.push(`前 5 日均量 ${fmtN(v.a5)}（${v.m5} 倍）`);
+    if (v.m20 != null) parts.push(`前 20 日均量 ${fmtN(v.a20)}（${v.m20} 倍）`);
+    parts.push(v.turnover == null ? "週轉率 —" : `週轉率 ${v.turnover}%`);
+    return parts.join("／");
+  }
+
+  function volBox(v) {
+    if (!v) return "";
+    const head = v.hit ? `<span class="vol-hit">🔥 爆大量</span>${v.tags.length ? "：" + esc(v.tags.join("・")) : ""}`
+                       : "量能：沒有達到爆大量標準";
+    return `<div class="vol-box"><b>${head}</b>${!v.hit && v.high ? `（${HIGH[v.high]}）` : ""}<div class="det">${esc(volLine(v))}</div></div>`;
+  }
+
+  let surgeSort = "mult";
+  function renderSurge() {
+    const codes = DATA.surge.filter((c) => DATA.stocks[c]);
+    const key = (c) => DATA.stocks[c].vol[surgeSort] ?? -1;
+    const sorted = [...codes].sort((a, b) => key(b) - key(a));
+    $("surge-list").innerHTML = sorted.map((c) => {
+      const s = DATA.stocks[c], v = s.vol;
+      const num = surgeSort === "mult" ? `${v.mult} 倍` : `${v.turnover ?? "—"}%`;
+      const pct = s.pct == null ? "" : `${s.pct >= 0 ? "+" : ""}${s.pct}%　`;
+      return `<li data-code="${esc(c)}"><span class="s-name">${esc(s.n)}<span class="mono">${esc(c)}</span></span><span class="s-num">${num}</span>
+        <span class="s-sub">${pct}${esc(volLine(v))}${v.tags.length ? "｜" + esc(v.tags.join("・")) : ""}</span></li>`;
+    }).join("");
+    document.querySelectorAll(".sort-btns button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.sort === surgeSort)));
+  }
+
   const ICON = { true: "✅", false: "❌", null: "⚪" };
   const TAG = { judge: "請你判斷", manual: "需看盤軟體" };
 
@@ -312,6 +391,7 @@
       <p class="summary">6 家中，自動條件全部通過：<b>${okCount}</b> 家${openCount ? `<span class="summary-sub">（其中 ${openCount} 家還有項目要你自己看）</span>` : ""}</p>
       <ul class="summary-list">${verdicts.map(({ m, v }) =>
         `<li class="chip v-${v.k}">${v.k === "pass" ? "✅" : v.k === "fail" ? "❌" : "⚪"} ${esc(m.name)}${v.open ? `<span class="chip-sub">・${v.open} 項待看</span>` : ""}</li>`).join("")}</ul>`;
+    html += volBox(s.vol);
     if (s.days < 100) html += `<p class="note">這檔目前只有 ${s.days} 個交易日的資料，部分條件會顯示「資料不足」。</p>`;
     if (s.m === "上櫃") html += `<p class="note">上櫃股票的成交量不含盤後定價交易（櫃買中心沒有提供這部分的歷史資料），可能比看盤軟體少 2～4%。</p>`;
 

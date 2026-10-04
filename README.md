@@ -91,3 +91,11 @@ python scripts/build_page.py      # 輸出 docs/index.html
   網頁本身（`docs/picks/index.html`）是公開的空殼，沒有密碼就只看得到亂碼。
 - 不讓搜尋引擎收錄：頁面有 `noindex`，`docs/robots.txt` 也擋掉 `/picks/`，首頁不放連結。
 - 股價是未還原價。這兩步失敗不會擋住晨讀上線（workflow 設了 `continue-on-error`）。
+
+### 爆大量
+
+`scripts/volume_surge.py` 用同一份全市場資料挑出爆大量的普通股（排除 ETF），標準是**使用者自訂**：
+成交量 ≥ 過去 5 日或 20 日均量的 2 倍（不含當天），或創 3 個月（60 日）新高量，或週轉率 > 10%，
+任一成立就列入；≥ 3 倍、創半年新高量、週轉 > 20%／> 30%（籌碼不穩）另外標籤。週轉率用的發行股數
+每天由 `fetch_stock_history.py` 抓（`data/stocks/shares.json`）。晨讀首頁顯示依倍數排序的 TOP 10
+（清單超過 4 天就不顯示），密碼頁有完整清單和個股的量能資訊。

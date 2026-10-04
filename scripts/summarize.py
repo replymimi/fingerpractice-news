@@ -178,6 +178,21 @@ def whale_activity(tide_digest):
     return {"buy": buy, "sell": sell}
 
 
+SURGE_TOP_N = 10
+SURGE_STALE_DAYS = 4  # same freshness rule as the index tiles: never show an old list as today's
+
+
+def volume_surge_top(surge, now):
+    """爆大量 TOP N by multiple, from volume_surge.py (the owner's own standard)."""
+    if not surge or not surge.get("rows"):
+        return None
+    as_of = datetime.fromisoformat(surge["date"]).replace(tzinfo=TAIPEI)
+    if (now - as_of).days > SURGE_STALE_DAYS:
+        log(f"WARN volume surge list is from {surge['date']}, too old — hidden")
+        return None
+    return {"date": surge["date"], "count": surge["count"], "rows": surge["rows"][:SURGE_TOP_N]}
+
+
 def sentiment_gauge(tide_digest):
     if not tide_digest or "panic_index" not in tide_digest:
         return None
@@ -288,6 +303,7 @@ def main():
     tw_title, tw_points = recap_bullets("台股", market.get("tw", []), tw_context, us_headlines)
 
     now = datetime.now(TAIPEI)
+    surge = volume_surge_top(load_json(os.path.join(RAW_DIR, "volume_surge.json")), now)
     summary = {
         "generated_at": now.isoformat(),
         "date_label": now.strftime("%Y/%m/%d") + f"（週{WEEKDAYS[now.weekday()]}）",
@@ -299,6 +315,7 @@ def main():
         },
         "tide": {"flow": flow, "whale": whale, "sentiment": sentiment},
         "chips": chips,
+        "volume_surge": surge,
         "news": news_out,
         "youtube": youtube_out,
     }

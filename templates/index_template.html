@@ -102,6 +102,12 @@
 
   .flow-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
   @media (max-width: 420px) { .flow-pair { grid-template-columns: 1fr; } }
+  .surge-row .flow-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 6px; }
+  .surge-pct { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.7rem; color: var(--ink-soft); }
+  .surge-pct.up { color: var(--pos); }
+  .surge-pct.down { color: var(--neg); }
+  .surge-tags { flex-basis: 100%; font-size: 0.68rem; color: var(--ink-faint); }
+  .surge-note { font-size: 0.68rem; color: var(--ink-faint); line-height: 1.5; margin: 4px 0 0; }
   .flow-row .flow-code { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; color: var(--ink-faint); margin-left: 4px; }
   .item-meta .chg { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 0.7rem; font-weight: 600; }
   .item-meta .chg.up { color: var(--pos); }
@@ -373,6 +379,25 @@
       {% for s in tide.whale.sell %}<div class="flow-row"><span class="flow-name">{{ s.name }}</span><span class="flow-amt down">{{ '%.1f'|format(s.amount) }} 億</span></div>{% endfor %}
     </div>
     {% endif %}
+    </div>
+    {% endif %}
+
+    {% if volume_surge %}
+    <p class="section-label toggle">爆大量 TOP {{ volume_surge.rows|length }}<span class="toggle-pill">展開</span></p>
+    <div class="section-body" hidden>
+    <div class="flow-group">
+      <p class="flow-group-label">{{ volume_surge.date[5:]|replace('-', '/') }} 收盤・共 {{ volume_surge.count }} 檔符合・依倍數排序</p>
+      {% for s in volume_surge.rows %}
+      <div class="flow-row surge-row">
+        <span class="flow-name">{{ s.name }}<span class="flow-code">{{ s.code }}</span>
+          {% if s.pct is not none %}<span class="surge-pct {{ 'up' if s.pct > 0 else ('down' if s.pct < 0 else '') }}">{{ '%+.2f'|format(s.pct) }}%</span>{% endif %}
+          {% if s.tags %}<span class="surge-tags">{{ s.tags|join('・') }}</span>{% endif %}
+        </span>
+        <span class="flow-amt">{{ '%.1f'|format(s.mult) }} 倍</span>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="surge-note">你的自訂標準：成交量 ≥ 過去 5 日或 20 日均量的 2 倍（不含當天），或創 3 個月新高量，或週轉率 &gt; 10%，任一成立就列入。倍數取 5 日、20 日兩者較高的。上櫃股票的量不含盤後定價。</p>
     </div>
     {% endif %}
   </section>

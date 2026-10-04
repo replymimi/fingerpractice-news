@@ -26,6 +26,7 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import ROOT, DATA_DIR, log, load_json, now_taipei
+import volume_surge
 
 DAILY_DIR = os.path.join(DATA_DIR, "stocks", "daily")
 OUT_PATH = os.path.join(ROOT, "docs", "picks", "data.json")
@@ -326,6 +327,7 @@ def encrypt(payload, password):
 def build():
     series, latest, n_days = load_series()
     names = load_json(os.path.join(DATA_DIR, "stocks", "names.json"), {})
+    shares = load_json(volume_surge.SHARES_PATH, {})
     stocks = {}
     for code, s in series.items():
         if s["dates"][-1] != latest:
@@ -337,10 +339,13 @@ def build():
         stocks[code] = {"n": name, "m": market, "c": s["c"][i], "chg": chg,
                         "pct": round(chg / prev * 100, 2) if prev else None,
                         "days": len(s["c"]), "a": check_stock(s)}
+        vi = volume_surge.vol_info(s["v"], shares.get(code))
+        stocks[code]["vol"] = {**vi, "tags": volume_surge.tags(vi), "hit": volume_surge.is_ordinary(code) and volume_surge.qualifies(vi)}
     meta = [{**a, "checks": [{"t": c[0], "l": c[1], **({"g": c[2]} if len(c) > 2 else {})} for c in a["checks"]]}
             for a in ANALYSTS]
+    surge = volume_surge.analyze(series, latest, names)
     return {"date": latest, "history_days": n_days, "generated_at": now_taipei().isoformat(timespec="minutes"),
-            "analysts": meta, "stocks": stocks}
+            "analysts": meta, "stocks": stocks, "surge": [r["code"] for r in surge["rows"]]}
 
 
 def main():
