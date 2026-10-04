@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-10-04T08:36:47.907372+08:00",
+  "fetched_at": "2026-10-04T21:52:55.924260+08:00",
   "data": [
+    {
+      "source": "MarketWatch",
+      "title": "October can be a scary month for stocks. Here’s what investors need to watch this year.",
+      "link": "https://www.marketwatch.com/story/october-can-be-a-scary-month-for-stocks-heres-what-investors-need-to-watch-this-year-ac1da700?mod=mw_rss_topstories",
+      "published_iso": "2026-10-04T13:00:00+00:00",
+      "summary_raw": "If stocks see another big swoon this year, investors already know why."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "Fed minutes coming this week could give markets important clues about future rate hikes",
+      "link": "https://www.marketwatch.com/story/fed-minutes-coming-this-week-could-give-markets-important-clues-about-future-rate-hikes-31bfba5b?mod=mw_rss_topstories",
+      "published_iso": "2026-10-04T12:00:00+00:00",
+      "summary_raw": "Minutes from the September meeting may provide extra context, as the real fed-funds rate is now surprisingly low."
+    },
     {
       "source": "MarketWatch",
       "title": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
@@ -14,20 +28,6 @@
       "link": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
       "published_iso": "2026-10-03T18:49:00+00:00",
       "summary_raw": "With U.S. Treasury yields on the rise, financial planners say they’re seeing a growing interest in bonds, especially among investors looking to secure fixed income in retirement."
-    },
-    {
-      "source": "MarketWatch",
-      "title": "A tough job market is pushing more young Americans to make a big bet: on themselves",
-      "link": "https://www.marketwatch.com/story/a-tough-job-market-is-pushing-more-young-americans-to-make-a-big-bet-on-themselves-1aaddeca?mod=mw_rss_topstories",
-      "published_iso": "2026-10-03T17:24:00+00:00",
-      "summary_raw": "There has been a rise in entrepreneurship among young Americans as the entry-level labor market has become tougher to join."
-    },
-    {
-      "source": "MarketWatch",
-      "title": "Switching jobs to get higher pay works best in these industries",
-      "link": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
-      "published_iso": "2026-10-03T16:42:00+00:00",
-      "summary_raw": "Finding a new job is one way to get a pay increase at a time when inflation has been outpacing wage growth."
     }
   ]
 }

@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-04T08:36:48.283954+08:00",
+  "fetched_at": "2026-10-04T21:52:56.465840+08:00",
   "data": [
+    {
+      "source": "CoinDesk",
+      "title": "The Clarity Act stalled. Bankers aren’t hitting the brakes yet on crypto dealmaking",
+      "link": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
+      "published_iso": "2026-10-04T13:00:00+00:00",
+      "summary_raw": ""
+    },
     {
       "source": "CoinDesk",
       "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
@@ -20,13 +27,6 @@
       "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
       "link": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
       "published_iso": "2026-10-03T15:00:00+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "Crypto's Sisyphean struggle",
-      "link": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
-      "published_iso": "2026-10-03T13:00:00+00:00",
       "summary_raw": ""
     }
   ]

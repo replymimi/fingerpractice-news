@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-04T08:36:47.616734+08:00",
+  "fetched_at": "2026-10-04T21:52:55.649919+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
-      "link": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
-      "published_iso": "2026-10-03T20:29:07+00:00",
-      "summary_raw": "Elon Musk's effort to move beyond auto sales largely relies on the success of his company's Cybercab, which launched in Austin a month ago."
+      "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+      "link": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+      "published_iso": "2026-10-04T13:22:39+00:00",
+      "summary_raw": "Apple, Google and Meta are pushing new AI devices and assistants amid growing privacy concerns around wearables."
     },
     {
       "source": "CNBC",
-      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
-      "link": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
-      "published_iso": "2026-10-03T11:00:01+00:00",
-      "summary_raw": "Ynon Kreiz's appointment as co-CEO of Skydance answers a key governance question for Ellison's soon-to-be-merged company."
-    },
-    {
-      "source": "CNBC",
-      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
+      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
       "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-      "published_iso": "2026-10-03T23:37:23+00:00",
-      "summary_raw": "Director of National Intelligence Jay Clayton will lead the administration's AI policy, The Wall Street Journal reported on Saturday."
+      "published_iso": "2026-10-04T12:53:12+00:00",
+      "summary_raw": "Director of National Intelligence Jay Clayton will lead the administration's AI policy."
     },
     {
       "source": "CNBC",
-      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
-      "link": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
-      "published_iso": "2026-10-03T12:34:59+00:00",
-      "summary_raw": "The FlyDubai co-pilot attacked the pilot inside the cockpit with a crash axe and attempted to take control of the aircraft, the UAE prosecutor general said."
+      "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
+      "link": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
+      "published_iso": "2026-10-04T05:00:01+00:00",
+      "summary_raw": "Experts say the offensive is not a decisive breakthrough, but demonstrates how Ukraine’s expanding use of robotic systems is reshaping frontline warfare."
+    },
+    {
+      "source": "CNBC",
+      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
+      "link": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
+      "published_iso": "2026-10-04T12:57:45+00:00",
+      "summary_raw": "Surveys show Gen Z increasingly views sports bets as a form of investment, and those who gamble too often face mental health risks."
     }
   ]
 }
