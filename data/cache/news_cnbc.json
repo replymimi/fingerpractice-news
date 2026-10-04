@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-03T10:31:04.757208+08:00",
+  "fetched_at": "2026-10-04T08:36:47.616734+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
-      "link": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
-      "published_iso": "2026-10-02T17:20:33+00:00",
-      "summary_raw": "Ford on Friday reported a year-over-year sales decline of 6.6% during the third quarter to 507,395 light-duty vehicles."
+      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
+      "link": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+      "published_iso": "2026-10-03T20:29:07+00:00",
+      "summary_raw": "Elon Musk's effort to move beyond auto sales largely relies on the success of his company's Cybercab, which launched in Austin a month ago."
     },
     {
       "source": "CNBC",
-      "title": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
-      "link": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
-      "published_iso": "2026-10-02T19:19:15+00:00",
-      "summary_raw": "The FAA on Monday said it was reviewing the software glitch, which could affect procedures during certain landings."
+      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
+      "link": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
+      "published_iso": "2026-10-03T11:00:01+00:00",
+      "summary_raw": "Ynon Kreiz's appointment as co-CEO of Skydance answers a key governance question for Ellison's soon-to-be-merged company."
     },
     {
       "source": "CNBC",
-      "title": "Cerebras stock hits post-IPO low, tumbling 20% for the week on Nvidia pressure and lockup expiration",
-      "link": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html",
-      "published_iso": "2026-10-02T22:38:49+00:00",
-      "summary_raw": "Cerebras shares hit an all-time low due to pressure from chip giant Nvidia, plus a post-lockup selloff."
+      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
+      "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+      "published_iso": "2026-10-03T23:37:23+00:00",
+      "summary_raw": "Director of National Intelligence Jay Clayton will lead the administration's AI policy, The Wall Street Journal reported on Saturday."
     },
     {
       "source": "CNBC",
-      "title": "Men are losing ground in the labor market. Here's why",
-      "link": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
-      "published_iso": "2026-10-02T17:38:59+00:00",
-      "summary_raw": "Women outnumbered men in the workforce for eight straight months as of September, according to one analysis."
+      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
+      "link": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
+      "published_iso": "2026-10-03T12:34:59+00:00",
+      "summary_raw": "The FlyDubai co-pilot attacked the pilot inside the cockpit with a crash axe and attempted to take control of the aircraft, the UAE prosecutor general said."
     }
   ]
 }
