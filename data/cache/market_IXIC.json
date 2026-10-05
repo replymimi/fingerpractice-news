@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-10-04T22:47:00.315013+08:00",
+  "fetched_at": "2026-10-05T08:54:53.743785+08:00",
   "data": {
     "name": "那斯達克 NASDAQ",
     "symbol": "^IXIC",
     "is_currency": false,
     "price": 27190.863,
-    "prev_close": 26871.596,
-    "chg": 319.27,
+    "prev_close": 26871.6,
+    "chg": 319.26,
     "chg_pct": 1.19,
     "as_of": "2026-10-03T05:15:59+08:00"
   }

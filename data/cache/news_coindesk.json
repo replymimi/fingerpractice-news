@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-04T22:46:59.230996+08:00",
+  "fetched_at": "2026-10-05T08:54:52.623717+08:00",
   "data": [
+    {
+      "source": "CoinDesk",
+      "title": "There's an election next month: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
+      "published_iso": "2026-10-04T18:30:00+00:00",
+      "summary_raw": ""
+    },
     {
       "source": "CoinDesk",
       "title": "Crypto poured years into new products. The next challenge is keeping users",
@@ -19,13 +26,6 @@
       "source": "CoinDesk",
       "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
       "link": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
-      "published_iso": "2026-10-03T16:00:00+00:00",
-      "summary_raw": ""
-    },
-    {
-      "source": "CoinDesk",
-      "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
-      "link": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
       "published_iso": "2026-10-03T16:00:00+00:00",
       "summary_raw": ""
     }

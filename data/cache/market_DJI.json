@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-10-04T22:47:00.193898+08:00",
+  "fetched_at": "2026-10-05T08:54:53.653006+08:00",
   "data": {
     "name": "道瓊工業指數 DJIA",
     "symbol": "^DJI",
     "is_currency": false,
     "price": 51176.96,
-    "prev_close": 50926.56,
-    "chg": 250.4,
+    "prev_close": 50926.6,
+    "chg": 250.36,
     "chg_pct": 0.49,
     "as_of": "2026-10-03T05:00:17+08:00"
   }
