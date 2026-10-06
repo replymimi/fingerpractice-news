@@ -109,6 +109,26 @@
 
   .empty { color: var(--ink-faint); padding: 30px 0; text-align: center; }
 
+  /* watchlist */
+  .wl { background: var(--surface); border: 1px solid var(--accent); border-radius: 10px; padding: 12px 14px; margin: 20px 0 4px; }
+  .wl h2 { font-family: 'Noto Serif TC', serif; font-size: 1.05rem; margin: 0 0 2px; }
+  .wl-sub { font-size: 0.74rem; color: var(--ink-faint); margin: 0 0 8px; }
+  .wl-form { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .wl-form input { font-size: 0.9rem; padding: 7px 10px; border: 1px solid var(--hairline); border-radius: 6px; background: var(--bg); color: var(--ink); min-width: 0; }
+  .wl-form #wl-code { width: 110px; }
+  .wl-form #wl-note { flex: 1; min-width: 140px; }
+  .wl-form .btn { padding: 7px 16px; font-size: 0.85rem; }
+  .wl-list { list-style: none; margin: 0; padding: 0; }
+  .wl-list li { display: grid; grid-template-columns: 1fr auto; gap: 0 10px; padding: 7px 0; border-top: 1px dashed var(--hairline); }
+  .wl-list li:first-child { border-top: none; }
+  .wl-name { background: none; border: none; padding: 0; font: inherit; font-size: 0.92rem; color: var(--ink); cursor: pointer; text-align: left; }
+  .wl-name:hover { color: var(--accent); }
+  .wl-name .mono { color: var(--ink-faint); font-size: 0.78rem; margin-right: 4px; }
+  .wl-del { background: none; border: none; color: var(--ink-faint); font-size: 0.76rem; cursor: pointer; font-family: inherit; text-decoration: underline; }
+  .wl-meta { grid-column: 1 / -1; font-size: 0.76rem; color: var(--ink-soft); }
+  .wl-msg { font-size: 0.78rem; color: var(--ink-faint); margin: 6px 0 0; }
+  .wl-msg.err { color: var(--fail); }
+
   /* volume surge */
   .surge-open { background: none; border: 1px solid var(--hairline); color: var(--ink); border-radius: 999px; padding: 5px 14px; font-size: 0.82rem; font-family: inherit; cursor: pointer; margin: 0 0 18px; }
   .surge-open:hover { border-color: var(--accent); color: var(--accent); }
@@ -153,6 +173,17 @@
   </form>
 
   <section id="app" hidden>
+    <section class="wl" id="wl">
+      <h2>明天要進場</h2>
+      <p class="wl-sub">每天早上 07:00 左右，把這些股票的最新檢查結果寄到 thisismimi.yu@gmail.com。手機、電腦看到的是同一份。</p>
+      <ul class="wl-list" id="wl-list"></ul>
+      <form class="wl-form" id="wl-form">
+        <input id="wl-code" placeholder="代號" aria-label="要加入的股票代號" autocomplete="off" list="stock-list">
+        <input id="wl-note" placeholder="備註（選填），例如：拉回 1,400 再買" aria-label="備註" maxlength="200" autocomplete="off">
+        <button class="btn" type="submit">加入</button>
+      </form>
+      <p class="wl-msg" id="wl-msg" hidden></p>
+    </section>
     <form class="search" id="search-form">
       <input id="q" list="stock-list" inputmode="search" placeholder="輸入股票代號或名稱，例如 2368 或 金像電" aria-label="股票代號或名稱" autocomplete="off">
       <datalist id="stock-list"></datalist>
@@ -186,6 +217,7 @@
   const $ = (id) => document.getElementById(id);
   const KEY = "picks-pw";
   let DATA = null;
+  let PW = null;
 
   const store = {
     get: () => { try { return localStorage.getItem(KEY); } catch { return null; } },
@@ -235,6 +267,7 @@
     $("lock-err").hidden = true;
     try {
       DATA = await decrypt(pw);
+      PW = pw;
     } catch (err) {
       $("unlock").disabled = false;
       $("lock-err").textContent = err.message === "data" ? "資料檔讀不到，請稍後再試。" : "密碼不對。";
@@ -249,6 +282,7 @@
     $("stock-list").innerHTML = Object.entries(DATA.stocks)
       .map(([c, s]) => `<option value="${esc(c)}">${esc(s.n)}</option>`).join("");
     renderRecent();
+    wlLoad();
     if (DATA.surge) {
       $("surge-open").hidden = false;
       $("surge-open").textContent = `🔥 今日爆大量清單（${DATA.surge.length} 檔）`;
@@ -259,6 +293,28 @@
 
   $("lock").addEventListener("submit", (ev) => { ev.preventDefault(); unlock($("pw").value, $("remember").checked); });
   $("forget").addEventListener("click", () => { store.clear(); recent.clear(); location.hash = ""; location.reload(); });
+  $("wl-form").addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const code = $("wl-code").value.trim().split(/\s/)[0].toUpperCase();
+    if (!DATA.stocks[code]) { wlMsg(`找不到代號「${code}」`, true); return; }
+    wlMsg("加入中…");
+    try {
+      WL = await wlCall("add", { code, note: $("wl-note").value.trim() });
+      $("wl-code").value = ""; $("wl-note").value = ""; wlMsg(""); renderWl();
+    } catch (e) { wlMsg("加入失敗：" + e.message, true); }
+  });
+  $("wl-list").addEventListener("click", async (ev) => {
+    const del = ev.target.closest("[data-del]");
+    if (del) {
+      if (!confirm(`從清單刪除 ${del.dataset.del}？`)) return;
+      wlMsg("刪除中…");
+      try { WL = await wlCall("remove", { code: del.dataset.del }); wlMsg(""); renderWl(); }
+      catch (e) { wlMsg("刪除失敗：" + e.message, true); }
+      return;
+    }
+    const b = ev.target.closest("[data-code]");
+    if (b) { $("q").value = b.dataset.code; show(b.dataset.code); $("result").scrollIntoView({ behavior: "smooth" }); }
+  });
   $("surge-open").addEventListener("click", () => {
     const p = $("surge-panel");
     p.hidden = !p.hidden;
@@ -329,6 +385,43 @@
     return { k: "pass", open, text: open ? `自動條件都過，另有 ${open} 項待你判斷` : "符合" };
   }
 
+
+
+  // ----- 明天要進場 (stored in the owner's Google Apps Script, see apps-script/Code.gs) -----
+  let WL = [];
+  function wlMsg(text, isErr) {
+    const m = $("wl-msg");
+    m.hidden = !text; m.textContent = text || ""; m.classList.toggle("err", !!isErr);
+  }
+  async function wlCall(action, body) {
+    // text/plain body keeps it a "simple" request (no CORS preflight, which Apps Script can't answer)
+    const r = await fetch(DATA.watchlist_url, { method: "POST", body: JSON.stringify({ key: PW, action, ...(body || {}) }) });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || "error");
+    return j.list;
+  }
+  function wlSummary(code) {
+    const s = DATA.stocks[code];
+    if (!s) return "找不到這檔的最新資料";
+    const vs = DATA.analysts.map((m) => verdict(m, s.a[m.key]));
+    const ok = vs.filter((v) => v.k === "pass").length;
+    const vol = s.vol && s.vol.hit ? "・🔥 爆大量" : "";
+    return `收 ${s.c}・自動條件全過 ${ok}/6 家${vol}`;
+  }
+  function renderWl() {
+    $("wl-list").innerHTML = WL.length ? WL.map((x) => {
+      const s = DATA.stocks[x.code];
+      return `<li><button class="wl-name" type="button" data-code="${esc(x.code)}"><span class="mono">${esc(x.code)}</span>${esc(s ? s.n : "")}</button>
+        <button class="wl-del" type="button" data-del="${esc(x.code)}">刪除</button>
+        <span class="wl-meta">${esc(wlSummary(x.code))}${x.note ? `｜${esc(x.note)}` : ""}｜${esc(x.added)} 加入</span></li>`;
+    }).join("") : `<li><span class="wl-meta">還沒有股票。輸入代號加入。</span></li>`;
+  }
+  async function wlLoad() {
+    if (!DATA.watchlist_url) { $("wl-form").hidden = true; wlMsg("雲端記事本還沒設定好（GitHub 的 WATCHLIST_URL）。"); return; }
+    wlMsg("讀取中…");
+    try { WL = await wlCall("list"); wlMsg(""); renderWl(); }
+    catch (e) { wlMsg("清單讀不到：" + e.message, true); }
+  }
 
   const fmtN = (x) => x == null ? "—" : Math.round(x).toLocaleString();
   const HIGH = { 60: "創 3 個月新高量", 120: "創半年新高量" };

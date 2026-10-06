@@ -30,6 +30,8 @@ import volume_surge
 
 DAILY_DIR = os.path.join(DATA_DIR, "stocks", "daily")
 OUT_PATH = os.path.join(ROOT, "docs", "picks", "data.json")
+# unencrypted copy for send_watchlist.py; data/processed is gitignored, never published
+PLAIN_PATH = os.path.join(DATA_DIR, "processed", "picks.json")
 PBKDF2_ITER = 250_000
 WEEKS_SHOWN = 26
 
@@ -352,6 +354,11 @@ def build():
 def main():
     data = build()
     log(f"picks: {len(data['stocks'])} stocks checked, data as of {data['date']} ({data['history_days']} trading days)")
+    os.makedirs(os.path.dirname(PLAIN_PATH), exist_ok=True)
+    with open(PLAIN_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
+    # the watchlist endpoint lives inside the encrypted payload, so only an unlocked page knows it
+    data["watchlist_url"] = os.environ.get("WATCHLIST_URL") or None
     password = os.environ.get("PICKS_PASSWORD")
     if not password:
         log("WARN PICKS_PASSWORD not set — docs/picks/data.json left unchanged")

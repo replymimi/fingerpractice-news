@@ -99,3 +99,19 @@ python scripts/build_page.py      # 輸出 docs/index.html
 任一成立、而且當天成交 ≥ 1,000 張（排除冷門股）就列入；≥ 3 倍、創半年新高量、週轉 > 20%／> 30%（籌碼不穩）另外標籤。週轉率用的發行股數
 每天由 `fetch_stock_history.py` 抓（`data/stocks/shares.json`）。晨讀首頁顯示依倍數排序的 TOP 10
 （清單超過 4 天就不顯示），密碼頁有完整清單和個股的量能資訊。
+
+### 明天要進場清單（每天寄信）
+
+密碼頁最上面的「明天要進場」清單存在使用者自己 Google 帳號的 Apps Script（`apps-script/Code.gs`），
+手機和電腦共用。每天主排程算完結果後，`scripts/send_watchlist.py` 讀清單、組好信，再請同一個
+Apps Script 從使用者的 Google 帳號寄到 thisismimi.yu@gmail.com（收件人寫死在 Code.gs）。
+清單是空的那天不寄。清單會一直保留，要刪請到頁面上刪。
+
+設定（一次）：
+1. 到 script.google.com 新增專案，把 `apps-script/Code.gs` 全部貼上、存檔
+2. 專案設定 → 指令碼屬性 → 新增 `KEY`，值跟 `PICKS_PASSWORD` 一樣
+3. 函式選 `authorize` 按「執行」，允許寄信權限
+4. 部署 → 新增部署作業 → 類型「網頁應用程式」，執行身分「我」，存取權「所有人」→ 複製網址
+5. GitHub Secrets 新增 `WATCHLIST_URL` = 那個網址
+
+改了 `PICKS_PASSWORD` 的話，Apps Script 的 `KEY` 也要一起改。
