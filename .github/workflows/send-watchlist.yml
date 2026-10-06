@@ -1,0 +1,60 @@
+name: 寄出明天要進場清單
+
+# 半夜寄：當天收盤資料早就出來了，就算 GitHub 排程延遲好幾個小時，也會在開盤前寄到。
+# 順便更新波段條件檢查頁，所以早上打開頁面時已經是前一天收盤的結果。
+
+on:
+  schedule:
+    - cron: '7 16 * * *'  # 00:07 台北時間（避開整點，GitHub 整點最塞）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢查倉庫代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 抓全市場行情
+        run: python scripts/fetch_stock_history.py
+
+      - name: 找出爆大量股票
+        run: python scripts/volume_surge.py
+
+      - name: 產生波段條件檢查頁（加密）
+        env:
+          PICKS_PASSWORD: ${{ secrets.PICKS_PASSWORD }}
+          WATCHLIST_URL: ${{ secrets.WATCHLIST_URL }}
+        run: python scripts/build_picks.py
+
+      - name: 寄出「明天要進場」清單
+        env:
+          PICKS_PASSWORD: ${{ secrets.PICKS_PASSWORD }}
+          WATCHLIST_URL: ${{ secrets.WATCHLIST_URL }}
+        run: python scripts/send_watchlist.py
+
+      - name: 提交更新
+        if: always()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/stocks data/raw/volume_surge.json docs/picks
+          git diff --cached --quiet || git commit -m "🤖 半夜更新波段條件檢查頁"
+          for i in 1 2 3 4 5; do
+            git push origin main && exit 0
+            echo "push rejected, pulling and retrying ($i/5)"
+            git pull --rebase origin main
+            sleep $((RANDOM % 10 + 1))
+          done
+          git push origin main

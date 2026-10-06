@@ -103,8 +103,10 @@ python scripts/build_page.py      # 輸出 docs/index.html
 ### 明天要進場清單（每天寄信）
 
 密碼頁最上面的「明天要進場」清單存在使用者自己 Google 帳號的 Apps Script（`apps-script/Code.gs`），
-手機和電腦共用。每天主排程算完結果後，`scripts/send_watchlist.py` 讀清單、組好信，再請同一個
+手機和電腦共用。`scripts/send_watchlist.py` 讀清單、組好信，再請同一個
 Apps Script 從使用者的 Google 帳號寄到 thisismimi.yu@gmail.com（收件人寫死在 Code.gs）。
+寄信在獨立的 `send-watchlist.yml`，每天 00:07（台北）跑：當天收盤資料已經有了，就算 GitHub
+排程延遲幾小時也會在開盤前寄到；同時更新波段條件檢查頁。
 清單是空的那天不寄。清單會一直保留，要刪請到頁面上刪。
 
 設定（一次）：

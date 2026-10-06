@@ -39,7 +39,15 @@
   :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
   [hidden] { display: none !important; }
 
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  /* phone: search → 明天要進場 → result; desktop: left column + sticky right column */
+  .app-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 900px) {
+    .app-grid { grid-template-columns: minmax(0, 1fr) 320px; grid-template-areas: "top side" "result side"; column-gap: 28px; }
+    .app-top { grid-area: top; }
+    .app-result { grid-area: result; }
+    .app-side { grid-area: side; align-self: start; position: sticky; top: 16px; }
+  }
   .topbar { border-bottom: 1px solid var(--hairline); padding: 18px 0 14px; }
   .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; color: var(--ink-faint); text-transform: uppercase; margin: 0 0 4px; }
   h1 { font-family: 'Noto Serif TC', serif; font-size: 1.7rem; font-weight: 700; margin: 0; }
@@ -110,13 +118,14 @@
   .empty { color: var(--ink-faint); padding: 30px 0; text-align: center; }
 
   /* watchlist */
-  .wl { background: var(--surface); border: 1px solid var(--accent); border-radius: 10px; padding: 12px 14px; margin: 20px 0 4px; }
+  .wl { background: var(--surface); border: 1px solid var(--accent); border-radius: 10px; padding: 12px 14px; margin: 22px 0 18px; }
   .wl h2 { font-family: 'Noto Serif TC', serif; font-size: 1.05rem; margin: 0 0 2px; }
   .wl-sub { font-size: 0.74rem; color: var(--ink-faint); margin: 0 0 8px; }
   .wl-form { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
   .wl-form input { font-size: 0.9rem; padding: 7px 10px; border: 1px solid var(--hairline); border-radius: 6px; background: var(--bg); color: var(--ink); min-width: 0; }
   .wl-form #wl-code { width: 110px; }
-  .wl-form #wl-note { flex: 1; min-width: 140px; }
+  .wl-form #wl-note { flex: 1 1 100%; min-width: 0; }
+  @media (max-width: 899px) { .wl-form #wl-note { flex-basis: 140px; } }
   .wl-form .btn { padding: 7px 16px; font-size: 0.85rem; }
   .wl-list { list-style: none; margin: 0; padding: 0; }
   .wl-list li { display: grid; grid-template-columns: 1fr auto; gap: 0 10px; padding: 7px 0; border-top: 1px dashed var(--hairline); }
@@ -172,24 +181,14 @@
     <p class="err" id="lock-err" hidden></p>
   </form>
 
-  <section id="app" hidden>
-    <section class="wl" id="wl">
-      <h2>明天要進場</h2>
-      <p class="wl-sub">每天早上 07:00 左右，把這些股票的最新檢查結果寄到 thisismimi.yu@gmail.com。手機、電腦看到的是同一份。</p>
-      <ul class="wl-list" id="wl-list"></ul>
-      <form class="wl-form" id="wl-form">
-        <input id="wl-code" placeholder="代號" aria-label="要加入的股票代號" autocomplete="off" list="stock-list">
-        <input id="wl-note" placeholder="備註（選填），例如：拉回 1,400 再買" aria-label="備註" maxlength="200" autocomplete="off">
-        <button class="btn" type="submit">加入</button>
-      </form>
-      <p class="wl-msg" id="wl-msg" hidden></p>
-    </section>
+  <section id="app" class="app-grid" hidden>
+    <div class="app-top">
     <form class="search" id="search-form">
       <input id="q" list="stock-list" inputmode="search" placeholder="輸入股票代號或名稱，例如 2368 或 金像電" aria-label="股票代號或名稱" autocomplete="off">
       <datalist id="stock-list"></datalist>
       <button class="btn" type="submit">檢查</button>
     </form>
-    <p class="hint">每天早上 07:00 更新到前一個交易日收盤。<button class="lock-again" id="forget" type="button">登出並忘記這台裝置</button></p>
+    <p class="hint">每天半夜 12 點左右更新到當天收盤。<button class="lock-again" id="forget" type="button">登出並忘記這台裝置</button></p>
     <div class="recent" id="recent" hidden>
       <span class="recent-label">最近查過</span>
       <span id="recent-list"></span>
@@ -202,7 +201,23 @@
       <ul class="surge-list" id="surge-list"></ul>
       <p class="surge-note">你的自訂標準：成交量 ≥ 過去 5 日或 20 日均量的 2 倍（不含當天），或創 3 個月新高量，或週轉率 &gt; 10%，任一成立、而且當天成交 ≥ 1,000 張就列入。倍數取兩者較高的。上櫃股票的量不含盤後定價。點一檔就看它的六家檢查。</p>
     </section>
+    </div>
+    <aside class="app-side">
+    <section class="wl" id="wl">
+      <h2>明天要進場</h2>
+      <p class="wl-sub">每天半夜 12 點左右，把這些股票的當天收盤檢查結果寄到 thisismimi.yu@gmail.com。手機、電腦看到的是同一份。</p>
+      <ul class="wl-list" id="wl-list"></ul>
+      <form class="wl-form" id="wl-form">
+        <input id="wl-code" placeholder="代號" aria-label="要加入的股票代號" autocomplete="off" list="stock-list">
+        <input id="wl-note" placeholder="備註（選填），例如：拉回 1,400 再買" aria-label="備註" maxlength="200" autocomplete="off">
+        <button class="btn" type="submit">加入</button>
+      </form>
+      <p class="wl-msg" id="wl-msg" hidden></p>
+    </section>
+    </aside>
+    <div class="app-result">
     <div id="result"></div>
+    </div>
   </section>
 
   <footer>

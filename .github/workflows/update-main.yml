@@ -56,13 +56,6 @@ jobs:
           WATCHLIST_URL: ${{ secrets.WATCHLIST_URL }}
         run: python scripts/build_picks.py
 
-      - name: 寄出「明天要進場」清單
-        continue-on-error: true
-        env:
-          PICKS_PASSWORD: ${{ secrets.PICKS_PASSWORD }}
-          WATCHLIST_URL: ${{ secrets.WATCHLIST_URL }}
-        run: python scripts/send_watchlist.py
-
       - name: 抓 YouTube 影片（除游庭皓外全部）
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
