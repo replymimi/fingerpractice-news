@@ -1,19 +1,19 @@
 {
   "stocks": [
     {
-      "source": "尼可拉斯楊Live精",
-      "title": "美光法說會印證了，2030年前，必須持有的核心AI股票！這是最後的發財機會！",
-      "video_url": "https://www.youtube.com/watch?v=VeIQL5jK5TY",
-      "published_iso": "2026-10-02T11:13:16Z",
-      "duration": "15:24",
-      "transcript_raw": ""
-    },
-    {
       "source": "游庭皓的財經皓角",
       "title": "2026/10/6(二)台股衝五萬 這次誰在買?美債殖利率衝6% 美股越漲越怪?【早晨財經速解讀】",
       "video_url": "https://www.youtube.com/watch?v=tlXP3xUPZLI",
       "published_iso": "2026-10-06T01:11:19Z",
       "duration": "35:17",
+      "transcript_raw": ""
+    },
+    {
+      "source": "尼可拉斯楊Live精",
+      "title": "美光法說會印證了，2030年前，必須持有的核心AI股票！這是最後的發財機會！",
+      "video_url": "https://www.youtube.com/watch?v=VeIQL5jK5TY",
+      "published_iso": "2026-10-02T11:13:16Z",
+      "duration": "15:24",
       "transcript_raw": ""
     }
   ],

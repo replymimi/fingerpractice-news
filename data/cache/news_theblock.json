@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-05T08:54:52.828036+08:00",
+  "fetched_at": "2026-10-06T10:17:44.432252+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Drift opens exploit recovery claims with initial payouts of just over 1% of user losses",
-      "link": "https://www.theblock.co/news/ecosystems/2026-10-02-drift-opens-exploit-recovery-claims-initial-payouts-just-over-1-user-losses-417581",
-      "published_iso": "2026-10-02T17:10:40+00:00",
-      "summary_raw": "DFX holders can cash out now or wait for more funding, with no firm timeline for full repayment."
+      "title": "Treasury withdraws crypto mixing rule, citing concerns over ‘chilling effect on legitimate activity’",
+      "link": "https://www.theblock.co/news/regulation/2026-10-05-fincen-drops-crypto-mixing-rule-self-hosted-wallet-proposal-417690",
+      "published_iso": "2026-10-05T17:22:37+00:00",
+      "summary_raw": "FinCEN is withdrawing a proposal that would've designated crypto mixing a \"primary money laundering concern\" under the PATRIOT Act."
     },
     {
       "source": "The Block Research",
-      "title": "Paradigm-backed Layer 2 Blast to wind down network as costs exceed revenue",
-      "link": "https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583",
-      "published_iso": "2026-10-02T16:54:29+00:00",
-      "summary_raw": "Ethereum L2 Blast is winding down after costs outpaced revenue. Users have until Oct. 26 to withdraw via the app."
+      "title": "Umia raises $6.1 million at $18 million FDV to help crypto projects launch tokens",
+      "link": "https://www.theblock.co/news/business/2026-10-05-umia-raises-6-1-million-at-18-million-fdv-to-help-crypto-projects-launch-tokens-417717",
+      "published_iso": "2026-10-05T16:49:15+00:00",
+      "summary_raw": "Umia raised $6.11 million through a seven-day auction of its UMIA token, with ten funds and nearly 700 individual bidders taking part."
     },
     {
       "source": "The Block Research",
-      "title": "Bitcoin nears highest level since January as $85,000 sell wall clears, US jobs data disappoints",
-      "link": "https://www.theblock.co/news/markets/2026-10-02-bitcoin-nears-highest-level-january-85000-sell-wall-clears-us-jobs-data-disappoints-417570",
-      "published_iso": "2026-10-02T13:34:40+00:00",
-      "summary_raw": "Bitcoin climbed back toward $87,000 on Friday as sellers cleared out around $85,000, according to Glassnode."
+      "title": "CFTC proposes new federal framework for leveraged retail crypto trading",
+      "link": "https://www.theblock.co/news/markets/2026-10-05-cftc-rulemaking-leveraged-retail-crypto-trading-regulation-ctx-cam-417701",
+      "published_iso": "2026-10-05T16:09:02+00:00",
+      "summary_raw": "The CFTC launched rulemaking on leveraged and margined retail crypto trading, proposing Regulation CTX and CAM and a new \"crypto asset market\" exchange."
     },
     {
       "source": "The Block Research",
-      "title": "BitGo CEO says Clarity’s failure left capital markets exposed to risk potentially worse than Lehman",
-      "link": "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
-      "published_iso": "2026-10-02T12:28:54+00:00",
-      "summary_raw": "BitGo CEO Mike Belshe warned that Clarity's failure left systemic risks arising from one firm holding exchange, brokerage, and custody functions."
+      "title": "Strive adds 2,000 bitcoin in biggest buy since June, closes in on MARA",
+      "link": "https://www.theblock.co/news/business/2026-10-05-strive-adds-2000-bitcoin-biggest-buy-since-june-closes-in-mara-417677",
+      "published_iso": "2026-10-05T15:03:54+00:00",
+      "summary_raw": "Strive’s bitcoin holdings near 30,000 BTC as the race among the largest public treasuries heats up."
     }
   ]
 }

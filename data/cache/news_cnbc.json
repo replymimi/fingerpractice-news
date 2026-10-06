@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-05T08:54:51.523871+08:00",
+  "fetched_at": "2026-10-06T10:17:43.404161+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump tells South Korea to sign on to Alaska LNG deal or 'I'll just charge them more'",
-      "link": "https://www.cnbc.com/2026/10/05/trump-alaska-lng-south-korea-pay.html",
-      "published_iso": "2026-10-05T00:47:47+00:00",
-      "summary_raw": "Trump is ramping up pressure on South Korea over Alaska LNG as Seoul remains cautious over investment projects announced by the U.S. president."
+      "title": "Trump offers U.S. help to Russia after plague death; WHO assesses the situation as low risk",
+      "link": "https://www.cnbc.com/2026/10/06/russia-plague-death-trump-offers-us-help.html",
+      "published_iso": "2026-10-06T01:47:32+00:00",
+      "summary_raw": "WHO said it was in contact with Russian authorities, and has offered support if needed, while assessing the risk to the general public as low based on available information."
     },
     {
       "source": "CNBC",
-      "title": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
-      "link": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
-      "published_iso": "2026-10-04T22:08:34+00:00",
-      "summary_raw": "The Senate could flip to Democrats after November's midterm election, jeopardizing a potential Supreme Court nomination by President Donald Trump."
+      "title": "Trump says MAGA Inc. PAC will pay for controversial TV ads that government funded",
+      "link": "https://www.cnbc.com/2026/10/05/trump-ads-election.html",
+      "published_iso": "2026-10-06T01:55:50+00:00",
+      "summary_raw": "The New York Times reported \"Trump personally instructed his budget director to use taxpayer money for TV ads praising him and his presidency.\""
     },
     {
       "source": "CNBC",
-      "title": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
-      "link": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
-      "published_iso": "2026-10-04T20:28:47+00:00",
-      "summary_raw": "Trump is promoting two federal payment programs already underway while reiterating a $5,000 dividend promise contingent on Republicans retaining Congress."
+      "title": "AI researcher warns 'we are racing to build and grow our own adversary' in NYC hearing",
+      "link": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
+      "published_iso": "2026-10-05T23:28:31+00:00",
+      "summary_raw": "The leading AI labs facing intensifying scrutiny over their safety and security practices."
     },
     {
       "source": "CNBC",
-      "title": "All U.S. bombers leave UK air base on concerns of suspected terror plots; more tankers struck near Iran in the Middle East",
-      "link": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
-      "published_iso": "2026-10-04T21:46:15+00:00",
-      "summary_raw": "Tehran's conditions include a halt to U.S. \"acts of aggression,\" an end to the naval blockade  and economic warfare, and the release of Iranian assets."
+      "title": "'We had a threat': Trump explains U.S. moving long-range bombers from UK",
+      "link": "https://www.cnbc.com/2026/10/05/trump-bombers-uk-iran.html",
+      "published_iso": "2026-10-05T20:53:33+00:00",
+      "summary_raw": "The U.S. Air Force B-1 bombers removed from England have been used in strikes on Iran."
     }
   ]
 }

@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-05T08:54:53.370793+08:00",
+  "fetched_at": "2026-10-06T10:17:44.707114+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "Bitwise Is Pitching NEAR to Wall Street as an AI Bet",
+      "link": "https://www.bankless.com/read/bitwise-is-pitching-near-to-wall-street-as-an-ai-bet",
+      "published_iso": "2026-10-05T19:34:21+00:00",
+      "summary_raw": "Bitwise's NRR, the first U.S. spot NEAR ETF, drew $35.5M on day one. Hunter Horsley and Sal Ternullo explain the demand and NEAR's AI-first pitch."
+    },
     {
       "source": "Bankless",
       "title": "🏴 CryptoPunks Rally Again",
@@ -21,13 +28,6 @@
       "link": "https://www.bankless.com/read/news/sec-proposes-new-crypto-custody-framework-for-advisers-and-funds",
       "published_iso": "2026-10-02T17:56:02+00:00",
       "summary_raw": "The SEC's new proposal would let advisers and funds use state trust companies, and in limited cases self-custody, to hold crypto."
-    },
-    {
-      "source": "Bankless",
-      "title": "Blast L2 Winds Down, Sets Oct. 26th Withdrawal Deadline",
-      "link": "https://www.bankless.com/read/news/blast-l2-winds-down-sets-oct-26th-withdrawal-deadline",
-      "published_iso": "2026-10-02T17:41:50+00:00",
-      "summary_raw": "Blast is sunsetting its Ethereum L2 after costs outran revenue."
     }
   ]
 }
