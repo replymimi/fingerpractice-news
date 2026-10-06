@@ -1,48 +1,48 @@
 {
-  "fetched_at": "2026-10-06T10:17:47.757723+08:00",
+  "fetched_at": "2026-10-06T22:37:43.995265+08:00",
   "data": {
-    "date": "2026-10-05",
-    "generated_at": "2026-10-06T06:07:17+08:00",
-    "market_chg_1d": 2.55,
+    "date": "2026-10-06",
+    "generated_at": "2026-10-06T19:53:13+08:00",
+    "market_chg_1d": 0.22,
     "is_market_down": false,
     "panic_index": {
-      "score": 43,
+      "score": 53,
       "label": "中性",
-      "advancers": 660,
-      "decliners": 1133,
-      "down_ratio": 0.632
+      "advancers": 765,
+      "decliners": 995,
+      "down_ratio": 0.565
     },
     "safe_harbor": {
       "mode": "top_inflow",
       "sectors": [
         {
-          "name": "CPU 與 Agentic AI",
-          "net_1d_yi": 375.2,
-          "chg_1d": 2.61,
-          "inflow_streak": 1
+          "name": "PCB 硬板製造",
+          "net_1d_yi": 78.9,
+          "chg_1d": -0.27,
+          "inflow_streak": 4
         },
         {
-          "name": "HBM 高頻寬記憶體",
-          "net_1d_yi": 343.5,
-          "chg_1d": 2.03,
-          "inflow_streak": 1
+          "name": "軟板",
+          "net_1d_yi": 76.4,
+          "chg_1d": 0.7,
+          "inflow_streak": 3
         },
         {
-          "name": "AI 先進封裝",
-          "net_1d_yi": 297.2,
-          "chg_1d": 0.73,
-          "inflow_streak": 1
-        },
-        {
-          "name": "EMS 電子代工",
-          "net_1d_yi": 237.0,
-          "chg_1d": 1.34,
-          "inflow_streak": 1
+          "name": "低軌衛星",
+          "net_1d_yi": 66.5,
+          "chg_1d": 1.68,
+          "inflow_streak": 3
         },
         {
           "name": "車用連接器",
-          "net_1d_yi": 193.2,
-          "chg_1d": 2.42,
+          "net_1d_yi": 63.1,
+          "chg_1d": 0.47,
+          "inflow_streak": 2
+        },
+        {
+          "name": "封測代工",
+          "net_1d_yi": 59.6,
+          "chg_1d": 1.2,
           "inflow_streak": 1
         }
       ]
@@ -50,75 +50,75 @@
     "big_money": {
       "abnormal_buy": [
         {
-          "code": "2308",
-          "name": "台達電",
-          "net_1d_yi": 167.4,
-          "chg_1d": 6.37,
-          "inflow_streak": 1
-        },
-        {
-          "code": "2301",
-          "name": "光寶科",
-          "net_1d_yi": 37.1,
-          "chg_1d": 5.86,
-          "inflow_streak": 1
-        },
-        {
-          "code": "8358",
-          "name": "金居",
-          "net_1d_yi": 34.8,
-          "chg_1d": 9.83,
+          "code": "2383",
+          "name": "台光電",
+          "net_1d_yi": 55.6,
+          "chg_1d": 5.18,
           "inflow_streak": 3
         },
         {
-          "code": "3017",
-          "name": "奇鋐",
-          "net_1d_yi": 33.7,
-          "chg_1d": 4.22,
-          "inflow_streak": 1
-        },
-        {
-          "code": "2376",
-          "name": "技嘉",
-          "net_1d_yi": 13.3,
-          "chg_1d": 4.02,
+          "code": "2313",
+          "name": "華通",
+          "net_1d_yi": 51.4,
+          "chg_1d": 1.41,
           "inflow_streak": 3
-        }
-      ],
-      "abnormal_sell": [
-        {
-          "code": "2303",
-          "name": "聯電",
-          "net_1d_yi": -180.8,
-          "chg_1d": -5.57,
-          "inflow_streak": -1
         },
         {
-          "code": "2409",
-          "name": "友達",
-          "net_1d_yi": -91.5,
-          "chg_1d": -3.46,
-          "inflow_streak": -1
+          "code": "2368",
+          "name": "金像電",
+          "net_1d_yi": 30.1,
+          "chg_1d": 3.7,
+          "inflow_streak": 2
         },
         {
           "code": "6239",
           "name": "力成",
-          "net_1d_yi": -32.8,
-          "chg_1d": -3.41,
+          "net_1d_yi": 26.7,
+          "chg_1d": 4.37,
+          "inflow_streak": 1
+        },
+        {
+          "code": "5347",
+          "name": "世界",
+          "net_1d_yi": 24.6,
+          "chg_1d": 3.8,
+          "inflow_streak": 1
+        }
+      ],
+      "abnormal_sell": [
+        {
+          "code": "2454",
+          "name": "聯發科",
+          "net_1d_yi": -232.8,
+          "chg_1d": -4.74,
           "inflow_streak": -1
         },
         {
-          "code": "6805",
-          "name": "富世達",
-          "net_1d_yi": -8.0,
-          "chg_1d": 6.06,
-          "inflow_streak": -2
+          "code": "2317",
+          "name": "鴻海",
+          "net_1d_yi": -53.1,
+          "chg_1d": 0.79,
+          "inflow_streak": -1
         },
         {
-          "code": "4991",
-          "name": "環宇-KY",
-          "net_1d_yi": -7.4,
-          "chg_1d": -1.87,
+          "code": "2455",
+          "name": "全新",
+          "net_1d_yi": -16.4,
+          "chg_1d": -6.44,
+          "inflow_streak": -1
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎",
+          "net_1d_yi": -6.7,
+          "chg_1d": -2.32,
+          "inflow_streak": -8
+        },
+        {
+          "code": "5425",
+          "name": "台半",
+          "net_1d_yi": -4.6,
+          "chg_1d": -4.74,
           "inflow_streak": -1
         }
       ],
@@ -127,36 +127,36 @@
           "code": "5876",
           "name": "上海商銀",
           "net_1d_yi": 0.4,
-          "chg_1d": -0.61,
+          "chg_1d": 0.31,
           "inflow_streak": 20
         },
         {
           "code": "3558",
           "name": "神準",
-          "net_1d_yi": 0.1,
-          "chg_1d": -0.38,
-          "inflow_streak": 17
-        },
-        {
-          "code": "3272",
-          "name": "東碩",
-          "net_1d_yi": 0,
-          "chg_1d": 0.35,
-          "inflow_streak": 17
+          "net_1d_yi": 0.0,
+          "chg_1d": 1.15,
+          "inflow_streak": 18
         },
         {
           "code": "3338",
           "name": "泰碩",
-          "net_1d_yi": 0.2,
-          "chg_1d": 1.59,
-          "inflow_streak": 15
+          "net_1d_yi": 0.1,
+          "chg_1d": 0.86,
+          "inflow_streak": 16
         },
         {
           "code": "1702",
           "name": "南僑",
-          "net_1d_yi": 0,
-          "chg_1d": -1.06,
-          "inflow_streak": 14
+          "net_1d_yi": 0.0,
+          "chg_1d": -0.3,
+          "inflow_streak": 15
+        },
+        {
+          "code": "3402",
+          "name": "漢科",
+          "net_1d_yi": 0.2,
+          "chg_1d": 0.36,
+          "inflow_streak": 15
         }
       ]
     },

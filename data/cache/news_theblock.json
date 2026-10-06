@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-06T10:17:44.432252+08:00",
+  "fetched_at": "2026-10-06T22:37:40.614812+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Treasury withdraws crypto mixing rule, citing concerns over ‘chilling effect on legitimate activity’",
-      "link": "https://www.theblock.co/news/regulation/2026-10-05-fincen-drops-crypto-mixing-rule-self-hosted-wallet-proposal-417690",
-      "published_iso": "2026-10-05T17:22:37+00:00",
-      "summary_raw": "FinCEN is withdrawing a proposal that would've designated crypto mixing a \"primary money laundering concern\" under the PATRIOT Act."
+      "title": "Brevan Howard to use Ripple Prime for multi-asset brokerage, clearing and financing",
+      "link": "https://www.theblock.co/news/business/2026-10-06-ripple-prime-brevan-howard-prime-brokerage-clearing-financing-417801",
+      "published_iso": "2026-10-06T14:36:08+00:00",
+      "summary_raw": "Ripple Prime will provide prime brokerage, clearing and financing to Brevan Howard, deepening a tie that began with its Ripple investment."
     },
     {
       "source": "The Block Research",
-      "title": "Umia raises $6.1 million at $18 million FDV to help crypto projects launch tokens",
-      "link": "https://www.theblock.co/news/business/2026-10-05-umia-raises-6-1-million-at-18-million-fdv-to-help-crypto-projects-launch-tokens-417717",
-      "published_iso": "2026-10-05T16:49:15+00:00",
-      "summary_raw": "Umia raised $6.11 million through a seven-day auction of its UMIA token, with ten funds and nearly 700 individual bidders taking part."
+      "title": "Polymarket rolls out V2 upgrade with single ERC-1155 positions contract, pUSD collateral",
+      "link": "https://www.theblock.co/news/business/2026-10-06-polymarket-rolls-out-v2-upgrade-with-single-erc-1155-positions-contract-pusd-collateral-417804",
+      "published_iso": "2026-10-06T14:35:03+00:00",
+      "summary_raw": "Polymarket rolls out Protocol V2, replacing its legacy Gnosis-based setup with a single ERC-1155 positions contract and pUSD collateral."
     },
     {
       "source": "The Block Research",
-      "title": "CFTC proposes new federal framework for leveraged retail crypto trading",
-      "link": "https://www.theblock.co/news/markets/2026-10-05-cftc-rulemaking-leveraged-retail-crypto-trading-regulation-ctx-cam-417701",
-      "published_iso": "2026-10-05T16:09:02+00:00",
-      "summary_raw": "The CFTC launched rulemaking on leveraged and margined retail crypto trading, proposing Regulation CTX and CAM and a new \"crypto asset market\" exchange."
+      "title": "Fortitude expands Zcash mining push with up to $100 million equipment commitment",
+      "link": "https://www.theblock.co/news/business/2026-10-06-fortitude-expands-zcash-mining-push-with-up-to-100-million-equipment-commitment-417790",
+      "published_iso": "2026-10-06T13:00:48+00:00",
+      "summary_raw": "Fortitude secured priority access to BITMAIN’s next-generation Zcash miners as it expands capacity and increases financing from DCG."
     },
     {
       "source": "The Block Research",
-      "title": "Strive adds 2,000 bitcoin in biggest buy since June, closes in on MARA",
-      "link": "https://www.theblock.co/news/business/2026-10-05-strive-adds-2000-bitcoin-biggest-buy-since-june-closes-in-mara-417677",
-      "published_iso": "2026-10-05T15:03:54+00:00",
-      "summary_raw": "Strive’s bitcoin holdings near 30,000 BTC as the race among the largest public treasuries heats up."
+      "title": "Rep. Don Davis introduces bill to stop federal candidates trading prediction market contracts tied to their own elections",
+      "link": "https://www.theblock.co/news/regulation/2026-10-06-rep-don-davis-introduces-bill-to-stop-federal-candidates-trading-prediction-market-contracts-tied-to-their-own-elections-417781",
+      "published_iso": "2026-10-06T11:36:15+00:00",
+      "summary_raw": "Don Davis introduced legislation barring federal candidates and their families from trading prediction contracts tied to their own elections."
     }
   ]
 }

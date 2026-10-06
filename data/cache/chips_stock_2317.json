@@ -1,22 +1,22 @@
 {
-  "fetched_at": "2026-10-06T10:18:00.133503+08:00",
+  "fetched_at": "2026-10-06T22:37:53.923811+08:00",
   "data": {
     "id": "2317",
     "name": "鴻海",
-    "date": "2026-10-05",
-    "close": 254.0,
-    "chg": 3.0,
-    "chg_pct": 1.1952191235059761,
+    "date": "2026-10-06",
+    "close": 256.0,
+    "chg": 2.0,
+    "chg_pct": 0.7874015748031495,
     "inst": {
-      "foreign": 13072.342,
-      "trust": -63.478,
-      "dealer": 374.858,
-      "date": "2026-10-05"
+      "foreign": -19982.641,
+      "trust": -1140.948,
+      "dealer": 393.96299999999997,
+      "date": "2026-10-06"
     },
-    "foreign_5d": 10741.394,
-    "margin_chg": -542,
-    "margin_balance": 58171,
-    "short_chg": 18,
+    "foreign_5d": -12332.291,
+    "margin_chg": 4040,
+    "margin_balance": 62211,
+    "short_chg": 0,
     "revenue": {
       "label": "2026 年 9 月",
       "amount_yi": 11586.33235,

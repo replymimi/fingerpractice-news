@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-06T10:17:43.404161+08:00",
+  "fetched_at": "2026-10-06T22:37:39.314772+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump offers U.S. help to Russia after plague death; WHO assesses the situation as low risk",
-      "link": "https://www.cnbc.com/2026/10/06/russia-plague-death-trump-offers-us-help.html",
-      "published_iso": "2026-10-06T01:47:32+00:00",
-      "summary_raw": "WHO said it was in contact with Russian authorities, and has offered support if needed, while assessing the risk to the general public as low based on available information."
+      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+      "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
+      "published_iso": "2026-10-06T13:07:57+00:00",
+      "summary_raw": "That marked a 13.7% jump from July and was ahead of the Dow Jones consensus estimate for $102 billion."
     },
     {
       "source": "CNBC",
-      "title": "Trump says MAGA Inc. PAC will pay for controversial TV ads that government funded",
-      "link": "https://www.cnbc.com/2026/10/05/trump-ads-election.html",
-      "published_iso": "2026-10-06T01:55:50+00:00",
-      "summary_raw": "The New York Times reported \"Trump personally instructed his budget director to use taxpayer money for TV ads praising him and his presidency.\""
+      "title": "Rebounding oil exports through Strait of Hormuz are vulnerable to stepped-up Iranian tanker attacks",
+      "link": "https://www.cnbc.com/2026/10/06/crude-oil-tanker-strait-hormuz-iran-attack.html",
+      "published_iso": "2026-10-06T13:17:17+00:00",
+      "summary_raw": "Nearly 20 commercial ships, mostly tankers, have come under attack over the past month while sailing through the Hormuz chokepoint."
     },
     {
       "source": "CNBC",
-      "title": "AI researcher warns 'we are racing to build and grow our own adversary' in NYC hearing",
-      "link": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
-      "published_iso": "2026-10-05T23:28:31+00:00",
-      "summary_raw": "The leading AI labs facing intensifying scrutiny over their safety and security practices."
+      "title": "Paramount's hard-fought takeover of Warner Bros. Discovery closed Tuesday. Here's how we got here",
+      "link": "https://www.cnbc.com/2026/10/06/paramount-wbd-deal-timeline.html",
+      "published_iso": "2026-10-06T13:08:32+00:00",
+      "summary_raw": "Paramount has faced competing bids and an antitrust hurdle since its earliest attempts to take over WBD. Here's a timeline of key events."
     },
     {
       "source": "CNBC",
-      "title": "'We had a threat': Trump explains U.S. moving long-range bombers from UK",
-      "link": "https://www.cnbc.com/2026/10/05/trump-bombers-uk-iran.html",
-      "published_iso": "2026-10-05T20:53:33+00:00",
-      "summary_raw": "The U.S. Air Force B-1 bombers removed from England have been used in strikes on Iran."
+      "title": "Why deep-red Kansas has become an unexpected Senate battleground",
+      "link": "https://www.cnbc.com/2026/10/06/kansas-election-senate-marshall-hamilton.html",
+      "published_iso": "2026-10-06T10:00:01+00:00",
+      "summary_raw": "A combination of local, national and international events has contributed to making the Kansas Senate race one to watch."
     }
   ]
 }
