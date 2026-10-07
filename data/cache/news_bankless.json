@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-06T22:43:40.529172+08:00",
+  "fetched_at": "2026-10-07T09:31:42.154941+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "Quantus Takes Aim at Bitcoin’s Quantum Problem",
+      "link": "https://www.bankless.com/read/quantus-takes-aim-at-bitcoin-s-quantum-problem",
+      "published_iso": "2026-10-06T19:03:08+00:00",
+      "summary_raw": "QTC is now tradable through NEAR Intents, giving the quantum-resistant L1 its first real liquidity test against Bitcoin and Zcash."
+    },
     {
       "source": "Bankless",
       "title": "Bitwise Is Pitching NEAR to Wall Street as an AI Bet",
@@ -21,13 +28,6 @@
       "link": "https://www.bankless.com/read/cryptopunks-are-heating-back-up",
       "published_iso": "2026-10-02T20:55:10+00:00",
       "summary_raw": "CryptoPunks sales are surging, and the collection's grails are selling for millions again. Here's everything you need to know."
-    },
-    {
-      "source": "Bankless",
-      "title": "SEC Proposes New Crypto Custody Framework for Advisers and Funds",
-      "link": "https://www.bankless.com/read/news/sec-proposes-new-crypto-custody-framework-for-advisers-and-funds",
-      "published_iso": "2026-10-02T17:56:02+00:00",
-      "summary_raw": "The SEC's new proposal would let advisers and funds use state trust companies, and in limited cases self-custody, to hold crypto."
     }
   ]
 }
