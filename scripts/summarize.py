@@ -117,15 +117,12 @@ def summarize_video_item(item):
     }
 
 
-_WEEKDAYS = ["一", "二", "三", "四", "五", "六", "日"]
-
-
 def _as_of_label(iso):
     """'10/02（五）13:30' — every tile states when its quote is from."""
     if not iso:
         return "時間不明"
     dt = datetime.fromisoformat(iso).astimezone(TAIPEI)
-    return f"{dt.month:02d}/{dt.day:02d}（{_WEEKDAYS[dt.weekday()]}）{dt:%H:%M}"
+    return f"{dt.month:02d}/{dt.day:02d}（{WEEKDAYS[dt.weekday()]}）{dt:%H:%M}"
 
 
 def build_market_tiles(rows):
@@ -160,22 +157,58 @@ def build_market_tiles(rows):
     return tiles
 
 
+DATA_STALE_DAYS = 4  # same rule as news / index tiles: an old table must never pass as today's
+
+
+def day_label(date_str):
+    """'2026-10-07' -> '10/07（三）' (a trading day, no time of day)."""
+    d = datetime.fromisoformat(date_str)
+    return f"{d.month:02d}/{d.day:02d}（{WEEKDAYS[d.weekday()]}）"
+
+
+def is_fresh_day(date_str, now, what):
+    """True if the dataset's own date is recent enough to show; WARN + False otherwise."""
+    if not date_str:
+        log(f"WARN {what}: no date in the data — hidden")
+        return False
+    age = (now.date() - datetime.fromisoformat(date_str).date()).days
+    if age > DATA_STALE_DAYS:
+        log(f"WARN {what}: data is from {date_str} ({age} days old) — hidden")
+        return False
+    return True
+
+
 def sector_flow_ranking(tide_latest):
     if not tide_latest or "sectors" not in tide_latest:
-        return {"inflow": [], "outflow": [], "as_of": None}
+        return {"inflow": [], "outflow": [], "as_of": None, "as_of_label": ""}
     sectors = sorted(tide_latest["sectors"], key=lambda s: s["net_5d_yi"], reverse=True)
     inflow = [{"name": s["name"], "amount": s["net_5d_yi"]} for s in sectors[:5]]
     outflow = [{"name": s["name"], "amount": s["net_5d_yi"]} for s in sectors[-5:][::-1] if s["net_5d_yi"] < 0]
-    return {"inflow": inflow, "outflow": outflow, "as_of": tide_latest.get("date")}
+    date = tide_latest.get("date")
+    return {"inflow": inflow, "outflow": outflow, "as_of": date, "as_of_label": day_label(date) if date else ""}
 
 
 def whale_activity(tide_digest):
     if not tide_digest or "big_money" not in tide_digest:
-        return {"buy": [], "sell": []}
+        return {"buy": [], "sell": [], "as_of_label": ""}
     bm = tide_digest["big_money"]
     buy = [{"name": s["name"], "amount": s["net_1d_yi"]} for s in bm.get("abnormal_buy", [])[:3]]
     sell = [{"name": s["name"], "amount": s["net_1d_yi"]} for s in bm.get("abnormal_sell", [])[:3]]
-    return {"buy": buy, "sell": sell}
+    return {"buy": buy, "sell": sell, "as_of_label": day_label(tide_digest["date"])}
+
+
+def check_tide_against_taiex(tide_digest, tw_rows):
+    """Tide is a one-person unofficial feed, so cross-check its stated market move
+    against the TAIEX quote from Yahoo when both are for the same trading day."""
+    taiex = next((r for r in tw_rows if r.get("symbol") == "^TWII"), None)
+    if not tide_digest or not taiex or tide_digest.get("market_chg_1d") is None:
+        return
+    if taiex["as_of"][:10] != tide_digest["date"]:
+        log(f"  Tide cross-check skipped (Tide {tide_digest['date']} vs TAIEX {taiex['as_of'][:10]})")
+        return
+    diff = abs(tide_digest["market_chg_1d"] - taiex["chg_pct"])
+    tag = "OK" if diff <= 0.1 else "WARN MISMATCH"
+    log(f"  Tide cross-check {tag}: Tide {tide_digest['market_chg_1d']:+.2f}% vs TAIEX {taiex['chg_pct']:+.2f}% ({tide_digest['date']})")
 
 
 SURGE_TOP_N = 10
@@ -202,6 +235,7 @@ def sentiment_gauge(tide_digest):
         "score": p["score"], "label": p["label"],
         "advancers": p["advancers"], "decliners": p["decliners"],
         "marker_pct": p["score"],
+        "as_of_label": day_label(tide_digest["date"]),
     }
 
 
@@ -214,11 +248,15 @@ def chg_words(v, unit, fmt="{:,.1f}"):
     return f"{'增加' if v >= 0 else '減少'} {fmt.format(abs(v))} {unit}"
 
 
-def chips_section(chips):
+def chips_section(chips, now):
     """Pass chips.json through for the page, plus plain-sentence points the
     read-aloud player can speak (it reads each item's title + <li> text)."""
     market = chips.get("market") or {}
     totals, ranking = market.get("totals"), market.get("ranking")
+    if totals and not is_fresh_day(totals.get("date"), now, "三大法人買賣超總額"):
+        totals = None
+    if ranking and not is_fresh_day(ranking.get("date"), now, "法人買賣超排行"):
+        ranking = None
 
     market_points = []
     if totals:
@@ -236,6 +274,9 @@ def chips_section(chips):
 
     watchlist = []
     for s in chips.get("watchlist", []):
+        if not is_fresh_day(s.get("date"), now, f"自選股 {s.get('name')}"):
+            continue
+        s = {**s, "date_label": day_label(s["date"])}
         pts = [f"收盤 {s['close']:,.2f}，{'漲' if s['chg'] >= 0 else '跌'} {abs(s['chg']):,.2f}（{s['chg_pct']:+.2f}%）"]
         if s.get("inst"):
             i = s["inst"]
@@ -276,7 +317,8 @@ def main():
     youtube = load_json(os.path.join(RAW_DIR, "youtube.json"), {"stocks": [], "crypto": []})
     market = load_json(os.path.join(RAW_DIR, "market.json"), {"us": [], "tw": []})
     tide = load_json(os.path.join(RAW_DIR, "tide.json"), {})
-    chips = chips_section(load_json(os.path.join(RAW_DIR, "chips.json"), {}))
+    now = datetime.now(TAIPEI)
+    chips = chips_section(load_json(os.path.join(RAW_DIR, "chips.json"), {}), now)
 
     log("Summarizing news items...")
     news_out = {col: [summarize_news_item(it) for it in news.get(col, [])] for col in ("stocks", "crypto")}
@@ -287,6 +329,11 @@ def main():
     log("Building market tiles + Tide-derived sections...")
     tide_latest = tide.get("latest")
     tide_digest = tide.get("daily_digest")
+    if tide_latest and not is_fresh_day(tide_latest.get("date"), now, "Tide 板塊資金流向"):
+        tide_latest = None
+    if tide_digest and not is_fresh_day(tide_digest.get("date"), now, "Tide 大戶異常／情緒指數"):
+        tide_digest = None
+    check_tide_against_taiex(tide_digest, market.get("tw", []))
     flow = sector_flow_ranking(tide_latest)
     whale = whale_activity(tide_digest)
     sentiment = sentiment_gauge(tide_digest)
@@ -302,7 +349,6 @@ def main():
     us_title, us_points = recap_bullets("美股", market.get("us", []), "", us_headlines)
     tw_title, tw_points = recap_bullets("台股", market.get("tw", []), tw_context, us_headlines)
 
-    now = datetime.now(TAIPEI)
     surge = volume_surge_top(load_json(os.path.join(RAW_DIR, "volume_surge.json")), now)
     summary = {
         "generated_at": now.isoformat(),

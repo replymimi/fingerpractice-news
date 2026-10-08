@@ -252,7 +252,7 @@
       </div>
       <div class="sentiment-bar"><span class="sentiment-marker" style="left: {{ tide.sentiment.marker_pct }}%"></span></div>
       <div class="sentiment-scale"><span>樂觀</span><span>恐慌</span></div>
-      <p class="sentiment-sub">上漲 {{ tide.sentiment.advancers }} 檔・下跌 {{ tide.sentiment.decliners }} 檔</p>
+      <p class="sentiment-sub">上漲 {{ tide.sentiment.advancers }} 檔・下跌 {{ tide.sentiment.decliners }} 檔・{{ tide.sentiment.as_of_label }}收盤</p>
     </div>
     {% endif %}
 
@@ -278,7 +278,7 @@
     </article>
 
     {% if chips.totals or chips.ranking %}
-    <p class="section-label toggle">三大法人動向{% if chips.ranking %}　{{ chips.ranking.date[5:]|replace('-', '/') }}{% endif %}<span class="toggle-pill">展開</span></p>
+    <p class="section-label toggle">三大法人動向{% set cd = (chips.ranking or chips.totals) %}{% if cd %}　{{ cd.date[5:]|replace('-', '/') }}{% endif %}<span class="toggle-pill">展開</span></p>
     <div class="section-body" hidden>
     {% if chips.totals %}
     <div class="flow-group">
@@ -314,7 +314,7 @@
     {% endif %}
 
     {% if chips.watchlist %}
-    <p class="section-label toggle">自選股追蹤<span class="toggle-pill">展開</span></p>
+    <p class="section-label toggle">自選股追蹤　{{ chips.watchlist[0].date_label }}<span class="toggle-pill">展開</span></p>
     <div class="section-body" hidden>
     {% for s in chips.watchlist %}
     <article class="item" data-item-id="tw-watch-{{ s.id }}">
@@ -335,7 +335,7 @@
     {% endif %}
 
     {% if tide.flow.inflow or tide.flow.outflow %}
-    <p class="section-label toggle">五日法人資金流向排行<span class="toggle-pill">展開</span></p>
+    <p class="section-label toggle">五日法人資金流向排行{% if tide.flow.as_of_label %}　{{ tide.flow.as_of_label }}{% endif %}<span class="toggle-pill">展開</span></p>
     <div class="section-body" hidden>
     {% if tide.flow.inflow %}
     <div class="flow-group">
@@ -365,7 +365,7 @@
     {% endif %}
 
     {% if tide.whale.buy or tide.whale.sell %}
-    <p class="section-label toggle">大戶異常<span class="toggle-pill">展開</span></p>
+    <p class="section-label toggle">大戶異常{% if tide.whale.as_of_label %}　{{ tide.whale.as_of_label }}{% endif %}<span class="toggle-pill">展開</span></p>
     <div class="section-body" hidden>
     {% if tide.whale.buy %}
     <div class="flow-group">
