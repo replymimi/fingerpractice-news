@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-08T09:55:00.505752+08:00",
+  "fetched_at": "2026-10-08T19:57:46.252337+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Solana’s Orca merges with Loopscale in push to finance AI, robotics and defense",
-      "link": "https://www.theblock.co/news/defi/2026-10-07-solanas-orca-merges-with-loopscale-push-to-finance-ai-robotics-defense-417924",
-      "published_iso": "2026-10-07T22:01:02+00:00",
-      "summary_raw": "Orca and Loopscale unite as Formation, targeting financing for AI, energy, robotics and defense."
+      "title": "Crypto industry split over Justin Drake’s AI warning",
+      "link": "https://www.theblock.co/news/defi/2026-10-08-crypto-industry-split-over-justin-drakes-ai-warning-418021",
+      "published_iso": "2026-10-08T10:20:00+00:00",
+      "summary_raw": "Crypto players disagree over Justin Drake’s AI cryptography warning, with some dismissing it while others urge proactive preparation."
     },
     {
       "source": "The Block Research",
-      "title": "Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion",
-      "link": "https://www.theblock.co/news/markets/2026-10-07-grayscale-crypto-etf-market-beyond-bitcoin-ether-417953",
-      "published_iso": "2026-10-07T18:37:17+00:00",
-      "summary_raw": "Grayscale's Krista Lynch says SEC listing standards cover about 15 tokens, letting crypto ETF issuers get selective beyond bitcoin and ether."
+      "title": "Standard Chartered to expand crypto custody services in Singapore",
+      "link": "https://www.theblock.co/news/business/2026-10-08-standard-chartered-crypto-custody-singapore-418017",
+      "published_iso": "2026-10-08T07:55:14+00:00",
+      "summary_raw": "The bank said the service would extend its existing crypto custody footprint in the UAE, Luxembourg, and Hong Kong."
     },
     {
       "source": "The Block Research",
-      "title": "Ethereum researcher Justin Drake calls for ‘bunker mode’ planning over private key recovery risk",
-      "link": "https://www.theblock.co/news/ecosystems/2026-10-07-ethereum-researcher-justin-drake-bunker-mode-planning-private-key-recovery-risk-417954",
-      "published_iso": "2026-10-07T17:23:02+00:00",
-      "summary_raw": "Justin Drake recommended moving crypto assets to fresh addresses that keep their public keys hidden behind a hash."
+      "title": "‘Don’t rush anything’: Vitalik Buterin warns against hasty wallet migrations amid growing AI threats",
+      "link": "https://www.theblock.co/news/defi/2026-10-08-vitalik-buterin-warns-hasty-wallet-migrations-418007",
+      "published_iso": "2026-10-08T05:00:28+00:00",
+      "summary_raw": "Ethereum co-founder Vitalik Buterin warned that the crypto industry should take risks to cryptography from AI-accelerated math seriously."
     },
     {
       "source": "The Block Research",
-      "title": "Hunter Biden says LAPTOP market maker should ‘buy it all back and burn it’",
-      "link": "https://www.theblock.co/news/markets/2026-10-07-hunter-biden-laptop-market-maker-should-buy-back-burn-it-417947",
-      "published_iso": "2026-10-07T16:40:51+00:00",
-      "summary_raw": "A commissioned report details thin liquidity and market-maker-linked gains during LAPTOP’s launch."
+      "title": "Samsung to launch USDC transfers on Solana for US Galaxy users",
+      "link": "https://www.theblock.co/news/business/2026-10-07-samsung-to-launch-usdc-transfers-on-solana-for-us-galaxy-users-418004",
+      "published_iso": "2026-10-08T02:50:01+00:00",
+      "summary_raw": "The South Korean tech giant said the feature is built into Samsung Wallet, with fiat on- and off-ramps, rather than a separate crypto app."
     }
   ]
 }

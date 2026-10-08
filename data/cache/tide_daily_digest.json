@@ -1,48 +1,48 @@
 {
-  "fetched_at": "2026-10-08T09:55:04.050737+08:00",
+  "fetched_at": "2026-10-08T19:57:51.153160+08:00",
   "data": {
-    "date": "2026-10-07",
-    "generated_at": "2026-10-08T04:42:48+08:00",
-    "market_chg_1d": -0.03,
+    "date": "2026-10-08",
+    "generated_at": "2026-10-08T19:54:13+08:00",
+    "market_chg_1d": -0.99,
     "is_market_down": false,
     "panic_index": {
-      "score": 46,
+      "score": 59,
       "label": "中性",
-      "advancers": 1010,
-      "decliners": 742,
-      "down_ratio": 0.424
+      "advancers": 783,
+      "decliners": 958,
+      "down_ratio": 0.55
     },
     "safe_harbor": {
       "mode": "top_inflow",
       "sectors": [
         {
-          "name": "石化與塑膠產業",
-          "net_1d_yi": 95.4,
-          "chg_1d": 2.13,
-          "inflow_streak": 4
-        },
-        {
-          "name": "電容器",
-          "net_1d_yi": 92.6,
-          "chg_1d": 2.92,
+          "name": "記憶體模組",
+          "net_1d_yi": 119.9,
+          "chg_1d": 2.3,
           "inflow_streak": 1
         },
         {
-          "name": "被動元件 MLCC",
-          "net_1d_yi": 91.7,
-          "chg_1d": 1.49,
-          "inflow_streak": 1
+          "name": "光感測與元件",
+          "net_1d_yi": 64.2,
+          "chg_1d": -0.96,
+          "inflow_streak": 5
         },
         {
-          "name": "玻纖布",
-          "net_1d_yi": 88.2,
-          "chg_1d": 4.23,
-          "inflow_streak": 4
+          "name": "PCB 硬板製造",
+          "net_1d_yi": 62.1,
+          "chg_1d": 0.29,
+          "inflow_streak": 6
         },
         {
-          "name": "日本被動元件",
-          "net_1d_yi": 73.3,
-          "chg_1d": 2.91,
+          "name": "PCB 載板",
+          "net_1d_yi": 28.1,
+          "chg_1d": -1.17,
+          "inflow_streak": 13
+        },
+        {
+          "name": "連接器 工業消費",
+          "net_1d_yi": 26.3,
+          "chg_1d": 0.95,
           "inflow_streak": 1
         }
       ]
@@ -50,113 +50,113 @@
     "big_money": {
       "abnormal_buy": [
         {
-          "code": "6147",
-          "name": "頎邦",
-          "net_1d_yi": 51.4,
-          "chg_1d": 6.93,
-          "inflow_streak": 2
-        },
-        {
-          "code": "1301",
-          "name": "台塑",
-          "net_1d_yi": 36.1,
-          "chg_1d": 9.91,
-          "inflow_streak": 4
+          "code": "6515",
+          "name": "穎崴",
+          "net_1d_yi": 30.6,
+          "chg_1d": 1.72,
+          "inflow_streak": 1
         },
         {
           "code": "3026",
           "name": "禾伸堂",
-          "net_1d_yi": 18.8,
-          "chg_1d": 5.4,
-          "inflow_streak": 1
-        },
-        {
-          "code": "3532",
-          "name": "台勝科",
-          "net_1d_yi": 17.7,
-          "chg_1d": 9.85,
+          "net_1d_yi": 28.5,
+          "chg_1d": 4.53,
           "inflow_streak": 2
         },
         {
-          "code": "1802",
-          "name": "台玻",
-          "net_1d_yi": 15.4,
-          "chg_1d": 9.87,
-          "inflow_streak": 4
+          "code": "3533",
+          "name": "嘉澤",
+          "net_1d_yi": 12.2,
+          "chg_1d": 4.93,
+          "inflow_streak": 1
+        },
+        {
+          "code": "6510",
+          "name": "精測",
+          "net_1d_yi": 11.9,
+          "chg_1d": 9.93,
+          "inflow_streak": 1
+        },
+        {
+          "code": "6278",
+          "name": "台表科",
+          "net_1d_yi": 11.4,
+          "chg_1d": -1.0,
+          "inflow_streak": 9
         }
       ],
       "abnormal_sell": [
         {
-          "code": "6515",
-          "name": "穎崴",
-          "net_1d_yi": -42.2,
-          "chg_1d": -9.95,
-          "inflow_streak": -2
+          "code": "2317",
+          "name": "鴻海",
+          "net_1d_yi": -63.6,
+          "chg_1d": -1.19,
+          "inflow_streak": -3
         },
         {
-          "code": "3017",
-          "name": "奇鋐",
-          "net_1d_yi": -35.9,
-          "chg_1d": -3.8,
+          "code": "2059",
+          "name": "川湖",
+          "net_1d_yi": -54.1,
+          "chg_1d": -9.97,
           "inflow_streak": -1
-        },
-        {
-          "code": "2376",
-          "name": "技嘉",
-          "net_1d_yi": -25.7,
-          "chg_1d": -3.82,
-          "inflow_streak": -2
         },
         {
           "code": "5274",
           "name": "信驊",
-          "net_1d_yi": -10.7,
-          "chg_1d": -6.51,
-          "inflow_streak": -2
+          "net_1d_yi": -27.7,
+          "chg_1d": -1.49,
+          "inflow_streak": -3
         },
         {
-          "code": "6285",
-          "name": "啟碁",
-          "net_1d_yi": -6.6,
-          "chg_1d": 0.59,
+          "code": "2337",
+          "name": "旺宏",
+          "net_1d_yi": -18.3,
+          "chg_1d": -1.69,
+          "inflow_streak": -4
+        },
+        {
+          "code": "1590",
+          "name": "亞德客-KY",
+          "net_1d_yi": -16.3,
+          "chg_1d": -2.03,
           "inflow_streak": -1
         }
       ],
       "streak_leaders": [
         {
-          "code": "5876",
-          "name": "上海商銀",
-          "net_1d_yi": 1.3,
-          "chg_1d": 1.43,
+          "code": "3558",
+          "name": "神準",
+          "net_1d_yi": 0.2,
+          "chg_1d": 1.12,
           "inflow_streak": 20
         },
         {
-          "code": "3558",
-          "name": "神準",
-          "net_1d_yi": 0.0,
-          "chg_1d": 1.52,
-          "inflow_streak": 19
+          "code": "5876",
+          "name": "上海商銀",
+          "net_1d_yi": 0.5,
+          "chg_1d": 0.3,
+          "inflow_streak": 20
         },
         {
-          "code": "3338",
-          "name": "泰碩",
-          "net_1d_yi": 0,
-          "chg_1d": -0.28,
+          "code": "3402",
+          "name": "漢科",
+          "net_1d_yi": 0.1,
+          "chg_1d": 0.0,
           "inflow_streak": 17
         },
         {
           "code": "1702",
           "name": "南僑",
           "net_1d_yi": 0.0,
-          "chg_1d": 0.15,
-          "inflow_streak": 16
+          "chg_1d": 1.83,
+          "inflow_streak": 17
         },
         {
-          "code": "3402",
-          "name": "漢科",
-          "net_1d_yi": 0.2,
-          "chg_1d": -0.71,
-          "inflow_streak": 16
+          "code": "6189",
+          "name": "豐藝",
+          "net_1d_yi": 0.0,
+          "chg_1d": -0.2,
+          "inflow_streak": 15
         }
       ]
     },
