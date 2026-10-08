@@ -383,7 +383,7 @@
     {% endif %}
 
     {% if volume_surge %}
-    <p class="section-label toggle">爆大量 TOP {{ volume_surge.rows|length }}<span class="toggle-pill">展開</span></p>
+    <p class="section-label toggle">爆大量 TOP {{ volume_surge.rows|length }}　{{ volume_surge.date[5:]|replace('-', '/') }}<span class="toggle-pill">展開</span></p>
     <div class="section-body" hidden>
     <div class="flow-group">
       <p class="flow-group-label">{{ volume_surge.date[5:]|replace('-', '/') }} 收盤・共 {{ volume_surge.count }} 檔符合・依倍數排序</p>
