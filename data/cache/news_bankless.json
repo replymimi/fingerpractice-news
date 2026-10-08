@@ -1,6 +1,13 @@
 {
-  "fetched_at": "2026-10-07T09:31:42.154941+08:00",
+  "fetched_at": "2026-10-08T09:55:00.848994+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "Bigger Blocks Are Coming to Ethereum",
+      "link": "https://www.bankless.com/read/bigger-blocks-are-coming-to-ethereum",
+      "published_iso": "2026-10-07T15:37:06+00:00",
+      "summary_raw": "Sepolia's gas limit hit Glamsterdam's 200M target just 11 hours after the fork. Here's how Ethereum's next upgrade makes room for much bigger blocks."
+    },
     {
       "source": "Bankless",
       "title": "Quantus Takes Aim at Bitcoin’s Quantum Problem",
@@ -14,20 +21,6 @@
       "link": "https://www.bankless.com/read/bitwise-is-pitching-near-to-wall-street-as-an-ai-bet",
       "published_iso": "2026-10-05T19:34:21+00:00",
       "summary_raw": "Bitwise's NRR, the first U.S. spot NEAR ETF, drew $35.5M on day one. Hunter Horsley and Sal Ternullo explain the demand and NEAR's AI-first pitch."
-    },
-    {
-      "source": "Bankless",
-      "title": "🏴 CryptoPunks Rally Again",
-      "link": "https://www.bankless.com/read/cryptopunks-rally-again",
-      "published_iso": "2026-10-02T21:37:29+00:00",
-      "summary_raw": "CryptoPunks sales are surging while the collection's grails are moving for millions again."
-    },
-    {
-      "source": "Bankless",
-      "title": "CryptoPunks Are Heating Back Up",
-      "link": "https://www.bankless.com/read/cryptopunks-are-heating-back-up",
-      "published_iso": "2026-10-02T20:55:10+00:00",
-      "summary_raw": "CryptoPunks sales are surging, and the collection's grails are selling for millions again. Here's everything you need to know."
     }
   ]
 }

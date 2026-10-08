@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-07T09:31:40.258240+08:00",
+  "fetched_at": "2026-10-08T09:54:59.342091+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Chart: A look at the S&P 500's remarkable and defiant trip to a new record",
-      "link": "https://www.cnbc.com/2026/10/06/chart-a-look-at-the-sp-500s-remarkable-and-defiant-trip-a-new-record.html",
-      "published_iso": "2026-10-06T22:23:01+00:00",
-      "summary_raw": "The S&amp;P 500 returned to an intraday record Tuesday as tech gains, easing oil prices and Treasury yields helped stocks overcome months of market shocks."
+      "title": "Fed officials see another hike coming, but no sign as to when, minutes show",
+      "link": "https://www.cnbc.com/2026/10/07/fed-officials-see-another-hike-coming-but-no-sign-as-to-when-minutes-show.html",
+      "published_iso": "2026-10-07T18:42:36+00:00",
+      "summary_raw": "The Federal Reserve on Wednesday released minutes from its Sept. 15-16 policy meeting."
     },
     {
       "source": "CNBC",
-      "title": "Trump hedges on paying back government for ads that already aired",
-      "link": "https://www.cnbc.com/2026/10/05/trump-ads-election.html",
-      "published_iso": "2026-10-06T21:32:32+00:00",
-      "summary_raw": "The New York Times reported \"Trump personally instructed his budget director to use taxpayer money for TV ads praising him and his presidency.\""
+      "title": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
+      "link": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
+      "published_iso": "2026-10-08T00:51:23+00:00",
+      "summary_raw": "Samsung Electronics reported preliminary third-quarter earnings on Thursday, with operating profit forecast to top 100 trillion won for the first time."
     },
     {
       "source": "CNBC",
-      "title": "Anthropic expands Claude Startups program in bid to snag founders and fast-growing companies",
-      "link": "https://www.cnbc.com/2026/10/06/anthropic-claude-startups-program.html",
-      "published_iso": "2026-10-06T18:06:40+00:00",
-      "summary_raw": "The expansion marks the AI company's latest push to deepen its ties to founders and fast-growing companies."
+      "title": "Oil gains as Middle East hostilities stoke supply worries",
+      "link": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html",
+      "published_iso": "2026-10-08T01:46:56+00:00",
+      "summary_raw": "President Donald Trump and his national security team have talked about possibly restarting large-scale U.S. military operations in Iran in the coming weeks, NBC News reported."
     },
     {
       "source": "CNBC",
-      "title": "Trillions are being ‘wasted’ on the AI boom, Arthur Hayes says. He’s betting on what comes next",
-      "link": "https://www.cnbc.com/2026/10/07/flop-ai-boom-arthur-hayes-bitcoin-bitmex-coinferencex-.html",
-      "published_iso": "2026-10-07T00:49:34+00:00",
-      "summary_raw": "Former BitMEX CEO Arthur Hayes says the AI infrastructure boom is being overbuilt and is betting an eventual crash and bailout will send crypto higher."
+      "title": "Trump doesn't think Russia plague incident is bioweapon, plans Putin call Wednesday",
+      "link": "https://www.cnbc.com/2026/10/07/trump-russia-plague-bioweapon-putin.html",
+      "published_iso": "2026-10-07T21:20:40+00:00",
+      "summary_raw": "Nearly 200 people were placed under medical observation earlier this week in Russia's Irkutsk region in eastern Siberia over suspected exposure to plague."
     }
   ]
 }

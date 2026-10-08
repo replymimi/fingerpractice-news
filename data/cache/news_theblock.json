@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-07T09:31:41.543911+08:00",
+  "fetched_at": "2026-10-08T09:55:00.505752+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Pudgy Penguins-backed Ethereum L2 Abstract to shut down after losing ‘tens of millions’",
-      "link": "https://www.theblock.co/news/ecosystems/2026-10-06-abstract-ethereum-layer-2-shutting-down-pudgy-penguins-igloo-417855",
-      "published_iso": "2026-10-06T20:11:30+00:00",
-      "summary_raw": "Abstract, the Pudgy Penguins-backed Ethereum L2, will shut down on Dec. 15. Users must bridge assets off before then."
+      "title": "Solana’s Orca merges with Loopscale in push to finance AI, robotics and defense",
+      "link": "https://www.theblock.co/news/defi/2026-10-07-solanas-orca-merges-with-loopscale-push-to-finance-ai-robotics-defense-417924",
+      "published_iso": "2026-10-07T22:01:02+00:00",
+      "summary_raw": "Orca and Loopscale unite as Formation, targeting financing for AI, energy, robotics and defense."
     },
     {
       "source": "The Block Research",
-      "title": "Conduit sues Tether over $2.76 million freeze, says it has ‘no legal entitlement’ to funds",
-      "link": "https://www.theblock.co/news/regulation/2026-10-06-conduit-sues-tether-usdt-freeze-417831",
-      "published_iso": "2026-10-06T17:54:00+00:00",
-      "summary_raw": "Conduit is suing Tether in NY federal court, alleging the USDT issuer froze $2.76 million of its funds for over a year without explanation."
+      "title": "Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion",
+      "link": "https://www.theblock.co/news/markets/2026-10-07-grayscale-crypto-etf-market-beyond-bitcoin-ether-417953",
+      "published_iso": "2026-10-07T18:37:17+00:00",
+      "summary_raw": "Grayscale's Krista Lynch says SEC listing standards cover about 15 tokens, letting crypto ETF issuers get selective beyond bitcoin and ether."
     },
     {
       "source": "The Block Research",
-      "title": "Winklevoss group seeks to launch Zcash ETF with 0.25% fee, proposed WINK ticker",
-      "link": "https://www.theblock.co/news/markets/2026-10-06-winklevoss-files-spot-zcash-etf-wink-417826",
-      "published_iso": "2026-10-06T16:43:41+00:00",
-      "summary_raw": "Winklevoss Asset Services filed for a spot Zcash ETF under ticker WINK, with Gemini as custodian and a 0.25% fee, rivaling Grayscale's ZCSH."
+      "title": "Ethereum researcher Justin Drake calls for ‘bunker mode’ planning over private key recovery risk",
+      "link": "https://www.theblock.co/news/ecosystems/2026-10-07-ethereum-researcher-justin-drake-bunker-mode-planning-private-key-recovery-risk-417954",
+      "published_iso": "2026-10-07T17:23:02+00:00",
+      "summary_raw": "Justin Drake recommended moving crypto assets to fresh addresses that keep their public keys hidden behind a hash."
     },
     {
       "source": "The Block Research",
-      "title": "Solana treasury DeFi Development authorizes CHAD preferred stock buyback program",
-      "link": "https://www.theblock.co/news/markets/2026-10-06-defi-development-chad-preferred-stock-repurchase-program-417819",
-      "published_iso": "2026-10-06T15:09:41+00:00",
-      "summary_raw": "Solana treasury firm DeFi Development approved an open-ended program to repurchase CHAD preferred stock if it trades below its $10 par value."
+      "title": "Hunter Biden says LAPTOP market maker should ‘buy it all back and burn it’",
+      "link": "https://www.theblock.co/news/markets/2026-10-07-hunter-biden-laptop-market-maker-should-buy-back-burn-it-417947",
+      "published_iso": "2026-10-07T16:40:51+00:00",
+      "summary_raw": "A commissioned report details thin liquidity and market-maker-linked gains during LAPTOP’s launch."
     }
   ]
 }
