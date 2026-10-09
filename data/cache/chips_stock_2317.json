@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-08T19:58:01.896401+08:00",
+  "fetched_at": "2026-10-09T10:08:50.004686+08:00",
   "data": {
     "id": "2317",
     "name": "鴻海",
@@ -14,9 +14,9 @@
       "date": "2026-10-08"
     },
     "foreign_5d": -59404.558999999994,
-    "margin_chg": -1108,
-    "margin_balance": 61103,
-    "short_chg": -33,
+    "margin_chg": 145,
+    "margin_balance": 61248,
+    "short_chg": -14,
     "revenue": {
       "label": "2026 年 9 月",
       "amount_yi": 11586.33235,

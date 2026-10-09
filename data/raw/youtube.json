@@ -1,19 +1,19 @@
 {
   "stocks": [
     {
-      "source": "尼可拉斯楊Live精",
-      "title": "11月石油暴跌倒計時！看估值買股票，成功抄底Space X！目標價300美金！美股台股年底大反攻全面啟動！【新高注意回撤】",
-      "video_url": "https://www.youtube.com/watch?v=s9AGh0RhjrE",
-      "published_iso": "2026-10-07T11:00:39Z",
-      "duration": "14:02",
-      "transcript_raw": ""
-    },
-    {
       "source": "游庭皓的財經皓角",
       "title": "2026/10/8(四)全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?【早晨財經速解讀】",
       "video_url": "https://www.youtube.com/watch?v=_dfkO0oKRvg",
       "published_iso": "2026-10-08T01:15:25Z",
       "duration": "35:36",
+      "transcript_raw": ""
+    },
+    {
+      "source": "尼可拉斯楊Live精",
+      "title": "11月石油暴跌倒計時！看估值買股票，成功抄底Space X！目標價300美金！美股台股年底大反攻全面啟動！【新高注意回撤】",
+      "video_url": "https://www.youtube.com/watch?v=s9AGh0RhjrE",
+      "published_iso": "2026-10-07T11:00:39Z",
+      "duration": "14:02",
       "transcript_raw": ""
     }
   ],

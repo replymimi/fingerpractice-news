@@ -1,26 +1,33 @@
 {
-  "fetched_at": "2026-10-08T19:57:46.509676+08:00",
+  "fetched_at": "2026-10-09T10:08:35.784389+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "Bigger Blocks Are Coming to Ethereum",
-      "link": "https://www.bankless.com/read/bigger-blocks-are-coming-to-ethereum",
-      "published_iso": "2026-10-07T15:37:06+00:00",
-      "summary_raw": "Sepolia's gas limit hit Glamsterdam's 200M target just 11 hours after the fork. Here's how Ethereum's next upgrade makes room for much bigger blocks."
+      "title": "🏴 The NFL Audibles on Prediction Markets",
+      "link": "https://www.bankless.com/read/the-nfl-audibles-on-prediction-markets",
+      "published_iso": "2026-10-08T19:47:40+00:00",
+      "summary_raw": "The NFL just filed a Supreme Court brief siding with New Jersey against Kalshi. Here’s how the league got here."
     },
     {
       "source": "Bankless",
-      "title": "Quantus Takes Aim at Bitcoin’s Quantum Problem",
-      "link": "https://www.bankless.com/read/quantus-takes-aim-at-bitcoin-s-quantum-problem",
-      "published_iso": "2026-10-06T19:03:08+00:00",
-      "summary_raw": "QTC is now tradable through NEAR Intents, giving the quantum-resistant L1 its first real liquidity test against Bitcoin and Zcash."
+      "title": "Derive V3 Goes Live, Moving Onchain Options Custody to Ethereum",
+      "link": "https://www.bankless.com/read/news/derive-v3-goes-live-moving-onchain-options-custody-to-ethereum",
+      "published_iso": "2026-10-08T18:30:35+00:00",
+      "summary_raw": "Derive completes its V3 migration, moving onchain options custody to Ethereum and adding ETH, WBTC, and HYPE borrowing."
     },
     {
       "source": "Bankless",
-      "title": "Bitwise Is Pitching NEAR to Wall Street as an AI Bet",
-      "link": "https://www.bankless.com/read/bitwise-is-pitching-near-to-wall-street-as-an-ai-bet",
-      "published_iso": "2026-10-05T19:34:21+00:00",
-      "summary_raw": "Bitwise's NRR, the first U.S. spot NEAR ETF, drew $35.5M on day one. Hunter Horsley and Sal Ternullo explain the demand and NEAR's AI-first pitch."
+      "title": "Starknet Weighs Becoming an L1 to Chase Quantum Resistance",
+      "link": "https://www.bankless.com/read/news/starknet-weighs-becoming-an-l1-to-chase-quantum-resistance",
+      "published_iso": "2026-10-08T18:20:04+00:00",
+      "summary_raw": "StarkWare’s Eli Ben-Sasson floats making Starknet an L1 for “post-quantum agility,” citing AI and quantum threats."
+    },
+    {
+      "source": "Bankless",
+      "title": "Vitalik Flags AI Risk to Crypto, Warns Against Rushed Wallet Moves",
+      "link": "https://www.bankless.com/read/news/vitalik-flags-ai-risk-to-crypto-warns-against-rushed-wallet-moves",
+      "published_iso": "2026-10-08T18:11:29+00:00",
+      "summary_raw": "Vitalik Buterin has chimed in on Ethereum’s “bunker mode” debate, sharing practical tips for addresses and multisigs."
     }
   ]
 }

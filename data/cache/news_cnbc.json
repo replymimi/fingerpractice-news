@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-08T19:57:45.707493+08:00",
+  "fetched_at": "2026-10-09T10:08:34.283547+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump says he doesn't want Iran deal as U.S. reportedly prepares for 'massive bombing'",
-      "link": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
-      "published_iso": "2026-10-08T11:42:48+00:00",
-      "summary_raw": "The U.S. president and his national security team have discussed possibly resuming large-scale U.S. military operations in the coming weeks, NBC News reported."
+      "title": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
+      "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+      "published_iso": "2026-10-08T21:19:14+00:00",
+      "summary_raw": "OpenAI has told investors that it hit roughly $50 billion in annualized revenue at the end of September, CNBC confirmed."
     },
     {
       "source": "CNBC",
-      "title": "NFL tells Supreme Court prediction markets are gambling and should be regulated by the states",
-      "link": "https://www.cnbc.com/2026/10/08/nfl-tells-supreme-court-prediction-markets-are-gambling-and-should-be-regulated-by-the-states.html",
-      "published_iso": "2026-10-08T10:50:45+00:00",
-      "summary_raw": "In an amicus brief supporting New Jersey regulators in their battle against Kalshi, the NFL argues sports prediction contracts are effectively gambling"
+      "title": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
+      "link": "https://www.cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html",
+      "published_iso": "2026-10-09T01:02:38+00:00",
+      "summary_raw": "Nvidia-backed Australian AI data center operator Firmus has withdrawn its planned IPO amid market volatility."
     },
     {
       "source": "CNBC",
-      "title": "CNBC's Financial Advisor 100: Best financial advisors, top firms for 2026 ranked",
-      "link": "https://www.cnbc.com/2026/10/08/best-financial-advisors.html",
-      "published_iso": "2026-10-08T10:07:13+00:00",
-      "summary_raw": "CNBC's Financial Advisor 100 ranks the best financial advisors and top firms for 2026. Here's how to pick the best financial planner for you and your family."
+      "title": "SpaceX deal to acquire spectrum license hammers shares of AT&T, Verizon and T-Mobile",
+      "link": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html",
+      "published_iso": "2026-10-08T22:55:46+00:00",
+      "summary_raw": "SpaceX agreed to purchase a nationwide spectrum portfolio as it to pushes its Starlink service deeper into the U.S. telecommunications market."
     },
     {
       "source": "CNBC",
-      "title": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
-      "link": "https://www.cnbc.com/2026/10/08/autos-china-evs-uk-tariffs-hybrid-cars.html",
-      "published_iso": "2026-10-08T05:30:49+00:00",
-      "summary_raw": "Britain faces a finely balanced choice over whether to follow the EU in imposing tariffs on Chinese EVs."
+      "title": "Tokenization could unleash tens of billions of dollars in trapped capital, Nasdaq CEO says",
+      "link": "https://www.cnbc.com/2026/10/09/nasdaq-ceo-tokenization-could-unleash-billions-in-trapped-capital-.html",
+      "published_iso": "2026-10-08T23:57:23+00:00",
+      "summary_raw": "Nasdaq CEO Adena Friedman said tokenization could free up tens of billions of dollars in trapped capital."
     }
   ]
 }

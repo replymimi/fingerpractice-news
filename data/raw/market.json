@@ -4,41 +4,41 @@
       "name": "道瓊工業指數 DJIA",
       "symbol": "^DJI",
       "is_currency": false,
-      "price": 51179.87,
-      "prev_close": 51521.3,
-      "chg": -341.43,
-      "chg_pct": -0.66,
-      "as_of": "2026-10-08T04:55:25+08:00"
+      "price": 51231.64,
+      "prev_close": 51179.87,
+      "chg": 51.77,
+      "chg_pct": 0.1,
+      "as_of": "2026-10-09T04:46:52+08:00"
     },
     {
       "name": "標普 500 S&P 500",
       "symbol": "^GSPC",
       "is_currency": false,
-      "price": 7801.77,
-      "prev_close": 7818.93,
-      "chg": -17.16,
-      "chg_pct": -0.22,
-      "as_of": "2026-10-08T04:55:18+08:00"
+      "price": 7765.36,
+      "prev_close": 7801.77,
+      "chg": -36.41,
+      "chg_pct": -0.47,
+      "as_of": "2026-10-09T04:46:43+08:00"
     },
     {
       "name": "那斯達克 NASDAQ",
       "symbol": "^IXIC",
       "is_currency": false,
-      "price": 27538.691,
-      "prev_close": 27599.887,
-      "chg": -61.2,
-      "chg_pct": -0.22,
-      "as_of": "2026-10-08T05:15:59+08:00"
+      "price": 27193.34,
+      "prev_close": 27538.691,
+      "chg": -345.35,
+      "chg_pct": -1.25,
+      "as_of": "2026-10-09T05:15:59+08:00"
     },
     {
       "name": "費城半導體 SOX",
       "symbol": "^SOX",
       "is_currency": false,
-      "price": 13066.149,
-      "prev_close": 13217.823,
-      "chg": -151.67,
-      "chg_pct": -1.15,
-      "as_of": "2026-10-08T05:15:59+08:00"
+      "price": 12623.715,
+      "prev_close": 13066.149,
+      "chg": -442.43,
+      "chg_pct": -3.39,
+      "as_of": "2026-10-09T05:15:59+08:00"
     }
   ],
   "tw": [
@@ -47,9 +47,9 @@
       "symbol": "^TWII",
       "is_currency": false,
       "price": 49313.44,
-      "prev_close": 49822.6,
-      "chg": -509.16,
-      "chg_pct": -1.02,
+      "prev_close": 49806.37,
+      "chg": -492.93,
+      "chg_pct": -0.99,
       "as_of": "2026-10-08T13:31:15+08:00"
     },
     {
@@ -66,11 +66,11 @@
       "name": "美元兌台幣 USD/TWD",
       "symbol": "TWD=X",
       "is_currency": true,
-      "price": 31.947,
-      "prev_close": 31.842,
-      "chg": 0.11,
-      "chg_pct": 0.33,
-      "as_of": "2026-10-08T19:57:13+08:00"
+      "price": 31.912,
+      "prev_close": 31.918,
+      "chg": -0.01,
+      "chg_pct": -0.02,
+      "as_of": "2026-10-09T10:02:32+08:00"
     }
   ]
 }

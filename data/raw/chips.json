@@ -3,12 +3,12 @@
     "totals": {
       "date": "2026-10-08",
       "foreign": -758.5229349,
-      "trust": 46.88777263,
-      "dealer": -187.31576769,
-      "total": -898.95092996,
-      "margin_date": "2026-10-07",
-      "margin_money_chg": 23.4373,
-      "short_chg": 575
+      "trust": 30.08930013,
+      "dealer": -187.31261604,
+      "total": -915.74625081,
+      "margin_date": "2026-10-08",
+      "margin_money_chg": 64.04993,
+      "short_chg": -3155
     },
     "ranking": {
       "date": "2026-10-08",
@@ -136,14 +136,14 @@
       "chg_pct": -1.3539651837524178,
       "inst": {
         "foreign": -12302.987,
-        "trust": 718.394,
+        "trust": 792.863,
         "dealer": 509.84799999999996,
         "date": "2026-10-08"
       },
       "foreign_5d": -11282.023,
-      "margin_chg": -222,
-      "margin_balance": 30278,
-      "short_chg": 1,
+      "margin_chg": 1308,
+      "margin_balance": 31586,
+      "short_chg": -5,
       "revenue": {
         "label": "2026 年 9 月",
         "amount_yi": 5118.57399,
@@ -165,9 +165,9 @@
         "date": "2026-10-08"
       },
       "foreign_5d": -59404.558999999994,
-      "margin_chg": -1108,
-      "margin_balance": 61103,
-      "short_chg": -33,
+      "margin_chg": 145,
+      "margin_balance": 61248,
+      "short_chg": -14,
       "revenue": {
         "label": "2026 年 9 月",
         "amount_yi": 11586.33235,
@@ -189,14 +189,14 @@
         "date": "2026-10-08"
       },
       "foreign_5d": -9877.247000000001,
-      "margin_chg": 4,
-      "margin_balance": 11177,
-      "short_chg": -4,
+      "margin_chg": 77,
+      "margin_balance": 11254,
+      "short_chg": -3,
       "revenue": {
-        "label": "2026 年 8 月",
-        "amount_yi": 641.83361,
-        "yoy": 44.081252093451795,
-        "mom": 32.405268042676916
+        "label": "2026 年 9 月",
+        "amount_yi": 553.99497,
+        "yoy": 1.968413175049677,
+        "mom": -13.685578104892326
       }
     }
   ]

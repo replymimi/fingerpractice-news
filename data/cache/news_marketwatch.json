@@ -1,33 +1,26 @@
 {
-  "fetched_at": "2026-10-08T19:57:45.793686+08:00",
+  "fetched_at": "2026-10-09T10:08:34.472455+08:00",
   "data": [
     {
       "source": "MarketWatch",
-      "title": "Higher yields are taking their toll on all areas of the stock market, except the one that matters",
-      "link": "https://www.marketwatch.com/story/higher-yields-are-taking-their-toll-on-all-areas-of-the-stock-market-except-the-one-that-matters-69a90322?mod=mw_rss_topstories",
-      "published_iso": "2026-10-08T11:43:00+00:00",
-      "summary_raw": "Technology is the only one of the S&amp;P 500’s 11 sectors that gained since Sept. 1, as Treasury yields have climbed to multi-decade highs."
+      "title": "SpaceX’s Starlink Mobile plans are pressuring AT&T and Verizon shares",
+      "link": "https://www.marketwatch.com/story/spacexs-starlink-mobile-plans-are-pressuring-at-t-and-verizon-shares-7cb56764?mod=mw_rss_topstories",
+      "published_iso": "2026-10-09T00:52:00+00:00",
+      "summary_raw": "SpaceX plans to purchase Grain Management’s 800 MHz spectrum portfolio in a move to bolster its mobile ambitions. The news is lifting cell-tower stocks."
     },
     {
       "source": "MarketWatch",
-      "title": "Rising yields are quietly crashing the stock market’s earlier winners of 2026",
-      "link": "https://www.marketwatch.com/story/rising-yields-are-quietly-crashing-the-stock-markets-earlier-winners-of-2026-a29f2863?mod=mw_rss_topstories",
-      "published_iso": "2026-10-08T11:00:00+00:00",
-      "summary_raw": "Surging Treasury yields have begun to hammer parts of the stock market that might easily be overlooked, especially with the spotlight once again shining brightly on a small group of glamorous tech companies."
+      "title": "Micron, Nvidia and AI chip stocks fall as report on OpenAI’s revenue causes ‘undue concern’",
+      "link": "https://www.marketwatch.com/story/micron-nvidia-and-ai-chip-stocks-fall-as-report-on-openais-revenue-causes-undue-concern-2a2bcf53?mod=mw_rss_topstories",
+      "published_iso": "2026-10-08T22:08:00+00:00",
+      "summary_raw": "OpenAI’s annualized revenue reportedly fell short of expectations — but analysts say that reflects differences in how the figure is reported, not weakness in AI demand."
     },
     {
       "source": "MarketWatch",
-      "title": "A true ‘nuclear renaissance’ is taking shape, and these stocks could be big winners",
-      "link": "https://www.marketwatch.com/story/a-true-nuclear-renaissance-is-taking-shape-and-these-stocks-could-be-big-winners-e04f7364?mod=mw_rss_topstories",
-      "published_iso": "2026-10-08T10:30:00+00:00",
-      "summary_raw": "The nuclear-energy industry has been having a moment, but analysts say some companies look better positioned than others to capitalize on a wave of AI-fueled demand."
-    },
-    {
-      "source": "MarketWatch",
-      "title": "Oil prices are jumping again. Here’s how the S&P 500 has performed on days when crude has seen big gains may be surprising.",
-      "link": "https://www.marketwatch.com/story/oil-prices-are-jumping-again-how-the-s-p-500-has-performed-on-days-crude-has-seen-big-gains-may-be-surprising-283555c1?mod=mw_rss_topstories",
-      "published_iso": "2026-10-08T09:33:00+00:00",
-      "summary_raw": "The S&amp;P 500 moves on days oil prices have gained 3% may come as a surprise."
+      "title": "Why a longtime skeptic of Palantir’s stock is finally saying it’s time to buy",
+      "link": "https://www.marketwatch.com/story/why-a-longtime-skeptic-of-palantirs-stock-is-finally-saying-its-time-to-buy-60cdeede?mod=mw_rss_topstories",
+      "published_iso": "2026-10-08T21:56:00+00:00",
+      "summary_raw": "Palantir’s total addressable market could get a lot bigger, while its business model should sustain its lead against competitors, an analyst says"
     }
   ]
 }
