@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-09T10:08:35.435323+08:00",
+  "fetched_at": "2026-10-11T09:00:15.264089+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "JPMorgan estimates $50 billion has flowed into crypto this year as momentum improves into Q4",
-      "link": "https://www.theblock.co/news/markets/2026-10-08-jpmorgan-crypto-inflows-50-billion-etf-futures-q4-418115",
-      "published_iso": "2026-10-08T18:46:59+00:00",
-      "summary_raw": "JPMorgan analysts estimate around $50 billion has flowed into digital assets this year, equal to an annualized pace of $66 billion."
+      "title": "Kalshi is investigating bets on Trump’s press secretary pick placed before announcement: WSJ",
+      "link": "https://www.theblock.co/news/regulation/2026-10-10-kalshi-is-investigating-bets-on-trumps-press-secretary-pick-placed-before-announcement-wsj-418222",
+      "published_iso": "2026-10-10T18:35:25+00:00",
+      "summary_raw": "Three bets totaling about $173 were placed before news outlets reported Zacharia's pick and are expected to pay out roughly $9,600 combined."
     },
     {
       "source": "The Block Research",
-      "title": "NFL tells Supreme Court prediction market sports contracts are gambling, not swaps",
-      "link": "https://www.theblock.co/news/regulation/2026-10-08-nfl-amicus-brief-supreme-court-kalshi-new-jersey-prediction-markets-418064",
-      "published_iso": "2026-10-08T17:30:58+00:00",
-      "summary_raw": "The NFL filed an amicus brief urging the Supreme Court to hear New Jersey's case, arguing Kalshi's sports contracts are gambling, not CFTC-regulated swaps."
+      "title": "Ether ETFs extend outflow streak to nine days as Solana funds snap record 14-week inflow run",
+      "link": "https://www.theblock.co/news/markets/2026-10-10-ether-etfs-extend-outflow-streak-to-nine-days-as-solana-funds-snap-record-14-week-inflow-run-418215",
+      "published_iso": "2026-10-10T15:10:37+00:00",
+      "summary_raw": "Spot bitcoin, solana, and ether ETFs all logged weekly outflows following last week's trading, a notable shift for some of the funds."
     },
     {
       "source": "The Block Research",
-      "title": "Strategy shareholders face dilution drag despite brighter bitcoin forecasts, TD Cowen says",
-      "link": "https://www.theblock.co/news/markets/2026-10-08-strategy-shareholders-face-dilution-drag-despite-brighter-bitcoin-forecasts-td-cowen-418066",
-      "published_iso": "2026-10-08T17:18:24+00:00",
-      "summary_raw": "TD Cowen kept its $260 price target on Strategy (MSTR) as dilution limits the benefit of higher bitcoin forecasts."
+      "title": "Former FTX COO says Netflix’s ‘Altruists’ trailer ‘made me physically throw up’",
+      "link": "https://www.theblock.co/news/business/2026-10-09-former-ftx-coo-netflix-the-altruists-trailer-418208",
+      "published_iso": "2026-10-09T18:51:45+00:00",
+      "summary_raw": "Former FTX COO Constance Wang says Netflix's \"The Altruists\" misrepresents FTX's collapse and turns it into a love story."
     },
     {
       "source": "The Block Research",
-      "title": "The Block GCCI 2026 Country Profile: Inside Korea’s Crypto Market",
-      "link": "https://www.theblock.co/research/institutional/block-gcci-2026-country-profile-korea-crypto-market-418081",
-      "published_iso": "2026-10-08T17:16:23+00:00",
-      "summary_raw": "Section 1: The Block’s Global Crypto Competitiveness Index Crypto markets have historically been measured on their trading volume, ownership, or adoption. While these metrics remain important, they speak to demand-side factors rather than the environment in which crypto companies and capital can operate. A country can have large trading volume while having a restrictive domestic […]"
+      "title": "Blockchain.com seeks CFTC greenlight for US prediction markets, crypto derivatives trading: CNBC",
+      "link": "https://www.theblock.co/news/business/2026-10-09-blockchain-com-cftc-license-prediction-markets-derivatives-418192",
+      "published_iso": "2026-10-09T16:05:22+00:00",
+      "summary_raw": "Blockchain.com has applied for DCM and FCM licenses to offer ahead of a planned $500 million IPO."
     }
   ]
 }

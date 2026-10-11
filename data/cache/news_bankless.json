@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-10-09T10:08:35.784389+08:00",
+  "fetched_at": "2026-10-11T09:00:15.583558+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "🏴 Papertrade's Launch Weekend",
+      "link": "https://www.bankless.com/read/papertrade-s-launch-weekend",
+      "published_iso": "2026-10-09T19:03:12+00:00",
+      "summary_raw": "Hyperliquid's 1000x perps experiment opens tomorrow. Here's how it works, who's lining up, and what could go wrong."
+    },
+    {
+      "source": "Bankless",
+      "title": "What to Know About Papertrade's Launch",
+      "link": "https://www.bankless.com/read/what-to-know-about-papertrade-s-launch",
+      "published_iso": "2026-10-09T18:26:05+00:00",
+      "summary_raw": "Hyperliquid's 1000x perps experiment opens Saturday. Here's how it works, who's lining up, and what could go wrong."
+    },
     {
       "source": "Bankless",
       "title": "🏴 The NFL Audibles on Prediction Markets",
@@ -14,20 +28,6 @@
       "link": "https://www.bankless.com/read/news/derive-v3-goes-live-moving-onchain-options-custody-to-ethereum",
       "published_iso": "2026-10-08T18:30:35+00:00",
       "summary_raw": "Derive completes its V3 migration, moving onchain options custody to Ethereum and adding ETH, WBTC, and HYPE borrowing."
-    },
-    {
-      "source": "Bankless",
-      "title": "Starknet Weighs Becoming an L1 to Chase Quantum Resistance",
-      "link": "https://www.bankless.com/read/news/starknet-weighs-becoming-an-l1-to-chase-quantum-resistance",
-      "published_iso": "2026-10-08T18:20:04+00:00",
-      "summary_raw": "StarkWare’s Eli Ben-Sasson floats making Starknet an L1 for “post-quantum agility,” citing AI and quantum threats."
-    },
-    {
-      "source": "Bankless",
-      "title": "Vitalik Flags AI Risk to Crypto, Warns Against Rushed Wallet Moves",
-      "link": "https://www.bankless.com/read/news/vitalik-flags-ai-risk-to-crypto-warns-against-rushed-wallet-moves",
-      "published_iso": "2026-10-08T18:11:29+00:00",
-      "summary_raw": "Vitalik Buterin has chimed in on Ethereum’s “bunker mode” debate, sharing practical tips for addresses and multisigs."
     }
   ]
 }

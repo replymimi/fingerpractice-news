@@ -1,26 +1,33 @@
 {
-  "fetched_at": "2026-10-09T10:08:34.472455+08:00",
+  "fetched_at": "2026-10-11T09:00:14.222741+08:00",
   "data": [
     {
       "source": "MarketWatch",
-      "title": "SpaceX’s Starlink Mobile plans are pressuring AT&T and Verizon shares",
-      "link": "https://www.marketwatch.com/story/spacexs-starlink-mobile-plans-are-pressuring-at-t-and-verizon-shares-7cb56764?mod=mw_rss_topstories",
-      "published_iso": "2026-10-09T00:52:00+00:00",
-      "summary_raw": "SpaceX plans to purchase Grain Management’s 800 MHz spectrum portfolio in a move to bolster its mobile ambitions. The news is lifting cell-tower stocks."
+      "title": "Should I put my nest egg in a 30-year Treasury bond?",
+      "link": "https://www.marketwatch.com/story/should-i-put-my-nest-egg-in-a-30-year-treasury-bond-89db6e09?mod=mw_rss_topstories",
+      "published_iso": "2026-10-10T19:44:00+00:00",
+      "summary_raw": "Risk comes in many forms, even with “safe” investments."
     },
     {
       "source": "MarketWatch",
-      "title": "Micron, Nvidia and AI chip stocks fall as report on OpenAI’s revenue causes ‘undue concern’",
-      "link": "https://www.marketwatch.com/story/micron-nvidia-and-ai-chip-stocks-fall-as-report-on-openais-revenue-causes-undue-concern-2a2bcf53?mod=mw_rss_topstories",
-      "published_iso": "2026-10-08T22:08:00+00:00",
-      "summary_raw": "OpenAI’s annualized revenue reportedly fell short of expectations — but analysts say that reflects differences in how the figure is reported, not weakness in AI demand."
+      "title": "These decisions you make in your 20s — not your income — determine whether you’ll spend decades in debt or retire comfortably",
+      "link": "https://www.marketwatch.com/story/these-decisions-you-make-in-your-20s-not-your-income-determine-whether-youll-spend-decades-in-debt-or-retire-comfortably-7bbb28f9?mod=mw_rss_topstories",
+      "published_iso": "2026-10-10T19:44:00+00:00",
+      "summary_raw": "Don’t just focus on stock picks when you’re thinking of building retirement wealth"
     },
     {
       "source": "MarketWatch",
-      "title": "Why a longtime skeptic of Palantir’s stock is finally saying it’s time to buy",
-      "link": "https://www.marketwatch.com/story/why-a-longtime-skeptic-of-palantirs-stock-is-finally-saying-its-time-to-buy-60cdeede?mod=mw_rss_topstories",
-      "published_iso": "2026-10-08T21:56:00+00:00",
-      "summary_raw": "Palantir’s total addressable market could get a lot bigger, while its business model should sustain its lead against competitors, an analyst says"
+      "title": "Rising interest rates: The good, the bad and the ugly for retirees",
+      "link": "https://www.marketwatch.com/story/the-good-the-bad-and-the-ugly-of-rising-interest-rates-ee465a81?mod=mw_rss_topstories",
+      "published_iso": "2026-10-10T19:44:00+00:00",
+      "summary_raw": "Unlike higher gas prices, which hurt almost everyone, higher borrowing costs have an uneven impact."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "Taxing stocks, estates and employee benefits could keep Social Security from running out of money. Here’s who could pay the most.",
+      "link": "https://www.marketwatch.com/story/taxing-stocks-estates-and-employee-benefits-could-keep-social-security-from-running-out-of-money-heres-who-could-pay-the-most-616be82c?mod=mw_rss_topstories",
+      "published_iso": "2026-10-10T19:44:00+00:00",
+      "summary_raw": "Social Security is projected to become insolvent in six years. These are some of the creative solutions that are on the table, beyond raising payroll taxes."
     }
   ]
 }
