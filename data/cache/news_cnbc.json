@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-10-11T09:00:14.028569+08:00",
+  "fetched_at": "2026-10-12T09:19:22.075011+08:00",
   "data": [
+    {
+      "source": "CNBC",
+      "title": "Judge orders Trump admin to stop airing challenged government-funded ads immediately",
+      "link": "https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html",
+      "published_iso": "2026-10-12T00:29:50+00:00",
+      "summary_raw": "The ads have been criticized as government propaganda and as aimed at influencing the outcome of the midterm election, which will determine control of Congress."
+    },
+    {
+      "source": "CNBC",
+      "title": "Why China is importing a record amount of gold — and what it means for prices",
+      "link": "https://www.cnbc.com/2026/10/12/china-gold-buying-interest-rate-.html",
+      "published_iso": "2026-10-12T00:51:10+00:00",
+      "summary_raw": "Beijing’s push to diversify away from the dollar and Chinese households’ search for a safe place to put their savings has fueled China’s record gold buying."
+    },
     {
       "source": "CNBC",
       "title": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
@@ -10,24 +24,10 @@
     },
     {
       "source": "CNBC",
-      "title": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
-      "link": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
-      "published_iso": "2026-10-10T20:59:28+00:00",
-      "summary_raw": "Nadella joined other tech moguls and researchers in calling for stronger safeguards and, in some cases, for the pacing of frontier development."
-    },
-    {
-      "source": "CNBC",
-      "title": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
-      "link": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-      "published_iso": "2026-10-10T11:00:01+00:00",
-      "summary_raw": "One industry researcher identified over 300 neoclouds that can provide GPU capacity, up about 55% in less than a year."
-    },
-    {
-      "source": "CNBC",
-      "title": "Putin relayed Iran war proposal to Trump, Kremlin says",
-      "link": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
-      "published_iso": "2026-10-10T13:42:36+00:00",
-      "summary_raw": "Putin's reported call with Trump regarding the Iran war comes on the heels of a deal for the U.S. to buy Russian diesel amid a surge in fuel prices."
+      "title": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
+      "link": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
+      "published_iso": "2026-10-11T21:30:45+00:00",
+      "summary_raw": "U.S. military involvement in the fight against the Houthis would stretch resources in the Middle East already committed to fighting Iran, analysts said."
     }
   ]
 }

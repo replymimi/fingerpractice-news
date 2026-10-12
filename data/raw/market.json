@@ -5,8 +5,8 @@
       "symbol": "^DJI",
       "is_currency": false,
       "price": 51654.95,
-      "prev_close": 51231.64,
-      "chg": 423.31,
+      "prev_close": 51231.6,
+      "chg": 423.35,
       "chg_pct": 0.83,
       "as_of": "2026-10-10T04:37:50+08:00"
     },
@@ -25,8 +25,8 @@
       "symbol": "^IXIC",
       "is_currency": false,
       "price": 27366.17,
-      "prev_close": 27193.34,
-      "chg": 172.83,
+      "prev_close": 27193.3,
+      "chg": 172.87,
       "chg_pct": 0.64,
       "as_of": "2026-10-10T05:15:59+08:00"
     },
@@ -35,8 +35,8 @@
       "symbol": "^SOX",
       "is_currency": false,
       "price": 12572.42,
-      "prev_close": 12623.715,
-      "chg": -51.3,
+      "prev_close": 12623.7,
+      "chg": -51.28,
       "chg_pct": -0.41,
       "as_of": "2026-10-10T05:15:59+08:00"
     }
@@ -47,8 +47,8 @@
       "symbol": "^TWII",
       "is_currency": false,
       "price": 49313.44,
-      "prev_close": 49806.37,
-      "chg": -492.93,
+      "prev_close": 49806.4,
+      "chg": -492.96,
       "chg_pct": -0.99,
       "as_of": "2026-10-08T13:31:15+08:00"
     },
@@ -66,11 +66,11 @@
       "name": "美元兌台幣 USD/TWD",
       "symbol": "TWD=X",
       "is_currency": true,
-      "price": 31.916,
-      "prev_close": 31.918,
-      "chg": -0.0,
-      "chg_pct": -0.01,
-      "as_of": "2026-10-10T11:09:19+08:00"
+      "price": 31.903,
+      "prev_close": 31.91,
+      "chg": -0.01,
+      "chg_pct": -0.02,
+      "as_of": "2026-10-12T09:19:23+08:00"
     }
   ]
 }
