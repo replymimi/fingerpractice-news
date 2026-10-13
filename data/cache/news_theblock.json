@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-12T09:19:22.960072+08:00",
+  "fetched_at": "2026-10-13T11:03:06.802263+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Trader nets $1.28 million on new 1,000x exchange Papertrade by moving Hyperliquid’s ETH prices",
-      "link": "https://www.theblock.co/news/defi/2026-10-11-trader-nets-1-28-million-on-new-1000x-exchange-papertrade-by-moving-hyperliquids-eth-prices-418239",
-      "published_iso": "2026-10-11T22:26:02+00:00",
-      "summary_raw": "The same wallet later lost $450,000 when 30 short positions were liquidated on Saturday night after staying open for more than three hours."
+      "title": "Bitcoin slides below $82,000 as crypto liquidations surge past $770 million",
+      "link": "https://www.theblock.co/news/markets/2026-10-12-bitcoin-slides-crypto-liquidations-surge-418374",
+      "published_iso": "2026-10-13T01:57:49+00:00",
+      "summary_raw": "Crypto liquidations amounted to $771 million over the past 24 hours, including $685.6 million in long positions."
     },
     {
       "source": "The Block Research",
-      "title": "XRP Ledger patches decade-old bug that could have minted trillions of XRP",
-      "link": "https://www.theblock.co/news/ecosystems/2026-10-11-xrp-ledger-patches-decade-old-bug-that-could-have-minted-trillions-of-xrp-418230",
-      "published_iso": "2026-10-11T18:07:41+00:00",
-      "summary_raw": "An overflow bug in the XRP Ledger's payment engine could have let an attacker mint about 18 trillion spendable XRP in one transaction."
+      "title": "Blur to shut down frontend next month as NFT trading volume dwindles",
+      "link": "https://www.theblock.co/news/ecosystems/2026-10-12-blur-nft-marketplace-shutting-down-frontend-blend-418363",
+      "published_iso": "2026-10-12T21:49:02+00:00",
+      "summary_raw": "The NFT marketplace's frontend next month while the protocol stays onchain. The BLUR token fell more than 20%."
     },
     {
       "source": "The Block Research",
-      "title": "Kalshi is investigating bets on Trump’s press secretary pick placed before announcement: WSJ",
-      "link": "https://www.theblock.co/news/regulation/2026-10-10-kalshi-is-investigating-bets-on-trumps-press-secretary-pick-placed-before-announcement-wsj-418222",
-      "published_iso": "2026-10-10T18:35:25+00:00",
-      "summary_raw": "Three bets totaling about $173 were placed before news outlets reported Zacharia's pick and are expected to pay out roughly $9,600 combined."
+      "title": "CFTC’s new crypto framework could face 2028 election deadline, says TD Cowen",
+      "link": "https://www.theblock.co/news/regulation/2026-10-12-cftcs-new-crypto-framework-could-face-2028-election-deadline-td-cowen-418358",
+      "published_iso": "2026-10-12T20:53:54+00:00",
+      "summary_raw": "Newly proposed rules for leveraged and margined crypto trading may be too late as the 2028 election cycle looms, according to TD Cowen."
     },
     {
       "source": "The Block Research",
-      "title": "Ether ETFs extend outflow streak to nine days as Solana funds snap record 14-week inflow run",
-      "link": "https://www.theblock.co/news/markets/2026-10-10-ether-etfs-extend-outflow-streak-to-nine-days-as-solana-funds-snap-record-14-week-inflow-run-418215",
-      "published_iso": "2026-10-10T15:10:37+00:00",
-      "summary_raw": "Spot bitcoin, solana, and ether ETFs all logged weekly outflows following last week's trading, a notable shift for some of the funds."
+      "title": "Binance launches AI trading tool after 150,000-user beta",
+      "link": "https://www.theblock.co/news/business/2026-10-12-binance-ai-trading-interface-global-rollout-418349",
+      "published_iso": "2026-10-12T18:44:10+00:00",
+      "summary_raw": "Binance rolled out Binance AI, a free generative-UI trading interface, to all English-language users after a beta with about 150,000 testers."
     }
   ]
 }

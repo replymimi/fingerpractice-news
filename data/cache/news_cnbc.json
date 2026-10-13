@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-12T09:19:22.075011+08:00",
+  "fetched_at": "2026-10-13T11:03:05.605060+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Judge orders Trump admin to stop airing challenged government-funded ads immediately",
-      "link": "https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html",
-      "published_iso": "2026-10-12T00:29:50+00:00",
-      "summary_raw": "The ads have been criticized as government propaganda and as aimed at influencing the outcome of the midterm election, which will determine control of Congress."
+      "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
+      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "published_iso": "2026-10-13T02:09:34+00:00",
+      "summary_raw": "The IMF raised its 2026 global growth forecast to 3.1%, as AI investment helped offset the war’s energy shock."
     },
     {
       "source": "CNBC",
-      "title": "Why China is importing a record amount of gold — and what it means for prices",
-      "link": "https://www.cnbc.com/2026/10/12/china-gold-buying-interest-rate-.html",
-      "published_iso": "2026-10-12T00:51:10+00:00",
-      "summary_raw": "Beijing’s push to diversify away from the dollar and Chinese households’ search for a safe place to put their savings has fueled China’s record gold buying."
+      "title": "SK Hynix, SoftBank shares plunge as tech stocks in Asia track Wall Street chip sell-off",
+      "link": "https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html",
+      "published_iso": "2026-10-13T02:49:17+00:00",
+      "summary_raw": "Asian technology stocks tumbled Tuesday as a sell-off in U.S. semiconductor shares spilled into regional markets."
     },
     {
       "source": "CNBC",
-      "title": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
-      "link": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
-      "published_iso": "2026-10-10T14:22:23+00:00",
-      "summary_raw": "The administration barred Microsoft and seven other firms from sponsoring green cards over claims they favor foreign workers. Here's what the visa data shows."
+      "title": "Trump defends Russia diesel deal after bipartisan pushback: 'I made the right choice'",
+      "link": "https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html",
+      "published_iso": "2026-10-12T18:32:03+00:00",
+      "summary_raw": "Ukraine President Volodymyr Zelenskyy said that the U.S. easing sanctions on Moscow \"plays into Russia's hands.\""
     },
     {
       "source": "CNBC",
-      "title": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
-      "link": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
-      "published_iso": "2026-10-11T21:30:45+00:00",
-      "summary_raw": "U.S. military involvement in the fight against the Houthis would stretch resources in the Middle East already committed to fighting Iran, analysts said."
+      "title": "How Red Bull's F1 team is using AI to make split-second decisions for Max Verstappen",
+      "link": "https://www.cnbc.com/2026/10/13/red-bull-f1-ai-max-verstappen.html",
+      "published_iso": "2026-10-13T02:37:08+00:00",
+      "summary_raw": "Red Bull Racing is increasingly using AI to help make real-time Formula 1 race decisions, but the team says human judgment remains essential."
     }
   ]
 }
