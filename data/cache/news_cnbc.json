@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-13T11:03:05.605060+08:00",
+  "fetched_at": "2026-10-14T09:13:07.314922+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
-      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "published_iso": "2026-10-13T02:09:34+00:00",
-      "summary_raw": "The IMF raised its 2026 global growth forecast to 3.1%, as AI investment helped offset the war’s energy shock."
+      "title": "More Republicans come out against Trump's diesel deal with Putin",
+      "link": "https://www.cnbc.com/2026/10/13/trump-russia-diesel-republicans.html",
+      "published_iso": "2026-10-13T18:19:42+00:00",
+      "summary_raw": "Senators told Trump, the deal with Russian President Vladimir Putin \"will not achieve just ends, nor will it benefit Americans.\""
     },
     {
       "source": "CNBC",
-      "title": "SK Hynix, SoftBank shares plunge as tech stocks in Asia track Wall Street chip sell-off",
-      "link": "https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html",
-      "published_iso": "2026-10-13T02:49:17+00:00",
-      "summary_raw": "Asian technology stocks tumbled Tuesday as a sell-off in U.S. semiconductor shares spilled into regional markets."
+      "title": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
+      "link": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
+      "published_iso": "2026-10-14T00:13:45+00:00",
+      "summary_raw": "The Tuesday incident comes as the ChatGPT-maker, along with competitors, faces heightened scrutiny over its safety practices."
     },
     {
       "source": "CNBC",
-      "title": "Trump defends Russia diesel deal after bipartisan pushback: 'I made the right choice'",
-      "link": "https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html",
-      "published_iso": "2026-10-12T18:32:03+00:00",
-      "summary_raw": "Ukraine President Volodymyr Zelenskyy said that the U.S. easing sanctions on Moscow \"plays into Russia's hands.\""
+      "title": "Bank of America fined $1.2 billion over money-laundering violations",
+      "link": "https://www.cnbc.com/2026/10/13/bank-of-america-treasury-money-laundering.html",
+      "published_iso": "2026-10-13T20:45:01+00:00",
+      "summary_raw": "The action by the Treasury Department was announced less than a day before Bank of America reports quarterly earnings."
     },
     {
       "source": "CNBC",
-      "title": "How Red Bull's F1 team is using AI to make split-second decisions for Max Verstappen",
-      "link": "https://www.cnbc.com/2026/10/13/red-bull-f1-ai-max-verstappen.html",
-      "published_iso": "2026-10-13T02:37:08+00:00",
-      "summary_raw": "Red Bull Racing is increasingly using AI to help make real-time Formula 1 race decisions, but the team says human judgment remains essential."
+      "title": "Anthropic urges court in Washington, D.C. to rehear appeal of Pentagon blacklisting",
+      "link": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html",
+      "published_iso": "2026-10-13T22:54:21+00:00",
+      "summary_raw": "Anthropic is asking a federal court in Washington, D.C. to rehear its appeal in a case concerning the Pentagon's blacklisting of the company's AI models."
     }
   ]
 }

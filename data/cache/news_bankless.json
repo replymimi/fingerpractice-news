@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-13T11:03:07.346028+08:00",
+  "fetched_at": "2026-10-14T09:13:08.851714+08:00",
   "data": [
+    {
+      "source": "Bankless",
+      "title": "The Logic Behind Starknet's L1 Question",
+      "link": "https://www.bankless.com/read/the-logic-behind-starknet-s-l1-question",
+      "published_iso": "2026-10-13T19:58:39+00:00",
+      "summary_raw": "Starknet is weighing evolving into an L1 network. Here’s what’s driving the idea and what would change."
+    },
+    {
+      "source": "Bankless",
+      "title": "Ledger Spyware Scare Spreads Across Asia and Europe",
+      "link": "https://www.bankless.com/read/news/ledger-spyware-scare-spreads-across-asia-and-europe",
+      "published_iso": "2026-10-13T16:33:24+00:00",
+      "summary_raw": "Spyware implants in Ledger wallets have surfaced across Asia and Europe, raising supply-chain concerns after more than $86M in suspected thefts"
+    },
+    {
+      "source": "Bankless",
+      "title": "Blur to Shut Down NFT Marketplace After Blast",
+      "link": "https://www.bankless.com/read/news/blur-to-shut-down-nft-marketplace-after-blast",
+      "published_iso": "2026-10-13T16:22:10+00:00",
+      "summary_raw": "Blur will shut down its website and halt new NFT loans on November 12, just ten days after sister project Blast announced its closure."
+    },
     {
       "source": "Bankless",
       "title": "🏴 Papertrade's Launch Weekend",
       "link": "https://www.bankless.com/read/papertrade-s-launch-weekend",
       "published_iso": "2026-10-09T19:03:12+00:00",
       "summary_raw": "Hyperliquid's 1000x perps experiment opens tomorrow. Here's how it works, who's lining up, and what could go wrong."
-    },
-    {
-      "source": "Bankless",
-      "title": "What to Know About Papertrade's Launch",
-      "link": "https://www.bankless.com/read/what-to-know-about-papertrade-s-launch",
-      "published_iso": "2026-10-09T18:26:05+00:00",
-      "summary_raw": "Hyperliquid's 1000x perps experiment opens Saturday. Here's how it works, who's lining up, and what could go wrong."
-    },
-    {
-      "source": "Bankless",
-      "title": "🏴 The NFL Audibles on Prediction Markets",
-      "link": "https://www.bankless.com/read/the-nfl-audibles-on-prediction-markets",
-      "published_iso": "2026-10-08T19:47:40+00:00",
-      "summary_raw": "The NFL just filed a Supreme Court brief siding with New Jersey against Kalshi. Here’s how the league got here."
-    },
-    {
-      "source": "Bankless",
-      "title": "Derive V3 Goes Live, Moving Onchain Options Custody to Ethereum",
-      "link": "https://www.bankless.com/read/news/derive-v3-goes-live-moving-onchain-options-custody-to-ethereum",
-      "published_iso": "2026-10-08T18:30:35+00:00",
-      "summary_raw": "Derive completes its V3 migration, moving onchain options custody to Ethereum and adding ETH, WBTC, and HYPE borrowing."
     }
   ]
 }

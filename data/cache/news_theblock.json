@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-13T11:03:06.802263+08:00",
+  "fetched_at": "2026-10-14T09:13:08.335782+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "Bitcoin slides below $82,000 as crypto liquidations surge past $770 million",
-      "link": "https://www.theblock.co/news/markets/2026-10-12-bitcoin-slides-crypto-liquidations-surge-418374",
-      "published_iso": "2026-10-13T01:57:49+00:00",
-      "summary_raw": "Crypto liquidations amounted to $771 million over the past 24 hours, including $685.6 million in long positions."
+      "title": "Ripple, Stripe-owned Privy partner to bring embedded wallets to XRP Ledger",
+      "link": "https://www.theblock.co/news/business/2026-10-13-stripe-privy-ripple-xrp-ledger-wallets-418463",
+      "published_iso": "2026-10-13T16:00:00+00:00",
+      "summary_raw": "Developers can now build XRPL wallets into apps via Privy, with support for XRP, RLUSD, AI agent payments and x402."
     },
     {
       "source": "The Block Research",
-      "title": "Blur to shut down frontend next month as NFT trading volume dwindles",
-      "link": "https://www.theblock.co/news/ecosystems/2026-10-12-blur-nft-marketplace-shutting-down-frontend-blend-418363",
-      "published_iso": "2026-10-12T21:49:02+00:00",
-      "summary_raw": "The NFT marketplace's frontend next month while the protocol stays onchain. The BLUR token fell more than 20%."
+      "title": "Interactive Brokers expands crypto services with Ethereum staking via Zerohash",
+      "link": "https://www.theblock.co/news/ecosystems/2026-10-13-interactive-brokers-ethereum-staking-zerohash-418457",
+      "published_iso": "2026-10-13T15:24:14+00:00",
+      "summary_raw": "Interactive Brokers now lets eligible clients stake ETH through its Client Portal, with zerohash providing the service."
     },
     {
       "source": "The Block Research",
-      "title": "CFTC’s new crypto framework could face 2028 election deadline, says TD Cowen",
-      "link": "https://www.theblock.co/news/regulation/2026-10-12-cftcs-new-crypto-framework-could-face-2028-election-deadline-td-cowen-418358",
-      "published_iso": "2026-10-12T20:53:54+00:00",
-      "summary_raw": "Newly proposed rules for leveraged and margined crypto trading may be too late as the 2028 election cycle looms, according to TD Cowen."
+      "title": "DRW and Marex complete OTC swap referencing tokenized S&P iBoxx Index",
+      "link": "https://www.theblock.co/news/markets/2026-10-13-drw-marex-first-otc-swap-tokenized-sp-iboxx-index-canton-network-418440",
+      "published_iso": "2026-10-13T15:00:29+00:00",
+      "summary_raw": "DRW and Marex completed the first OTC swap referencing a fully tokenized index on Derivnex via the Canton Network, with Kaiko data."
     },
     {
       "source": "The Block Research",
-      "title": "Binance launches AI trading tool after 150,000-user beta",
-      "link": "https://www.theblock.co/news/business/2026-10-12-binance-ai-trading-interface-global-rollout-418349",
-      "published_iso": "2026-10-12T18:44:10+00:00",
-      "summary_raw": "Binance rolled out Binance AI, a free generative-UI trading interface, to all English-language users after a beta with about 150,000 testers."
+      "title": "Ledger confirms hardware implant in CryptoBilis reseller units as MediaMarkt suspends sales in Europe",
+      "link": "https://www.theblock.co/news/business/2026-10-13-ledger-confirms-hardware-implant-cryptobilis-reseller-units-mediamarkt-suspends-sales-europe-418442",
+      "published_iso": "2026-10-13T14:45:08+00:00",
+      "summary_raw": "Ledger confirmed a hardware implant in CryptoBilis-sold devices steals recovery phrases, as MediaMarkt suspends sales."
     }
   ]
 }
