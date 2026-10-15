@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-14T09:13:07.569393+08:00",
+  "fetched_at": "2026-10-15T08:31:10.375151+08:00",
   "data": [
     {
       "source": "MarketWatch",
-      "title": "Chip stocks suffer worst stretch in 16 months as AI fatigue grips the market",
-      "link": "https://www.marketwatch.com/story/ai-fatigue-is-gripping-the-market-and-driving-chip-stocks-toward-their-worst-stretch-in-16-months-6dc78ece?mod=mw_rss_topstories",
-      "published_iso": "2026-10-13T21:02:00+00:00",
-      "summary_raw": "Anticipation is building for Anthropic’s investor day, as Wall Street grows less patient with heavy AI spending."
+      "title": "Rocket Lab’s stock slides as the company pushes back Neutron’s first launch",
+      "link": "https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories",
+      "published_iso": "2026-10-15T00:02:00+00:00",
+      "summary_raw": "Neutron, a medium-lift rocket meant to rival SpaceX’s Falcon 9, will no longer launch this year."
     },
     {
       "source": "MarketWatch",
-      "title": "The SpaceX threat could loom over AT&T’s stock for a prolonged stretch, analyst cautions",
-      "link": "https://www.marketwatch.com/story/the-spacex-threat-could-loom-over-at-ts-stock-for-a-prolonged-stretch-analyst-cautions-71436853?mod=mw_rss_topstories",
-      "published_iso": "2026-10-13T20:42:00+00:00",
-      "summary_raw": "Bernstein analyst Laurent Yoon no longer recommends any of the major telecommunications stocks as he warns of more volatility ahead."
+      "title": "The AI trade is splintering as inflation fears rattle hyped-up tech stocks",
+      "link": "https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories",
+      "published_iso": "2026-10-14T23:36:00+00:00",
+      "summary_raw": "Investors are wondering if steep inflation and increased borrowing costs could derail the AI buildout."
     },
     {
       "source": "MarketWatch",
-      "title": "Six Flags’ stock slumps near 17-year low after fatal incident",
-      "link": "https://www.marketwatch.com/story/six-flags-stock-slumps-near-52-week-lows-after-fatal-accident-3f938112?mod=mw_rss_topstories",
-      "published_iso": "2026-10-13T20:41:00+00:00",
-      "summary_raw": "A fatal accident on a Six Flags Entertainment roller coaster sent shares of the amusement-park operator tumbling."
+      "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+      "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+      "published_iso": "2026-10-14T22:30:00+00:00",
+      "summary_raw": "”I earn $110,000 a year.”"
     },
     {
       "source": "MarketWatch",
-      "title": "AST SpaceMobile’s stock is feeling the heat from SpaceX’s wireless plans",
-      "link": "https://www.marketwatch.com/story/ast-spacemobiles-stock-is-feeling-the-heat-from-spacexs-wireless-plans-7e2fafb4?mod=mw_rss_topstories",
-      "published_iso": "2026-10-13T20:32:00+00:00",
-      "summary_raw": "AST’s commercial rollout could face delays due to satellite-launch challenges and SpaceX’s growing ambitions, an analyst warns."
+      "title": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
+      "link": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
+      "published_iso": "2026-10-14T22:24:00+00:00",
+      "summary_raw": "The 3.6% COLA for 2027 is aimed at helping more than 68 million beneficiaries keep pace with the cost of living"
     }
   ]
 }
