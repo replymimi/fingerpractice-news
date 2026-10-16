@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-15T08:31:10.375151+08:00",
+  "fetched_at": "2026-10-16T08:23:53.146280+08:00",
   "data": [
-    {
-      "source": "MarketWatch",
-      "title": "Rocket Lab’s stock slides as the company pushes back Neutron’s first launch",
-      "link": "https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories",
-      "published_iso": "2026-10-15T00:02:00+00:00",
-      "summary_raw": "Neutron, a medium-lift rocket meant to rival SpaceX’s Falcon 9, will no longer launch this year."
-    },
-    {
-      "source": "MarketWatch",
-      "title": "The AI trade is splintering as inflation fears rattle hyped-up tech stocks",
-      "link": "https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories",
-      "published_iso": "2026-10-14T23:36:00+00:00",
-      "summary_raw": "Investors are wondering if steep inflation and increased borrowing costs could derail the AI buildout."
-    },
     {
       "source": "MarketWatch",
       "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
       "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-      "published_iso": "2026-10-14T22:30:00+00:00",
+      "published_iso": "2026-10-15T22:31:00+00:00",
       "summary_raw": "”I earn $110,000 a year.”"
     },
     {
       "source": "MarketWatch",
-      "title": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
-      "link": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
-      "published_iso": "2026-10-14T22:24:00+00:00",
-      "summary_raw": "The 3.6% COLA for 2027 is aimed at helping more than 68 million beneficiaries keep pace with the cost of living"
+      "title": "Nvidia and other chip stocks face renewed pressure as AI fears swell",
+      "link": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories",
+      "published_iso": "2026-10-15T21:23:00+00:00",
+      "summary_raw": "Reported details about Anthropic’s financial progress are adding to concerns about the health of the AI ecosystem."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "Don’t ditch tech stocks just yet. Make these moves to take advantage of the latest AI reset.",
+      "link": "https://www.marketwatch.com/story/dont-ditch-tech-stocks-just-yet-make-these-moves-to-take-advantage-of-the-latest-ai-reset-cb70c7b2?mod=mw_rss_topstories",
+      "published_iso": "2026-10-15T21:21:00+00:00",
+      "summary_raw": "Investors have a ‘love-hate relationship’ with tech stocks now — and experts recommend selectively hunting for bargains while also betting on the major cloud companies."
+    },
+    {
+      "source": "MarketWatch",
+      "title": "CoreWeave’s polarizing stock rebounds as Wall Street squares off about AI spending",
+      "link": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
+      "published_iso": "2026-10-15T21:03:00+00:00",
+      "summary_raw": "Wall Street’s views on CoreWeave are starkly divisive as investors pay more attention to the financial details of big artificial-intelligence companies."
     }
   ]
 }

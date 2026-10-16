@@ -1,22 +1,22 @@
 {
-  "fetched_at": "2026-10-15T08:31:33.371379+08:00",
+  "fetched_at": "2026-10-16T08:24:05.891514+08:00",
   "data": {
     "id": "2454",
     "name": "聯發科",
-    "date": "2026-10-14",
-    "close": 4475.0,
-    "chg": -50.0,
-    "chg_pct": -1.1049723756906076,
+    "date": "2026-10-15",
+    "close": 4165.0,
+    "chg": -310.0,
+    "chg_pct": -6.927374301675977,
     "inst": {
-      "foreign": -3512.599,
-      "trust": 239.133,
-      "dealer": 16.581,
-      "date": "2026-10-14"
+      "foreign": -6884.407,
+      "trust": 445.36,
+      "dealer": 312.365,
+      "date": "2026-10-15"
     },
-    "foreign_5d": -14419.699,
-    "margin_chg": 249,
-    "margin_balance": 11510,
-    "short_chg": -8,
+    "foreign_5d": -18534.826,
+    "margin_chg": 137,
+    "margin_balance": 11647,
+    "short_chg": -5,
     "revenue": {
       "label": "2026 年 9 月",
       "amount_yi": 553.99497,

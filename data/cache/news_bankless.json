@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-15T08:31:12.860851+08:00",
+  "fetched_at": "2026-10-16T08:23:54.476699+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 Yukon Wants Your Agents to Break Crypto",
-      "link": "https://www.bankless.com/read/yukon-wants-your-agents-to-break-crypto",
-      "published_iso": "2026-10-14T19:55:44+00:00",
-      "summary_raw": "While others go into \"bunker mode,\" Eigen's Yukon is crowdsourcing attacks and fixes with AI agents."
+      "title": "Privacy Apps Are Having Their Moment",
+      "link": "https://www.bankless.com/read/privacy-apps-are-having-their-moment",
+      "published_iso": "2026-10-15T19:16:27+00:00",
+      "summary_raw": "The app layer is where crypto privacy is heating up most right now. Here are 7 new releases you can try today."
     },
     {
       "source": "Bankless",
-      "title": "Crypto's Quantum Defense Is Being Built in the Open",
-      "link": "https://www.bankless.com/read/cryptos-quantum-defense-is-being-built-in-the-open",
-      "published_iso": "2026-10-14T19:26:00+00:00",
-      "summary_raw": "While others go into \"bunker mode,\" Eigen's Yukon is crowdsourcing attacks and fixes with AI agents."
+      "title": "White House Crypto Adviser Patrick Witt Steps Down",
+      "link": "https://www.bankless.com/read/news/white-house-crypto-adviser-patrick-witt-steps-down",
+      "published_iso": "2026-10-15T14:19:28+00:00",
+      "summary_raw": "Witt becomes the second executive director of the White House crypto council to leave, following predecessor Bo Hines, who departed for Tether in August 2025."
     },
     {
       "source": "Bankless",
-      "title": "Alpenglow Is Coming to Solana Mainnet Next Week",
-      "link": "https://www.bankless.com/read/news/alpenglow-is-coming-to-solana-mainnet-next-week",
-      "published_iso": "2026-10-14T17:29:58+00:00",
-      "summary_raw": "Solana’s Alpenglow upgrade goes live October 21st, targeting ~150ms finality."
+      "title": "Helius CEO Mert Mumtaz Joins NEAR Foundation Council",
+      "link": "https://www.bankless.com/read/news/helius-ceo-mert-mumtaz-joins-near-foundation-council",
+      "published_iso": "2026-10-15T13:59:25+00:00",
+      "summary_raw": "The head of one of Solana's largest infrastructure firms is joining NEAR's governing council as the network expands its push into private, cross-chain markets."
     },
     {
       "source": "Bankless",
-      "title": "HEX Founder Richard Heart Detained in Turkey",
-      "link": "https://www.bankless.com/read/news/hex-founder-richard-heart-detained-in-turkey",
-      "published_iso": "2026-10-14T16:32:32+00:00",
-      "summary_raw": "HEX founder Richard Heart was detained in Istanbul on a Finnish Interpol notice tied to alleged tax fraud."
+      "title": "Ledger Officially Responds to Hardware Wallet Attack",
+      "link": "https://www.bankless.com/read/news/ledger-officially-responds-to-hardware-wallet-attack",
+      "published_iso": "2026-10-15T13:40:17+00:00",
+      "summary_raw": "The company announces new reseller security measures after criminals implanted hidden components in hardware wallets to steal recovery phrases."
     }
   ]
 }

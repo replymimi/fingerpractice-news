@@ -1,162 +1,137 @@
 {
-  "fetched_at": "2026-10-15T08:31:15.535538+08:00",
+  "fetched_at": "2026-10-16T08:23:55.893130+08:00",
   "data": {
-    "date": "2026-10-14",
-    "generated_at": "2026-10-15T03:35:38+08:00",
-    "market_chg_1d": 0.59,
-    "is_market_down": false,
+    "date": "2026-10-15",
+    "generated_at": "2026-10-16T03:18:44+08:00",
+    "market_chg_1d": -3.41,
+    "is_market_down": true,
     "panic_index": {
-      "score": 32,
-      "label": "樂觀",
-      "advancers": 1300,
-      "decliners": 463,
-      "down_ratio": 0.263
+      "score": 90,
+      "label": "極度恐慌",
+      "advancers": 304,
+      "decliners": 1516,
+      "down_ratio": 0.833
     },
     "safe_harbor": {
-      "mode": "top_inflow",
+      "mode": "bottom_fishing",
       "sectors": [
-        {
-          "name": "石化與塑膠產業",
-          "net_1d_yi": 140.8,
-          "chg_1d": 3.35,
-          "inflow_streak": 2
-        },
-        {
-          "name": "PCB 硬板製造",
-          "net_1d_yi": 106.9,
-          "chg_1d": 2.66,
-          "inflow_streak": 1
-        },
-        {
-          "name": "電容器",
-          "net_1d_yi": 78.4,
-          "chg_1d": 6.64,
-          "inflow_streak": 1
-        },
-        {
-          "name": "被動元件 MLCC",
-          "net_1d_yi": 75.5,
-          "chg_1d": 5.39,
-          "inflow_streak": 1
-        },
-        {
-          "name": "電阻與被動保護",
-          "net_1d_yi": 65.0,
-          "chg_1d": 5.26,
-          "inflow_streak": 1
-        }
+        {},
+        {},
+        {},
+        {},
+        {}
       ]
     },
     "big_money": {
       "abnormal_buy": [
         {
-          "code": "1301",
-          "name": "台塑",
-          "net_1d_yi": 50.4,
-          "chg_1d": 9.89,
-          "inflow_streak": 1
+          "code": "6278",
+          "name": "台表科",
+          "net_1d_yi": 34.2,
+          "chg_1d": 4.48,
+          "inflow_streak": 13
         },
         {
-          "code": "2368",
-          "name": "金像電",
-          "net_1d_yi": 36.1,
-          "chg_1d": 7.69,
-          "inflow_streak": 2
+          "code": "1216",
+          "name": "統一",
+          "net_1d_yi": 25.7,
+          "chg_1d": 1.66,
+          "inflow_streak": 7
         },
         {
-          "code": "1802",
-          "name": "台玻",
-          "net_1d_yi": 33.0,
-          "chg_1d": 8.41,
-          "inflow_streak": 1
+          "code": "2412",
+          "name": "中華電",
+          "net_1d_yi": 24.0,
+          "chg_1d": 2.69,
+          "inflow_streak": 11
         },
         {
-          "code": "4979",
-          "name": "華星光",
-          "net_1d_yi": 25.2,
-          "chg_1d": 9.91,
-          "inflow_streak": 1
+          "code": "2886",
+          "name": "兆豐金",
+          "net_1d_yi": 17.7,
+          "chg_1d": 2.74,
+          "inflow_streak": 7
         },
         {
-          "code": "1326",
-          "name": "台化",
-          "net_1d_yi": 23.7,
-          "chg_1d": 9.9,
-          "inflow_streak": 2
+          "code": "2912",
+          "name": "統一超",
+          "net_1d_yi": 11.8,
+          "chg_1d": 2.05,
+          "inflow_streak": 8
         }
       ],
       "abnormal_sell": [
         {
-          "code": "2449",
-          "name": "京元電子",
-          "net_1d_yi": -72.3,
-          "chg_1d": -2.79,
+          "code": "2330",
+          "name": "台積電",
+          "net_1d_yi": -572.8,
+          "chg_1d": -2.01,
+          "inflow_streak": -7
+        },
+        {
+          "code": "2454",
+          "name": "聯發科",
+          "net_1d_yi": -262.9,
+          "chg_1d": -6.93,
+          "inflow_streak": -7
+        },
+        {
+          "code": "2308",
+          "name": "台達電",
+          "net_1d_yi": -168.6,
+          "chg_1d": -8.68,
+          "inflow_streak": -6
+        },
+        {
+          "code": "2327",
+          "name": "國巨*",
+          "net_1d_yi": -145.5,
+          "chg_1d": -8.61,
           "inflow_streak": -1
         },
         {
-          "code": "3008",
-          "name": "大立光",
-          "net_1d_yi": -40.3,
-          "chg_1d": -5.43,
-          "inflow_streak": -1
-        },
-        {
-          "code": "3406",
-          "name": "玉晶光",
-          "net_1d_yi": -21.9,
-          "chg_1d": -9.36,
-          "inflow_streak": -1
-        },
-        {
-          "code": "8086",
-          "name": "宏捷科",
-          "net_1d_yi": -5.8,
-          "chg_1d": 0.71,
-          "inflow_streak": -2
-        },
-        {
-          "code": "6209",
-          "name": "今國光",
-          "net_1d_yi": -4.9,
-          "chg_1d": -1.43,
+          "code": "3711",
+          "name": "日月光投控",
+          "net_1d_yi": -126.7,
+          "chg_1d": -9.91,
           "inflow_streak": -1
         }
       ],
       "streak_leaders": [
         {
-          "code": "3558",
-          "name": "神準",
-          "net_1d_yi": 0.1,
-          "chg_1d": 1.1,
+          "code": "5876",
+          "name": "上海商銀",
+          "net_1d_yi": 4.5,
+          "chg_1d": 3.29,
           "inflow_streak": 20
         },
         {
-          "code": "5876",
-          "name": "上海商銀",
-          "net_1d_yi": 0.4,
-          "chg_1d": -0.39,
+          "code": "3558",
+          "name": "神準",
+          "net_1d_yi": 0.1,
+          "chg_1d": -1.45,
           "inflow_streak": 20
         },
         {
           "code": "6189",
           "name": "豐藝",
-          "net_1d_yi": 0.1,
-          "chg_1d": 0.71,
-          "inflow_streak": 18
+          "net_1d_yi": 0.2,
+          "chg_1d": 0.3,
+          "inflow_streak": 19
         },
         {
           "code": "2347",
           "name": "聯強",
-          "net_1d_yi": 2.3,
-          "chg_1d": 1.99,
-          "inflow_streak": 14
+          "net_1d_yi": 1.4,
+          "chg_1d": 0.0,
+          "inflow_streak": 15
         },
         {
           "code": "6278",
           "name": "台表科",
-          "net_1d_yi": 8.9,
-          "chg_1d": 9.85,
-          "inflow_streak": 12
+          "net_1d_yi": 34.2,
+          "chg_1d": 4.48,
+          "inflow_streak": 13
         }
       ]
     },
