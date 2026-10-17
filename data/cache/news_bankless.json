@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-16T08:23:54.476699+08:00",
+  "fetched_at": "2026-10-17T08:28:13.623352+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "Privacy Apps Are Having Their Moment",
-      "link": "https://www.bankless.com/read/privacy-apps-are-having-their-moment",
-      "published_iso": "2026-10-15T19:16:27+00:00",
-      "summary_raw": "The app layer is where crypto privacy is heating up most right now. Here are 7 new releases you can try today."
+      "title": "🏴 Pearl’s AI Twist on Mining",
+      "link": "https://www.bankless.com/read/pearls-ai-twist-on-bitcoin-mining",
+      "published_iso": "2026-10-16T20:26:09+00:00",
+      "summary_raw": "Pearl lets the work that secures its network also serve paying AI customers. Here's why that matters for Bitcoin's mining economics, and the risks."
     },
     {
       "source": "Bankless",
-      "title": "White House Crypto Adviser Patrick Witt Steps Down",
-      "link": "https://www.bankless.com/read/news/white-house-crypto-adviser-patrick-witt-steps-down",
-      "published_iso": "2026-10-15T14:19:28+00:00",
-      "summary_raw": "Witt becomes the second executive director of the White House crypto council to leave, following predecessor Bo Hines, who departed for Tether in August 2025."
+      "title": "Pump.fun Adds Leveraged Perps via Hyperliquid",
+      "link": "https://www.bankless.com/read/news/pump-fun-adds-leveraged-perps-via-hyperliquid",
+      "published_iso": "2026-10-16T19:45:29+00:00",
+      "summary_raw": "Pump.fun’s new Hyperliquid integration brings leveraged perpetuals trading to the memecoin crowd."
     },
     {
       "source": "Bankless",
-      "title": "Helius CEO Mert Mumtaz Joins NEAR Foundation Council",
-      "link": "https://www.bankless.com/read/news/helius-ceo-mert-mumtaz-joins-near-foundation-council",
-      "published_iso": "2026-10-15T13:59:25+00:00",
-      "summary_raw": "The head of one of Solana's largest infrastructure firms is joining NEAR's governing council as the network expands its push into private, cross-chain markets."
+      "title": "Pearl and the Security Budget Bitcoin Can't Solve",
+      "link": "https://www.bankless.com/read/who-pays-for-proof-of-work-pearl-has-an-answer",
+      "published_iso": "2026-10-16T19:34:55+00:00",
+      "summary_raw": "Pearl lets the work that secures its network also serve paying AI customers. Here's why that matters for Bitcoin's mining economics, and the risks."
     },
     {
       "source": "Bankless",
-      "title": "Ledger Officially Responds to Hardware Wallet Attack",
-      "link": "https://www.bankless.com/read/news/ledger-officially-responds-to-hardware-wallet-attack",
-      "published_iso": "2026-10-15T13:40:17+00:00",
-      "summary_raw": "The company announces new reseller security measures after criminals implanted hidden components in hardware wallets to steal recovery phrases."
+      "title": "OpenAI Model Helped Itself to Testnet ETH Without Permission",
+      "link": "https://www.bankless.com/read/news/openai-model-helped-itself-to-testnet-eth-to-finish-a-coding-task",
+      "published_iso": "2026-10-16T19:13:41+00:00",
+      "summary_raw": "An internal OpenAI model scanned public dev wallets on Sepolia and spent testnet ETH from one to finish a job."
     }
   ]
 }

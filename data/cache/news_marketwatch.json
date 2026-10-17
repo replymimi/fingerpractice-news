@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-16T08:23:53.146280+08:00",
+  "fetched_at": "2026-10-17T08:28:12.493714+08:00",
   "data": [
     {
       "source": "MarketWatch",
-      "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-      "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-      "published_iso": "2026-10-15T22:31:00+00:00",
-      "summary_raw": "”I earn $110,000 a year.”"
+      "title": "Nowhere to hide: Tech selloff hits software and chip stocks alike",
+      "link": "https://www.marketwatch.com/story/nowhere-to-hide-tech-selloff-hits-software-and-chip-stocks-alike-6d96773c?mod=mw_rss_topstories",
+      "published_iso": "2026-10-16T21:59:00+00:00",
+      "summary_raw": "The software and semiconductor sectors haven’t been trading in tandem much this year, but they collectively fell Friday as AI and interest-rate fears hit the market."
     },
     {
       "source": "MarketWatch",
-      "title": "Nvidia and other chip stocks face renewed pressure as AI fears swell",
-      "link": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories",
-      "published_iso": "2026-10-15T21:23:00+00:00",
-      "summary_raw": "Reported details about Anthropic’s financial progress are adding to concerns about the health of the AI ecosystem."
+      "title": "Could an Anthropic IPO put your 401(k) at risk? The AI safety debate hits a new dimension.",
+      "link": "https://www.marketwatch.com/story/could-an-anthropic-ipo-put-your-401-k-at-risk-the-ai-safety-debate-hits-a-new-dimension-db3f09f7?mod=mw_rss_topstories",
+      "published_iso": "2026-10-16T21:35:00+00:00",
+      "summary_raw": "Anthropic and New York City’s comptroller have opened a line of communication to discuss “existential risks” posed by AI and what that could mean for the company’s future stock."
     },
     {
       "source": "MarketWatch",
-      "title": "Don’t ditch tech stocks just yet. Make these moves to take advantage of the latest AI reset.",
-      "link": "https://www.marketwatch.com/story/dont-ditch-tech-stocks-just-yet-make-these-moves-to-take-advantage-of-the-latest-ai-reset-cb70c7b2?mod=mw_rss_topstories",
-      "published_iso": "2026-10-15T21:21:00+00:00",
-      "summary_raw": "Investors have a ‘love-hate relationship’ with tech stocks now — and experts recommend selectively hunting for bargains while also betting on the major cloud companies."
+      "title": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
+      "link": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
+      "published_iso": "2026-10-16T21:30:00+00:00",
+      "summary_raw": "Hot CPI and PPI data should have pushed Treasury yields higher. Instead, bond buyers stepped in to suggest yields have risen high enough to become attractive for investors."
     },
     {
       "source": "MarketWatch",
-      "title": "CoreWeave’s polarizing stock rebounds as Wall Street squares off about AI spending",
-      "link": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
-      "published_iso": "2026-10-15T21:03:00+00:00",
-      "summary_raw": "Wall Street’s views on CoreWeave are starkly divisive as investors pay more attention to the financial details of big artificial-intelligence companies."
+      "title": "New SEC rules would fleece everyday investors to enrich Wall Street",
+      "link": "https://www.marketwatch.com/story/new-sec-rules-would-fleece-everyday-investors-to-enrich-wall-street-0a00fe03?mod=mw_rss_topstories",
+      "published_iso": "2026-10-16T21:21:00+00:00",
+      "summary_raw": "New proposals from the Securities and Exchange Commission will tilt the scales in favor of Wall Street and against a huge group of retail investors."
     }
   ]
 }
