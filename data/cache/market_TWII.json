@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-10-17T08:28:14.277519+08:00",
+  "fetched_at": "2026-10-18T08:01:43.461854+08:00",
   "data": {
     "name": "台股加權指數 TAIEX",
     "symbol": "^TWII",
     "is_currency": false,
     "price": 47111.26,
-    "prev_close": 48625.8,
-    "chg": -1514.54,
-    "chg_pct": -3.11,
+    "prev_close": 46969.9,
+    "chg": 141.36,
+    "chg_pct": 0.3,
     "as_of": "2026-10-16T13:33:25+08:00"
   }
 }

@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-17T08:28:12.238719+08:00",
+  "fetched_at": "2026-10-18T08:01:41.097828+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-      "link": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-      "published_iso": "2026-10-16T20:02:21+00:00",
-      "summary_raw": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week."
+      "title": "Trump waives broad new Russia sanctions, Zelenskyy condemns it as 'wrong'",
+      "link": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
+      "published_iso": "2026-10-17T19:35:18+00:00",
+      "summary_raw": "Trump signed the Graham Bill, which targeted Russia over its invasion of Ukraine, into law in September."
     },
     {
       "source": "CNBC",
-      "title": "Katie Zacharia out as Trump's White House press secretary",
-      "link": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
-      "published_iso": "2026-10-16T21:26:15+00:00",
-      "summary_raw": "Zacharia was on shaky ground from her first White House press conference and over questions about her claims of being a lawyer despite not passing a bar exam."
+      "title": "Software’s new consolidator gets big vote of confidence from Berkshire",
+      "link": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
+      "published_iso": "2026-10-17T15:11:30+00:00",
+      "summary_raw": "Less than four months into life as a public company, Bending Spoons got a big vote of confidence this week from Berkshire Hathaway."
     },
     {
       "source": "CNBC",
-      "title": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
-      "link": "https://www.cnbc.com/2026/10/16/apple-iphone-duo-demand-price.html",
-      "published_iso": "2026-10-16T22:31:26+00:00",
-      "summary_raw": "Apple’s $1,999 iPhone Duo is drawing early demand as analysts assess whether the foldable can lift iPhone pricing and revenue."
+      "title": "Berkshire shares buck market sell-off, rally to highest since Buffett said he would step down as CEO",
+      "link": "https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html",
+      "published_iso": "2026-10-17T12:46:21+00:00",
+      "summary_raw": "Berkshire Hathaway shares are at their highest level since Warren Buffett told shareholders at the May 2025 annual meeting he planned to step down as CEO at the end of that year."
     },
     {
       "source": "CNBC",
-      "title": "Wall Street's fear gauge is ripping. Traders see it going even higher",
-      "link": "https://www.cnbc.com/2026/10/16/wall-streets-fear-gauge-is-ripping-traders-see-it-going-even-higher.html",
-      "published_iso": "2026-10-16T19:28:10+00:00",
-      "summary_raw": "The sell-off in AI-related stocks pushed the VIX above 22 for the first time in four months. A cluster of trades suggests it could go even higher."
+      "title": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
+      "link": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
+      "published_iso": "2026-10-16T21:49:13+00:00",
+      "summary_raw": "Democrats outraise Republicans in key Congress races as Elon Musk funds Ken Paxton in Texas and GOP groups aligned with Trump."
     }
   ]
 }
