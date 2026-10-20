@@ -4,41 +4,41 @@
       "name": "道瓊工業指數 DJIA",
       "symbol": "^DJI",
       "is_currency": false,
-      "price": 52002.41,
-      "prev_close": 52177.7,
-      "chg": -175.29,
-      "chg_pct": -0.34,
-      "as_of": "2026-10-17T04:42:09+08:00"
+      "price": 51966.03,
+      "prev_close": 52002.41,
+      "chg": -36.38,
+      "chg_pct": -0.07,
+      "as_of": "2026-10-20T04:44:25+08:00"
     },
     {
       "name": "標普 500 S&P 500",
       "symbol": "^GSPC",
       "is_currency": false,
-      "price": 7659.44,
-      "prev_close": 7744.06,
-      "chg": -84.62,
-      "chg_pct": -1.09,
-      "as_of": "2026-10-17T04:42:08+08:00"
+      "price": 7690.73,
+      "prev_close": 7659.44,
+      "chg": 31.29,
+      "chg_pct": 0.41,
+      "as_of": "2026-10-20T04:44:14+08:00"
     },
     {
       "name": "那斯達克 NASDAQ",
       "symbol": "^IXIC",
       "is_currency": false,
-      "price": 26140.033,
-      "prev_close": 26713.0,
-      "chg": -572.97,
-      "chg_pct": -2.14,
-      "as_of": "2026-10-17T05:15:59+08:00"
+      "price": 26430.887,
+      "prev_close": 26140.033,
+      "chg": 290.85,
+      "chg_pct": 1.11,
+      "as_of": "2026-10-20T05:15:59+08:00"
     },
     {
       "name": "費城半導體 SOX",
       "symbol": "^SOX",
       "is_currency": false,
-      "price": 11137.287,
-      "prev_close": 11581.2,
-      "chg": -443.91,
-      "chg_pct": -3.83,
-      "as_of": "2026-10-17T05:15:59+08:00"
+      "price": 11316.343,
+      "prev_close": 11137.287,
+      "chg": 179.06,
+      "chg_pct": 1.61,
+      "as_of": "2026-10-20T05:15:59+08:00"
     }
   ],
   "tw": [
@@ -46,31 +46,31 @@
       "name": "台股加權指數 TAIEX",
       "symbol": "^TWII",
       "is_currency": false,
-      "price": 47111.26,
-      "prev_close": 46969.9,
-      "chg": 141.36,
-      "chg_pct": 0.3,
-      "as_of": "2026-10-16T13:33:25+08:00"
+      "price": 46822.08,
+      "prev_close": 47111.26,
+      "chg": -289.18,
+      "chg_pct": -0.61,
+      "as_of": "2026-10-19T13:33:25+08:00"
     },
     {
       "name": "櫃買指數 TPEx",
       "symbol": "TPEX",
       "is_currency": false,
-      "price": 400.26,
-      "prev_close": 396.9,
-      "chg": 3.36,
-      "chg_pct": 0.85,
-      "as_of": "2026-10-16T13:30:00+08:00"
+      "price": 394.05,
+      "prev_close": 400.26,
+      "chg": -6.21,
+      "chg_pct": -1.55,
+      "as_of": "2026-10-19T13:30:00+08:00"
     },
     {
       "name": "美元兌台幣 USD/TWD",
       "symbol": "TWD=X",
       "is_currency": true,
-      "price": 32.376,
-      "prev_close": 32.428,
-      "chg": -0.05,
-      "chg_pct": -0.16,
-      "as_of": "2026-10-19T08:12:21+08:00"
+      "price": 32.492,
+      "prev_close": 32.475,
+      "chg": 0.02,
+      "chg_pct": 0.05,
+      "as_of": "2026-10-20T09:05:21+08:00"
     }
   ]
 }
