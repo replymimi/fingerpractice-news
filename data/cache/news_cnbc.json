@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-20T09:05:18.489038+08:00",
+  "fetched_at": "2026-10-21T08:36:56.355284+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
-      "link": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
-      "published_iso": "2026-10-17T16:31:06+00:00",
-      "summary_raw": "Timberland managers buying for pension funds and other institutional investors can wait decades for returns, but the market can also be a profit trap."
+      "title": "Japan exports post huge miss in September as growth slows to 16.7%",
+      "link": "https://www.cnbc.com/2026/10/21/japan-trade-exports-semiconductor-yen.html",
+      "published_iso": "2026-10-21T00:12:17+00:00",
+      "summary_raw": "Japan's imports grew 18.9%, also missing expectations of 19.6% from Reuters."
     },
     {
       "source": "CNBC",
-      "title": "China's CXMT shares fall nearly 8% as investors look past chipmaker's profit turnaround",
-      "link": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
-      "published_iso": "2026-10-19T07:48:53+00:00",
-      "summary_raw": "CXMT shares fell nearly 8% on Monday after the company released its earnings forecast for the first nine months of 2026."
+      "title": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
+      "link": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+      "published_iso": "2026-10-20T22:29:45+00:00",
+      "summary_raw": "Wall Street and investors will be looking for Netflix to provide additional details about the company's strategy following recent organizational changes"
     },
     {
       "source": "CNBC",
-      "title": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
-      "link": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
-      "published_iso": "2026-10-17T13:30:01+00:00",
-      "summary_raw": "After nearly three decades as a bankruptcy judge, Sarah Sharer Curley writes about the legal process in her new book, \"The Price of Forgiveness.\""
+      "title": "Boeing wins FAA approval for 737 Max 10 after years of delays as Duffy says certification process should be faster",
+      "link": "https://www.cnbc.com/2026/10/20/boeing-737-max-10-certification.html",
+      "published_iso": "2026-10-20T22:01:11+00:00",
+      "summary_raw": "The 737 Max 10, the largest model in the family, was set to start flying in 2020, but increased scrutiny and other safety issues delayed its certification."
     },
     {
       "source": "CNBC",
-      "title": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
-      "link": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
-      "published_iso": "2026-10-17T13:00:01+00:00",
-      "summary_raw": "Kelly Schultz bought a pumpkin farm in 1996. He transformed it into a seasonal attraction that draws in 100,000 visitors each fall."
+      "title": "United Airlines slashes 2026 profit outlook on fuel prices, but travelers keep booking despite higher fares",
+      "link": "https://www.cnbc.com/2026/10/20/united-airlines-ual-3q-2026-earnings.html",
+      "published_iso": "2026-10-20T20:23:58+00:00",
+      "summary_raw": "United Airlines cut its profit outlook for the year as fuel prices continued to climb."
     }
   ]
 }

@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-20T09:05:20.304563+08:00",
+  "fetched_at": "2026-10-21T08:36:57.948622+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 The CFTC Isn't Waiting on Congress",
-      "link": "https://www.bankless.com/read/the-cftc-isnt-waiting-on-congress",
-      "published_iso": "2026-10-19T20:50:00+00:00",
-      "summary_raw": "CFTC Chairman Mike Selig wants federal rules for crypto exchanges, retail margin, and prediction markets. Here's what he told Bankless."
+      "title": "Why Papertrade Won't Let PAPER Trade",
+      "link": "https://www.bankless.com/read/why-papertrade-wont-let-paper-trade",
+      "published_iso": "2026-10-20T19:49:11+00:00",
+      "summary_raw": "In a house pool exchange, the token is the house. That's why Papertrade won't let it trade."
     },
     {
       "source": "Bankless",
-      "title": "Vitalik Pushes EIP-8288 Over New Precompiles",
-      "link": "https://www.bankless.com/read/news/vitalik-pushes-eip-8288-over-new-precompiles",
-      "published_iso": "2026-10-19T18:25:11+00:00",
-      "summary_raw": "Vitalik says EIP-8288, and not a growing pile of precompiles, should carry Ethereum's cryptography going forward."
+      "title": "Onchain Inference Markets Post Record Token Usage",
+      "link": "https://www.bankless.com/read/news/onchain-inference-markets-post-record-token-usage",
+      "published_iso": "2026-10-20T17:21:10+00:00",
+      "summary_raw": "Surplus usage rose ~2.3x in under a month to a record 312.6B tokens on Oct 18, as rivals' volumes climb and critics demand dollar figures."
     },
     {
       "source": "Bankless",
-      "title": "Kinetiq's Elysium L2 Sets Nov. 9th Mainnet Launch",
-      "link": "https://www.bankless.com/read/news/kinetiqs-elysium-l2-sets-nov-9-mainnet-launch",
-      "published_iso": "2026-10-19T18:11:51+00:00",
-      "summary_raw": "Kinetiq's Hyperliquid L2 finally has a date, though its HyperCore hooks will arrive a few weeks later."
+      "title": "CFTC Tells Court CME Can't Challenge U.S. Perps",
+      "link": "https://www.bankless.com/read/news/cftc-tells-court-cme-cant-challenge-us-perps",
+      "published_iso": "2026-10-20T16:36:53+00:00",
+      "summary_raw": "The CFTC says CME can't sue over U.S. perps because it hasn't been hurt, pointing to a 23% rise in CME's own crypto futures volume since May."
     },
     {
       "source": "Bankless",
-      "title": "The CFTC's Proposed Rules to Reshape U.S. Crypto Markets",
-      "link": "https://www.bankless.com/read/the-cftc-s-proposed-rules-to-reshape-u-s-crypto-markets",
-      "published_iso": "2026-10-19T17:36:57+00:00",
-      "summary_raw": "Chairman Selig's CTX and CAM proposals could bring retail margin onshore, put exchanges under one federal roof, and reshape the fight over prediction markets."
+      "title": "ZachXBT Flags $20M XMR Laundering Ring on Hyperliquid",
+      "link": "https://www.bankless.com/read/news/zachxbt-flags-20m-xmr-laundering-ring-on-hyperliquid",
+      "published_iso": "2026-10-20T16:18:55+00:00",
+      "summary_raw": "More than 87% of inflows to FreedomXMR, a Monero swap service on Hyperliquid Core, came from illicit activity, with $20M+ traced to hacks and ransomware."
     }
   ]
 }
