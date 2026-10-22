@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-21T08:36:56.355284+08:00",
+  "fetched_at": "2026-10-22T08:40:53.249156+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Japan exports post huge miss in September as growth slows to 16.7%",
-      "link": "https://www.cnbc.com/2026/10/21/japan-trade-exports-semiconductor-yen.html",
-      "published_iso": "2026-10-21T00:12:17+00:00",
-      "summary_raw": "Japan's imports grew 18.9%, also missing expectations of 19.6% from Reuters."
+      "title": "Tesla beats on earnings and sales even as auto revenue declines",
+      "link": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
+      "published_iso": "2026-10-21T23:32:04+00:00",
+      "summary_raw": "Tesla reported better-than-expected third-quarter results."
     },
     {
       "source": "CNBC",
-      "title": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
-      "link": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
-      "published_iso": "2026-10-20T22:29:45+00:00",
-      "summary_raw": "Wall Street and investors will be looking for Netflix to provide additional details about the company's strategy following recent organizational changes"
+      "title": "CoreWeave’s market confidence erodes as bond yields spike and stock sinks",
+      "link": "https://www.cnbc.com/2026/10/21/coreweaves-market-confidence-erodes-as-bond-yields-spike-stock-sinks.html",
+      "published_iso": "2026-10-21T22:50:35+00:00",
+      "summary_raw": "CoreWeave shares are down 29% in October, and the spreads in its credit default swaps are widening."
     },
     {
       "source": "CNBC",
-      "title": "Boeing wins FAA approval for 737 Max 10 after years of delays as Duffy says certification process should be faster",
-      "link": "https://www.cnbc.com/2026/10/20/boeing-737-max-10-certification.html",
-      "published_iso": "2026-10-20T22:01:11+00:00",
-      "summary_raw": "The 737 Max 10, the largest model in the family, was set to start flying in 2020, but increased scrutiny and other safety issues delayed its certification."
+      "title": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
+      "link": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
+      "published_iso": "2026-10-21T22:03:37+00:00",
+      "summary_raw": "CEO Arvind Krishna indicated that IBM is helping clients in artificial intelligence."
     },
     {
       "source": "CNBC",
-      "title": "United Airlines slashes 2026 profit outlook on fuel prices, but travelers keep booking despite higher fares",
-      "link": "https://www.cnbc.com/2026/10/20/united-airlines-ual-3q-2026-earnings.html",
-      "published_iso": "2026-10-20T20:23:58+00:00",
-      "summary_raw": "United Airlines cut its profit outlook for the year as fuel prices continued to climb."
+      "title": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
+      "link": "https://www.cnbc.com/2026/10/21/trump-starlink-ukraine-elon-musk.html",
+      "published_iso": "2026-10-21T21:48:02+00:00",
+      "summary_raw": "Asked if Elon Musk ordered the slowdown, Trump said, \"I don't know who did it, but I was not involved.\""
     }
   ]
 }

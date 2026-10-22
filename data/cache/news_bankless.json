@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-21T08:36:57.948622+08:00",
+  "fetched_at": "2026-10-22T08:40:54.844667+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "Why Papertrade Won't Let PAPER Trade",
-      "link": "https://www.bankless.com/read/why-papertrade-wont-let-paper-trade",
-      "published_iso": "2026-10-20T19:49:11+00:00",
-      "summary_raw": "In a house pool exchange, the token is the house. That's why Papertrade won't let it trade."
+      "title": "🏴 Bitcoin's Quantum To-Do List",
+      "link": "https://www.bankless.com/read/bitcoins-quantum-to-do-list",
+      "published_iso": "2026-10-21T18:00:34+00:00",
+      "summary_raw": "Flexible addresses, new signatures, and a separate fight over dormant coins: inside Coinbase's plan to get Bitcoin quantum-ready."
     },
     {
       "source": "Bankless",
-      "title": "Onchain Inference Markets Post Record Token Usage",
-      "link": "https://www.bankless.com/read/news/onchain-inference-markets-post-record-token-usage",
-      "published_iso": "2026-10-20T17:21:10+00:00",
-      "summary_raw": "Surplus usage rose ~2.3x in under a month to a record 312.6B tokens on Oct 18, as rivals' volumes climb and critics demand dollar figures."
+      "title": "Coinbase's Plan for a Quantum-Safe Bitcoin",
+      "link": "https://www.bankless.com/read/coinbases-plan-for-a-quantum-safe-bitcoin",
+      "published_iso": "2026-10-21T17:24:55+00:00",
+      "summary_raw": "New addresses, new signatures and a plan for coins that never move: here's what Coinbase thinks Bitcoin needs."
     },
     {
       "source": "Bankless",
-      "title": "CFTC Tells Court CME Can't Challenge U.S. Perps",
-      "link": "https://www.bankless.com/read/news/cftc-tells-court-cme-cant-challenge-us-perps",
-      "published_iso": "2026-10-20T16:36:53+00:00",
-      "summary_raw": "The CFTC says CME can't sue over U.S. perps because it hasn't been hurt, pointing to a 23% rise in CME's own crypto futures volume since May."
+      "title": "Zcash Sprout Holders Have Two Weeks to Move Their ZEC",
+      "link": "https://www.bankless.com/read/news/zcash-sprout-holders-have-two-weeks-to-move-their-zec",
+      "published_iso": "2026-10-21T17:20:27+00:00",
+      "summary_raw": "NU7 retires the transaction format Sprout depends on, so old shielded ZEC needs to move before activation."
     },
     {
       "source": "Bankless",
-      "title": "ZachXBT Flags $20M XMR Laundering Ring on Hyperliquid",
-      "link": "https://www.bankless.com/read/news/zachxbt-flags-20m-xmr-laundering-ring-on-hyperliquid",
-      "published_iso": "2026-10-20T16:18:55+00:00",
-      "summary_raw": "More than 87% of inflows to FreedomXMR, a Monero swap service on Hyperliquid Core, came from illicit activity, with $20M+ traced to hacks and ransomware."
+      "title": "Privacy Pools v2 Goes Live With Bigger Feature Suite",
+      "link": "https://www.bankless.com/read/news/privacy-pools-v2-goes-live-with-bigger-feature-suite",
+      "published_iso": "2026-10-21T17:19:19+00:00",
+      "summary_raw": "The compliance-first privacy protocol now does payments, yield, and swaps."
     }
   ]
 }
