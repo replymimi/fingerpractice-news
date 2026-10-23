@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-22T08:40:54.844667+08:00",
+  "fetched_at": "2026-10-23T08:39:18.778272+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "🏴 Bitcoin's Quantum To-Do List",
-      "link": "https://www.bankless.com/read/bitcoins-quantum-to-do-list",
-      "published_iso": "2026-10-21T18:00:34+00:00",
-      "summary_raw": "Flexible addresses, new signatures, and a separate fight over dormant coins: inside Coinbase's plan to get Bitcoin quantum-ready."
+      "title": "Why DefiLlama’s Data Markets Are Interesting",
+      "link": "https://www.bankless.com/read/why-defillamas-data-markets-are-interesting",
+      "published_iso": "2026-10-22T18:40:57+00:00",
+      "summary_raw": "DefiLlama’s new markets are already pricing onchain earnings, quoting hack risk, and turning its methodology into money."
     },
     {
       "source": "Bankless",
-      "title": "Coinbase's Plan for a Quantum-Safe Bitcoin",
-      "link": "https://www.bankless.com/read/coinbases-plan-for-a-quantum-safe-bitcoin",
-      "published_iso": "2026-10-21T17:24:55+00:00",
-      "summary_raw": "New addresses, new signatures and a plan for coins that never move: here's what Coinbase thinks Bitcoin needs."
+      "title": "Ethereum Researchers Draft a Consensus Overhaul for Faster Finality",
+      "link": "https://www.bankless.com/read/news/ethereum-researchers-draft-a-consensus-overhaul-for-faster-finality",
+      "published_iso": "2026-10-22T16:08:45+00:00",
+      "summary_raw": "A draft EIP would split Ethereum’s validator voting in two, chasing faster finality, sturdier fork choice, and a path to post-quantum signatures."
     },
     {
       "source": "Bankless",
-      "title": "Zcash Sprout Holders Have Two Weeks to Move Their ZEC",
-      "link": "https://www.bankless.com/read/news/zcash-sprout-holders-have-two-weeks-to-move-their-zec",
-      "published_iso": "2026-10-21T17:20:27+00:00",
-      "summary_raw": "NU7 retires the transaction format Sprout depends on, so old shielded ZEC needs to move before activation."
+      "title": "Aerodrome and Velodrome Go Live as Aero Across Seven Chains",
+      "link": "https://www.bankless.com/read/news/aerodrome-velodrome-go-live-as-aero",
+      "published_iso": "2026-10-22T12:47:30+00:00",
+      "summary_raw": "VELO holders now convert into AERO, with the merged supply split 94.5% to Aerodrome's side and 5.5% to Velodrome's."
     },
     {
       "source": "Bankless",
-      "title": "Privacy Pools v2 Goes Live With Bigger Feature Suite",
-      "link": "https://www.bankless.com/read/news/privacy-pools-v2-goes-live-with-bigger-feature-suite",
-      "published_iso": "2026-10-21T17:19:19+00:00",
-      "summary_raw": "The compliance-first privacy protocol now does payments, yield, and swaps."
+      "title": "Pump.fun Ditches Relay for In-House Pump Bridge",
+      "link": "https://www.bankless.com/read/news/pump-fun-ditches-relay-for-in-house-pump-bridge",
+      "published_iso": "2026-10-22T12:27:36+00:00",
+      "summary_raw": "Pump.fun claims its own crosschain route cut buy errors 92% and halved typical buy times vs. Relay, the provider rival Fomo still uses."
     }
   ]
 }

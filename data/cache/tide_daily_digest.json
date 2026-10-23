@@ -1,162 +1,133 @@
 {
-  "fetched_at": "2026-10-22T08:40:56.639114+08:00",
+  "fetched_at": "2026-10-23T08:39:21.240855+08:00",
   "data": {
-    "date": "2026-10-21",
-    "generated_at": "2026-10-22T03:28:07+08:00",
-    "market_chg_1d": 1.28,
-    "is_market_down": false,
+    "date": "2026-10-22",
+    "generated_at": "2026-10-23T03:21:32+08:00",
+    "market_chg_1d": -1.81,
+    "is_market_down": true,
     "panic_index": {
-      "score": 34,
-      "label": "樂觀",
-      "advancers": 1120,
-      "decliners": 637,
-      "down_ratio": 0.363
+      "score": 78,
+      "label": "恐慌",
+      "advancers": 393,
+      "decliners": 1417,
+      "down_ratio": 0.783
     },
     "safe_harbor": {
-      "mode": "top_inflow",
+      "mode": "bottom_fishing",
       "sectors": [
-        {
-          "name": "智慧型手機",
-          "net_1d_yi": 137.9,
-          "chg_1d": 2.81,
-          "inflow_streak": 2
-        },
-        {
-          "name": "AI 伺服器組裝",
-          "net_1d_yi": 132.2,
-          "chg_1d": 1.04,
-          "inflow_streak": 2
-        },
-        {
-          "name": "EMS 電子代工",
-          "net_1d_yi": 122.4,
-          "chg_1d": 2.27,
-          "inflow_streak": 2
-        },
-        {
-          "name": "石化與塑膠產業",
-          "net_1d_yi": 105.7,
-          "chg_1d": 1.43,
-          "inflow_streak": 1
-        },
-        {
-          "name": "銀行金融",
-          "net_1d_yi": 65.4,
-          "chg_1d": 2.02,
-          "inflow_streak": 1
-        }
+        {}
       ]
     },
     "big_money": {
       "abnormal_buy": [
         {
-          "code": "2317",
-          "name": "鴻海",
-          "net_1d_yi": 69.5,
-          "chg_1d": 3.52,
+          "code": "3324",
+          "name": "雙鴻",
+          "net_1d_yi": 10.6,
+          "chg_1d": -1.09,
+          "inflow_streak": 1
+        },
+        {
+          "code": "6173",
+          "name": "信昌電",
+          "net_1d_yi": 9.6,
+          "chg_1d": 3.16,
+          "inflow_streak": 3
+        },
+        {
+          "code": "6456",
+          "name": "GIS-KY",
+          "net_1d_yi": 8.1,
+          "chg_1d": 3.66,
+          "inflow_streak": 1
+        },
+        {
+          "code": "2880",
+          "name": "華南金",
+          "net_1d_yi": 4.4,
+          "chg_1d": 1.0,
+          "inflow_streak": 4
+        },
+        {
+          "code": "4526",
+          "name": "東台",
+          "net_1d_yi": 4.3,
+          "chg_1d": 7.88,
           "inflow_streak": 2
-        },
-        {
-          "code": "3008",
-          "name": "大立光",
-          "net_1d_yi": 17.9,
-          "chg_1d": 3.26,
-          "inflow_streak": 1
-        },
-        {
-          "code": "2382",
-          "name": "廣達",
-          "net_1d_yi": 17.4,
-          "chg_1d": 2.5,
-          "inflow_streak": 2
-        },
-        {
-          "code": "3374",
-          "name": "精材",
-          "net_1d_yi": 16.5,
-          "chg_1d": 9.93,
-          "inflow_streak": 1
-        },
-        {
-          "code": "3006",
-          "name": "晶豪科",
-          "net_1d_yi": 7.1,
-          "chg_1d": 6.26,
-          "inflow_streak": 1
         }
       ],
       "abnormal_sell": [
         {
-          "code": "6274",
-          "name": "台燿",
-          "net_1d_yi": -64.2,
-          "chg_1d": -3.23,
-          "inflow_streak": -4
-        },
-        {
-          "code": "2313",
-          "name": "華通",
-          "net_1d_yi": -37.9,
-          "chg_1d": -1.23,
+          "code": "6213",
+          "name": "聯茂",
+          "net_1d_yi": -31.5,
+          "chg_1d": -5.59,
           "inflow_streak": -1
         },
         {
-          "code": "2345",
-          "name": "智邦",
-          "net_1d_yi": -33.8,
-          "chg_1d": -7.87,
-          "inflow_streak": -1
-        },
-        {
-          "code": "6285",
-          "name": "啟碁",
-          "net_1d_yi": -17.3,
-          "chg_1d": -0.4,
+          "code": "6672",
+          "name": "騰輝電子-KY",
+          "net_1d_yi": -11.1,
+          "chg_1d": -7.34,
           "inflow_streak": -1
         },
         {
           "code": "3693",
           "name": "營邦",
-          "net_1d_yi": -4.2,
-          "chg_1d": -0.42,
+          "net_1d_yi": -8.3,
+          "chg_1d": -9.89,
+          "inflow_streak": -2
+        },
+        {
+          "code": "6209",
+          "name": "今國光",
+          "net_1d_yi": -6.5,
+          "chg_1d": -10.0,
+          "inflow_streak": -1
+        },
+        {
+          "code": "2357",
+          "name": "華碩",
+          "net_1d_yi": -6.0,
+          "chg_1d": -3.67,
           "inflow_streak": -1
         }
       ],
       "streak_leaders": [
         {
-          "code": "5876",
-          "name": "上海商銀",
-          "net_1d_yi": 1.8,
-          "chg_1d": 0.19,
-          "inflow_streak": 20
-        },
-        {
           "code": "2347",
           "name": "聯強",
           "net_1d_yi": 0.7,
-          "chg_1d": 0.71,
-          "inflow_streak": 19
+          "chg_1d": -0.4,
+          "inflow_streak": 20
+        },
+        {
+          "code": "5876",
+          "name": "上海商銀",
+          "net_1d_yi": 2.8,
+          "chg_1d": 1.49,
+          "inflow_streak": 20
         },
         {
           "code": "5278",
           "name": "尚凡*",
-          "net_1d_yi": 0,
-          "chg_1d": 0.42,
-          "inflow_streak": 16
+          "net_1d_yi": 0.0,
+          "chg_1d": 1.68,
+          "inflow_streak": 17
         },
         {
           "code": "2412",
           "name": "中華電",
-          "net_1d_yi": 0.9,
-          "chg_1d": -0.32,
-          "inflow_streak": 15
+          "net_1d_yi": 9.6,
+          "chg_1d": 2.6,
+          "inflow_streak": 16
         },
         {
           "code": "1477",
           "name": "聚陽",
-          "net_1d_yi": 0.5,
-          "chg_1d": 0.72,
-          "inflow_streak": 14
+          "net_1d_yi": 0.2,
+          "chg_1d": 0.0,
+          "inflow_streak": 15
         }
       ]
     },
