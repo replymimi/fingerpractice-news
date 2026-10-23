@@ -4,7 +4,7 @@
 > 規則：開工先 `git pull` 讀這份；做完事、作者做了決定，就更新這份再 commit＋push（push 前 `git pull --rebase`，機器人每天會自己 commit）。日期一律台北時間。
 > 官網專案的進度在另一個 repo：`replymimi/fingerpractice-site` 的 `PROGRESS.md`。
 
-最後更新：2026-10-23（五）11:40
+最後更新：2026-10-23（五）12:00
 
 ## 專案在哪裡
 
@@ -32,8 +32,10 @@
 
 | 問題 | 期限 | 背景 |
 |---|---|---|
-| 翻譯摘要要不要從 OpenAI 換成 Claude | 作者想好再說 | `scripts/summarize.py` 目前用 OpenAI `gpt-4o-mini`，GitHub Secrets 有 `OPENAI_API_KEY`。作者的整體規則是 ChatGPT／OpenAI 全面停用、看到殘留要清掉，所以這是殘留。換掉要：（1）作者在 Anthropic 申請 API 金鑰並存進 GitHub Secrets（2）改 `summarize.py` 和 workflow（3）實際跑一次對照品質和費用，再上線。換之前現況照跑，不要偷偷改，改壞會讓明天的晨讀空白。 |
+| 翻譯摘要從 OpenAI 換成 Claude | **作者 10-23 決定：等 OpenAI 額度用完再換**，不急著動 | `scripts/summarize.py` 的 `ai_json()` 是唯一呼叫 AI 的地方（OpenAI `gpt-4o-mini`），GitHub Secrets 有 `OPENAI_API_KEY`。換法已跟作者講過：（1）作者到 console.anthropic.com 儲值、建金鑰、存進 GitHub Secrets `ANTHROPIC_API_KEY`（不貼給 Claude）（2）Claude 在分支改 `summarize.py`、`requirements.txt`、兩個 workflow，先用 `claude-haiku-5-5`（3）同一批資料新舊並排對照品質、實測費用，不夠好再試 Sonnet 5.5（4）作者說可以才合併，隔天 07:00 看晨讀，3 天沒事再刪 `OPENAI_API_KEY`。**額度用完前現況照跑，不要偷偷改。** |
+| **額度用完的徵兆** | — | OpenAI 額度沒了，`ai_json()` 會失敗，晨讀每則會變成「（此則暫時無法自動摘要，請點連結看原文）」，頁面不會壞但沒有摘要。看到這個就是該換的時候，換的步驟照上一列。 |
 
 ## 最近發生的事（新的在上面）
 
+- **10-23** 12:00 作者決定 OpenAI 換 Claude 這件事等額度用完再做（見上方「等作者決定」），計劃和步驟已記好。
 - **10-23** 作者決定 news 和官網**不合併**、各自一個 repo（理由：機器人每天自動 commit，合進官網會每次觸發官網自動部署，繞過「改官網要作者確認」的規則）。改成兩邊各有 `PROGRESS.md`／`CLAUDE.md`，規則一致，三地都能接手。新增這份 `PROGRESS.md` 和 `CLAUDE.md`。順手發現上面「OpenAI 殘留」那件事。
