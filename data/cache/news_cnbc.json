@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-23T08:39:17.166218+08:00",
+  "fetched_at": "2026-10-24T08:40:45.801815+08:00",
   "data": [
     {
       "source": "CNBC",
-      "title": "Trump asked Musk to lift Starlink slowdown, WSJ reports",
-      "link": "https://www.cnbc.com/2026/10/22/trump-musk-starlink-ukraine.html",
-      "published_iso": "2026-10-22T21:02:07+00:00",
-      "summary_raw": "Elon Musk, a critic of Ukrainian President Volodymyr Zelenskyy, had ordered the slowdown of SpaceX's Starlink, The Wall Street Journal previously reported."
+      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products",
+      "link": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html",
+      "published_iso": "2026-10-23T21:26:59+00:00",
+      "summary_raw": "Sen. Susan Collins announced Canada was dropping Canadian tariffs, but the White House later said it was \"replacing\" the ones removed from the list."
     },
     {
       "source": "CNBC",
-      "title": "Moderna shares plunge after cancer vaccine data leaks — despite positive results",
-      "link": "https://www.cnbc.com/2026/10/22/moderna-stock-cancer-vaccine-data-leak.html",
-      "published_iso": "2026-10-22T21:52:02+00:00",
-      "summary_raw": "Moderna released full data on its closely watched cancer vaccine developed with Merck."
+      "title": "Turmoil hits AI build-out as neoclouds face pressure, credit risks mount and Solidigm pulls IPO",
+      "link": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
+      "published_iso": "2026-10-23T22:49:04+00:00",
+      "summary_raw": "Stock slumps, pulled IPOs and rising spreads on credit default swaps this week sets stage for hyperscaler earnings."
     },
     {
       "source": "CNBC",
-      "title": "Etsy bans AI-generated recipes and patterns from its online marketplace",
-      "link": "https://www.cnbc.com/2026/10/22/etsy-bans-ai-generated-recipes-patterns-from-its-online-marketplace.html",
-      "published_iso": "2026-10-22T23:45:50+00:00",
-      "summary_raw": "Etsy also laid out clearer rules around AI usage on its platform, including barring sellers from creating bot-generated listings without any human involvement."
+      "title": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
+      "link": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
+      "published_iso": "2026-10-23T22:27:06+00:00",
+      "summary_raw": "Trump's executive order on housing aims to lower mortgage costs. Here's what it means for homeowners and buyers."
     },
     {
       "source": "CNBC",
-      "title": "Trump defends Ramaswamy ad with Acton's estranged mom after bipartisan criticism",
-      "link": "https://www.cnbc.com/2026/10/22/trump-ramaswamy-ad-acton-mother-ad.html",
-      "published_iso": "2026-10-22T20:26:48+00:00",
-      "summary_raw": "Ohio Gov. Mike DeWine said GOP gubernatorial nominee Vivek Ramaswamy should remove the ad featuring the mother of Democratic nominee Amy Acton."
+      "title": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
+      "link": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
+      "published_iso": "2026-10-23T22:49:42+00:00",
+      "summary_raw": "Moody's left its credit rating on France at Aa3, giving the country some relief in a week of unrest."
     }
   ]
 }

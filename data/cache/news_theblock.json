@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-23T08:39:18.129340+08:00",
+  "fetched_at": "2026-10-24T08:40:46.618811+08:00",
   "data": [
     {
       "source": "The Block Research",
-      "title": "JPMorgan says crypto regulatory moves partly offset Clarity Act failure, but risks remain",
-      "link": "https://www.theblock.co/news/regulation/2026-10-22-jpmorgan-crypto-regulatory-moves-clarity-act-failure-risks-423473",
-      "published_iso": "2026-10-22T19:14:21+00:00",
-      "summary_raw": "JPMorgan said actions by U.S. regulators partly offset the Clarity Act setback, but longer-lasting rules are still needed."
+      "title": "Netanyahu seeking blockchain plan to prepare for possible sanctions",
+      "link": "https://www.theblock.co/news/markets/2026-10-23-netanyahu-israel-blockchain-plan-possible-sanctions-427792",
+      "published_iso": "2026-10-23T18:15:55+00:00",
+      "summary_raw": "Netanyahu says blockchain could help Israel prepare for possible sanctions targeting its banking system."
     },
     {
       "source": "The Block Research",
-      "title": "Blockchain Association pushes for crypto tax clarity as broader bill stalls",
-      "link": "https://www.theblock.co/news/regulation/2026-10-22-blockchain-association-pushes-crypto-tax-clarity-broader-bill-stalls-423475",
-      "published_iso": "2026-10-22T18:59:25+00:00",
-      "summary_raw": "As progress stalls on a crypto bill, the Blockchain Association is urging Congress to pass legislation to resolve uncertainty around taxes."
+      "title": "Sen. Blumenthal seeks answers from Tether over payments to firm founded by ex-White House crypto adviser",
+      "link": "https://www.theblock.co/news/regulation/2026-10-23-sen-blumenthal-seeks-answers-tether-payments-firm-founded-ex-white-house-crypto-adviser-427785",
+      "published_iso": "2026-10-23T17:46:09+00:00",
+      "summary_raw": "Sen. Blumenthal said he wants answers from Tether following reports that it paid millions to a firm started by a former WH crypto adviser."
     },
     {
       "source": "The Block Research",
-      "title": "Coinbase Ireland fined $3.6 million over customer fund segregation, oversight failures",
-      "link": "https://www.theblock.co/news/regulation/2026-10-22-coinbase-ireland-fined-3-6-million-over-customer-fund-segregation-oversight-failures-421943",
-      "published_iso": "2026-10-22T14:03:40+00:00",
-      "summary_raw": "Coinbase Ireland fined $3.6 million for safeguarding breaches that left customer funds underfunded and mixed with group accounts."
+      "title": "Initia halts network after security incident as attacker reportedly mints tokens",
+      "link": "https://www.theblock.co/news/defi/2026-10-23-initia-halts-network-after-security-incident-attacker-reportedly-mints-tokens-427755",
+      "published_iso": "2026-10-23T17:03:56+00:00",
+      "summary_raw": "Onchain data shows a $2.7 million ether transfer as Initia investigates the scope of a security incident."
     },
     {
       "source": "The Block Research",
-      "title": "Uniswap’s aggregator hooks go live on Ethereum, Base and Robinhood Chain",
-      "link": "https://www.theblock.co/news/defi/2026-10-22-uniswaps-aggregator-hooks-go-live-ethereum-base-robinhood-chain-421932",
-      "published_iso": "2026-10-22T13:55:03+00:00",
-      "summary_raw": "Uniswap Labs has launched aggregator hooks, allowing Uniswap v4 to route trades through liquidity held on external platforms."
+      "title": "Phantom rolls out Kalshi prediction markets to US users, says it’s ‘confident and comfortable’ amid state lawsuits",
+      "link": "https://www.theblock.co/news/markets/2026-10-23-phantom-rolls-out-kalshi-prediction-markets-us-421652",
+      "published_iso": "2026-10-23T13:00:00+00:00",
+      "summary_raw": "Phantom users will fund trades with CASH stablecoins, with market restrictions applied in Michigan, Nevada and Washington."
     }
   ]
 }

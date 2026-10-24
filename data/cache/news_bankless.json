@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-23T08:39:18.778272+08:00",
+  "fetched_at": "2026-10-24T08:40:48.718883+08:00",
   "data": [
     {
       "source": "Bankless",
-      "title": "Why DefiLlama’s Data Markets Are Interesting",
-      "link": "https://www.bankless.com/read/why-defillamas-data-markets-are-interesting",
-      "published_iso": "2026-10-22T18:40:57+00:00",
-      "summary_raw": "DefiLlama’s new markets are already pricing onchain earnings, quoting hack risk, and turning its methodology into money."
+      "title": "Crypto's Two Answers to AI Bug Hunters",
+      "link": "https://www.bankless.com/read/crypto-s-two-answers-to-ai-bug-hunters",
+      "published_iso": "2026-10-23T20:01:46+00:00",
+      "summary_raw": "As AI makes bugs cheap to find, crypto is splitting between agility and minimalism."
     },
     {
       "source": "Bankless",
-      "title": "Ethereum Researchers Draft a Consensus Overhaul for Faster Finality",
-      "link": "https://www.bankless.com/read/news/ethereum-researchers-draft-a-consensus-overhaul-for-faster-finality",
-      "published_iso": "2026-10-22T16:08:45+00:00",
-      "summary_raw": "A draft EIP would split Ethereum’s validator voting in two, chasing faster finality, sturdier fork choice, and a path to post-quantum signatures."
+      "title": "Uniswap v4 Is Now an Aggregator",
+      "link": "https://www.bankless.com/read/news/uniswap-v4-is-now-an-aggregator",
+      "published_iso": "2026-10-23T17:53:45+00:00",
+      "summary_raw": "Uniswap's new Aggregator Hooks plug seven outside liquidity sources, covering more than 90% of DEX activity on Ethereum, Base and Robinhood Chain, into v4."
     },
     {
       "source": "Bankless",
-      "title": "Aerodrome and Velodrome Go Live as Aero Across Seven Chains",
-      "link": "https://www.bankless.com/read/news/aerodrome-velodrome-go-live-as-aero",
-      "published_iso": "2026-10-22T12:47:30+00:00",
-      "summary_raw": "VELO holders now convert into AERO, with the merged supply split 94.5% to Aerodrome's side and 5.5% to Velodrome's."
+      "title": "CME-Backed Group Pushes Back on Kalshi as Phantom Rolls Out Prediction Markets",
+      "link": "https://www.bankless.com/read/news/cme-backed-group-pushes-back-on-kalshi-as-phantom-rolls-out-prediction-markets",
+      "published_iso": "2026-10-23T17:51:58+00:00",
+      "summary_raw": "The Commodity Markets Council wants the CFTC to block Kalshi's first oil perp, as Kalshi's October volume hits $55.33B and Phantom brings its markets to US users."
     },
     {
       "source": "Bankless",
-      "title": "Pump.fun Ditches Relay for In-House Pump Bridge",
-      "link": "https://www.bankless.com/read/news/pump-fun-ditches-relay-for-in-house-pump-bridge",
-      "published_iso": "2026-10-22T12:27:36+00:00",
-      "summary_raw": "Pump.fun claims its own crosschain route cut buy errors 92% and halved typical buy times vs. Relay, the provider rival Fomo still uses."
+      "title": "Starknet Votes to Explore Going Solo as a Post-Quantum L1",
+      "link": "https://www.bankless.com/read/news/starknet-votes-to-explore-going-solo-as-a-post-quantum-l1",
+      "published_iso": "2026-10-23T17:28:44+00:00",
+      "summary_raw": "93.5% of voting power backed researching a standalone post-quantum chain, though any actual switch would still need another community vote."
     }
   ]
 }
